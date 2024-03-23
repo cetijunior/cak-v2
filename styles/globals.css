@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes fadeInUpwards {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInUpwards {
+    animation-name: fadeInUpwards;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+  }
+  
