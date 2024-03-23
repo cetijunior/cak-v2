@@ -49,7 +49,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="mb-2">
-                <Link  legacyBehavior href="/linkedin">
+                <Link legacyBehavior href="/linkedin">
                   <a>Linkedin</a>
                 </Link>
               </li>
