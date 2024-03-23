@@ -7,7 +7,7 @@ function Hero() {
             <Image className='mt-[-40px] w-screen' src='/hero.png' width={1920} height={1080} alt={''} />
 
             <div className='flex flex-col items-center justify-center w-screen'>
-                <div className='w-[600px] h-[400px] bg-[#F8F9FB] shadow-custom-blue rounded-xl mt-[-280px] p-10 space-y-4'>
+                <div className='w-[600px] h-[400px] bg-[#F8F9FB] shadow-custom-blue rounded-xl mt-[-250px] p-10 space-y-4'>
                     <h1 className='text-center text-5xl font-bold'>
                         World-Clas Website Development
                     </h1>
