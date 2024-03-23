@@ -18,9 +18,15 @@
     animation-duration: 0.8s;
     animation-fill-mode: both;
   }
-  .split-bg{
-  background-image: linear-gradient(to right, #E6F0F8 40%, #E6F0F8 40%, #F8F9FB 40%, #F8F9FB 70%);
-}
+
+  .split-bg-horizontally{
+  background-image: linear-gradient(to right, #E6F0F8 40%, #E6F0F8 40%, #ffffff 40%, #ffffff 70%);
+  }
+
+  .split-bg-vertically{
+  background-image: linear-gradient(to bottom, #E6F0F8 40%, #E6F0F8 40%, #ffffff 40%, #ffffff 70%);
+  }
+
 
 @keyframes slideInFromRight {
   from { transform: translateX(100%); }

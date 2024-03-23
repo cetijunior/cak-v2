@@ -62,17 +62,17 @@ function CarouselAbout() {
   };
   
   return (
-    <div className='h-[400px] w-[800px] flex flex-row rounded-[39px]'>
-      <button onClick={goToPrevSlide} className={`w-10 h-10 button-fade ${buttonState === "visible" || buttonState === "fading in" ? "opacity-1" : "opacity-0"} rounded-full bg-white mt-[180px] absolute shadow-custom-blue left-[635px] z-10`}>Left</button>
-      <div key={animationKey} className={`h-[400px] w-[800px] ${getAnimationClass(current)} flex flex-row rounded-[39px] split-bg shadow-custom-blue`}>
+    <div className='sm:h-[400px] sm:w-[800px] h-[200px] w-[400px] sm:flex flex flex-col sm:flex-row rounded-[39px]'>
+      <button onClick={goToPrevSlide} className={`w-10 h-10 button-fade ${buttonState === "visible" || buttonState === "fading in" ? "opacity-1" : "opacity-0"} rounded-full bg-white sm:mt-[180px] absolute shadow-custom-blue mt-[370px] ml-[-20px] sm:ml-0 sm:left-[635px] z-10`}>Left</button>
+      <div key={animationKey} className={`sm:h-[400px] sm:w-[800px] h-[800px] w-[330px] ${getAnimationClass(current)} sm:flex flex flex-col sm:flex-row rounded-[39px] md:split-bg-horizontally split-bg-vertically shadow-custom-blue`}>
                     <img src={items[current].img} alt={items[current].name} className={items[current].className}/>
                     <div className='flex flex-col'>
-                        <p className='text-left px-10 py-14 w-[300px] text-[#131B23]'>{items[current].text}</p>
+                        <p className='text-left px-10 sm:py-14 py-12 w-[300px] text-[#131B23]'>{items[current].text}</p>
                         <h1 className='text-left px-10 w-[300px] text-[#131B23]'>{items[current].name}</h1>
-                        <h1 className='text-left text-sm px-10 text-[#131B23]'>{items[current].role}</h1>
+                        <h1 className='text-left text-sm px-10 mb-4 text-[#131B23]'>{items[current].role}</h1>
                     </div>
                 </div>
-      <button onClick={goToNextSlide} className={`w-10 h-10 button-fade rounded-full button-fade ${buttonState === "visible" || buttonState === "fading in" ? "opacity-1" : "opacity-0"} bg-white shadow-custom-blue absolute right-[45px] mt-[180px] z-10`}>Right</button>
+      <button onClick={goToNextSlide} className={`w-10 h-10 button-fade rounded-full button-fade ${buttonState === "visible" || buttonState === "fading in" ? "opacity-1" : "opacity-0"} bg-white shadow-custom-blue absolute sm:right-[60px] right-[10px] mt-[370px] sm:mt-[180px] z-10`}>Right</button>
     </div>
   )
 }
