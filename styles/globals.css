@@ -6,36 +6,40 @@
   background-image: linear-gradient(to right, #E6F0F8 40%, #E6F0F8 40%, #F8F9FB 40%, #F8F9FB 70%);
 }
 
-/* Add these styles to your global.css or equivalent */
 @keyframes slideInFromRight {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
 }
-
+@keyframes slideOutToLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
 @keyframes slideInFromLeft {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+@keyframes slideOutToRight {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
 }
 
-.slide-right {
+.slide-in-from-right {
   animation: slideInFromRight 0.5s forwards;
 }
-
-.slide-left {
+.slide-out-to-left {
+  animation: slideOutToLeft 0.5s forwards;
+}
+.slide-in-from-left {
   animation: slideInFromLeft 0.5s forwards;
 }
+.slide-out-to-right {
+  animation: slideOutToRight 0.5s forwards;
+}
+
 
 /* Add to your CSS file */
 .button-fade {
-  transition: opacity 0.5s ease;
+  transition: opacity 1s ease;
 }
 
 .button-hidden {
