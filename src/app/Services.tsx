@@ -1,10 +1,6 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import webDev from './services-pages/web-dev';
-import mobDev from './services-pages/mob-dev';
-import smma from './services-pages/smma';
-import design from './services-pages/design';
 
 export default function ServicesSection() {
   const ref = useRef(null); // Ref for the section
@@ -40,14 +36,14 @@ export default function ServicesSection() {
       <div className='h-20'></div>
       <div className={`max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 transition-opacity duration-1000 ${cardClass}`}>
         
-        <Link legacyBehavior href={'webDev'} passHref>
+        <Link legacyBehavior href='./services-pages/web-dev' >
           <a className="text-center cursor-pointer">
             <img src={'/computer.png'} alt="Website Development" className="mx-auto mb-4" width={90} />
             <h3 className="text-2xl font-semibold mb-4">Website Development</h3>
             <p className="text-gray-600 text-xl">Specializing in custom web solutions to enhance your online presence.</p>
           </a>
         </Link>
-        <Link legacyBehavior href="/mobile-app-development" passHref>
+        <Link legacyBehavior href="/mobile-app-development" >
           <a className="text-center cursor-pointer">
             <img src={'/smartphone.png'} alt="Mobile App Development" className="mx-auto mb-4" width={90} />
             <h3 className="text-2xl font-semibold mb-4">Mobile App Development</h3>
@@ -55,7 +51,7 @@ export default function ServicesSection() {
           </a>
         </Link>
         
-        <Link legacyBehavior href="/social-media-marketing" passHref>
+        <Link legacyBehavior href="/social-media-marketing" >
           <a className="text-center cursor-pointer">
             <img src={'/smma.png'} alt="Social Media Marketing" className="mx-auto mb-4" width={90} />
             <h3 className="text-2xl font-semibold mb-4">Social Media Marketing</h3>
@@ -63,7 +59,7 @@ export default function ServicesSection() {
           </a>
         </Link>
         
-        <Link legacyBehavior href="/design" passHref>
+        <Link legacyBehavior href="./services-pages/design" >
           <a className="text-center cursor-pointer">
             <img src={'/web-design.png'} alt="Design Services" className="mx-auto mb-4" width={90} />
             <h3 className="text-2xl font-semibold mb-4">Design</h3>

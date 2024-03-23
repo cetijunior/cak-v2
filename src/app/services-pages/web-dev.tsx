@@ -1,9 +1,9 @@
 import React from 'react'
 
-const web-dev = () => {
+const webdev = () => {
   return (
     <div>web-dev</div>
   )
 }
 
-export default web-dev
+export default webdev
