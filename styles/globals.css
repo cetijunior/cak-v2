@@ -47,3 +47,8 @@
   opacity: 1;
   visibility: visible;
 }
+
+
+::-webkit-scrollbar {
+  display: none;
+}
