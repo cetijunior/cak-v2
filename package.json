@@ -10,9 +10,15 @@
   },
   "dependencies": {
     "next": "14.1.4",
+<<<<<<< HEAD
     "react": "^18",
     "react-dom": "^18",
     "styled-components": "^6.1.8"
+=======
+    "next-video": "^0.16.2",
+    "react": "^18",
+    "react-dom": "^18"
+>>>>>>> 531c7ce2ba50b18a6c73e3e00000bb4b7db08e50
   },
   "devDependencies": {
     "@types/node": "^20",
