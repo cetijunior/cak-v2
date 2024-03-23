@@ -7,7 +7,7 @@ import Portfolio from "./Portfolio";
 export default function Home() {
   return (
     <div className="flex flex-col items-start">
-      <div className="space-y-5">
+      <div className="space-y-8">
         <Navbar />
         <Hero />
         <Portfolio />
@@ -15,3 +15,4 @@ export default function Home() {
     </div>
   );
 }
+
