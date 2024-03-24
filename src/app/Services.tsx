@@ -1,73 +1,73 @@
 'use client'
-import React, { useEffect, useRef, useState } from 'react';
+
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 export default function ServicesSection() {
-  const ref = useRef(null); // Ref for the section
-  const [isVisible, setIsVisible] = useState(false); // State to track the visibility of the section
+  const [visible, setVisible] = useState(false); // Track if the section is visible
+  const [show, setShow] = useState([false, false, false, false]); // Individual visibility for links
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsVisible(entry.isIntersecting);
-      },
-      { threshold: 0.50 } // Trigger when at least 10% of the element is in the viewport
-    );
+    const section = document.getElementById('services');
+    if (section) { // Check if the element exists
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+          }
+        });
+      }, { threshold: 0.1 });
 
-    if (ref.current) {
-      observer.observe(ref.current);
+      observer.observe(section);
+
+      return () => observer.disconnect();
     }
+  }, []);
 
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, [ref]);
+  useEffect(() => {
+    if (visible) {
+      // Trigger fade-in effect for each card with a delay
+      show.forEach((_, index) => {
+        setTimeout(() => {
+          setShow((s) => {
+            const newShow = [...s];
+            newShow[index] = true;
+            return newShow;
+          });
+        }, index * 1000); // Sequential delay (1s, 2s, 3s, 4s)
+      });
+    }
+  }, [visible]);
 
-  // Dynamically generate the card classes based on visibility
-  const cardClass = isVisible ? "fade-in" : "opacity-0";
+  const links = [
+    { href: './web-dev', img: '/computer.png', title: 'Website Development', description: 'Specializing in custom web solutions to enhance your online presence.' },
+    { href: './mob-dev', img: '/smartphone.png', title: 'Mobile App Development', description: 'Creating mobile applications that offer seamless user experiences.' },
+    { href: '/social-media-marketing', img: '/smma.png', title: 'Social Media Marketing', description: 'Strategies to grow your brand’s presence on various social platforms.' },
+    { href: './services-pages/design', img: '/web-design.png', title: 'Design', description: 'Innovative design solutions tailored to your business’s needs.' }
+  ];
 
   return (
-    <section id='services' className="py-16 h-[700px] bg-white" ref={ref}>
+    <section id='services' className="py-16 bg-white">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-900">Digital Services Provider</h2>
       </div>
       <div className='h-20'></div>
-      <div className={`max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 transition-opacity duration-1000 ${cardClass}`}>
-        
-        <Link legacyBehavior href='./services-pages/web-dev' >
-          <a className="text-center cursor-pointer">
-            <img src={'/computer.png'} alt="Website Development" className="mx-auto mb-4" width={90} />
-            <h3 className="text-2xl font-semibold mb-4">Website Development</h3>
-            <p className="text-gray-600 text-xl">Specializing in custom web solutions to enhance your online presence.</p>
-          </a>
-        </Link>
-        <Link legacyBehavior href="/mobile-app-development" >
-          <a className="text-center cursor-pointer">
-            <img src={'/smartphone.png'} alt="Mobile App Development" className="mx-auto mb-4" width={90} />
-            <h3 className="text-2xl font-semibold mb-4">Mobile App Development</h3>
-            <p className="text-gray-600 text-xl">Creating mobile applications that offer seamless user experiences.</p>
-          </a>
-        </Link>
-        
-        <Link legacyBehavior href="/social-media-marketing" >
-          <a className="text-center cursor-pointer">
-            <img src={'/smma.png'} alt="Social Media Marketing" className="mx-auto mb-4" width={90} />
-            <h3 className="text-2xl font-semibold mb-4">Social Media Marketing</h3>
-            <p className="text-gray-600 text-xl">Strategies to grow your brand’s presence on various social platforms.</p>
-          </a>
-        </Link>
-        
-        <Link legacyBehavior href="./services-pages/design" >
-          <a className="text-center cursor-pointer">
-            <img src={'/web-design.png'} alt="Design Services" className="mx-auto mb-4" width={90} />
-            <h3 className="text-2xl font-semibold mb-4">Design</h3>
-            <p className="text-gray-600 text-xl">Innovative design solutions tailored to your business’s needs.</p>
-          </a>
-        </Link>
-
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        {links.map((link, index) => (
+          <div
+            key={index}
+            className={`transition-opacity duration-1000 ${show[index] ? 'opacity-100' : 'opacity-0'}`}>
+            <Link legacyBehavior href={link.href} passHref>
+              <a className="text-center cursor-pointer">
+                <img src={link.img} alt={link.title} className="mx-auto mb-4" width={90} />
+                <h3 className="text-2xl font-semibold mb-4">{link.title}</h3>
+                <p className="text-gray-600 text-xl">{link.description}</p>
+              </a>
+            </Link>
+          </div>
+        ))}
       </div>
     </section>
   );
 }
+
