@@ -8,17 +8,20 @@ export default function ServicesSection() {
   const [show, setShow] = useState([false, false, false, false]); // Individual visibility for links
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setVisible(true); // Section is visible
-        }
-      });
-    }, { threshold: 0.1 });
+    const section = document.getElementById('services');
+    if (section) { // Check if the element exists
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+          }
+        });
+      }, { threshold: 0.1 });
 
-    observer.observe(document.getElementById('services'));
+      observer.observe(section);
 
-    return () => observer.disconnect();
+      return () => observer.disconnect();
+    }
   }, []);
 
   useEffect(() => {
@@ -37,8 +40,8 @@ export default function ServicesSection() {
   }, [visible]);
 
   const links = [
-    { href: './services-pages/web-dev', img: '/computer.png', title: 'Website Development', description: 'Specializing in custom web solutions to enhance your online presence.' },
-    { href: '/mobile-app-development', img: '/smartphone.png', title: 'Mobile App Development', description: 'Creating mobile applications that offer seamless user experiences.' },
+    { href: './web-dev', img: '/computer.png', title: 'Website Development', description: 'Specializing in custom web solutions to enhance your online presence.' },
+    { href: './mob-dev', img: '/smartphone.png', title: 'Mobile App Development', description: 'Creating mobile applications that offer seamless user experiences.' },
     { href: '/social-media-marketing', img: '/smma.png', title: 'Social Media Marketing', description: 'Strategies to grow your brand’s presence on various social platforms.' },
     { href: './services-pages/design', img: '/web-design.png', title: 'Design', description: 'Innovative design solutions tailored to your business’s needs.' }
   ];
