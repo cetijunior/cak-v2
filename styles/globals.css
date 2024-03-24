@@ -200,3 +200,7 @@
   animation-delay: 400ms;
 }
 
+.split-bg-vertically{
+  background-image: linear-gradient(to bottom, #E6F0F8 40%, #E6F0F8 40%, #ffffff 40%, #ffffff 70%);
+  }
+

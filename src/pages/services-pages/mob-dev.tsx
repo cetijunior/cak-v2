@@ -7,9 +7,9 @@ import Footer from '@/components/Footer';
 const mobdev = () => {
   return (
     <>
-    <Navbar />
-    <Hero />
-    <Footer />
+      <Navbar />
+      <Hero />
+      <Footer />
     </>
   )
 }
