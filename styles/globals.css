@@ -151,3 +151,31 @@
 }
 
 
+/* Arsi section */
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+/* Utility for animation delay, repeat this pattern for as many delays as you need */
+.delay-200ms {
+  animation-delay: 200ms;
+}
+.delay-400ms {
+  animation-delay: 400ms;
+}
+

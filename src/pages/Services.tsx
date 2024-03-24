@@ -57,7 +57,7 @@ export default function ServicesSection() {
           <div
             key={index}
             className={`transition-opacity duration-1000 ${show[index] ? 'opacity-100' : 'opacity-0'}`}>
-            <Link href={link.href} passHref>
+            <Link legacyBehavior href={link.href} passHref>
               <div className="text-center cursor-pointer">
                 <img src={link.img} alt={link.title} className="mx-auto mb-4" width={90} />
                 <h3 className="text-2xl font-semibold mb-4">{link.title}</h3>
