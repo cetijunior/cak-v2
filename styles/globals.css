@@ -72,6 +72,16 @@
   border-color: #446AF2 !important;
 }
 
+.carousel-container{
+  height: 100% !important;
+}
+
+.carousel-container .swiper-pagination {
+  bottom: 0 !important; /* Adjust as needed */
+
+  z-index: 50;
+}
+
 /* Adding margin-top to the pagination container */
 
 
