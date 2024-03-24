@@ -15,7 +15,7 @@ function Navbar() {
             <div className='pr-4 z-30 sm:hidden'>
                 <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     {/* Update the path here to correctly point to the images in the public folder */}
-                    {isMenuOpen ? <img src='/close.png' alt='Close' className="w-6 h-6" /> : <img src='/menu.png' alt='Menu' className="w-6 h-6" />}
+                    {isMenuOpen ? <img src='/close.png' alt='Close' className="w-10 h-10" /> : <img src='/menu.png' alt='Menu' className="w-6 h-6 rotate-180" />}
                 </button>
             </div>
 
@@ -25,13 +25,13 @@ function Navbar() {
                     <li className='cursor-pointer text-2xl hover:opacity-70'>About Us</li>
                     <div className='flex flex-row items-center space-x-16 '>
                         <li className='cursor-pointer text-wrap text-2xl hover:opacity-70'>Web Development Services</li>
-                        <button>Pick</button>
+                        <img src='/arrow.png' alt='next' className='w-10 h-10 rotate-180'></img>
                     </div>
                     <li className='cursor-pointer text-2xl hover:opacity-70'>Projects</li>
                     <li className='cursor-pointer text-2xl hover:opacity-70'>Contact</li>
                     <div className='flex flex-row items-center space-x-36 '>
                         <li className='cursor-pointer text-2xl hover:opacity-70'>ENG</li>
-                        <button className=''>Pick</button>
+                        <img src='/arrow.png' alt='next' className='w-10 h-10 rotate-180'></img>
                     </div>
                 </ul>
             </div>
