@@ -19,43 +19,120 @@
     animation-fill-mode: both;
   }
 
-  .bgForAbout{
-  background-image: linear-gradient(to right, #E6F0F8 40%, #E6F0F8 40%, #ffffff 40%, #ffffff 70%);
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
   }
 
-  .split-bg-vertically{
-  background-image: linear-gradient(to bottom, #E6F0F8 40%, #E6F0F8 40%, #ffffff 40%, #ffffff 70%);
+  .fadeIn {
+      animation-name: fadeIn;
+      animation-duration: 1s;
+      animation-fill-mode: both;
   }
 
+ /* Small screens: Default to vertical split */
+.split-bg-vertically {
+  background-image: linear-gradient(to bottom, #E6F0F8 20%, #E6F0F8 20%, #ffffff 20%, #ffffff 70%);
+}
 
-@keyframes slideInFromRight {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
+/* Larger screens */
+@media (min-width: 640px) { /* Adjust breakpoint as needed */
+  .bgForAbout {
+    background-image: linear-gradient(to right, #E6F0F8 40%, #E6F0F8 40%, #ffffff 40%, #ffffff 70%);
+  }
+
+  .split-bg-vertically {
+    background-image: none; /* Reset for larger screens if necessary */
+  }
 }
-@keyframes slideOutToLeft {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+
+/* Carousel styles */
+.carousel-container .swiper-pagination-bullet {
+  background: #446AF2  !important; /* Example: Black bullets */
+  opacity: 1 !important; /* Ensure the bullets are always visible */
+  width: 15px;
+  height: 15px;
 }
-@keyframes slideInFromLeft {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); }
+
+.carousel-container{
+  position: relative !important;
+  overflow: visible !important; /* Ensure the bullets are always visible */
 }
-@keyframes slideOutToRight {
-  from { transform: translateX(0); }
-  to { transform: translateX(100%); }
+
+.carousel-container .swiper-pagination-bullet-active {
+  background: #E6F0F8 !important;
+  border-radius: 10px !important;
+  border-width: 2px;
+  border-color: #446AF2 !important;
+}
+
+/* Adding margin-top to the pagination container */
+
+
+@keyframes slide-in-from-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out-to-right {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in-from-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out-to-left {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.slide-in-from-left {
+  animation: slide-in-from-left 1s forwards;
+}
+
+.slide-out-to-right {
+  animation: slide-out-to-right 1s forwards;
 }
 
 .slide-in-from-right {
-  animation: slideInFromRight 0.5s forwards;
+  animation: slide-in-from-right 1s forwards;
 }
+
 .slide-out-to-left {
-  animation: slideOutToLeft 0.5s forwards;
-}
-.slide-in-from-left {
-  animation: slideInFromLeft 0.5s forwards;
-}
-.slide-out-to-right {
-  animation: slideOutToRight 0.5s forwards;
+  animation: slide-out-to-left 1s forwards;
 }
 
 
