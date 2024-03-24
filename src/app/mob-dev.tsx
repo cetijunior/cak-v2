@@ -1,9 +1,9 @@
 import React from 'react'
 
-const mob-dev = () => {
+const mobdev = () => {
   return (
     <div>mob-dev</div>
   )
 }
 
-export default mob-dev
+export default mobdev
