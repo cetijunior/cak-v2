@@ -9,7 +9,7 @@ export default function ServicesSection() {
 
   useEffect(() => {
     const section = document.getElementById('services');
-    if (section) { 
+    if (section) {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {

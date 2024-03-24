@@ -24,7 +24,7 @@
   }
 
   .split-bg-vertically{
-  background-image: linear-gradient(to bottom, #E6F0F8 20%, #E6F0F8 20%, #ffffff 20%, #ffffff 70%);
+  background-image: linear-gradient(to bottom, #E6F0F8 40%, #E6F0F8 40%, #ffffff 40%, #ffffff 70%);
   }
 
 
@@ -93,3 +93,5 @@
 .animate-slideIn {
   animation: slideIn 0.7s forwards;
 }
+
+
