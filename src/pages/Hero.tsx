@@ -1,6 +1,5 @@
-import Video from 'next-video';
 import React from 'react'
-import HeroV from '../../videos/HeroV.mp4'
+
 
 function Hero() {
     return (
