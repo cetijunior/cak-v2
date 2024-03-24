@@ -7,9 +7,9 @@ import "/styles/globals.css";
 const design = () => {
   return (
     <>
-    <Navbar />
-    <Hero />
-    <Footer />
+      <Navbar />
+      <Hero />
+      <Footer />
     </>
   )
 }

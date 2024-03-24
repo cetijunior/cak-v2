@@ -4,15 +4,15 @@ import '/styles/globals.css'
 
 
 const techStack = [
-    { name: 'C++', icon: '/icons/cis.png' }, 
-    { name: 'Python', icon: '/icons/python.png' },
-    { name: 'Css', icon: '/icons/css-3.png' }, 
-    { name: 'Sql', icon: '/icons/datenbank.png' },
-    { name: 'Javascript', icon: '/icons/java-skript.png' }, 
-    { name: 'Php', icon: '/icons/php.png' },
-    { name: 'Java', icon: '/icons/java.png' }, 
-    { name: 'React Native', icon: '/icons/codes.png' },
-  ];
+  { name: 'C++', icon: '/icons/cis.png' },
+  { name: 'Python', icon: '/icons/python.png' },
+  { name: 'Css', icon: '/icons/css-3.png' },
+  { name: 'Sql', icon: '/icons/datenbank.png' },
+  { name: 'Javascript', icon: '/icons/java-skript.png' },
+  { name: 'Php', icon: '/icons/php.png' },
+  { name: 'Java', icon: '/icons/java.png' },
+  { name: 'React Native', icon: '/icons/codes.png' },
+];
 
 
   
@@ -41,3 +41,4 @@ const techStack = [
       </section>
     );
   }
+

@@ -7,9 +7,9 @@ import "/styles/globals.css";
 const smma = () => {
   return (
     <>
-    <Navbar />
-    <Hero />
-    <Footer />
+      <Navbar />
+      <Hero />
+      <Footer />
     </>
   )
 }
