@@ -19,7 +19,7 @@
     animation-fill-mode: both;
   }
 
-  .split-bg-horizontally{
+  .bgForAbout{
   background-image: linear-gradient(to right, #E6F0F8 40%, #E6F0F8 40%, #ffffff 40%, #ffffff 70%);
   }
 

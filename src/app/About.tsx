@@ -1,80 +1,18 @@
-"use client";
-
 import React from 'react'
 import CarouselAbout from './CarouselAbout'
-import styled from 'styled-components'
 
-const About = () => {
-    const media = {
-        sm: '(min-width: 640px)',
-        md: '(min-width: 768px)',
-        lg: '(min-width: 1024px)',
-        xl: '(min-width: 1280px)',
-    }
-
-    const Container = styled.section`
-        background-color: white;
-        min-height: 600px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        @media ${media.sm} {
-            padding: 40px;
-            flex-direction: row;
-            gap: 40px;
-        }
-
-        @media ${media.md} {
-            padding: 40px 60px;
-        }
-
-        @media ${media.lg} {
-            padding: 40px 120px;
-        }
-
-        @media ${media.xl} {
-            padding: 40px 160px;
-        }
-    `
-
-    const Title = styled.h2`
-        margin: 0 auto;
-        font-size: 24px;
-        color: #131B23;
-        text-align: center;
-
-        @media ${media.sm} {
-            font-size: 28px;
-            text-align: left;
-        }
-    `
-
-    const Text = styled.p`
-        font-size: 16px;
-        color: #131B23;
-        text-align: center;
-        max-width: 80%;
-        margin: 0 auto;
-
-        @media ${media.sm} {
-            font-size: 18px;
-            text-align: left;
-            max-width: 60%;
-        }
-    `
-
+function About() {
     return (
-        <Container id='about-us'>
-            <div className='flex flex-col gap-8 my-12'>
-                <Title>Who are we?</Title>
-                <Text>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non porro adipisci, repellat aliquid vero assumenda molestias, consectetur quae in illo nam velit nemo cum asperiores saepe quaerat. Deserunt, totam incidunt.</Text>
+        <section id='about' className='bg-white h-screen w-screen px-8 sm:px-24 py-[700px] sm:py-0'>
+            <div className=' sm:flex sm:flex-row flex flex-col gap-4 items-center '>
+                <div className='flex flex-col sm:gap-10 gap-10'>
+                    <h2 className='sm:text-left text-center text-3xl font-semibold'>Who are we?</h2>
+                    <p className='sm:text-left text-center w-[400px]'>Lorem ipsum dolor sit amet <br />consectetur adipisicing elit. Sit <br /> architecto modi dolor, atque laborum qui <br />ea dolorem cupiditate fugit harum <br />corrupti veniam. Blanditiis repudiandae <br /> earum id laboriosam omnis quas <br />voluptate!</p>
+                </div>
+                <CarouselAbout />
             </div>
-            <CarouselAbout />
-        </Container>
+        </section>
     )
 }
-
 
 export default About
