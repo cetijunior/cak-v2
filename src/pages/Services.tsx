@@ -9,7 +9,7 @@ export default function ServicesSection() {
 
   useEffect(() => {
     const section = document.getElementById('services');
-    if (section) { // Check if the element exists
+    if (section) { 
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -34,16 +34,16 @@ export default function ServicesSection() {
             newShow[index] = true;
             return newShow;
           });
-        }, index * 1000); // Sequential delay (1s, 2s, 3s, 4s)
+        }, index * 500); // Sequential delay (1s, 2s, 3s, 4s)
       });
     }
   }, [visible]);
 
   const links = [
-    { href: './web-dev', img: '/computer.png', title: 'Website Development', description: 'Specializing in custom web solutions to enhance your online presence.' },
-    { href: './mob-dev', img: '/smartphone.png', title: 'Mobile App Development', description: 'Creating mobile applications that offer seamless user experiences.' },
-    { href: '/social-media-marketing', img: '/smma.png', title: 'Social Media Marketing', description: 'Strategies to grow your brand’s presence on various social platforms.' },
-    { href: './services-pages/design', img: '/web-design.png', title: 'Design', description: 'Innovative design solutions tailored to your business’s needs.' }
+    { href: '/services-pages/web-dev', img: '/computer.png', title: 'Website Development', description: 'Specializing in custom web solutions to enhance your online presence.' },
+    { href: '/services-pages/mob-dev', img: '/smartphone.png', title: 'Mobile App Development', description: 'Creating mobile applications that offer seamless user experiences.' },
+    { href: '/services-pages/smma', img: '/smma.png', title: 'Social Media Marketing', description: 'Strategies to grow your brand’s presence on various social platforms.' },
+    { href: '/services-pages/design', img: '/web-design.png', title: 'Design', description: 'Innovative design solutions tailored to your business’s needs.' }
   ];
 
   return (
@@ -57,12 +57,12 @@ export default function ServicesSection() {
           <div
             key={index}
             className={`transition-opacity duration-1000 ${show[index] ? 'opacity-100' : 'opacity-0'}`}>
-            <Link legacyBehavior href={link.href} passHref>
-              <a className="text-center cursor-pointer">
+            <Link href={link.href} passHref>
+              <div className="text-center cursor-pointer">
                 <img src={link.img} alt={link.title} className="mx-auto mb-4" width={90} />
                 <h3 className="text-2xl font-semibold mb-4">{link.title}</h3>
                 <p className="text-gray-600 text-xl">{link.description}</p>
-              </a>
+              </div>
             </Link>
           </div>
         ))}
