@@ -52,6 +52,27 @@
   }
 }
 
+/* Carousel styles */
+.carousel-container .swiper-pagination-bullet {
+  background: #446AF2  !important; /* Example: Black bullets */
+  opacity: 1 !important; /* Ensure the bullets are always visible */
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-container{
+  position: relative !important;
+  overflow: visible !important; /* Ensure the bullets are always visible */
+}
+
+.carousel-container .swiper-pagination-bullet-active {
+  background: #E6F0F8 !important;
+  border-radius: 10px !important;
+  border-width: 2px;
+  border-color: #446AF2 !important;
+}
+
+/* Adding margin-top to the pagination container */
 
 
 @keyframes slide-in-from-left {
