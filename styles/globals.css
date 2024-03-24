@@ -19,6 +19,23 @@
     animation-fill-mode: both;
   }
 
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
+  .fadeIn {
+      animation-name: fadeIn;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+  }
+
   .bgForAbout{
   background-image: linear-gradient(to right, #E6F0F8 40%, #E6F0F8 40%, #ffffff 40%, #ffffff 70%);
   }
