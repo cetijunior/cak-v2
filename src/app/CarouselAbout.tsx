@@ -63,16 +63,17 @@ function CarouselAbout() {
   
   return (
     <div>
-      <button onClick={goToPrevSlide} className={`button-fade left-[500px] absolute w-10 h-10 bg-white shadow-custom-blue rounded-full ${buttonState === "visible" || buttonState === "fading in" ? "opacity-1" : "opacity-0"} `}>Left</button>
+      <button onClick={goToPrevSlide} className={`button-fade z-10 sm:left-[495px] left-3 mt-[325px] sm:mt-[170px] absolute w-10 h-10 bg-white shadow-custom-blue rounded-full ${buttonState === "visible" || buttonState === "fading in" ? "opacity-1" : "opacity-0"} `}>Left</button>
+      <button onClick={goToNextSlide} className={` button-fade  z-10 sm:right-20 right-3 mt-[325px] sm:mt-[170px] absolute w-10 h-10 bg-white shadow-custom-blue rounded-full ${buttonState === "visible" || buttonState === "fading in" ? "opacity-1" : "opacity-0"} `}>Right</button>
       <div key={animationKey} className={`sm:flex sm:flex-row flex flex-col sm:gap-10 gap-10 split-bg-vertically sm:bgForAbout rounded-[39px] shadow-custom-blue ${getAnimationClass(current)}`}>
                     <img src={items[current].img} alt={items[current].name} className={items[current].className}/>
-                    <div className=''>
-                        <p className=''>{items[current].text}</p>
-                        <h1 className=''>{items[current].name}</h1>
-                        <h1 className=''>{items[current].role}</h1>
+                    <div className='px-4 mb-6'>
+                        <p className='text-center sm:text-left'>{items[current].text}</p>
+                        <h1 className='sm:text-left text-center font-semibold mt-4'>{items[current].name}</h1>
+                        <h1 className='sm:text-left text-center text-sm'>{items[current].role}</h1>
                     </div>
                 </div>
-      <button onClick={goToNextSlide} className={` button-fade right absolute w-10 h-10 bg-white shadow-custom-blue rounded-full ${buttonState === "visible" || buttonState === "fading in" ? "opacity-1" : "opacity-0"} `}>Right</button>
+      
     </div>
   )
 }
