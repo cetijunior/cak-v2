@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
@@ -8,8 +8,16 @@ function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDropdownOpenServices, setIsDropdownOpenServices] = useState(false);
     const [isDropdownOpenLanguages, setIsDropdownOpenLanguages] = useState(false);
-    const router = useRouter(); // Initialize useRouter
+    const [rotateArrowLang, setRotateArrowLang] = useState(false);
+    const [rotateArrowServ, setRotateArrowServ] = useState(false);
 
+
+
+    const router = useRouter();
+
+    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+    const navigateHome = () => router.push('/'); // Navigate to the home page
 
 
     const serviceLinks = [
@@ -31,35 +39,106 @@ function Navbar() {
         }
     };
 
-    const navigateBack = () => {
-        router.push('/'); // Assuming '/' is the route of your main page
+    const handleMenuToggle = () => {
+        setIsMenuOpen((prev) => !prev); // Toggle menu open/close state
     };
 
-    const handleMenuToggle = () => {
-        if (isMenuOpen) {
-            // If the menu is currently open, navigate back to the previous page on close
-            router.push('/'); // Navigate to the main page or the appropriate path
-        } else {
-            // If the menu is currently closed, navigate to the MiniNavbar page on open
-            router.push('/navbar/mini-navbar');
-        }
-        setIsMenuOpen(!isMenuOpen); // Toggle the menu state
+    const navigateToSection = (sectionId: string) => {
+        setIsMenuOpen(false); // Close the menu
+        router.push('/#' + sectionId); // Navigate to section with smooth scroll
     };
+
+    const handleLanguageDropdownToggle = () => {
+        setIsDropdownOpenLanguages(!isDropdownOpenLanguages);
+        setRotateArrowLang(!rotateArrowLang); // Toggle the rotation state as well
+    };
+
+    const handleServicesDropdownToggle = () => {
+        setIsDropdownOpenServices(!isDropdownOpenServices);
+        setRotateArrowServ(!rotateArrowServ); // Toggle the rotation state as well
+    };
+
+    const handleClickScreen = () => {
+        setIsDropdownOpenLanguages(false)
+        setIsDropdownOpenServices(false)
+    }
 
 
     return (
-        <div className='relative sm:px-10 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] w-screen'>
-            <div className='p-4'>
-                <h1 className='text-2xl font-bold text-[#446AF2]'>CAK Web Solutions</h1>
+        <div className='sticky top-0 z-50 sm:px-10 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] w-screen'>
+            <div onDoubleClick={navigateHome} className='p-4'
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                <h1 className='cursor-pointer text-2xl font-bold text-[#446AF2]'>CAK Web Solutions</h1>
             </div>
 
-            {/* Menu/Close Button at the top for small screens */}
-            <div className='pr-4 mb-[-10px] z-30 sm:hidden'>
-                <button onClick={handleMenuToggle} className="w-10 h-10">
-                    {/* Conditional rendering for Menu or Close icon */}
-                    <img src={isMenuOpen ? '/close.png' : '/menu.png'} alt={isMenuOpen ? 'Close' : 'Menu'} className="w-full h-full" />
+            {/* Toggle button for small screens */}
+            <div className='absolute pr-4 pt-2 z-40  right-0 sm:hidden'>
+                <button onClick={handleMenuToggle}>
+                    {isMenuOpen ? <img src='/close.png' alt='Close' className="w-10 h-10" /> : <img src='/menu.png' alt='Menu' className="w-10 h-10" />}
                 </button>
             </div>
+
+            {/* Fullscreen Menu for small screens */}
+            <div onDoubleClick={handleClickScreen} className={`fixed inset-0 bg-[#2a3f8b] z-30 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out `}>
+
+                <ul className='flex h-full flex-col z-30 w-[300px] pl-5 space-y-12 items-start justify-center text-white'>
+                    <li className='cursor-pointer text-3xl hover:opacity-70' onClick={() => navigateToSection('/')}>Home</li>
+
+                    <li className='cursor-pointer text-3xl hover:opacity-70' onClick={() => navigateToSection('about')}>About Us</li>
+
+                    <div onClick={handleServicesDropdownToggle} className='flex flex-row items-center space-x-4 cursor-pointer'>
+                        <span className='text-3xl'>Web Development Services
+                        </span>
+                        <img
+                            src='/arrow.png'
+                            alt='next'
+                            className={`w-10 h-10 ${rotateArrowServ ? 'rotate-0' : 'rotate-180'}`} // Apply rotation based on state
+                            style={{ transition: 'transform 0.4s ease' }} // Smooth transition for rotation
+                        />
+                    </div>
+                    {isDropdownOpenServices && (
+                        <ul className='left-0 bottom-60 bg-gray-700 shadow-md mt-12 p-2 rounded-lg'>
+                            {serviceLinks.map((link, index) => (
+                                <li key={index} className='hover:bg-gray-100 hover:text-black rounded-md p-2'>
+                                    <Link legacyBehavior href={link.href}>
+                                        <a className='flex items-center space-x-3'>
+                                            <img src={link.img} alt={link.title} className="w-6 h-6" />
+                                            <span>{link.title}</span>
+                                        </a>
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+
+                    <li className='cursor-pointer text-3xl hover:opacity-70' onClick={() => navigateToSection('projects')}>Projects</li>
+                    <li className='cursor-pointer text-3xl hover:opacity-70' onClick={() => navigateToSection('contact')}>Contact</li>
+
+                    <div onClick={handleLanguageDropdownToggle} className='flex flex-row items-center space-x-24 cursor-pointer'>
+                        <span className='text-3xl'>ENG</span>
+                        <img
+                            src='/arrow.png'
+                            alt='next'
+                            className={`w-10 h-10 ${rotateArrowLang ? 'rotate-0' : 'rotate-180'}`} // Apply rotation based on state
+                            style={{ transition: 'transform 0.4s ease' }} // Smooth transition for rotation
+                        />
+                    </div>
+                    {isDropdownOpenLanguages && (
+                        <ul className='left-0 text-white bg-gray-700 shadow-md bottom-36 m-5 rounded-lg'>
+                            {languageLinks.map((link, index) => (
+                                <li key={index} className='hover:bg-gray-100 hover:text-black rounded-md p-2'>
+                                    <Link legacyBehavior href={link.href}>
+                                        <a className='flex items-center space-x-3'>
+                                            <span>{link.title}</span>
+                                        </a>
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+                </ul>
+            </div>
+
 
             {/* Desktop Navbar */}
             <div className='hidden sm:flex flex-row items-center sm:px-10 space-x-8'>
@@ -107,8 +186,6 @@ function Navbar() {
                     </h1>
 
                 </div>
-
-
             </div>
         </div>
     );
