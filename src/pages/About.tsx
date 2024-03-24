@@ -1,5 +1,5 @@
 import React from 'react'
-import CarouselAbout from './CarouselAbout'
+import CarouselAbout from './carousel-about/CarouselAbout'
 
 function About() {
     return (

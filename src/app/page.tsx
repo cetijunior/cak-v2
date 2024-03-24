@@ -1,10 +1,10 @@
-import Navbar from "./Navbar";
-import Hero from "./Hero";
-import Portfolio from "./Portfolio";
-import About from "./About";
-import Contact from "./Contact";
-import Footer from "./Footer";
-import Services from "./Services";
+import Navbar from "../components/Navbar";
+import Hero from "../pages/Hero";
+import Portfolio from "../pages/Portfolio";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
+import Footer from "../components/Footer";
+import Services from "../pages/Services";
 
 
 export default function Home() {
