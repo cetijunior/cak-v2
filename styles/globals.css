@@ -36,43 +36,82 @@
       animation-fill-mode: both;
   }
 
-  .bgForAbout{
-  background-image: linear-gradient(to right, #E6F0F8 40%, #E6F0F8 40%, #ffffff 40%, #ffffff 70%);
-  }
-
-  .split-bg-vertically{
+ /* Small screens: Default to vertical split */
+.split-bg-vertically {
   background-image: linear-gradient(to bottom, #E6F0F8 20%, #E6F0F8 20%, #ffffff 20%, #ffffff 70%);
+}
+
+/* Larger screens */
+@media (min-width: 640px) { /* Adjust breakpoint as needed */
+  .bgForAbout {
+    background-image: linear-gradient(to right, #E6F0F8 40%, #E6F0F8 40%, #ffffff 40%, #ffffff 70%);
   }
 
+  .split-bg-vertically {
+    background-image: none; /* Reset for larger screens if necessary */
+  }
+}
 
-@keyframes slideInFromRight {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
+
+
+@keyframes slide-in-from-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
-@keyframes slideOutToLeft {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+
+@keyframes slide-out-to-right {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
 }
-@keyframes slideInFromLeft {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); }
+
+@keyframes slide-in-from-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
-@keyframes slideOutToRight {
-  from { transform: translateX(0); }
-  to { transform: translateX(100%); }
+
+@keyframes slide-out-to-left {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.slide-in-from-left {
+  animation: slide-in-from-left 1s forwards;
+}
+
+.slide-out-to-right {
+  animation: slide-out-to-right 1s forwards;
 }
 
 .slide-in-from-right {
-  animation: slideInFromRight 0.5s forwards;
+  animation: slide-in-from-right 1s forwards;
 }
+
 .slide-out-to-left {
-  animation: slideOutToLeft 0.5s forwards;
-}
-.slide-in-from-left {
-  animation: slideInFromLeft 0.5s forwards;
-}
-.slide-out-to-right {
-  animation: slideOutToRight 0.5s forwards;
+  animation: slide-out-to-left 1s forwards;
 }
 
 
