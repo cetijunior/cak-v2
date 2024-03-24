@@ -1,7 +1,17 @@
+'use client'
+
 import React from 'react'
 
-
 function Hero() {
+
+    const scrollToSection = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
+
     return (
         <div className='w-screen'>
             <div className="flex bg-[#1E1919 mt-[-50px] sm:mt-[-350px] items-center justify-center">
@@ -26,7 +36,7 @@ function Hero() {
                         Minima perferendis consectetur delectus culpa? Perspiciatis!
                     </h3>
                 </div>
-                <button className='bg-[#446AF2] z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl'>Contact Us</button>
+                <button onClick={() => scrollToSection('contact')} className='bg-[#446AF2] z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl'>Contact Us</button>
             </div>
         </div>
     )

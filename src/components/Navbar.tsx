@@ -2,11 +2,14 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDropdownOpenServices, setIsDropdownOpenServices] = useState(false);
     const [isDropdownOpenLanguages, setIsDropdownOpenLanguages] = useState(false);
+    const router = useRouter(); // Initialize useRouter
+
 
 
     const serviceLinks = [
@@ -28,6 +31,22 @@ function Navbar() {
         }
     };
 
+    const navigateBack = () => {
+        router.push('/'); // Assuming '/' is the route of your main page
+    };
+
+    const handleMenuToggle = () => {
+        if (isMenuOpen) {
+            // If the menu is currently open, navigate back to the previous page on close
+            router.push('/'); // Navigate to the main page or the appropriate path
+        } else {
+            // If the menu is currently closed, navigate to the MiniNavbar page on open
+            router.push('/navbar/mini-navbar');
+        }
+        setIsMenuOpen(!isMenuOpen); // Toggle the menu state
+    };
+
+
     return (
         <div className='relative sm:px-10 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] w-screen'>
             <div className='p-4'>
@@ -36,16 +55,10 @@ function Navbar() {
 
             {/* Menu/Close Button at the top for small screens */}
             <div className='pr-4 mb-[-10px] z-30 sm:hidden'>
-                <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                    {isMenuOpen ?
-                        <img src='/close.png' alt='Close' className="w-10 h-10" onClick={navigateBack} />
-                        :
-                        <Link href='/navbar/MiniNavbar'>
-                            <img src='/menu.png' alt='Menu' className="w-10 h-10" />
-                        </Link>
-                    }
+                <button onClick={handleMenuToggle} className="w-10 h-10">
+                    {/* Conditional rendering for Menu or Close icon */}
+                    <img src={isMenuOpen ? '/close.png' : '/menu.png'} alt={isMenuOpen ? 'Close' : 'Menu'} className="w-full h-full" />
                 </button>
-
             </div>
 
             {/* Desktop Navbar */}
