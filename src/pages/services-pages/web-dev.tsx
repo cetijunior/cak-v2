@@ -38,6 +38,7 @@ const webdev = () => {
         </div>
         <TechSection />
         <HowWeWork /> 
+        <div className="h-20"></div>
     <Footer />
     </>
   )
