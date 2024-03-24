@@ -37,7 +37,7 @@ const webdev = () => {
             </div>
         </div>
         <TechSection />
-        <HowWeWork />
+        <HowWeWork /> 
     <Footer />
     </>
   )

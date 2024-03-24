@@ -10,8 +10,8 @@ const techStack = [
     { name: 'Sql', icon: '/icons/datenbank.png' },
     { name: 'Javascript', icon: '/icons/java-skript.png' }, 
     { name: 'Php', icon: '/icons/php.png' },
-    { name: 'Java', icon: '/icons/java-skript.png' }, 
-    { name: 'React Native', icon: '/icons/php.png' },
+    { name: 'Java', icon: '/icons/java.png' }, 
+    { name: 'React Native', icon: '/icons/codes.png' },
   ];
 
 
