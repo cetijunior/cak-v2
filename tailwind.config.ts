@@ -13,7 +13,28 @@ const config: Config = {
         'custom-blue': 'rgba(131, 176, 225, 0.4) 10px 25px 50px',
         'custom-blue2': 'rgba(131, 176, 225, 1) 10px 25px 50px'
       },
-
+      keyframes: {
+        popup: {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+          '100%': { transform: 'scale(1)' },
+        },
+      },
+      // Define the animation utility based on the keyframes
+      animation: {
+        popup: 'popup 300ms cubic-bezier(0.4, 0, 0.2, 1) forwards',
+      },
+      // Add any other properties needed for the transition
+      transitionProperty: {
+        // Ensure you have 'transform' if you're transforming elements
+        'transform': 'transform',
+      },
+      transitionDuration: {
+        '300': '300ms',
+      },
+      transitionTimingFunction: {
+        'popup': 'cubic-bezier(0.4, 0, 0.2, 1)',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

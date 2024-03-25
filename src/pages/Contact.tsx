@@ -46,8 +46,8 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-                <div className='bg-white w-[400px] h-[550px] ml-[-130px] mt-20 transition-all duration-300 ease-in-out transform hover:scale-105 flex flex-col shadow-custom-blue rounded-[39px]'>
-                    <form onSubmit={handleSubmit(onsubmit)} >
+                <div className='bg-white w-[400px] h-[550px] ml-[-80px] mt-[100px] flex flex-col shadow-custom-blue rounded-[39px]'>
+                    <form onSubmit={handleSubmit(onSubmit)} >
                         <div className='px-4 py-4 flex flex-col space-y-2'>
                             <h1 className='text-2xl font-bold text-center py-4'>Fill in the form!</h1>
                             <h1>Your Full Name</h1>
@@ -94,7 +94,7 @@ function Contact() {
                     </form>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

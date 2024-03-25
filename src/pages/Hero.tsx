@@ -36,7 +36,7 @@ function Hero() {
                         Minima perferendis consectetur delectus culpa? Perspiciatis!
                     </h3>
                 </div>
-                <button onClick={() => scrollToSection('contact')} className='bg-[#446AF2] z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl'>Contact Us</button>
+                <button onClick={() => scrollToSection('contact')} className='bg-[#446AF2] transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl'>Contact Us</button>
             </div>
         </div>
     )

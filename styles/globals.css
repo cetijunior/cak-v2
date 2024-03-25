@@ -58,11 +58,7 @@
   opacity: 1 !important; /* Ensure the bullets are always visible */
   width: 15px;
   height: 15px;
-}
-
-.carousel-container{
-  position: relative !important;
-  overflow: visible !important; /* Ensure the bullets are always visible */
+  z-index: 10 !important
 }
 
 .carousel-container .swiper-pagination-bullet-active {
@@ -72,14 +68,13 @@
   border-color: #446AF2 !important;
 }
 
-.carousel-container{
-  height: 100% !important;
+.carousel-container .swiperbody{
+  overflow: visible !important;
+  position: relative !important;
 }
 
 .carousel-container .swiper-pagination {
-  bottom: 0 !important; /* Adjust as needed */
-
-  z-index: 50;
+  position: absolute !important;
 }
 
 /* Adding margin-top to the pagination container */
