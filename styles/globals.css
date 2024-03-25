@@ -3,48 +3,61 @@
 @tailwind utilities;
 
 @keyframes fadeInUpwards {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .fadeInUpwards {
-    animation-name: fadeInUpwards;
-    animation-duration: 0.8s;
-    animation-fill-mode: both;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
-  @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-  }
+.fadeInUpwards {
+  animation-name: fadeInUpwards;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
 
-  .fadeIn {
-      animation-name: fadeIn;
-      animation-duration: 1s;
-      animation-fill-mode: both;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
- /* Small screens: Default to vertical split */
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Small screens: Default to vertical split */
 .split-bg-vertically {
-  background-image: linear-gradient(to bottom, #E6F0F8 20%, #E6F0F8 20%, #ffffff 20%, #ffffff 70%);
+  background-image: linear-gradient(
+    to bottom,
+    #e6f0f8 10%,
+    #e6f0f8 10%,
+    #ffffff 10%,
+    #ffffff 70%
+  );
 }
 
 /* Larger screens */
-@media (min-width: 640px) { /* Adjust breakpoint as needed */
+@media (min-width: 640px) {
+  /* Adjust breakpoint as needed */
   .bgForAbout {
-    background-image: linear-gradient(to right, #E6F0F8 40%, #E6F0F8 40%, #ffffff 40%, #ffffff 70%);
+    background-image: linear-gradient(
+      to right,
+      #e6f0f8 40%,
+      #e6f0f8 40%,
+      #ffffff 40%,
+      #ffffff 70%
+    );
   }
 
   .split-bg-vertically {
@@ -52,23 +65,31 @@
   }
 }
 
+@media (max-width: 768px) {
+  /* Adjust as needed for your responsive breakpoints */
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+
 /* Carousel styles */
 .carousel-container .swiper-pagination-bullet {
-  background: #446AF2  !important; /* Example: Black bullets */
+  background: #446af2 !important; /* Example: Black bullets */
   opacity: 1 !important; /* Ensure the bullets are always visible */
   width: 15px;
   height: 15px;
-  z-index: 10 !important
+  z-index: 10 !important;
 }
 
 .carousel-container .swiper-pagination-bullet-active {
-  background: #E6F0F8 !important;
+  background: #e6f0f8 !important;
   border-radius: 10px !important;
   border-width: 2px;
-  border-color: #446AF2 !important;
+  border-color: #446af2 !important;
 }
 
-.carousel-container .swiperbody{
+.carousel-container .swiperbody {
   overflow: visible !important;
   position: relative !important;
 }
@@ -78,7 +99,6 @@
 }
 
 /* Adding margin-top to the pagination container */
-
 
 @keyframes slide-in-from-left {
   from {
@@ -140,7 +160,6 @@
   animation: slide-out-to-left 1s forwards;
 }
 
-
 /* Add to your CSS file */
 .button-fade {
   transition: opacity 1s ease;
@@ -156,19 +175,16 @@
   visibility: visible;
 }
 
-
 ::-webkit-scrollbar {
   display: none;
 }
 
-
-
 @keyframes slideIn {
   from {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   to {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -176,9 +192,7 @@
   animation: slideIn 0.7s forwards;
 }
 
-
 /* Arsi section */
-
 
 @keyframes fadeInUp {
   from {
@@ -205,7 +219,12 @@
   animation-delay: 400ms;
 }
 
-.split-bg-vertically{
-  background-image: linear-gradient(to bottom, #E6F0F8 40%, #E6F0F8 40%, #ffffff 40%, #ffffff 70%);
-  }
-
+.split-bg-vertically {
+  background-image: linear-gradient(
+    to bottom,
+    #e6f0f8 40%,
+    #e6f0f8 40%,
+    #ffffff 40%,
+    #ffffff 70%
+  );
+}
