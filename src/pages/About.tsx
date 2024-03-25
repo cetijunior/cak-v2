@@ -1,8 +1,8 @@
 "use client";
 
-import React from 'react'
-import CarouselAbout from './carousel-about/CarouselAbout'
-import { useState, useEffect, useRef } from 'react';
+import React from "react";
+import CarouselAbout from "./carousel-about/CarouselAbout";
+import { useState, useEffect, useRef } from "react";
 
 function About() {
   const [visible, setVisible] = useState(false); // Track if the section is visible
@@ -11,14 +11,17 @@ function About() {
   const aboutRef = useRef(null); // Use ref to reference the about section
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.unobserve(entry.target); // Stop observing once visible
-        }
-      });
-    }, { threshold: 0.4 });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target); // Stop observing once visible
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
 
     if (aboutRef.current) {
       observer.observe(aboutRef.current);
@@ -47,16 +50,30 @@ function About() {
   }, [visible]);
 
   return (
-    <section ref={aboutRef} id='about' className='bg-white mx-auto min-h-[600px]'>
-      <div className='flex flex-col space-y-28 sm:ml-[-80px] ml-0 items-center' style={{ opacity: show[0] ? 1 : 0, transition: 'opacity 1s ease' }}>
-        <div className='flex flex-col sm:mt-32 sm:gap-20 gap-7'>
-          <h2 className=' text-center lg:text-[64px] text-2xl font-semibold z-10 '>Who are we?</h2>
-          <p className='lg:text-center text-base lg:text-base text-center w-[300px]  md:text-center lg:w-[400px] z-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit architecto modi dolor, atque laborum qui ea dolorem cupiditate fugit harum corrupti veniam. Blanditiis repudiandae earum id laboriosam omnis quas voluptate!</p>
+    <section
+      ref={aboutRef}
+      id="about"
+      className="bg-white mx-auto min-h-[600px]"
+    >
+      <div
+        className="flex flex-col space-y-28 sm:ml-[-80px] ml-0 items-center"
+        style={{ opacity: show[0] ? 1 : 0, transition: "opacity 1s ease" }}
+      >
+        <div className="flex flex-col sm:mt-32 sm:gap-20 gap-7">
+          <h2 className=" text-center lg:text-[64px] text-2xl font-semibold z-10 ">
+            Who are we?
+          </h2>
+          <p className="lg:text-center text-base lg:text-base text-center w-[300px]  md:text-center lg:w-[400px] z-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+            architecto modi dolor, atque laborum qui ea dolorem cupiditate fugit
+            harum corrupti veniam. Blanditiis repudiandae earum id laboriosam
+            omnis quas voluptate!
+          </p>
         </div>
         <CarouselAbout />
       </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;

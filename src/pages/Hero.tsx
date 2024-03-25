@@ -1,16 +1,14 @@
-'use client'
+"use client";
 
-import React from 'react'
+import React from "react";
 
 function Hero() {
-
     const scrollToSection = (sectionId: string) => {
         const section = document.getElementById(sectionId);
         if (section) {
-            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            section.scrollIntoView({ behavior: "smooth", block: "start" });
         }
     };
-
 
     return (
         <div className='w-screen'>
@@ -42,4 +40,4 @@ function Hero() {
     )
 }
 
-export default Hero
+export default Hero;

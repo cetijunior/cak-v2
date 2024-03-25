@@ -60,7 +60,7 @@ function Navbar() {
 
 
     return (
-        <div className='sticky top-0 z-50 sm:px-10 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] sm:w-screen w-full'>
+        <div className='sticky top-0 z-50 sm:px-14 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] sm:w-screen w-full'>
             <div onDoubleClick={navigateHome} className='p-4'
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 text-2xl font-bold text-[#446AF2]'>CAK Web Solutions</h1>
@@ -137,7 +137,7 @@ function Navbar() {
 
             {/* Desktop Navbar */}
             <div className='hidden sm:flex flex-row items-center sm:px-10 space-x-8'>
-                <div className='hidden sm:flex flex-row items-center space-x-14 pr-10'>
+                <div className='hidden sm:flex flex-row items-center space-x-16 pr-16'>
                     <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20' onClick={() => scrollToSection('about')}>About Us</h1>
                     <h1 onClick={() => scrollToSection('services')}
                         onMouseEnter={() => setIsDropdownOpenServices(true)}
