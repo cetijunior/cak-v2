@@ -1,7 +1,11 @@
 import React from "react";
 
 function Portfolio() {
-  return <div className="p-10">Portfolio</div>;
+  return (
+    <section id="portfolio">
+      <div>Portfolio</div>
+    </section>
+  );
 }
 
 export default Portfolio;
