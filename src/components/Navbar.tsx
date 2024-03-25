@@ -12,7 +12,10 @@ function Navbar() {
     const [rotateArrowServ, setRotateArrowServ] = useState(false);
     const router = useRouter();
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-    const navigateHome = () => router.push('/'); // Navigate to the home page
+    const navigateHome = () => router.push('/');
+    const navigateContact = () => {
+        router.push('/#contact');
+    };
 
 
     const serviceLinks = [
@@ -61,8 +64,10 @@ function Navbar() {
 
     return (
         <div className='sticky top-0 z-50 sm:px-14 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] sm:w-screen w-full'>
-            <div onDoubleClick={navigateHome} className='p-4'
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <div onDoubleClick={navigateHome}
+                className='p-4'
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
                 <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 text-2xl font-bold text-[#446AF2]'>CAK Web Solutions</h1>
             </div>
 
@@ -164,8 +169,12 @@ function Navbar() {
                         )}
                     </h1>
 
-                    <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20' onClick={() => scrollToSection('projects')}>Projects</h1>
-                    <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20' onClick={() => scrollToSection('contact')}>Contact</h1>
+                    <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20'
+
+                        onClick={() => scrollToSection('projects')}>Projects</h1>
+                    <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20'
+                        onDoubleClick={navigateContact}
+                        onClick={() => scrollToSection('contact')}>Contact</h1>
 
                     <h1 onMouseEnter={() => setIsDropdownOpenLanguages(true)} onMouseLeave={() => setIsDropdownOpenLanguages(false)} className='cursor-pointer hover:text-[#446AF2] text-xl z-20 relative'>
                         ENG
