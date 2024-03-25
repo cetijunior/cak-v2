@@ -48,28 +48,28 @@ export default function ServicesSection() {
       img: "/computer.png",
       title: "Website Development",
       description:
-        "Specializing in custom web solutions to enhance your online presence.",
+        "Focused on crafting tailored web solutions to elevate your digital presence.",
     },
     {
       href: "/services-pages/mob-dev",
       img: "/smartphone.png",
       title: "Mobile App Development",
       description:
-        "Creating mobile applications that offer seamless user experiences.",
+        "Developing mobile apps designed for smooth and intuitive user experiences.",
     },
     {
       href: "/services-pages/smma",
       img: "/smma.png",
       title: "Social Media Marketing",
       description:
-        "Strategies to grow your brand’s presence on various social platforms.",
+        "Approaches for expanding your brand's visibility across social media platforms.",
     },
     {
       href: "/services-pages/design",
       img: "/web-design.png",
       title: "Design",
       description:
-        "Innovative design solutions tailored to your business’s needs.",
+        "Creative design strategies customized to meet your business requirements.",
     },
   ];
 
