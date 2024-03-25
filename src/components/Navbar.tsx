@@ -142,18 +142,19 @@ function Navbar() {
 
             {/* Desktop Navbar */}
             <div className='hidden sm:flex flex-row items-center sm:px-10 space-x-8'>
-                <div className='hidden sm:flex flex-row items-center space-x-8'>
+                <div className='hidden sm:flex flex-row items-center space-x-14 pr-10'>
                     <h1 className='cursor-pointer hover:text-[#446AF2] text-xl z-20' onClick={() => scrollToSection('about')}>About Us</h1>
                     <h1 onClick={() => scrollToSection('services')}
                         onMouseEnter={() => setIsDropdownOpenServices(true)}
-                        className='cursor-pointer hover:text-[#446AF2] text-xl z-20 h-100p relative'>
+                        onMouseLeave={() => setIsDropdownOpenServices(false)}
+                        className='cursor-pointer hover:text-[#446AF2] popup text-xl z-20 h-100p relative'>
                         Web Development Services
                         {isDropdownOpenServices && (
-                            <div onMouseLeave={() => setIsDropdownOpenServices(false)} className='absolute top-full left-1/2 transform -translate-x-1/2 mt-10 w-[700px] bg-[#ffffff] shadow-custom-blue rounded-md p-4'>
+                            <div className='absolute top-full left-1/2 transition-all duration-300 ease-in-out transform hover:scale-105 -translate-x-1/2 hover:mt-5  w-[700px] bg-[#ffffff] shadow-custom-blue rounded-md p-4'>
                                 <div className='grid grid-cols-2 gap-4'>
                                     {serviceLinks.map((link, index) => (
                                         <Link legacyBehavior key={index} href={link.href}>
-                                            <a className='flex items-center space-x-3 bg-white p-2 rounded-lg hover:shadow-custom-blue'>
+                                            <a className='flex items-center space-x-3 transition-all duration-300 ease-in-out transform hover:scale-105 bg-white p-2 rounded-lg hover:shadow-custom-blue'>
                                                 <img src={link.img} alt={link.title} className="w-10 h-10" />
                                                 <div>
                                                     <div className='font-semibold text-gray-900'>{link.title}</div>
@@ -191,4 +192,7 @@ function Navbar() {
     );
 }
 
+
 export default Navbar;
+
+

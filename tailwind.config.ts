@@ -13,6 +13,7 @@ const config: Config = {
         'custom-blue': 'rgba(131, 176, 225, 0.4) 10px 25px 50px',
         'custom-blue2': 'rgba(131, 176, 225, 1) 10px 25px 50px'
       },
+
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

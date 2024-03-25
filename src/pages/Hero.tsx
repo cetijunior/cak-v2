@@ -22,7 +22,7 @@ function Hero() {
                     Your Browser does not support the video tag.
                 </video>
             </div>
-            <div className='flex flex-col items-center justify-center w-screen hover:p-30'>
+            <div className='flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105 justify-center w-screen '>
                 <div className='w-[400px] sm:w-[650px] p-20 z-10 sm:h-[400px] bg-[#F8F9FB] shadow-custom-blue mt-[-40px] sm:mt-[-350px] rounded-xl space-y-4'>
                     <h1 className='text-center text-2xl sm:text-5xl font-bold'>
                         World-Clas Website Development
