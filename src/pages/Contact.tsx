@@ -2,36 +2,39 @@
 
 import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { Props } from "next/script";
 
 type Inputs = {
-    name: string;
-    email: string;
-    subject: string;
-    message: string;
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
 };
 
-
 function Contact() {
-    const { register, handleSubmit, reset, formState: { errors } } = useForm<Inputs>();
-    const [isSubmitting, setIsSubmitting] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<Inputs>();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const onSubmit: SubmitHandler<Inputs> = (formData) => {
-        setIsSubmitting(true);
+  const onSubmit: SubmitHandler<Inputs> = (formData) => {
+    setIsSubmitting(true);
 
-        // Simulated email send operation
-        setTimeout(() => {
-            window.location.href = `mailto:info@cakwebsolutions.com?subject=${encodeURIComponent(
-                formData.subject
-            )}&body=Hello, my name is: ${encodeURIComponent(
-                formData.name
-            )}. ${encodeURIComponent(formData.message)} (${encodeURIComponent(
-                formData.email
-            )})`;
-            reset();
-            setIsSubmitting(false);
-        }, 2000);
-    };
+    // Simulated email send operation
+    setTimeout(() => {
+      window.location.href = `mailto:info@cakwebsolutions.com?subject=${encodeURIComponent(
+        formData.subject
+      )}&body=Hello, my name is: ${encodeURIComponent(
+        formData.name
+      )}. ${encodeURIComponent(formData.message)} (${encodeURIComponent(
+        formData.email
+      )})`;
+      reset();
+      setIsSubmitting(false);
+    }, 2000);
+  };
 
   return (
     <section id="contact" className="bg-white mx-auto py-10 min-h-[600px]">
@@ -46,7 +49,7 @@ function Contact() {
             consultation, and get a personalized project cost estimate and
             time-to-market assessment!
           </p>
-          <p className="px-10 py-8 text-[14px]sm:text-left text-center sm:w-[550px]">
+          <p className="px-10 py-8 text-[14px] sm:text-left text-center sm:w-[550px]">
             Send us an e-mail or fill in the form. We will be in touch within
             one business day!
           </p>
@@ -66,7 +69,7 @@ function Contact() {
             <img
               src="/archieContact.png"
               alt="archiecontact"
-              className="sm:w-[180px] sm:h-[240px] w-[300px] h-[400px] rounded-[39px] shadow-custom-blue2"
+              className="sm:w-[180px] sm:h-[240px] w-[300px] h-[400px] rounded-[39px] shadow-custom-blue2 transition-all duration-500 ease-in-out transform hover:scale-105"
             />
             <div className="flex sm:flex-col flex-wrap justify-start space-y-2">
               <h1 className="px-10 text-[18px] mt-[20px] sm:mt-[0px] text-left font-semibold ">
@@ -92,20 +95,22 @@ function Contact() {
                 placeholder={
                   errors.name ? errors.name.message : "Your name here"
                 }
+                className="transition-all duration-500 ease-in-out transform hover:scale-105 cursor-pointer border-none"
                 type="text"
               />
-              <div className="w-300 h-[1px] bg-black"></div>
+              <div className="w-300 h-[1px] bg-black" />
               <h1>Company Name</h1>
               <input
                 {...register("name", {
                   required: "*The Company name is missing",
                 })}
+                className="transition-all duration-500 ease-in-out transform hover:scale-105 cursor-pointer border-none"
                 placeholder={
                   errors.name ? errors.name.message : "Your Company name here"
                 }
                 type="text"
               />
-              <div className="w-300 h-[1px] bg-black"></div>
+              <div className="w-300 h-[1px] bg-black" />
               <h1>Company Email</h1>
               <input
                 {...register("email", {
@@ -115,32 +120,35 @@ function Contact() {
                     message: "Invalid email format",
                   },
                 })}
+                className="transition-all duration-500 ease-in-out transform hover:scale-105 cursor-pointer border-none"
                 placeholder={errors.email ? errors.email.message : "Email"}
                 type="email"
               />
-              <div className="w-300 h-[1px] bg-black"></div>
+              <div className="w-300 h-[1px] bg-black" />
               <h1>Subject</h1>
               <input
                 {...register("subject", {
                   required: "*The subject is missing",
                 })}
+                className="transition-all duration-500 ease-in-out transform hover:scale-105 cursor-pointer border-none"
                 placeholder={
                   errors.subject ? errors.subject.message : "Subject"
                 }
                 type="text"
               />
-              <div className="w-300 h-[1px] bg-black"></div>
-              <h1>Message</h1>
+              <div className="w-300 h-[1px] bg-black" />
+              <h1 className="">Message</h1>
               <input
                 {...register("message", {
                   required: "*The message is missing",
                 })}
+                className="transition-all duration-500 ease-in-out transform hover:scale-105 cursor-pointer border-none"
                 placeholder={
                   errors.message ? errors.message.message : "Message"
                 }
               />
-              <div className="w-300 h-[1px] bg-black"></div>
-              <div className="flex justify-center">
+              <div className="w-300 h-[1px] bg-black" />
+              <div className="flex justify-center transition-all duration-500 ease-in-out transform hover:scale-105">
                 <button
                   type="submit"
                   disabled={isSubmitting || Object.keys(errors).length > 0}
