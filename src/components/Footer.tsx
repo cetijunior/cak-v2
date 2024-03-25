@@ -1,6 +1,6 @@
-'use client'
-import React from 'react';
-import Link from 'next/link';
+"use client";
+import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   const handleScrollToSection = (e, selector) => {
@@ -9,7 +9,7 @@ const Footer = () => {
     if (targetSection) {
       window.scrollTo({
         top: targetSection.offsetTop,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
@@ -21,23 +21,49 @@ const Footer = () => {
           <div className="mb-4">
             <h5 className="text-xl font-bold mb-2">Our Company</h5>
             <ul className="text-gray-600">
-              <li className="mb-2 cursor-pointer" onClick={(e) => handleScrollToSection(e, '#about-us')}>About us</li>
-              <li className="mb-2 cursor-pointer" onClick={(e) => handleScrollToSection(e, '#services')}>Website Development Services</li>
-              <li className="mb-2 cursor-pointer" onClick={(e) => handleScrollToSection(e, '#contact')}>Contact</li>
-              <li className="mb-2 cursor-pointer" onClick={(e) => handleScrollToSection(e, '#projects')}>Projects</li>
+              <li
+                className="mb-2 cursor-pointer"
+                onClick={(e) => handleScrollToSection(e, "#about")}
+              >
+                About us
+              </li>
+              <li
+                className="mb-2 cursor-pointer"
+                onClick={(e) => handleScrollToSection(e, "#services")}
+              >
+                Website Development Services
+              </li>
+              <li
+                className="mb-2 cursor-pointer"
+                onClick={(e) => handleScrollToSection(e, "#contact")}
+              >
+                Contact
+              </li>
+              <li
+                className="mb-2 cursor-pointer"
+                onClick={(e) => handleScrollToSection(e, "#portfolio")}
+              >
+                Projects
+              </li>
             </ul>
           </div>
           <div className="mb-4">
             <h5 className="text-xl font-bold mb-2">Socials</h5>
             <ul className="text-gray-600">
               <li className="mb-2">
-                <Link legacyBehavior href="/facebook"><a>Facebook</a></Link>
+                <Link legacyBehavior href="/facebook">
+                  <a>Facebook</a>
+                </Link>
               </li>
               <li className="mb-2">
-                <Link legacyBehavior href="/instagram"><a>Instagram</a></Link>
+                <Link legacyBehavior href="/instagram">
+                  <a>Instagram</a>
+                </Link>
               </li>
               <li className="mb-2">
-                <Link legacyBehavior href="/linkedin"><a>Linkedin</a></Link>
+                <Link legacyBehavior href="/linkedin">
+                  <a>Linkedin</a>
+                </Link>
               </li>
             </ul>
           </div>
