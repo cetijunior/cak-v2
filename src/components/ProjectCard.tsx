@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 function ProjectCard() {
     // Initialize screenWidth state to 0 to safely handle server-side rendering
-    const [screenWidth, setScreenWidth] = React.useState(window.innerWidth);
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [show, setShow] = useState(new Array(4).fill(false));
 
     // Cards data
