@@ -10,8 +10,9 @@ const config: Config = {
   theme: {
     extend: {
       boxShadow: {
-        'custom-blue': 'rgba(131, 176, 225, 0.4) 10px 25px 50px',
-        'custom-blue2': 'rgba(131, 176, 225, 1) 10px 25px 50px'
+        "custom-blue": "rgba(131, 176, 225, 0.4) 10px 25px 50px",
+        "custom-blue2": "rgba(131, 176, 225, 0.6) 10px 25px 50px",
+        "blurred-edges": "0 0 8px 8px #ffffff inset, 0 0 8px 8px #ffffff inset",
       },
       keyframes: {
         popup: {
@@ -36,6 +37,8 @@ const config: Config = {
         'popup': 'cubic-bezier(0.4, 0, 0.2, 1)',
       },
       backgroundImage: {
+        "custom-blue-gradient":
+          "linear-gradient( to right, rgba(131, 176, 225, 0.6), rgba(131, 176, 225, 0.8))",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

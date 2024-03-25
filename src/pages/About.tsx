@@ -64,10 +64,12 @@ function About() {
             Who are we?
           </h2>
           <p className="lg:text-center text-base lg:text-base text-center w-[300px]  md:text-center lg:w-[400px] z-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-            architecto modi dolor, atque laborum qui ea dolorem cupiditate fugit
-            harum corrupti veniam. Blanditiis repudiandae earum id laboriosam
-            omnis quas voluptate!
+            We are CAK, a leading web development agency focused on delivering
+            innovative and high-quality digital solutions. Our expertise spans
+            technical development, UI/UX design, and strategic innovation,
+            ensuring standout digital experiences. Committed to excellence, we
+            aim to exceed expectations and make a lasting impact in the digital
+            landscape.
           </p>
         </div>
         <CarouselAbout />
