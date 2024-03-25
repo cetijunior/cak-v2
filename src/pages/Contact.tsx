@@ -5,37 +5,33 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { Props } from "next/script";
 
 type Inputs = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
 };
 
+
 function Contact() {
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm<Inputs>();
-  const [isSubmitting, setIsSubmitting] = useState(false);
+    const { register, handleSubmit, reset, formState: { errors } } = useForm<Inputs>();
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    setIsSubmitting(true);
+    const onSubmit: SubmitHandler<Inputs> = (formData) => {
+        setIsSubmitting(true);
 
-    // Simulated email send operation
-    setTimeout(() => {
-      window.location.href = `mailto:info@cakwebsolutions.com?subject=${encodeURIComponent(
-        formData.subject
-      )}&body=Hello, my name is: ${encodeURIComponent(
-        formData.name
-      )}. ${encodeURIComponent(formData.message)} (${encodeURIComponent(
-        formData.email
-      )})`;
-      reset();
-      setIsSubmitting(false);
-    }, 2000);
-  };
+        // Simulated email send operation
+        setTimeout(() => {
+            window.location.href = `mailto:info@cakwebsolutions.com?subject=${encodeURIComponent(
+                formData.subject
+            )}&body=Hello, my name is: ${encodeURIComponent(
+                formData.name
+            )}. ${encodeURIComponent(formData.message)} (${encodeURIComponent(
+                formData.email
+            )})`;
+            reset();
+            setIsSubmitting(false);
+        }, 2000);
+    };
 
   return (
     <section id="contact" className="bg-white mx-auto py-10 min-h-[600px]">
