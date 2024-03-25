@@ -14,25 +14,25 @@ function CarouselAbout() {
       name: "Krenar Dervishaj",
       role: "Co-Founder, FullStack Developer and UI/UX Designer",
       className:
-        "rounded-full w-[150px] h-[150px] ml-[0px] z-10 mt-[0px] sm:ml-[-40px] sm:w-[300px] sm:h-[300px]",
+        "rounded-full w-[150px] transition-all duration-500 ease-in-out transform hover:scale-105 h-[150px] ml-[0px] z-10 mt-[0px] sm:ml-[-40px] sm:w-[300px] sm:h-[300px]",
       img: "/keniPFP.png",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nulla nobis quisquam cum libero praesentium iste doloribus nam, molestias nemo dignissimos. Sed, repudiandae est mollitia repellat sapiente sint totam ea?",
+      text: "Krenar Dervishaj, co-founder of CAK, merges creativity with tech to excel in web development and UI/UX design. His innovative leadership ensures high-quality, unique digital solutions from the agency.",
     },
     {
       name: "Shefqet CJ Lame",
       role: "Co-Founder and FullStack Developer",
       img: "/cjPFP.png",
       className:
-        "rounded-full w-[150px] h-[150px] ml-[0px] mt-[10px] z-10 sm:ml-[-85px] sm:mt-[20px] sm:w-[275px] sm:h-[275px]",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nulla nobis quisquam cum libero praesentium iste doloribus nam, molestias nemo dignissimos. Sed, repudiandae est mollitia repellat sapiente sint totam ea?",
+        "rounded-full w-[150px] h-[150px] transition-all duration-500 ease-in-out transform hover:scale-105 ml-[0px] mt-[10px] z-10 sm:ml-[-85px] sm:mt-[20px] sm:w-[275px] sm:h-[275px]",
+      text: "CJ, co-founder of CAK, brings strategic insight and technical expertise to web development. His focus on innovative solutions drives the agency's success in delivering impactful digital products.",
     },
     {
       name: "Luars Qamo",
       role: "Co-Founder and FullStack Developer",
       img: "/archiePFP.png",
       className:
-        "rounded-full w-[200px] h-[200px] ml-[0px] mt-[-30px] z-10 sm:ml-[-85px] sm:mt-[-30px] sm:mr-8 sm:w-[300px] sm:h-[300px]",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nulla nobis quisquam cum libero praesentium iste doloribus nam, molestias nemo dignissimos. Sed, repudiandae est mollitia repellat sapiente sint totam ea?",
+        "rounded-full w-[200px] h-[200px] transition-all duration-500 ease-in-out transform hover:scale-105 ml-[0px] mt-[-30px] z-10 sm:ml-[-85px] sm:mt-[-30px] sm:mr-8 sm:w-[300px] sm:h-[300px]",
+      text: "Luars, co-founder of CAK, excels in web development, leveraging his technical skills to bring dynamic solutions to life. His dedication ensures the delivery of exceptional digital products.",
     },
   ];
 
@@ -55,7 +55,7 @@ function CarouselAbout() {
 
   return (
     <div
-      className={`carousel-container ${backgroundClass} z-10 shadow-custom-blue h-[600px] sm:h-[350px] rounded-[39px] mt-20 w-[290px] sm:w-[800px]`}
+      className={`carousel-container ${backgroundClass} transition-all duration-500 ease-in-out transform hover:scale-105 z-10 shadow-custom-blue h-[600px] sm:h-[350px] rounded-[39px] mt-20 w-[290px] sm:w-[800px]`}
     >
       <img
         src="/quotes.png"

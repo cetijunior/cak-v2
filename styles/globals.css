@@ -73,13 +73,30 @@
   }
 }
 
+.carousel-container .swiper-button-prev,
+.carousel-container .swiper-button-next {
+  transition: all 300ms ease-in-out; /* Smooth transition for all properties */
+  transform: scale(1); /* Initial scale */
+}
+
+.carousel-container .swiper-button-prev:hover,
+.carousel-container .swiper-button-next:hover {
+  transform: scale(1.5); /* Scale up the buttons to 105% on hover */
+}
+
 /* Carousel styles */
 .carousel-container .swiper-pagination-bullet {
-  background: #446af2 !important; /* Example: Black bullets */
+  background: #446af2 !important; /* Example: Deep blue bullets */
   opacity: 1 !important; /* Ensure the bullets are always visible */
   width: 15px;
   height: 15px;
   z-index: 10 !important;
+  transition: all 300ms ease-in-out; /* Smooth transition for all properties */
+  transform: scale(1); /* Initial scale */
+}
+
+.carousel-container .swiper-pagination-bullet:hover {
+  transform: scale(1.3); /* Scale up the bullets to 105% on hover */
 }
 
 .carousel-container .swiper-pagination-bullet-active {
