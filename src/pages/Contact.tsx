@@ -47,7 +47,7 @@ function Contact() {
                    </div>
                 </div>
                 <div className='bg-white w-[400px] h-[550px] ml-[-80px] mt-[100px] flex flex-col shadow-custom-blue rounded-[39px]'>
-                    <form onSubmit={handleSubmit(onsubmit)} >
+                    <form onSubmit={handleSubmit(onSubmit)} >
                     <div className='px-4 py-4 flex flex-col space-y-2'>
                         <h1 className='text-2xl font-bold text-center py-4'>Fill in the form!</h1>
                         <h1>Your Full Name</h1>
