@@ -1,11 +1,11 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 function ContactSection() {
   return (
     <div>
       <div className="bg-blue-200 opacity-70 w-screen h-[330px]">
-        <div className="flex flex-col items-center justify-center space-y-5">
+        <div className="px-5 flex flex-col items-center justify-center space-y-5">
           <h1 className="font-bold text-3xl pt-20">Contact us</h1>
           <p className="text-xl">
             For a successful conversation about creating or improving business
@@ -16,8 +16,9 @@ function ContactSection() {
             </Link>
           </p>
         </div>
-      </div></div>
-  )
+      </div>
+    </div>
+  );
 }
 
-export default ContactSection
+export default ContactSection;
