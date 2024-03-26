@@ -13,6 +13,7 @@ const config: Config = {
         "custom-blue": "rgba(131, 176, 225, 0.4) 10px 25px 50px",
         "custom-blue2": "rgba(131, 176, 225, 0.6) 10px 25px 50px",
         "blurred-edges": "0 0 8px 8px #ffffff inset, 0 0 8px 8px #ffffff inset",
+        'toggle-menu': "rgba(131, 176, 225, 0.6) 30px 30px 70px",
       },
       keyframes: {
         popup: {
