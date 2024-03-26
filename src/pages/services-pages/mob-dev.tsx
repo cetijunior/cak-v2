@@ -17,6 +17,10 @@ const mobdev = () => {
     { name: "Java", icon: "/icons/java.png" },
     { name: "React Native", icon: "/icons/codes.png" },
   ];
+  function scrollToSection(arg0: string): void {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <>
       <Navbar />
