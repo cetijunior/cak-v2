@@ -5,9 +5,9 @@ const services = [
   {
     id: 1,
     image: "/smartphone.png",
-    title: "App Design",
+    title: "Strategy Consultation",
     description:
-      "Creating visually appealing and user-friendly designs for your mobile app.",
+      "We craft a tailored social media strategy aligned with your goals by deeply understanding your brand, audience, and market.",
   },
   {
     id: 2,
