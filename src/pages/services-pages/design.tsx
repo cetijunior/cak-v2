@@ -30,7 +30,7 @@ const design = () => {
             <h3 className="text-center">
               Welcome to CAK, where your project takes center stage. Dive into
               our services to discover how we can lift your vision higher. From
-              seamless web development to intuitive UI/UX design, we're here to
+              seamless web development to intuitive UI/UX design, we`re here to
               turn your ideas into reality. Partner with us for a journey marked
               by precision, innovation, and transformative outcomes.
             </h3>
@@ -66,7 +66,7 @@ const design = () => {
             <br></br>
             that real value is created. This means that we take responsibility
             <br></br>
-            for the entire process from ideation to realization. It’s is an{" "}
+            for the entire process from ideation to realization. It`s is an{" "}
             <br></br>
             important part of our approach to ensure the solution is right for
             you.<br></br>

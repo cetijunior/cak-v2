@@ -29,14 +29,14 @@ function Hero() {
           <h3 className="text-center">
             Welcome to CAK, where your project takes center stage. Dive into our
             services to discover how we can lift your vision higher. From
-            seamless web development to intuitive UI/UX design, we're here to
+            seamless web development to intuitive UI/UX design, we are here to
             turn your ideas into reality. Partner with us for a journey marked
             by precision, innovation, and transformative outcomes.
           </h3>
         </div>
         <button
           onClick={() => scrollToSection("contact")}
-          className="bg-[#446AF2] transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl"
+          className="bg-[#446AF2] hover:font-semibold  transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl"
         >
           Contact Us
         </button>
