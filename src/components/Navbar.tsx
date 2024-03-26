@@ -175,7 +175,7 @@ function Navbar() {
                             <div className='grid grid-cols-2 '>
                                 {serviceLinks.map((link, index) => (
                                     <Link legacyBehavior key={index} href={link.href}>
-                                        <a className='flex p-4 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white p-2 rounded-lg'>
+                                        <a className='flex p-4 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white rounded-lg'>
                                             <img src={link.img} alt={link.title} className="w-10 h-10" />
                                             <div>
                                                 <div className='font-semibold text-gray-900'>{link.title}</div>
@@ -190,25 +190,33 @@ function Navbar() {
 
 
                     <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20'
-
                         onClick={() => scrollToSection('projects')}>Projects</h1>
+
                     <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20'
                         onDoubleClick={navigateContact}
                         onClick={() => scrollToSection('contact')}>Contact</h1>
 
-                    <h1 onMouseEnter={() => setIsDropdownOpenLanguages(true)} onMouseLeave={() => setIsDropdownOpenLanguages(false)} className='cursor-pointer hover:text-[#446AF2] text-xl z-20 relative'>
-                        ENG
-                        {isDropdownOpenLanguages && (
-                            <div className='absolute top-full left-1/2 transition-all duration-300 ease-in-out transform hover:scale-105 -translate-x-1/2 hover:mt-5 bg-[#ffffff] ml-[-20] shadow-custom-blue2 rounded-md'>
-                                {languageLinks.map((link) => (
-                                    <Link legacyBehavior key={link.href} href={link.href}>
-                                        <div className='flex flex-col items-start w-full px-2 space-x-3'>
-                                            <a className='items-center py-2 text-gray-700 hover:text-[#446AF2]'>{link.title}</a>
-                                        </div>
+                    <h1
+                        onClick={() => scrollToSection('')}
+                        onMouseEnter={() => setIsDropdownOpenLanguages(true)}
+                        onMouseLeave={() => setIsDropdownOpenLanguages(false)}
+                        className='cursor-pointer hover:text-[#446AF2] transition-all duration-600 ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative'
+                    >
+                        Eng
+                        <div
+                            className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenLanguages ? 'max-h-96' : 'max-h-0'} overflow-hidden`}
+                            style={{ width: '50px' }} // Adjust width as needed
+                        >
+                            <div className='flex flex-col items-center w-full '>
+                                {languageLinks.map((link, index) => (
+                                    <Link legacyBehavior key={index} href={link.href}>
+                                        <a className='flex p-2 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white  rounded-lg'>
+                                            <div className='text-sm hover:font-semibold text-md text-black'>{link.title}</div>
+                                        </a>
                                     </Link>
                                 ))}
                             </div>
-                        )}
+                        </div>
                     </h1>
 
                 </div>
