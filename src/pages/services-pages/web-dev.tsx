@@ -39,7 +39,7 @@ const webdev = () => {
                     >Contact Us</button>
                 </div>
             </div>
-            <div className="space-y-4">
+            <div>
                 <TechSection />
                 <HowWeWork />
                 <Relationship />
