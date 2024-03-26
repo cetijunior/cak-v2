@@ -85,7 +85,7 @@ export default function ServicesSection() {
         {links.map((link, index) => (
           <div
             key={index}
-            className={`transition-opacity duration-1000 ${
+            className={`ease-in-out hover:scale-105 transition-opacity duration-1000 ${
               show[index] ? "opacity-100" : "opacity-0"
             }`}
           >
