@@ -27,12 +27,12 @@ const smma = () => {
             </h1>
             <h3 className="text-center">
               Unlock the power of social media with our bespoke marketing
-              strategies! Whether you're a budding enterprise or a
-              well-established brand, we're here to elevate your online
+              strategies! Whether you`re a budding enterprise or a
+              well-established brand, we`re here to elevate your online
               presence. Dive into our tailor-made solutions that resonate with
               your audience, boost engagement, and drive conversions. Get in
               touch for a customized plan, complete with an in-depth analysis of
-              potential reach and ROI. Let's create something remarkable online
+              potential reach and ROI. Let`s create something remarkable online
               together.
             </h3>
           </div>

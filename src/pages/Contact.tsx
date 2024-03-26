@@ -77,7 +77,7 @@ function Contact() {
               </h1>
               <h2 className="px-10 text-[14px]">Co-founder of CAK</h2>
               <p className="px-10 py-4 text-[13px] w-[250px]">
-                I'll ensure the team best suited for your project gets in touch
+                I`ll ensure the team best suited for your project gets in touch
                 with you swiftly.
               </p>
             </div>

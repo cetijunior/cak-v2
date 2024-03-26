@@ -3,8 +3,8 @@ import "/styles/globals.css";
 import Navbar from "@/components/Navbar";
 import Hero from "../Hero";
 import Footer from "@/components/Footer";
-import MobDevSection from "./components/MobDevSection";
-import MobDevSection2 from "./components/MobDevSection2";
+import MobDevSection from "./components/mobDev/MobDevSection";
+import MobDevSection2 from "./components/mobDev/MobDevSection2";
 
 const mobdev = () => {
   const techStack = [
@@ -67,9 +67,8 @@ const mobdev = () => {
             {techStack.map((tech, index) => (
               <div
                 key={tech.name}
-                className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp delay-${
-                  index * 100
-                }ms`}
+                className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp delay-${index * 100
+                  }ms`}
               >
                 <img
                   src={tech.icon}
