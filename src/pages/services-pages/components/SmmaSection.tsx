@@ -39,13 +39,13 @@ const services = [
   },
 ];
 
-const mobDevSection = () => {
+const SmmaSection = () => {
   return (
     <section id="services">
       <div className="bg-blue-100">
         <div className="flex justify-center items-center py-10">
           <h1 className="text-4xl text-center">
-            Mobile app development services
+            Social Media Marketing Services
           </h1>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-10 p-6">
@@ -77,4 +77,4 @@ const mobDevSection = () => {
   );
 };
 
-export default mobDevSection;
+export default SmmaSection;
