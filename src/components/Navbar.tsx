@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import React, { useState, useCallback } from 'react';
@@ -79,7 +80,7 @@ function Navbar() {
             </div>
 
             {/* Fullscreen Menu for small screens */}
-            <div onDoubleClick={handleClickScreen} className={`fixed inset-0 bg-[#2a3f8b] z-30 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out `}>
+            <div onDoubleClick={handleClickScreen} className={`fixed inset-0 bg-[#446AF2] z-30 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out `}>
 
                 <ul className='flex h-full flex-col z-30 w-[300px] pl-5 space-y-12 items-start justify-center text-white'>
                     <li className='cursor-pointer text-3xl hover:opacity-70' onClick={() => navigateToSection('/')}>Home</li>
@@ -87,55 +88,71 @@ function Navbar() {
                     <li className='cursor-pointer text-3xl hover:opacity-70' onClick={() => navigateToSection('about')}>About Us</li>
 
                     <div onClick={handleServicesDropdownToggle} className='flex flex-row items-center space-x-4 cursor-pointer'>
-                        <span className='text-3xl'>Web Development Services
-                        </span>
+                        <span className='text-3xl'>Web Development Services</span>
                         <img
                             src='/arrow.png'
                             alt='next'
-                            className={`w-10 h-10 ${rotateArrowServ ? 'rotate-0' : 'rotate-180'}`} // Apply rotation based on state
+                            className={`w-10 h-10 transform ${rotateArrowServ ? 'rotate-0' : '-rotate-180'}`} // Apply rotation based on state
                             style={{ transition: 'transform 0.4s ease' }} // Smooth transition for rotation
                         />
                     </div>
-                    {isDropdownOpenServices && (
-                        <ul className='left-0 bottom-60 bg-gray-700 shadow-md mt-12 p-2 rounded-lg'>
+
+                    {/* Adjusted for sliding effect */}
+                    <div
+                        style={{
+                            maxHeight: isDropdownOpenServices ? '500px' : '0', // Adjust maxHeight according to the content size
+                            transition: 'max-height  1s ease-in-out', // Smooth transition for max-height
+                            overflow: 'hidden',  // Hide content that overflows during transition
+                        }}
+                    >
+                        <ul className='bg-[#37457a67] w-full p-2 rounded-2xl'>
                             {serviceLinks.map((link, index) => (
                                 <li key={index} className='hover:bg-gray-100 hover:text-black rounded-md p-2'>
                                     <Link legacyBehavior href={link.href}>
                                         <a className='flex items-center space-x-3'>
-                                            <img src={link.img} alt={link.title} className="w-6 h-6" />
+                                            <img src={link.img} alt={link.title} className="w-6 h-6 rotate" />
                                             <span>{link.title}</span>
                                         </a>
                                     </Link>
                                 </li>
                             ))}
                         </ul>
-                    )}
+                    </div>
 
                     <li className='cursor-pointer text-3xl hover:opacity-70' onClick={() => navigateToSection('projects')}>Projects</li>
                     <li className='cursor-pointer text-3xl hover:opacity-70' onClick={() => navigateToSection('contact')}>Contact</li>
 
-                    <div onClick={handleLanguageDropdownToggle} className='flex flex-row items-center space-x-24 cursor-pointer'>
-                        <span className='text-3xl'>ENG</span>
-                        <img
-                            src='/arrow.png'
-                            alt='next'
-                            className={`w-10 h-10 ${rotateArrowLang ? 'rotate-0' : 'rotate-180'}`} // Apply rotation based on state
-                            style={{ transition: 'transform 0.4s ease' }} // Smooth transition for rotation
-                        />
+                    <div onClick={handleLanguageDropdownToggle} className='flex flex-col cursor-pointer'>
+                        <div className='flex flex-row pb-8 justify-between'>
+                            <span className='text-3xl'>ENG</span>
+                            <img
+                                src='/arrow.png'
+                                alt='next'
+                                className={`w-10 h-10 ml-20 transform ${rotateArrowLang ? 'rotate-0' : '-rotate-180'}`} // Apply rotation based on state
+                                style={{ transition: 'transform 0.4s ease' }} // Smooth transition for rotation
+                            />
+                        </div>
+                        <div
+                            style={{
+                                maxHeight: isDropdownOpenLanguages ? '500px' : '0', // Adjust maxHeight according to the content size
+                                transition: 'max-height  1s ease-in-out', // Smooth transition for max-height
+                                overflow: 'hidden',  // Hide content that overflows during transition
+                            }}
+                        >
+                            <ul className='bg-[#37457a67] w-full p-2 rounded-2xl'>
+                                {languageLinks.map((link, index) => (
+                                    <li key={index} className='hover:bg-gray-100 item hover:text-black rounded-md p-2'>
+                                        <Link legacyBehavior href={link.href}>
+                                            <a className='flex items-center justify-center space-x-3'>
+                                                <span>{link.title}</span>
+                                            </a>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
                     </div>
-                    {isDropdownOpenLanguages && (
-                        <ul className='left-0 text-white bg-gray-700 shadow-md bottom-36 m-5 rounded-lg'>
-                            {languageLinks.map((link, index) => (
-                                <li key={index} className='hover:bg-gray-100 hover:text-black rounded-md p-2'>
-                                    <Link legacyBehavior href={link.href}>
-                                        <a className='flex items-center space-x-3'>
-                                            <span>{link.title}</span>
-                                        </a>
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    )}
                 </ul>
             </div>
 
@@ -144,30 +161,33 @@ function Navbar() {
             <div className='hidden sm:flex flex-row items-center sm:px-10 space-x-8'>
                 <div className='hidden sm:flex flex-row items-center space-x-16 pr-16'>
                     <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20' onClick={() => scrollToSection('about')}>About Us</h1>
-                    <h1 onClick={() => scrollToSection('services')}
+                    <h1
+                        onClick={() => scrollToSection('services')}
                         onMouseEnter={() => setIsDropdownOpenServices(true)}
                         onMouseLeave={() => setIsDropdownOpenServices(false)}
-                        className='cursor-pointer hover:text-[#446AF2] transition-all duration-600 ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative'>
+                        className='cursor-pointer hover:text-[#446AF2] transition-all duration-600 ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative'
+                    >
                         Web Development Services
-                        {isDropdownOpenServices && (
-                            <div className='absolute top-full left-1/2 transition-all duration-300 ease-in-out transform hover:scale-105 -translate-x-1/2 hover:mt-5  w-[700px] bg-[#ffffff] shadow-custom-blue rounded-md p-4'
-                            >
-                                <div className='grid grid-cols-2 gap-4'>
-                                    {serviceLinks.map((link, index) => (
-                                        <Link legacyBehavior key={index} href={link.href}>
-                                            <a className='flex items-center space-x-3 transition-all duration-300 ease-in-out transform hover:scale-105 bg-white p-2 rounded-lg hover:shadow-custom-blue'>
-                                                <img src={link.img} alt={link.title} className="w-10 h-10" />
-                                                <div>
-                                                    <div className='font-semibold text-gray-900'>{link.title}</div>
-                                                    <div className='text-sm text-gray-600'>{link.description}</div>
-                                                </div>
-                                            </a>
-                                        </Link>
-                                    ))}
-                                </div>
+                        <div
+                            className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenServices ? 'max-h-96' : 'max-h-0'} overflow-hidden`}
+                            style={{ width: '800px' }} // Adjust width as needed
+                        >
+                            <div className='grid grid-cols-2 '>
+                                {serviceLinks.map((link, index) => (
+                                    <Link legacyBehavior key={index} href={link.href}>
+                                        <a className='flex p-4 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white p-2 rounded-lg'>
+                                            <img src={link.img} alt={link.title} className="w-10 h-10" />
+                                            <div>
+                                                <div className='font-semibold text-gray-900'>{link.title}</div>
+                                                <div className='text-sm text-gray-600'>{link.description}</div>
+                                            </div>
+                                        </a>
+                                    </Link>
+                                ))}
                             </div>
-                        )}
+                        </div>
                     </h1>
+
 
                     <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20'
 
