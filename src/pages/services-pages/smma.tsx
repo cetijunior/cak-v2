@@ -3,6 +3,8 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import "/styles/globals.css";
 import MarketingStack from "./components/MarketingStack";
+import SmmaSection from "./components/SmmaSection";
+import SmmaSection2 from "./components/SmmaSection2";
 
 const smma = () => {
   return (
@@ -40,6 +42,8 @@ const smma = () => {
         </div>
       </div>
       <MarketingStack />
+      <SmmaSection />
+      <SmmaSection2 />
       <Footer />
     </>
   );
