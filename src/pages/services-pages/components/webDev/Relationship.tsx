@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 function Relationship() {
     return (
@@ -56,4 +56,4 @@ function Relationship() {
     )
 }
 
-export default Relationship
+export default Relationship;
