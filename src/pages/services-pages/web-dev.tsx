@@ -22,7 +22,7 @@ const webdev = () => {
                     </video>
                 </div>
                 <div className='flex flex-col transition-all duration-300 ease-in-out transform hover:scale-105 items-center justify-center w-screen'>
-                    <div className='w-[400px] sm:w-[650px] p-20 z-10 sm:h-[400px] bg-[#F8F9FB] shadow-custom-blue mt-[-40px] sm:mt-[-350px] rounded-xl space-y-4'>
+                    <div className="w-[350px] sm:w-[650px] p-10 sm:p-20 z-10 sm:h-[400px] bg-[#F8F9FB] shadow-custom-blue mt-[-40px] sm:mt-[-350px] rounded-xl space-y-4">
                         <h1 className='text-center text-2xl sm:text-5xl font-bold'>
                             Website Development
                         </h1>

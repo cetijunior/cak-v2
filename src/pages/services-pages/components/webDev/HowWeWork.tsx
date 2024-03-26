@@ -1,14 +1,61 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const HowWeWork = () => {
+
+  const [visible, setVisible] = useState(false); // Track if the section is visible
+  const [show, setShow] = useState([false, false, false]); // Individual visibility for links
+
+  const stackRef = useRef(null); // Use ref to reference the about section
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target); // Stop observing once visible
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+
+    if (stackRef.current) {
+      observer.observe(stackRef.current);
+    }
+
+    return () => {
+      if (stackRef.current) {
+        observer.unobserve(stackRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (visible) {
+      // Trigger fade-in effect for each part of the section with a delay
+      show.forEach((_, index) => {
+        setTimeout(() => {
+          setShow((s) => {
+            const newShow = [...s];
+            newShow[index] = true;
+            return newShow;
+          });
+        }, index * 1000); // Sequential delay
+      });
+    }
+  }, [visible]);
+
+
   return (
-    <div>
+    <div ref={stackRef}
+      style={{ opacity: show[0] ? 1 : 0, transition: "opacity 1s ease" }}>
       <div className="flex flex-col justify-center space-y-8 sm:space-y-0 sm:space-x-16 items-center sm:flex-row ">
         <div className="flex flex-col space-y-5 items-center justify-center sm:items-start sm:justify-between ">
 
-          <div className="w-[450px] space-y-3 items-center justify-center">
+          <div className="sm:w-[450px] w-[250px] space-y-5 sm:space-y-3 items-center justify-center">
 
             <h1 className="sm:text-start text-center text-4xl text-black ">How we Work ?</h1>
 

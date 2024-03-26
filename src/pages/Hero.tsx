@@ -22,7 +22,7 @@ function Hero() {
         </video>
       </div>
       <div className="flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105 justify-center w-screen ">
-        <div className="w-[400px] sm:w-[650px] p-20 z-10 sm:h-[400px] bg-[#F8F9FB] shadow-custom-blue mt-[-40px] sm:mt-[-350px] rounded-xl space-y-4">
+        <div className="w-[350px] sm:w-[650px] p-10 sm:p-20 z-10 sm:h-[400px] bg-[#F8F9FB] shadow-custom-blue mt-[-40px] sm:mt-[-350px] rounded-xl space-y-4">
           <h1 className="text-center text-2xl sm:text-4xl font-bold">
             World-Class Website Development
           </h1>
@@ -36,7 +36,7 @@ function Hero() {
         </div>
         <button
           onClick={() => scrollToSection("contact")}
-          className="bg-[#446AF2] hover:font-semibold  transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl"
+          className="bg-[#446AF2] hover:font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl"
         >
           Contact Us
         </button>
