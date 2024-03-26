@@ -75,7 +75,7 @@ const design = () => {
         <div className="flex gap-8 space-x-10 flex-row">
           <div className="flex flex-col justify-end items-end ">
             <div className="flex flex-col space-y-8 ">
-              <h1 className="absolute right-[500px] top-[100px] bg-white shadow-custom-blue rounded-3xl p-4 w-[9rem]">
+              <h1 className=" bg-white shadow-custom-blue rounded-3xl p-4 w-[9rem]">
                 Service Design
               </h1>
               <h1 className="bg-white shadow-custom-blue rounded-3xl p-4 w-[9rem]">
