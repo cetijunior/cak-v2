@@ -38,16 +38,16 @@ function Contact() {
 
   return (
     <section id="contact" className="bg-white mx-auto py-10 min-h-[600px]">
-      <div className="flex flex-wrap items-start justify-center">
-        <div className="flex flex-col bg-[#E6F0F8] shadow-custom-blue rounded-[39px] h-[1200px] px-4 w-[350px] sm:h-[700px] sm:w-[650px]">
+      <div className="flex flex-wrap items-start justify-center ">
+        <div className="flex flex-col bg-[#E6F0F8] shadow-custom-blue rounded-[39px] h-[1200px] px-4 w-[350px] sm:h-[700px] sm:w-[650px] transition-all duration-500 ease-in-out transform hover:scale-105">
           <h1 className="px-10 py-10 sm:text-left text-center text-3xl font-bold ">
             Contact Us!
           </h1>
           <p className="px-10 text-[14px] sm:text-left text-center sm:w-[550px]">
-            Partner with CAK to accelerate your software development projects.
-            Contact us to discuss your project requirements, receive a free
-            consultation, and get a personalized project cost estimate and
-            time-to-market assessment!
+            Choose CAK to propel your software development forward. Get in touch
+            to explore your project needs, benefit from our complimentary
+            consultation, and receive a tailored estimate for both cost and
+            launch timeline!
           </p>
           <p className="px-10 py-8 text-[14px] sm:text-left text-center sm:w-[550px]">
             Send us an e-mail or fill in the form. We will be in touch within
@@ -77,13 +77,13 @@ function Contact() {
               </h1>
               <h2 className="px-10 text-[14px]">Co-founder of CAK</h2>
               <p className="px-10 py-4 text-[13px] w-[250px]">
-                I will make sure the best team that fits your task will contact
-                you as quickly as possible
+                I'll ensure the team best suited for your project gets in touch
+                with you swiftly.
               </p>
             </div>
           </div>
         </div>
-        <div className="bg-white sm:w-[400px] w-[310px] h-[550px] sm:ml-[-80px] mt-[-40px] sm:mt-[100px] flex flex-col shadow-custom-blue2 rounded-[39px]">
+        <div className="bg-white sm:w-[400px] w-[310px] h-[550px] sm:ml-[-80px] mt-[-40px] sm:mt-[100px] flex flex-col shadow-custom-blue2 rounded-[39px] transition-all duration-500 ease-in-out transform hover:scale-105">
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="px-4 py-4 flex flex-col space-y-2">
               <h1 className="text-2xl font-bold text-center py-4">

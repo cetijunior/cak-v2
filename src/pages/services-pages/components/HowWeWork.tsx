@@ -2,6 +2,17 @@ import Link from "next/link";
 import React from "react";
 
 const HowWeWork = () => {
+  const handleScrollToSection = (e, selector) => {
+    e.preventDefault();
+    const targetSection = document.querySelector(selector);
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section>
       <div className="flex flex-col justify-center items-center gap-7 sm:flex-row ">
@@ -43,17 +54,17 @@ const HowWeWork = () => {
           </div>
         </div>
         <img
-          className="h-[33rem] w-[50rem] rounded-xl"
+          className="h-[20rem] w-[20rem] rounded-lg sm:h-[33rem] sm:w-[50rem] sm:rounded-xl"
           src="https://www.helmes.com/wp-content/uploads/2021/09/MG_9332-1024x683.jpg"
         ></img>
       </div>
       <div className="flex flex-col justify-center items-center mt-10 pt-10 space-y-5">
         <h1 className="text-bold text-4xl text-black">
-          How the realationship begins
+          How the realationship begins?
         </h1>
         <p>
           We use the{" "}
-          <Link className="text-blue-400" href={"/"}>
+          <Link className="text-blue-400" href={"contact"}>
             Quick Start model
           </Link>{" "}
           for onboarding new projects.<br></br>
