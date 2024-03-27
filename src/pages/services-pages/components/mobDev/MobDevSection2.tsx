@@ -59,8 +59,8 @@ const MobDevSection2 = () => {
                 A unique work method that guarantees 150% efficiency
               </h1>
               <p className="pt-4">
-                We call it The Helmes Way. For the past 20 years, we’ve worked
-                to perfect it.
+                We call it The CAK Way. For the past 5 years, we’ve worked to
+                perfect it.
               </p>
               <p>
                 Our methods enable at least 150% greater efficiency, in both

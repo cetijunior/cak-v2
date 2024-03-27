@@ -10,9 +10,11 @@ function ContactSection() {
             Contact us
           </h1>
           <div className="text-xl text-left sm:text-center">
-            <p>For a successful conversation about creating or improving business</p>
+            <p>
+              For a successful conversation about creating or improving business
+            </p>
             <p>software, contact any of our people or drop us a line at</p>
-            <Link className="text-blue-600" href={"/"}>
+            <Link className="text-blue-600" href="/#contact">
               info@cakwebsolutions.com.
             </Link>
           </div>

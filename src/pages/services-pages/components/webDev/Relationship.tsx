@@ -53,7 +53,11 @@ function Relationship() {
           <React.Fragment key={step}>
             <div
               className="flex flex-col items-start md:p-8 lg:p-6 md:justify-start lg:justify-center lg:w-[450px] lg:h-[300px] md:w-[400px] md:h-[300px] space-y-8 
+<<<<<<< HEAD
+                        w-[400px] h-[300px] justify-center p-8
+=======
                         w-[350px] h-[300px] justify-center p-8
+>>>>>>> b7399a6092967f8a9e4175560c00908c233fca65
                         transition-all duration-300 ease-in-out transform hover:scale-105 rounded-3xl shadow-custom-blue"
             >
               <h1 className="flex items-start font-bold text-3xl">
