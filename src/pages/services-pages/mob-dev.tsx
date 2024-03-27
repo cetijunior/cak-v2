@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "/styles/globals.css";
 import Navbar from "@/components/Navbar";
 import Hero from "../Hero";
@@ -17,9 +17,50 @@ const mobdev = () => {
     { name: "Java", icon: "/icons/java.png" },
     { name: "React Native", icon: "/icons/codes.png" },
   ];
-  function scrollToSection(arg0: string): void {
-    throw new Error("Function not implemented.");
-  }
+
+  const [visible, setVisible] = useState(false); // Track if the section is visible
+  const [show, setShow] = useState([false, false, false]); // Individual visibility for links
+
+  const stackRef = useRef(null); // Use ref to reference the about section
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target); // Stop observing once visible
+          }
+        });
+      },
+      { threshold: 0.01 }
+    );
+
+    if (stackRef.current) {
+      observer.observe(stackRef.current);
+    }
+
+    return () => {
+      if (stackRef.current) {
+        observer.unobserve(stackRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (visible) {
+      // Trigger fade-in effect for each part of the section with a delay
+      show.forEach((_, index) => {
+        setTimeout(() => {
+          setShow((s) => {
+            const newShow = [...s];
+            newShow[index] = true;
+            return newShow;
+          });
+        }, index * 1000); // Sequential delay
+      });
+    }
+  }, [visible]);
 
   return (
     <>
@@ -49,68 +90,86 @@ const mobdev = () => {
                 Perspiciatis!
               </h3>
             </div>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="bg-[#446AF2] transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl"
-            >
+            <button className="bg-[#446AF2] transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl">
               Contact Us
             </button>
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row bg-white min-h-screen w-full justify-around items-center px-4 sm:px-10 lg:px-24 py-20">
-        <div className="transition-all duration-300 ease-in-out transform hover:scale-105 p-7 rounded-xl shadow-custom-blue mb-10 sm:mb-0">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl text-gray-900 mb-10 text-center">
-            We speak your language
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-            {techStack.map((tech, index) => (
-              <div
-                key={tech.name}
-                className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp delay-${index * 100
+      <div
+        ref={stackRef}
+        style={{ opacity: show[0] ? 1 : 0, transition: "opacity 1s ease" }}
+      >
+        <div className="flex flex-col sm:flex-row bg-white sm:h-[50rem] w-full justify-around items-center px-4 sm:px-14 lg:px-24 py-20">
+          <div className="transition-all duration-300 ease-in-out transform hover:scale-105 p-7 rounded-xl shadow-custom-blue mb-10 sm:mb-0">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl text-gray-900 mb-10 text-center">
+              We speak your language
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+              {techStack.map((tech, index) => (
+                <div
+                  key={tech.name}
+                  className={`flex flex-col items-center transition-all duration-300 ease-in-out justify-center opacity-0 animate-fadeInUp delay-${
+                    index * 1000
                   }ms`}
-              >
-                <img
-                  src={tech.icon}
-                  className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
-                  alt={`${tech.name} logo`}
-                />
-                <span className="mt-2 text-sm md:text-md lg:text-lg font-semibold">
-                  {tech.name}
-                </span>
-              </div>
-            ))}
+                >
+                  <img
+                    src={tech.icon}
+                    className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                    alt={`${tech.name} logo`}
+                  />
+                  <span className="mt-2 text-sm md:text-md lg:text-lg font-semibold">
+                    {tech.name}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="max-w-md lg:max-w-lg space-y-4 px-4">
+            <h1 className="font-bold text-3xl">
+              We bring mobile<br></br> apps to life
+            </h1>
+            <p className="flex flex-row items-center w-full group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
+              <span className="text-black group-hover:text-blue-500 pr-5">
+                ◉{" "}
+              </span>
+              We elevate the art of mobile app development with our unique
+              methodology, ensuring a seamless fusion of innovation and
+              efficiency.
+            </p>
+            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
+              <span className="text-black group-hover:text-blue-500 pr-5">
+                ◉{" "}
+              </span>
+              Harnessing the power of cutting-edge technology and agile
+              methodologies, we transform your ideas into reality with
+              unparalleled speed and precision.
+            </p>
+            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
+              <span className="text-black group-hover:text-blue-500 pr-5">
+                ◉{" "}
+              </span>
+              With a focus on user-centric design and robust backend
+              engineering, our team crafts mobile solutions that not only meet
+              but exceed expectations.
+            </p>
+            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
+              <span className="text-black group-hover:text-blue-500 pr-5">
+                ◉{" "}
+              </span>
+              At the heart of our operation is a dedication to understanding and
+              solving your unique challenges.
+            </p>
+            <button className="rounded-xl shadow-custom-blue p-3 bg-blue-600 text-white ">
+              Tell us your Problem
+            </button>
           </div>
         </div>
-        <div className="max-w-md lg:max-w-lg space-y-4 px-4">
-          <h1 className="font-bold text-3xl">
-            We bring mobile<br></br> apps to life
-          </h1>
-          <p className="text-sm sm:text-md lg:text-lg text-gray-600">
-            Empowering your business through diverse technology expertise.
-          </p>
-          <p className="text-sm sm:text-md lg:text-lg text-gray-600">
-            Innovative solutions crafted with the latest tech stack.
-          </p>
-          <p className="text-sm sm:text-md lg:text-lg text-gray-600">
-            Bridging the gap between complex problems and user-friendly
-            solutions.
-          </p>
-          <p className="text-sm sm:text-md lg:text-lg text-gray-600">
-            Our dedication to tech excellence shapes the core of our identity.
-          </p>
-          <p className="text-sm sm:text-md lg:text-lg text-gray-600">
-            From ideation to execution, technology is our language of choice.
-          </p>
-          <button className="rounded-xl shadow-custom-blue p-3 bg-blue-600 text-white ">
-            Tell us your Problem
-          </button>
-        </div>
+        <MobDevSection />
+        <MobDevSection2 />
+        <div className="h-20"></div>
+        <Footer />
       </div>
-      <MobDevSection />
-      <MobDevSection2 />
-      <div className="h-20"></div>
-      <Footer />
     </>
   );
 };
