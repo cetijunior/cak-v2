@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 
 function ProjectCard() {
     // Initialize screenWidth state to 0 to safely handle server-side rendering
-    const [screenWidth, setScreenWidth] = useState(640);
+    const [screenWidth, setScreenWidth] = useState(0);
     const [show, setShow] = useState(new Array(4).fill(false));
 
     // Cards data
@@ -61,18 +61,17 @@ function ProjectCard() {
 
 
     return (
-        <div className="flex flex-col items-center rounded-[39px] mt-20">
+        <div className="flex flex-col items-center rounded-[39px] mt-4 md:mt-10 lg:mt-20">
             {cards.map((card, index) => (
                 <div
                     key={card.id}
                     className={`w-[350px] sm:w-[700px] my-4 ${backgroundClass}  shadow-custom-blue rounded-[39px]
-                                ${index % 2 === 0 ? 'sm:-ml-60' : 'sm:-mr-60'}
+                                ${index % 2 === 0 ? 'lg:-ml-60 md:-ml-20' : 'lg:-mr-60 md:-mr-20'}
                                 transition-opacity duration-1000 ${show[index] ? 'opacity-100' : 'opacity-0'}
                                 transition-transform transform hover:scale-105 ease-in-out duration-300`}>
 
                     <div className={`flex flex-col
-                                    sm:flex-row items-center justify-between h-auto p-4 rounded-[39px] 
-                                     sm:h-[300px]bg-white`}>
+                                    sm:flex-row items-center justify-between md:h-auto p-4 rounded-[39px] lg:h-[300px]`}>
                         <img
                             src='/Macbook.png'
                             alt='Project'
