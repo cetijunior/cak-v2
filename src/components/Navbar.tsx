@@ -88,11 +88,10 @@ function Navbar() {
   return (
     <div className="sticky top-0 z-50 sm:px-14 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] sm:w-screen w-full">
       <div
-       
         className="p-4"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
-        <h1 className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 text-2xl font font-extrabold text-[#446AF2]">
+        <h1 className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 text-2xl font-extrabold text-[#446AF2]">
           CAK Web Solutions
         </h1>
       </div>
@@ -115,16 +114,16 @@ function Navbar() {
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out `}
       >
-        <ul className="flex h-full flex-col z-30 w-[300px] pl-5 space-y-12 items-start justify-center font-mmontserrat font-extralight text-white">
+        <ul className="flex h-full flex-col z-30 w-[300px] pl-5 space-y-12 items-start justify-center font-extralight text-white">
           <li
-            className="cursor-pointer text-3xl font-mmontserrat font-extralight hover:opacity-70"
+            className="cursor-pointer text-3xl font-extralight hover:opacity-70"
             onClick={() => navigateToSection("/")}
           >
             Home
           </li>
 
           <li
-            className="cursor-pointer text-3xl font-mmontserrat font-extralight hover:opacity-70"
+            className="cursor-pointer text-3xl font-thin hover:opacity-70"
             onClick={() => navigateToSection("about")}
           >
             About Us
@@ -134,7 +133,7 @@ function Navbar() {
             onClick={handleServicesDropdownToggle}
             className="flex flex-row items-center space-x-4 cursor-pointer"
           >
-            <span className="text-3xl">Web Development Services</span>
+            <span className="text-3xl font-thin">Web Development Services</span>
             <img
               src="/arrow.png"
               alt="next"
@@ -157,7 +156,7 @@ function Navbar() {
               {serviceLinks.map((link, index) => (
                 <li
                   key={index}
-                  className="hover:bg-gray-100 hover:text-black font-mmontserrat font-extralight rounded-md p-2"
+                  className="hover:bg-gray-100 hover:text-black font-thin rounded-md p-2"
                 >
                   <Link legacyBehavior href={link.href}>
                     <a className="flex items-center space-x-3">
@@ -175,13 +174,13 @@ function Navbar() {
           </div>
 
           <li
-            className="cursor-pointer text-3xl hover:opacity-70"
+            className="cursor-pointer text-3xl font-thin hover:opacity-70"
             onClick={() => navigateToSection("projects")}
           >
             Projects
           </li>
           <li
-            className="cursor-pointer text-3xl hover:opacity-70"
+            className="cursor-pointer text-3xl font-thin hover:opacity-70"
             onClick={() => navigateToSection("contact")}
           >
             Contact
@@ -216,7 +215,7 @@ function Navbar() {
                     className="hover:bg-gray-100 item hover:text-black rounded-md p-2"
                   >
                     <Link legacyBehavior href={link.href}>
-                      <a className="flex items-center font-mmontserrat font-light justify-center space-x-3">
+                      <a className="flex items-center font-thin justify-center space-x-3">
                         <span>{link.title}</span>
                       </a>
                     </Link>
@@ -232,7 +231,7 @@ function Navbar() {
       <div className="hidden md:hidden lg:flex flex-row items-center md:px-10 space-x-8">
         <div className="hidden md:hidden lg:flex flex-row items-center space-x-16 pr-16">
           <h1
-            className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-light font-mmontserrat text-[#131B23] hover:text-[#446AF2] text-xl z-20"
+            className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20"
             onClick={() => scrollToSection("about")}
           >
             About Us
@@ -241,7 +240,7 @@ function Navbar() {
             onClick={() => scrollToSection("services")}
             onMouseEnter={() => setIsDropdownOpenServices(true)}
             onMouseLeave={() => setIsDropdownOpenServices(false)}
-            className="cursor-pointer hover:text-[#446AF2] transition-all duration-600 ease-in-out transform hover:scale-105 text-[#131B23] font-light font-mmontserrat text-xl z-20 h-100p relative"
+            className="cursor-pointer hover:text-[#446AF2] transition-all duration-600 ease-in-out transform hover:scale-105 text-[#131B23] font-extralight text-xl z-20 h-100p relative"
           >
             Web Development Services
             <div
@@ -263,7 +262,7 @@ function Navbar() {
                         <div className="font-semibold font-playfair text-[#131B23]">
                           {link.title}
                         </div>
-                        <div className="text-sm font-mmontserrat font-extralight text-[#131B23]">
+                        <div className="text-sm font-extralight text-[#131B23]">
                           {link.description}
                         </div>
                       </div>
@@ -275,14 +274,14 @@ function Navbar() {
           </h1>
 
           <h1
-            className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-light font-mmontserrat text-[#131B23] hover:text-[#446AF2] text-xl z-20"
+            className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20"
             onClick={() => scrollToSection("projects")}
           >
             Projects
           </h1>
 
           <h1
-            className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-light font-mmontserrat text-[#131B23] hover:text-[#446AF2] text-xl z-20"
+            className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20"
             onDoubleClick={navigateContact}
             onClick={() => scrollToSection("contact")}
           >
@@ -293,7 +292,7 @@ function Navbar() {
             onClick={() => scrollToSection("")}
             onMouseEnter={() => setIsDropdownOpenLanguages(true)}
             onMouseLeave={() => setIsDropdownOpenLanguages(false)}
-            className="cursor-pointer hover:text-[#446AF2] transition-all duration-600 ease-in-out transform text-[#131B23] font-light font-mmontserrat hover:scale-105 text-xl z-20 h-100p relative"
+            className="cursor-pointer hover:text-[#446AF2] transition-all duration-600 ease-in-out transform text-[#131B23] font-extralight hover:scale-105 text-xl z-20 h-100p relative"
           >
             Eng
             <div
@@ -306,7 +305,7 @@ function Navbar() {
                 {languageLinks.map((link, index) => (
                   <Link legacyBehavior key={index} href={link.href}>
                     <a className="flex p-2 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white  rounded-lg">
-                      <div className="text-sm hover:font-semibold font-light font-mmontserrat text-md text-[#131B23]">
+                      <div className="text-sm hover:font-semibold font-extralight text-md text-[#131B23]">
                         {link.title}
                       </div>
                     </a>

@@ -129,7 +129,7 @@ const SmmaSection = () => {
     >
       <div className="bg-[#AECBEB]">
         <div className="flex justify-center items-center py-10">
-          <h1 className="sm:text-4xl text-3xl font-semibold text-center">
+          <h1 className="sm:text-4xl text-3xl font-playfair font-semibold text-center">
             Social Media Marketing Services
           </h1>
         </div>
@@ -146,8 +146,10 @@ const SmmaSection = () => {
                 alt="service"
                 src={service.image}
               />
-              <h1 className="font-bold text-xl text-center">{service.title}</h1>
-              <p className="text-center">{service.description}</p>
+              <h1 className="font-bold text-xl font-playfair text-center">
+                {service.title}
+              </h1>
+              <p className="text-center font-thin">{service.description}</p>
             </div>
           ))}
         </div>

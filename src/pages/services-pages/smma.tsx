@@ -5,6 +5,7 @@ import Navbar from "./components/smma/Navbar";
 import MarketingStack from "./components/smma/MarketingStack";
 import SmmaSection from "./components/smma/SmmaSection";
 import SmmaSection2 from "./components/smma/SmmaSection2";
+import ContactSection from "./components/webDev/ContactSection";
 
 const smma = () => {
   return (
@@ -22,10 +23,10 @@ const smma = () => {
         </div>
         <div className="flex flex-col items-center justify-center w-screen transition-all duration-300 ease-in-out transform hover:scale-105">
           <div className="w-[400px] sm:w-[650px] p-20 z-10 sm:h-[400px] bg-[#F8F9FB] shadow-custom-blue mt-[-40px] sm:mt-[-350px] rounded-xl space-y-4 transition-all duration-300 ease-in-out transform hover:scale-105">
-            <h1 className="text-center text-2xl sm:text-4xl font-bold">
+            <h1 className="text-center text-2xl sm:text-4xl font-playfair font-bold">
               Engaging Social Media Marketing Solutions
             </h1>
-            <h3 className="text-center">
+            <h3 className="text-center font-thin">
               Unlock the power of social media with our bespoke marketing
               strategies! Whether you`re a budding enterprise or a
               well-established brand, we`re here to elevate your online
@@ -36,7 +37,7 @@ const smma = () => {
               together.
             </h3>
           </div>
-          <button className="bg-[#446AF2] z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl transition-all duration-300 ease-in-out transform hover:scale-105">
+          <button className="bg-[#446AF2] z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl hover:font-bold transition-all duration-300 ease-in-out transform hover:scale-105">
             Contact Us
           </button>
         </div>
@@ -44,7 +45,9 @@ const smma = () => {
       <MarketingStack />
       <SmmaSection />
       <SmmaSection2 />
+      <ContactSection />
       <Footer />
+      
     </>
   );
 };
