@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 const services = [
   {
     id: 1,
-    image: "/design.png",
+    image: "/web-design.png",
     title: "App Design",
     description:
       "Creating visually appealing and user-friendly designs for your mobile app.",

@@ -5,6 +5,7 @@ import Hero from "../Hero";
 import Footer from "@/components/Footer";
 import MobDevSection from "./components/mobDev/MobDevSection";
 import MobDevSection2 from "./components/mobDev/MobDevSection2";
+import Link from "next/link";
 
 const mobdev = () => {
   const techStack = [
@@ -65,34 +66,33 @@ const mobdev = () => {
   return (
     <>
       <Navbar />
-      <div className="hero">
-        <div className="w-screen">
-          <div className="flex bg-[#1E1919 mt-[-50px] sm:mt-[-350px] items-center justify-center">
-            <video autoPlay loop muted className="rounded-lg w-screen">
-              <source
-                src="https://www.helmes.com/wp-content/uploads/2022/07/costom-software-development_600.mp4"
-                type="video/mp4"
-              />
-              Your Browser does not support the video tag.
-            </video>
+      <div className="w-screen">
+        <div className="flex mt-[-40px] md:mt-[-200px] lg:mt-[-350px] items-center justify-center">
+          <video autoPlay loop muted className="rounded-lg w-screen">
+            <source
+              src="https://www.helmes.com/wp-content/uploads/2022/07/costom-software-development_600.mp4"
+              type="video/mp4"
+            />
+            Your Browser does not support the video tag.
+          </video>
+        </div>
+        <div className="flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105 justify-center w-screen ">
+          <div className="w-[380px] md:w-[650px] lg:w-[800px] p-10 md:p-10 lg:p-20 z-10 md:h-[400px] lg:h-[450px] bg-[#F8F9FB] shadow-custom-blue mt-[-100px] md:mt-[-200px] lg:mt-[-300px] rounded-xl space-y-8">
+            <h1 className="text-start md:text-start lg:text-center text-4xl md:text-5xl lg:text-6xl font-bold">
+              World-Class Mobile Development
+            </h1>
+            <h3 className="text-start md:text-start lg:text-center">
+              Welcome to CAK, where your project takes center stage. Dive into
+              our services to discover how we can lift your vision higher. From
+              seamless web development to intuitive UI/UX design, we are here to
+              turn your ideas into reality. Partner with us for a journey marked
+              by precision, innovation, and transformative outcomes.
+            </h3>
           </div>
-          <div className="flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105 justify-center w-screen ">
-            <div className="w-[400px] sm:w-[650px] p-20 z-10 sm:h-[400px] bg-[#F8F9FB] shadow-custom-blue mt-[-40px] sm:mt-[-350px] rounded-xl space-y-4">
-              <h1 className="text-center text-2xl sm:text-5xl font-bold">
-                Mobile App Development
-              </h1>
-              <h3 className="text-center">
-                Discover our range of services and find out how we can help you
-                take your project to the next level. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Officiis, quasi, in cupiditate
-                vero dicta eligendi maiores id ut quidem, illo molestiae alias
-                quisquam magnam? Minima perferendis consectetur delectus culpa?
-                Perspiciatis!
-              </h3>
-            </div>
-            <button className="bg-[#446AF2] transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl">
+          <div className="bg-[#446AF2] hover:font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl">
+            <Link href="/#contact" legacyBehavior>
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -160,9 +160,9 @@ const mobdev = () => {
               At the heart of our operation is a dedication to understanding and
               solving your unique challenges.
             </p>
-            <button className="rounded-xl shadow-custom-blue p-3 bg-blue-600 text-white ">
-              Tell us your Problem
-            </button>
+            <div className="rounded-xl w-fit shadow-custom-blue p-3 bg-blue-600 text-white">
+              <Link href="/#contact">Tell us your Problem</Link>
+            </div>
           </div>
         </div>
         <MobDevSection />
