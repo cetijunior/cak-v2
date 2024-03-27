@@ -73,7 +73,7 @@ function Navbar() {
             </div>
 
             {/* Toggle button for small screens */}
-            <div className='absolute pr-4 pt-2 z-40 right-0 sm:hidden'>
+            <div className='absolute pr-4 pt-2 z-40 right-0 sm:block md:block lg:hidden'>
                 <button onClick={handleMenuToggle}>
                     {isMenuOpen ? <img src='/close.png' alt='Close' className="w-10 h-10" /> : <img src='/menu.png' alt='Menu' className="w-10 h-10" />}
                 </button>
@@ -158,8 +158,8 @@ function Navbar() {
 
 
             {/* Desktop Navbar */}
-            <div className='hidden sm:flex flex-row items-center sm:px-10 space-x-8'>
-                <div className='hidden sm:flex flex-row items-center space-x-16 pr-16'>
+            <div className='hidden md:hidden lg:flex flex-row items-center md:px-10 space-x-8'>
+                <div className='hidden md:hidden lg:flex flex-row items-center space-x-16 pr-16'>
                     <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20' onClick={() => scrollToSection('about')}>About Us</h1>
                     <h1
                         onClick={() => scrollToSection('services')}
@@ -169,8 +169,8 @@ function Navbar() {
                     >
                         Web Development Services
                         <div
-                            className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenServices ? 'max-h-96' : 'max-h-0'} overflow-hidden`}
-                            style={{ width: '800px' }} // Adjust width as needed
+                            className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenServices ? 'max-h-96' : 'max-h-0'} overflow-hidden`}
+                            style={{ width: '700px' }} // Adjust width as needed
                         >
                             <div className='grid grid-cols-2 '>
                                 {serviceLinks.map((link, index) => (
