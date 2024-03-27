@@ -88,7 +88,7 @@ function Navbar() {
   return (
     <div className="sticky top-0 z-50 sm:px-14 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] sm:w-screen w-full">
       <div
-        onDoubleClick={navigateHome}
+       
         className="p-4"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >

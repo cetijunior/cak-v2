@@ -44,20 +44,15 @@ function Relationship() {
         </p>
       </div>
       <div
-        className={`flex flex-col items-center justify-center md:flex-col lg:flex-row sm:space-x-3 sm:space-y-0 pt-20 space-y-8  ${
-          show ? "opacity-100" : "opacity-0"
-        } transition-opacity duration-1000`}
+        className={`flex flex-col items-center justify-center md:flex-col lg:flex-row sm:space-x-3 sm:space-y-0 pt-20 space-y-8  ${show ? "opacity-100" : "opacity-0"
+          } transition-opacity duration-1000`}
       >
         {/* Simplified steps with mapping if there are multiple, similar steps */}
         {[1, 2, 3].map((step) => (
           <React.Fragment key={step}>
             <div
               className="flex flex-col items-start md:p-8 lg:p-6 md:justify-start lg:justify-center lg:w-[450px] lg:h-[300px] md:w-[400px] md:h-[300px] space-y-8 
-<<<<<<< HEAD
-                        w-[400px] h-[300px] justify-center p-8
-=======
                         w-[350px] h-[300px] justify-center p-8
->>>>>>> b7399a6092967f8a9e4175560c00908c233fca65
                         transition-all duration-300 ease-in-out transform hover:scale-105 rounded-3xl shadow-custom-blue"
             >
               <h1 className="flex items-start font-bold text-3xl">

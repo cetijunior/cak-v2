@@ -1,6 +1,5 @@
-import Navbar from "@/components/Navbar";
 import React from "react";
-import Hero from "../Hero";
+import Navbar from "./components/design/Navbar";
 import Footer from "@/components/Footer";
 import "/styles/globals.css";
 import ContactSection from "./components/webDev/ContactSection";
