@@ -102,7 +102,7 @@ function Navbar() {
                         style={{
                             maxHeight: isDropdownOpenServices ? '500px' : '0', // Adjust maxHeight according to the content size
                             transition: 'max-height  1s ease-in-out', // Smooth transition for max-height
-                            overflow: 'hidden',  // Hide content that overflows during transition
+                            overflow: 'auto',  // Hide content that overflows during transition
                         }}
                     >
                         <ul className='bg-[#37457a67] w-full p-2 rounded-2xl'>
