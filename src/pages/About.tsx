@@ -60,10 +60,10 @@ function About() {
         style={{ opacity: show[0] ? 1 : 0, transition: "opacity 1s ease" }}
       >
         <div className="flex flex-col sm:mt-32 sm:gap-20 gap-7">
-          <h2 className=" text-center lg:text-[64px] text-2xl font-semibold z-10 ">
+          <h2 className=" text-center lg:text-[64px] text-2xl font-playfair font-semibold z-10 ">
             Who are we?
           </h2>
-          <p className="lg:text-center text-base lg:text-base text-center w-[300px] md:text-center mt-0 md:-mt-8 lg:mt-0 lg:w-[400px] z-10">
+          <p className="lg:text-center text-base lg:text-base text-center w-[300px] font-mmontserrat font-light md:text-center mt-0 md:-mt-8 lg:mt-0 lg:w-[400px] z-10">
             We are CAK, a leading web development agency focused on delivering
             innovative and high-quality digital solutions. Our expertise spans
             technical development, UI/UX design, and strategic innovation,

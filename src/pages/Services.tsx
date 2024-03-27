@@ -76,7 +76,7 @@ export default function ServicesSection() {
   return (
     <section id="services" className="py-16 bg-white">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-900">
+        <h2 className="text-4xl font-extrabold font-playfair text-[#131B23]">
           Digital Services Provider
         </h2>
       </div>
@@ -97,8 +97,12 @@ export default function ServicesSection() {
                   className="mx-auto mb-4"
                   width={90}
                 />
-                <h3 className="text-2xl font-semibold mb-4">{link.title}</h3>
-                <p className="text-gray-600 text-xl">{link.description}</p>
+                <h3 className="text-2xl font-playfair text-[#131B23] font-semibold mb-4">
+                  {link.title}
+                </h3>
+                <p className="text-[#131B23] font-mmontserrat font-light text-xl">
+                  {link.description}
+                </p>
               </div>
             </Link>
           </div>

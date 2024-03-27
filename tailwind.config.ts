@@ -45,8 +45,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        playfair: ["Playfair Display", "serif"], // Add fallback font families as needed
-        montserrat: ["Montserrat", "sans-serif"],
+        playfair: ['"Playfair Display"', "serif"], // Create a custom name 'playfair'
+        montserrat: ['"Montserrat"', "sans-serif"], // Create a custom name 'montserrat'
+        sriracha: ['"Sriracha"', "cursive"], // Create a custom name 'sriracha'
       },
     },
   },
