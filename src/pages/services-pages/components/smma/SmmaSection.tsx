@@ -82,7 +82,7 @@ const SmmaSection = () => {
             newShow2[index] = true;
             return newShow2;
           });
-        }, index * 1000); // Sequential delay
+        }, index * 500); // Sequential delay
       });
     }
   }, [visible]);
@@ -127,7 +127,7 @@ const SmmaSection = () => {
       id="services"
       style={{ opacity: show[0] ? 1 : 0, transition: "opacity 1s ease" }}
     >
-      <div className="bg-blue-100">
+      <div className="bg-[#AECBEB]">
         <div className="flex justify-center items-center py-10">
           <h1 className="sm:text-4xl text-3xl font-semibold text-center">
             Social Media Marketing Services
@@ -138,7 +138,7 @@ const SmmaSection = () => {
             <div
               key={service.id}
               className={`flex flex-col items-center space-y-4 max-w-sm p-4 transition-all duration-300 ease-in-out transform hover:scale-105 ${
-                show[index] ? "opacity-100" : "opacity-0"
+                show2[index] ? "opacity-100" : "opacity-0"
               }`}
             >
               <img
