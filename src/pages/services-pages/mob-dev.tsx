@@ -77,15 +77,19 @@ const mobdev = () => {
         </div>
         <div className="flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105 justify-center w-screen ">
           <div className="w-[380px] md:w-[650px] lg:w-[800px] p-10 md:p-10 lg:p-20 z-10 md:h-[400px] lg:h-[450px] bg-[#F8F9FB] shadow-custom-blue mt-[-100px] md:mt-[-200px] lg:mt-[-300px] rounded-xl space-y-8">
-            <h1 className="text-start md:text-start lg:text-center text-4xl md:text-5xl lg:text-6xl font-bold">
+            <h1 className="text-start md:text-start lg:text-center font-playfair text-4xl md:text-5xl lg:text-6xl font-bold">
               World-Class Mobile Development
             </h1>
-            <h3 className="text-start md:text-start lg:text-center">
-              Welcome to CAK, where your project takes center stage. Dive into
-              our services to discover how we can lift your vision higher. From
-              seamless web development to intuitive UI/UX design, we are here to
-              turn your ideas into reality. Partner with us for a journey marked
-              by precision, innovation, and transformative outcomes.
+            <h3 className="text-start md:text-start font-thin lg:text-center">
+              Elevate your app development process with our customized
+              solutions! Whether you're starting from scratch or refining an
+              existing application, we're here to take your project to the next
+              level. Dive into our bespoke development strategies that cater
+              directly to your needs, enhancing functionality, user experience,
+              and overall app performance. Contact us for a tailored approach,
+              complete with a thorough assessment of your project's
+              specifications and potential outcomes. Let's collaborate to create
+              something exceptional in the mobile app landscape.
             </h3>
           </div>
           <div className="bg-[#446AF2] hover:font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl">
@@ -101,22 +105,23 @@ const mobdev = () => {
       >
         <div className="flex flex-col sm:flex-row bg-white sm:h-[50rem] w-full justify-around items-center px-4 sm:px-14 lg:px-24 py-20">
           <div className="transition-all duration-300 ease-in-out transform hover:scale-105 p-7 rounded-xl shadow-custom-blue mb-10 sm:mb-0">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl text-gray-900 mb-10 text-center">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair text-gray-900 mb-10 text-center">
               We speak your language
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
               {techStack.map((tech, index) => (
                 <div
                   key={tech.name}
-                  className={`flex flex-col items-center transition-all duration-300 ease-in-out justify-center opacity-0 animate-fadeInUp delay-${index * 1000
-                    }ms`}
+                  className={`flex flex-col items-center transition-all duration-300 ease-in-out justify-center opacity-0 animate-fadeInUp delay-${
+                    index * 1000
+                  }ms`}
                 >
                   <img
                     src={tech.icon}
-                    className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                    className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 transition-all duration-300 ease-in-out transform hover:scale-125"
                     alt={`${tech.name} logo`}
                   />
-                  <span className="mt-2 text-sm md:text-md lg:text-lg font-semibold">
+                  <span className="mt-2 font-playfair text-sm md:text-md lg:text-lg font-semibold">
                     {tech.name}
                   </span>
                 </div>
@@ -124,39 +129,40 @@ const mobdev = () => {
             </div>
           </div>
           <div className="max-w-md lg:max-w-lg space-y-4 px-4">
-            <h1 className="font-bold text-3xl">
-              We bring mobile<br></br> apps to life
+            <h1 className="font-bold font-playfair text-[#131B23] text-3xl">
+              We animate <br></br> mobile applications
             </h1>
-            <p className="flex flex-row items-center w-full group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
+            <p className="flex flex-row items-center w-full group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-normal text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              We elevate the art of mobile app development with our unique
-              methodology, ensuring a seamless fusion of innovation and
-              efficiency.
+              We breathe life into mobile apps, elevating mobile app development
+              through our distinctive approach that merges innovation with
+              efficiency seamlessly.
             </p>
-            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
+            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-normal text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              Harnessing the power of cutting-edge technology and agile
-              methodologies, we transform your ideas into reality with
-              unparalleled speed and precision.
+              By leveraging the latest technology and agile practices, we
+              swiftly and accurately turn your visions into tangible
+              applications.
             </p>
-            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
+            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-normal text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              With a focus on user-centric design and robust backend
-              engineering, our team crafts mobile solutions that not only meet
-              but exceed expectations.
+              Our emphasis on intuitive design and solid backend development
+              enables us to create mobile experiences that go beyond what's
+              anticipated.
             </p>
-            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
+            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-normal text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              At the heart of our operation is a dedication to understanding and
-              solving your unique challenges.
+              Central to our ethos is a commitment to comprehend and address
+              your specific needs, ensuring solutions are perfectly tailored to
+              your challenges.
             </p>
             <div className="rounded-xl w-fit shadow-custom-blue p-3 bg-blue-600 text-white">
               <Link href="/#contact">Tell us your Problem</Link>

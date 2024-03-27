@@ -5,10 +5,10 @@ const SmmaSection2 = () => {
     <div className="pt-12 flex flex-col justify-center">
       <div className="py-12 flex flex-col lg:flex-row justify-center items-center gap-20 p-6">
         <div className="space-y-6 max-w-md lg:max-w-lg">
-          <h1 className="text-3xl font-serif text-center">
+          <h1 className="text-3xl font-playfair font-semibold text-center">
             Our Clients Love Our Impactful Social Media Strategies
           </h1>
-          <p className="text-center">
+          <p className="text-center font-thin">
             We do more than create dynamic social media campaigns; we forge
             lasting partnerships. Our strategic insights and impactful outcomes
             consistently surpass client expectations.
@@ -19,16 +19,6 @@ const SmmaSection2 = () => {
           src="/smmapic.png"
           alt="Helmes Design"
         />
-      </div>
-      <div className="flex justify-center items-center bg-[#AECBEB] py-12">
-        <div className="text-center space-y-6">
-          <h1 className="text-3xl">Contact us</h1>
-          <p className="text-xl font-thin">
-            Reach out to us! Feel free to contact our team or send us an email
-            at info@cakwebsolutions.com. We're eager to talk about your social
-            media strategy needs.
-          </p>
-        </div>
       </div>
     </div>
   );

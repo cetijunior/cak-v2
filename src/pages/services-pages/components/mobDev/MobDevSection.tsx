@@ -41,9 +41,50 @@ const services = [
 
 const mobDevSection = () => {
   const [visible, setVisible] = useState(false); // Track if the section is visible
-  const [show, setShow] = useState([false, false, false]); // Individual visibility for links
+  const [show, setShow] = useState(Array(services.length).fill(false)); // Individual visibility for links
+  const [show2, setShow2] = useState([false, false, false]);
+  const [visible2, setVisible2] = useState(false);
 
   const stackRef = useRef(null); // Use ref to reference the about section
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible2(true);
+            observer.unobserve(entry.target); // Stop observing once visible
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+
+    if (stackRef.current) {
+      observer.observe(stackRef.current);
+    }
+
+    return () => {
+      if (stackRef.current) {
+        observer.unobserve(stackRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (visible2) {
+      // Trigger fade-in effect for each part of the section with a delay
+      show.forEach((_, index) => {
+        setTimeout(() => {
+          setShow2((s) => {
+            const newShow2 = [...s];
+            newShow2[index] = true;
+            return newShow2;
+          });
+        }, index * 500); // Sequential delay
+      });
+    }
+  }, [visible2]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -91,39 +132,27 @@ const mobDevSection = () => {
       >
         <div className="bg-blue-100">
           <div className="flex justify-center items-center py-10">
-            <h1 className="text-4xl text-center">
+            <h1 className="text-4xl font-playfair font-semibold text-center">
               Mobile app development services
             </h1>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-10 p-6">
-            {services.slice(0, 3).map((service) => (
+            {services.map((service, index) => (
               <div
                 key={service.id}
-                className="flex flex-col items-center space-y-4 max-w-sm p-4"
+                className={`flex flex-col items-center space-y-4 max-w-sm p-4 transition-all duration-300 ease-in-out transform hover:scale-105 ${
+                  show2[index] ? "opacity-100" : "opacity-0"
+                }`}
               >
                 <img
-                  className="transition-all duration-300 ease-in-out hover:scale h-24 w-24"
+                  className="transition-all duration-300 ease-in-out transform hover:scale-125 h-24 w-24 "
                   alt="service"
                   src={service.image}
                 />
-                <h1 className="font-bold text-xl text-center">
+                <h1 className="font-bold text-xl font-playfair text-center">
                   {service.title}
                 </h1>
-                <p className="text-center">{service.description}</p>
-              </div>
-            ))}
-          </div>
-          <div className="flex flex-wrap justify-center items-center gap-10 p-6">
-            {services.slice(3).map((service) => (
-              <div
-                key={service.id}
-                className="flex flex-col items-center space-y-4 max-w-sm p-4"
-              >
-                <img className="h-24 w-24" alt="phone" src={service.image} />
-                <h1 className="font-bold text-xl text-center">
-                  {service.title}
-                </h1>
-                <p className="text-center">{service.description}</p>
+                <p className="text-center font-thin">{service.description}</p>
               </div>
             ))}
           </div>
