@@ -52,14 +52,14 @@ const HowWeWork = () => {
   return (
     <div ref={stackRef}
       style={{ opacity: show[0] ? 1 : 0, transition: "opacity 1s ease" }}>
-      <div className="flex flex-col justify-center space-y-8 sm:space-y-0 sm:space-x-16 items-center sm:flex-row ">
-        <div className="flex flex-col space-y-5 items-center justify-center sm:items-start sm:justify-between ">
+      <div className="flex flex-col justify-center w-screen space-y-8 lg:space-y-0 md:space-y-8 lg:space-x-16 items-center lg:flex-row ">
+        <div className="flex flex-col space-y-5 items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-between ">
 
-          <div className="sm:w-[450px] w-[250px] space-y-5 sm:space-y-3 items-center justify-center">
+          <div className="lg:w-[450px] md:w-[600px] w-[350px] space-y-5 md:space-y-8 lg:space-y-3 items-center justify-center">
 
-            <h1 className="sm:text-start text-center text-4xl text-black ">How we Work ?</h1>
+            <h1 className="lg:text-start md:text-center text-center text-4xl md:text-5xl lg:text-6xl text-black ">How we Work ?</h1>
 
-            <h3 className="sm:text-start text-center text-xl text-gray-800">We call it the CAK way.</h3>
+            <h3 className="lg:text-start md:text-center text-center text-lg md:text-3xl lg:text-xl text-gray-700">We call it the CAK way.</h3>
 
             <p className="flex flex-row items-center w-full group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
               <span className='text-black group-hover:text-blue-500 pr-5'>◉ </span>
@@ -100,7 +100,7 @@ const HowWeWork = () => {
         </div>
 
         <img
-          className="h-[20rem] w-[20rem] rounded-lg sm:h-[33rem] sm:w-[50rem] sm:rounded-xl duration-300 ease-in-out transform hover:scale-105"
+          className="h-[22rem] w-[22rem] lg:h-[35rem] lg:w-[45rem] md:h-[38rem] md:w-[45rem] sm:rounded-xl rounded-lg duration-300 ease-in-out transform hover:scale-105"
           src="https://www.helmes.com/wp-content/uploads/2021/09/MG_9332-1024x683.jpg"
           alt="pic">
         </img>

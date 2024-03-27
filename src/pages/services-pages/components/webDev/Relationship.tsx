@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React, { useEffect, useState, useRef } from "react";
 
@@ -42,11 +43,13 @@ function Relationship() {
                     thorough analysis of your business`s IT infrastructure.
                 </p>
             </div>
-            <div className={`flex flex-col items-center justify-center pt-20 space-y-8 sm:flex sm:flex-row sm:space-x-3 sm:space-y-0 ${show ? "opacity-100" : "opacity-0"} transition-opacity duration-1000`}>
+            <div className={`flex flex-col items-center justify-center md:flex-col lg:flex-row sm:space-x-3 sm:space-y-0 pt-20 space-y-8  ${show ? "opacity-100" : "opacity-0"} transition-opacity duration-1000`}>
                 {/* Simplified steps with mapping if there are multiple, similar steps */}
                 {[1, 2, 3].map((step) => (
                     <React.Fragment key={step}>
-                        <div className="flex flex-col items-start p-6 justify-center sm:w-[450px] sm:h-[300px] space-y-7 transition-all duration-300 ease-in-out transform hover:scale-105 rounded-3xl shadow-custom-blue">
+                        <div className="flex flex-col items-start md:p-8 lg:p-6 md:justify-start lg:justify-center lg:w-[450px] lg:h-[300px] md:w-[400px] md:h-[300px] space-y-8 
+                        w-[400px] h-[300px] justify-center p-8
+                        transition-all duration-300 ease-in-out transform hover:scale-105 rounded-3xl shadow-custom-blue">
                             <h1 className="flex items-start font-bold text-3xl">
                                 Step {step}: Fact check, test
                                 <br /> assumptions
@@ -56,7 +59,7 @@ function Relationship() {
                             </p>
                         </div>
                         {step < 3 && ( // Only add arrows between the steps
-                            <img className="h-30 w-30 hover:animate-pulse transition-all duration-300 ease-in-out transform hover:scale-110 -rotate-90 sm:rotate-180" src="/arrowLeft.png" alt="Arrow" />
+                            <img className="h-30 w-30 hover:animate-pulse transition-all duration-300 ease-in-out transform hover:scale-110 -rotate-90 md:-rotate-90 lg:rotate-180" src="/arrowLeft.png" alt="Arrow" />
                         )}
                     </React.Fragment>
                 ))}
