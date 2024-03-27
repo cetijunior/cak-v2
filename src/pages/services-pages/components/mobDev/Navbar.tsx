@@ -14,9 +14,7 @@ function Navbar() {
     const router = useRouter();
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const navigateHome = () => router.push('/');
-    const navigateContact = () => {
-        router.push('/#contact');
-    };
+
 
 
     const serviceLinks = [
@@ -67,7 +65,7 @@ function Navbar() {
         <div className='sticky top-0 z-50 sm:px-14 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] sm:w-screen w-full'>
             <div
                 className='p-4'
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                onClick={navigateHome}
             >
                 <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 text-2xl font-bold text-[#446AF2]'>CAK Web Solutions</h1>
             </div>
@@ -161,65 +159,74 @@ function Navbar() {
             <div className='hidden md:hidden lg:flex flex-row items-center md:px-10 space-x-8'>
                 <div className='hidden md:hidden lg:flex flex-row items-center space-x-16 pr-16'>
 
-                    <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20' onClick={() => scrollToSection('about')}>About Us</h1>
-
-                    <h1
-                        onClick={() => scrollToSection('services')}
-                        onMouseEnter={() => setIsDropdownOpenServices(true)}
-                        onMouseLeave={() => setIsDropdownOpenServices(false)}
-                        className='cursor-pointer hover:text-[#446AF2] transition-all duration-600 ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative'
-                    >
-
-                        Web Development Services
-                        <div
-                            className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenServices ? 'max-h-96' : 'max-h-0'} overflow-hidden`}
-                            style={{ width: '700px' }} // Adjust width as needed
+                    <Link legacyBehavior href="/#about">
+                        <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20' >
+                            About Us
+                        </h1>
+                    </Link>
+                    <Link legacyBehavior href="/#services">
+                        <h1
+                            onMouseEnter={() => setIsDropdownOpenServices(true)}
+                            onMouseLeave={() => setIsDropdownOpenServices(false)}
+                            className='cursor-pointer hover:text-[#446AF2] transition-all duration-600 ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative'
                         >
-                            <div className='grid grid-cols-2 '>
-                                {serviceLinks.map((link, index) => (
-                                    <Link legacyBehavior key={index} href={link.href}>
-                                        <a className='flex p-4 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white rounded-lg'>
-                                            <img src={link.img} alt={link.title} className="w-10 h-10" />
-                                            <div>
-                                                <div className='font-semibold text-gray-900'>{link.title}</div>
-                                                <div className='text-sm text-gray-600'>{link.description}</div>
-                                            </div>
-                                        </a>
-                                    </Link>
-                                ))}
+
+                            Web Development Services
+                            <div
+                                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenServices ? 'max-h-96' : 'max-h-0'} overflow-hidden`}
+                                style={{ width: '700px' }} // Adjust width as needed
+                            >
+                                <div className='grid grid-cols-2 '>
+                                    {serviceLinks.map((link, index) => (
+                                        <Link legacyBehavior key={index} href={link.href}>
+                                            <a className='flex p-4 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white rounded-lg'>
+                                                <img src={link.img} alt={link.title} className="w-10 h-10" />
+                                                <div>
+                                                    <div className='font-semibold text-gray-900'>{link.title}</div>
+                                                    <div className='text-sm text-gray-600'>{link.description}</div>
+                                                </div>
+                                            </a>
+                                        </Link>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    </h1>
+                        </h1>
+                    </Link>
 
-                    <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20'
-                        onClick={() => scrollToSection('projects')}>Projects</h1>
+                    <Link legacyBehavior href="/#projects">
+                        <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20'>
+                            Projects
+                        </h1>
+                    </Link>
+                    <Link legacyBehavior href="/#contact">
+                        <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20'>
+                            Contact
+                        </h1>
+                    </Link>
+                    <Link legacyBehavior href="/#services">
 
-                    <h1 className='cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-[#446AF2] text-xl z-20'
-                        onDoubleClick={navigateContact}
-                        onClick={() => scrollToSection('contact')}>Contact</h1>
-
-                    <h1
-                        onClick={() => scrollToSection('')}
-                        onMouseEnter={() => setIsDropdownOpenLanguages(true)}
-                        onMouseLeave={() => setIsDropdownOpenLanguages(false)}
-                        className='cursor-pointer hover:text-[#446AF2] transition-all duration-600 ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative'
-                    >
-                        Eng
-                        <div
-                            className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenLanguages ? 'max-h-96' : 'max-h-0'} overflow-hidden`}
-                            style={{ width: '50px' }} // Adjust width as needed
+                        <h1
+                            onMouseEnter={() => setIsDropdownOpenLanguages(true)}
+                            onMouseLeave={() => setIsDropdownOpenLanguages(false)}
+                            className='cursor-pointer hover:text-[#446AF2] transition-all duration-600 ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative'
                         >
-                            <div className='flex flex-col items-center w-full '>
-                                {languageLinks.map((link, index) => (
-                                    <Link legacyBehavior key={index} href={link.href}>
-                                        <a className='flex p-2 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white  rounded-lg'>
-                                            <div className='text-sm hover:font-semibold text-md text-black'>{link.title}</div>
-                                        </a>
-                                    </Link>
-                                ))}
+                            Eng
+                            <div
+                                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenLanguages ? 'max-h-96' : 'max-h-0'} overflow-hidden`}
+                                style={{ width: '50px' }} // Adjust width as needed
+                            >
+                                <div className='flex flex-col items-center w-full '>
+                                    {languageLinks.map((link, index) => (
+                                        <Link legacyBehavior key={index} href={link.href}>
+                                            <a className='flex p-2 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white  rounded-lg'>
+                                                <div className='text-sm hover:font-semibold text-md text-black'>{link.title}</div>
+                                            </a>
+                                        </Link>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    </h1>
+                        </h1>
+                    </Link>
 
                 </div>
             </div>
