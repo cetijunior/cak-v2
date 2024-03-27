@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @keyframes fadeInUpwards {
   from {
     opacity: 0;
@@ -11,6 +11,16 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@font-face {
+  font-family: "Gambarino-Regular";
+  src: url(https://www.fontshare.com/fonts/gambarino) format("woff2"),
+    url(https://www.fontshare.com/fonts/gambarino) format("woff"),
+    url(https://www.fontshare.com/fonts/gambarino) format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
 .fadeInUpwards {
