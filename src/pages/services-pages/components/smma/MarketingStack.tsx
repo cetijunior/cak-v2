@@ -89,20 +89,25 @@ export default function MarketingStack() {
         </div>
       </div>
       <div className="max-w-md lg:max-w-lg space-y-4 px-4">
-        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center text-gray-600">
+        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
+          <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
           Elevating your brand with dynamic social media strategies.
         </p>
-        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center text-gray-600">
+        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
+          <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
           Crafting cutting-edge campaigns using the latest digital trends.
         </p>
-        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center text-gray-600">
+        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
+          <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
           Transforming challenges into engaging content that resonates with your
           audience.
         </p>
-        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center text-gray-600">
+        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
+          <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
           Our commitment to digital mastery is at the heart of everything we do.
         </p>
-        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center text-gray-600">
+        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
+          <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
           From concept to viral hit, social media is our canvas of expression.
         </p>
         <button className="rounded-xl sm:ml-0 ml-20 sm:mt-0 mt-12 shadow-custom-blue p-3 bg-blue-600 text-white ">
