@@ -61,7 +61,7 @@ export default function MarketingStack() {
   return (
     <section
       ref={stackRef}
-      className="flex flex-col sm:flex-row bg-white min-h-screen w-full justify-around items-center px-4 sm:px-10 lg:px-24 py-20"
+      className="flex flex-col lg:flex-row bg-white min-h-screen w-full justify-around items-center md:space-y-12 space-y-0 px-4 md:px-10 lg:px-24 lg:py-0 md:py-12 py-20"
       style={{ opacity: show[0] ? 1 : 0, transition: "opacity 1s ease" }}
     >
       <div className="transition-all duration-300 ease-in-out transform hover:scale-105 p-7 rounded-xl shadow-custom-blue mb-10 sm:mb-0">
@@ -72,8 +72,9 @@ export default function MarketingStack() {
           {techStack.map((tech, index) => (
             <div
               key={tech.name}
-              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp  delay-${index * 100
-                }ms`}
+              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp delay-${
+                index * 100
+              }ms`}
             >
               <img
                 src={tech.icon}
@@ -87,25 +88,25 @@ export default function MarketingStack() {
           ))}
         </div>
       </div>
-      <div className="max-w-md lg:max-w-lg space-y-4 px-4">
-        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
+      <div className="max-w-md lg:flex-none flex-none md:flex-col md:flex lg:max-w-lg space-y-4 px-4">
+        <p className="text-sm lg:text-md lg:text-lg lg:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
           <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
           Elevating your brand with dynamic social media strategies.
         </p>
-        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
+        <p className="text-sm lg:text-md lg:text-lg lg:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
           <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
           Crafting cutting-edge campaigns using the latest digital trends.
         </p>
-        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
+        <p className="text-sm lg:text-md lg:text-lg lg:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
           <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
           Transforming challenges into engaging content that resonates with your
           audience.
         </p>
-        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
+        <p className="text-sm lg:text-md lg:text-lg lg:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
           <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
           Our commitment to digital mastery is at the heart of everything we do.
         </p>
-        <p className="text-sm sm:text-md lg:text-lg sm:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
+        <p className="text-sm lg:text-md lg:text-lg lg:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600 text-gray-600">
           <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
           From concept to viral hit, social media is our canvas of expression.
         </p>
