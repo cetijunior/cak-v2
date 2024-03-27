@@ -22,22 +22,21 @@ function Hero() {
         </video>
       </div>
       <div className="flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105 justify-center w-screen ">
-        <div className="w-[380px] md:w-[650px] lg:w-[800px] p-10 md:p-10 lg:p-20 z-10 md:h-[400px] lg:h-[420px] bg-[#F8F9FB] shadow-custom-blue mt-[-100px] md:mt-[-200px] lg:mt-[-330px] rounded-xl space-y-8">
-          <h1 className="text-start md:text-start lg:text-center text-4xl md:text-5xl lg:text-6xl font-bold">
+        <div className="w-[380px] md:w-[650px] lg:w-[800px] p-10 md:p-10 lg:p-20 z-10 md:h-[400px] lg:h-[450px] bg-[#F8F9FB] shadow-custom-blue mt-[-100px] md:mt-[-200px] lg:mt-[-300px] rounded-xl space-y-8">
+          <h1 className="text-center md:text-start lg:text-center text-3xl md:text-5xl lg:text-6xl text-[#131B23] playfair-display">
             World-Class Website Development
           </h1>
-          <h3 className="text-start md:text-start lg:text-center">
+          <h3 className="text-center lg:text-xl md:text-xl text-[#131B23] text-sm font-extralight font-sans-serif ">
             Welcome to CAK, where your project takes center stage. Dive into our
             services to discover how we can lift your vision higher. From
             seamless web development to intuitive UI/UX design, we are here to
             turn your ideas into reality. Partner with us for a journey marked
             by precision, innovation, and transformative outcomes.
-
           </h3>
         </div>
         <button
           onClick={() => scrollToSection("contact")}
-          className="bg-[#446AF2] hover:font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl"
+          className="bg-[#446AF2] hover:font-semibold font-sans-serif text-xl transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl"
         >
           Contact Us
         </button>
