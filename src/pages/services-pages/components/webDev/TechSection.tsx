@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React, { useEffect, useRef, useState } from 'react';
 import '/styles/globals.css'
@@ -65,11 +66,11 @@ export default function TechStackSection() {
     <section
       ref={stackRef}
       style={{ opacity: show[0] ? 1 : 0, transition: "opacity 1s ease" }}
-      className="flex flex-col md:flex-col lg:flex-row bg-white h-full py-14 sm:py-20 w-full justify-center sm:justify-evenly sm:items-start px-4 sm:px-10 lg:px-24"
+      className="flex flex-col lg:flex-row justify-center items-center px-4 sm:px-10 lg:px-24 py-24"
     >
-      <div className="transition-all duration-300 ease-in-out transform cursor-pointer hover:scale-105 p-7 rounded-xl shadow-custom-blue mb-10 sm:mb-0">
+      <div className="transition-all duration-300 ease-in-out transform hover:scale-105 p-7 rounded-xl shadow-custom-blue mb-10 sm:mb-0">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl text-gray-900 mb-10 text-center">We speak your language</h2>
-        <div className=" md:[500px] lg:w-[600px]  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="w-[320px] md:w-[500px] lg:w-[600px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {techStack.map((tech, index) => (
             <div key={tech.name} className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp  delay-${index * 100
               }ms`}>
@@ -85,9 +86,11 @@ export default function TechStackSection() {
           ))}
         </div>
       </div>
-      <div className='flex flex-col space-y-8 sm:space-y-4 items-center sm:items-center p-4 rounded-3xl'>
-        <div className="sm:w-[900px] lg:max-w-lg space-y-4 px-4 sm:items-start items-center">
-          <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
+
+
+      <div className='flex flex-col justify-center md:justify-center lg:justify-center space-y-8 md:space-y-8 items-center md:items-center lg:items-start p-8 md:p-10 rounded-3xl'>
+        <div className="lg:w-fite md:w-[600px] w-[350px] space-y-4 px-4 justify-center md:justify-center lg:justify-evenly items-center md:items-center lg:items-start">
+          <p className="flex flex-row items-center md:items-center lg:items-start group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
             <span className='text-black group-hover:text-blue-500 pr-5'>◉ </span>
             Empowering your business through diverse technology expertise.
           </p>
@@ -109,8 +112,10 @@ export default function TechStackSection() {
           </p>
 
         </div>
-        <button className='rounded-xl duration-300 ease-in-out transform hover:scale-105 hover:font-semibold shadow-custom-blue w-fit px-16 p-2 bg-blue-600 text-white'>Tell us your Problem</button>
+        <button className='rounded-xl duration-300 ease-in-out transform hover:scale-105 hover:font-semibold shadow-custom-blue px-16 p-2 bg-blue-600 text-white'>Tell us your Problem</button>
       </div>
+
+
     </section>
   );
 }
