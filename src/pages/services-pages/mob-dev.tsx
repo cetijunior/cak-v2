@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "/styles/globals.css";
-import Navbar from "@/components/Navbar";
-import Hero from "../Hero";
+import Navbar from "./components/mobDev/Navbar";
 import Footer from "@/components/Footer";
 import MobDevSection from "./components/mobDev/MobDevSection";
 import MobDevSection2 from "./components/mobDev/MobDevSection2";
@@ -109,9 +108,8 @@ const mobdev = () => {
               {techStack.map((tech, index) => (
                 <div
                   key={tech.name}
-                  className={`flex flex-col items-center transition-all duration-300 ease-in-out justify-center opacity-0 animate-fadeInUp delay-${
-                    index * 1000
-                  }ms`}
+                  className={`flex flex-col items-center transition-all duration-300 ease-in-out justify-center opacity-0 animate-fadeInUp delay-${index * 1000
+                    }ms`}
                 >
                   <img
                     src={tech.icon}

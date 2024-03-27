@@ -1,6 +1,6 @@
 'use client'
-import Navbar from "@/components/Navbar";
 import "/styles/globals.css";
+import Navbar from "./components/webDev/Navbar";
 import Footer from "@/components/Footer";
 import TechSection from "./components/webDev/TechSection";
 import HowWeWork from "./components/webDev/HowWeWork";
