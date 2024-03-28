@@ -2,6 +2,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import "/styles/globals.css";
+import Link from "next/link";
 
 const techStack = [
   { name: "C++", icon: "/icons/cis.png" },
@@ -73,8 +74,9 @@ export default function TechStackSection() {
           {techStack.map((tech, index) => (
             <div
               key={tech.name}
-              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp  delay-${index * 100
-                }ms`}
+              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp  delay-${
+                index * 100
+              }ms`}
             >
               <div className="duration-300 ease-in-out transform hover:scale-105 flex flex-col items-center">
                 <img
@@ -128,9 +130,11 @@ export default function TechStackSection() {
             From ideation to execution, technology is our language of choice.
           </p>
         </div>
-        <button className="rounded-xl duration-300 ease-in-out transform hover:scale-105 hover:font-semibold shadow-custom-blue px-16 p-2 bg-blue-600 text-white">
-          Tell us your Problem
-        </button>
+        <Link legacyBehavior href="/#contact">
+          <button className="rounded-xl duration-300 ease-in-out transform hover:scale-105 hover:font-semibold shadow-custom-blue px-16 p-2 bg-blue-600 text-white">
+            Tell us your Problem
+          </button>
+        </Link>
       </div>
     </section>
   );

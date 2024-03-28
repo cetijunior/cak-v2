@@ -97,7 +97,7 @@ function Contact() {
                 placeholder={
                   errors.name ? errors.name.message : "Your name here"
                 }
-                className="transition-all bg-white focus:bg-white  duration-500 ease-in-out transform hover:scale-105 cursor-text contactInput outline-none"
+                className="bg-white focus:bg-white  lg:transition-all lg:duration-500 lg:ease-in-out lg:transform lg:hover:scale-105 cursor-text contactInput outline-none"
                 type="text"
               />
               <div className="w-300 h-[0.5px] bg-[#AECBEB]" />
@@ -106,7 +106,7 @@ function Contact() {
                 {...register("name", {
                   required: "*The Company name is missing",
                 })}
-                className="contactInput bg-white focus:bg-white transition-all duration-500 ease-in-out transform hover:scale-105 cursor-text outline-none"
+                className="contactInput bg-white focus:bg-white lg:transition-all lg:duration-500 lg:ease-in-out lg:transform lg:hover:scale-105 cursor-text outline-none"
                 placeholder={
                   errors.name ? errors.name.message : "Your Company name here"
                 }
@@ -122,7 +122,7 @@ function Contact() {
                     message: "Invalid email format",
                   },
                 })}
-                className="contactInput bg-white focus:bg-white transition-all duration-500 ease-in-out transform hover:scale-105 cursor-text outline-none"
+                className="contactInput bg-white focus:bg-white lg:transition-all lg:duration-500 lg:ease-in-out lg:transform lg:hover:scale-105 cursor-text outline-none"
                 placeholder={errors.email ? errors.email.message : "Email"}
                 type="email"
               />
@@ -132,7 +132,7 @@ function Contact() {
                 {...register("subject", {
                   required: "*The subject is missing",
                 })}
-                className="contactInput bg-white focus:bg-white transition-all duration-500 ease-in-out transform hover:scale-105 cursor-text outline-none"
+                className="contactInput bg-white focus:bg-white lg:transition-all lg:duration-500 lg:ease-in-out lg:transform lg:hover:scale-105 cursor-text outline-none"
                 placeholder={
                   errors.subject ? errors.subject.message : "Subject"
                 }
@@ -144,7 +144,7 @@ function Contact() {
                 {...register("message", {
                   required: "*The message is missing",
                 })}
-                className="contactInput w-full resize-none bg-white focus:bg-white transition-all duration-500 ease-in-out transform hover:scale-105 cursor-text outline-none"
+                className="contactInput w-full resize-none bg-white focus:bg-white lg:transition-all lg:duration-500 lg:ease-in-out lg:transform lg:hover:scale-105 cursor-text outline-none"
                 placeholder={
                   errors.message ? errors.message.message : "Message"
                 }
