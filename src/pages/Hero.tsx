@@ -37,7 +37,7 @@ function Hero() {
         <button
           onClick={() => scrollToSection("contact")}
           className="bg-[#446AF2] hover:font-semibold font-sans-serif lg:text-xl transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 
-          text-white mt-[-20px] md:mt-[-25px] lg:mt-[-30px] py-1 md:py-2 lg:py-3 px-8 md:px-20 lg:px-20 rounded-3xl md:text-xl text-md"
+          text-white mt-[-20px] md:mt-[-25px] lg:mt-[-30px] py-1 md:py-3 lg:py-3 px-8 md:px-20 lg:px-20 rounded-3xl md:text-xl text-md"
         >
           Contact Us
         </button>

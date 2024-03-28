@@ -73,9 +73,8 @@ export default function MarketingStack() {
           {techStack.map((tech, index) => (
             <div
               key={tech.name}
-              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp delay-${
-                index * 100
-              }ms`}
+              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp delay-${index * 100
+                }ms`}
             >
               <img
                 src={tech.icon}
