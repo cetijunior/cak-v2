@@ -104,9 +104,8 @@ function Navbar() {
       {/* Fullscreen Menu for small screens */}
       <div
         onDoubleClick={handleClickScreen}
-        className={`fixed inset-0 bg-[#446AF2] z-30 ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out `}
+        className={`fixed inset-0 bg-[#446AF2] z-30 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+          } transition-transform duration-300 ease-in-out `}
       >
         <ul className="flex h-full flex-col z-30 w-[300px] pl-5 space-y-12 items-start justify-center text-white">
           <li
@@ -133,9 +132,8 @@ function Navbar() {
             <img
               src="/arrow.png"
               alt="next"
-              className={`w-10 h-10 transform ${
-                rotateArrowServ ? "rotate-0" : "-rotate-180"
-              }`} // Apply rotation based on state
+              className={`w-10 h-10 transform ${rotateArrowServ ? "rotate-0" : "-rotate-180"
+                }`} // Apply rotation based on state
               style={{ transition: "transform 0.4s ease" }} // Smooth transition for rotation
             />
           </div>
@@ -170,13 +168,13 @@ function Navbar() {
           </div>
 
           <li
-            className="cursor-pointer text-3xl hover:opacity-70"
+            className="cursor-pointer font-thin text-3xl hover:opacity-70"
             onClick={() => navigateToSection("projects")}
           >
             Projects
           </li>
           <li
-            className="cursor-pointer text-3xl hover:opacity-70"
+            className="cursor-pointer font-thin text-3xl hover:opacity-70"
             onClick={() => navigateToSection("contact")}
           >
             Contact
@@ -187,13 +185,12 @@ function Navbar() {
             className="flex flex-col cursor-pointer"
           >
             <div className="flex flex-row pb-8 justify-between">
-              <span className="text-3xl">ENG</span>
+              <span className="text-3xl font-thin">ENG</span>
               <img
                 src="/arrow.png"
                 alt="next"
-                className={`w-10 h-10 ml-20 transform ${
-                  rotateArrowLang ? "rotate-0" : "-rotate-180"
-                }`} // Apply rotation based on state
+                className={`w-10 h-10 ml-20 transform ${rotateArrowLang ? "rotate-0" : "-rotate-180"
+                  }`} // Apply rotation based on state
                 style={{ transition: "transform 0.4s ease" }} // Smooth transition for rotation
               />
             </div>
@@ -239,9 +236,8 @@ function Navbar() {
             >
               Web Development Services
               <div
-                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${
-                  isDropdownOpenServices ? "max-h-96" : "max-h-0"
-                } overflow-hidden`}
+                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenServices ? "max-h-96" : "max-h-0"
+                  } overflow-hidden`}
                 style={{ width: "700px" }} // Adjust width as needed
               >
                 <div className="grid grid-cols-2 ">
@@ -287,9 +283,8 @@ function Navbar() {
             >
               Eng
               <div
-                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${
-                  isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
-                } overflow-hidden`}
+                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
+                  } overflow-hidden`}
                 style={{ width: "50px" }} // Adjust width as needed
               >
                 <div className="flex flex-col items-center w-full ">
