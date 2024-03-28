@@ -31,7 +31,7 @@ function CarouselAbout() {
       role: "Co-Founder and FullStack Developer",
       img: "/archiePFP.png",
       className:
-        "rounded-full w-[200px] h-[200px] transition-all duration-500 ease-in-out transform hover:scale-105 ml-[0px] mt-[-30px] z-10 lg:ml-[-85px] lg:mt-[-30px] md:mt-[-50px] lg:mr-8 md:ml-[-15px] md:w-[250px] md:h-[250px] lg:w-[300px] lg:h-[300px]",
+        "rounded-full w-[160px] h-[200px] transition-all duration-500 ease-in-out transform hover:scale-105 ml-[0px] mt-[-30px] z-10 lg:ml-[-75px] lg:mt-[-30px] md:mt-[-50px] lg:mr-8 md:ml-[20px] md:w-[200px] md:h-[250px] lg:w-[250px] lg:h-[300px]",
       text: "Luars, co-founder of CAK, excels in web development, leveraging his technical skills to bring dynamic solutions to life. His dedication ensures the delivery of exceptional digital products.",
     },
   ];
@@ -94,13 +94,13 @@ function CarouselAbout() {
                 />
                 <div className="absolute bg-custom-blue-gradient z-0 h-[150px] lg:h-[300px] md:h-[200px] md:w-[200px] lg:w-[200px] lg:right-[530px] md:right-[430px] blur-[35px] w-[150px] rounded-full" />
                 <div className="px-6 mt-0 lg:mt-10 lg:py-0 rounded-[39px] space-y-4 flex flex-col md:items-start lg:items-start items-center">
-                  <p className="text-center font-mmontserrat font-light text-[#131B23] text-[15px] lg:mb-4 mt-8 md:mt-[0px] lg:mt-0 lg:w-[300px] w-[200px] md:text-sm md:w-[350px] lg:text-sm md:text-left lg:text-left">
+                  <p className="text-center font-extralight text-[#131B23] text-[15px] lg:mb-4 mt-8 md:mt-[0px] lg:mt-0 lg:w-[300px] w-[200px] md:text-sm md:w-[350px] lg:text-sm md:text-left lg:text-left">
                     {item.text}
                   </p>
                   <h1 className="lg:text-left text-center font-playfair text-[#131B23] lg:mt-16 font-semibold mt-4">
                     {item.name}
                   </h1>
-                  <h1 className="lg:text-left text-center font-mmontserrat font-light text-[#131B23] text-sm lg:mt-4 mt-2">
+                  <h1 className="lg:text-left text-center font-extralight text-[#131B23] text-sm lg:mt-4 mt-2">
                     {item.role}
                   </h1>
                 </div>

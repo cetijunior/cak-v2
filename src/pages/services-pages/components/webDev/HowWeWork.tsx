@@ -107,7 +107,7 @@ const HowWeWork = () => {
         </div>
 
         <img
-          className="h-[22rem] w-[22rem] lg:h-[30rem] lg:w-[45rem] md:h-[38rem] md:w-[45rem] sm:rounded-xl rounded-lg duration-300 ease-in-out transform hover:scale-105"
+          className="h-[22rem] w-[22rem] lg:h-[30rem] lg:w-[45rem] md:h-[30rem] md:w-[45rem] sm:rounded-xl rounded-lg duration-300 ease-in-out transform hover:scale-105"
           src="/howwework.png"
           alt="pic"
         ></img>

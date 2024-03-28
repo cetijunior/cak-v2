@@ -63,7 +63,7 @@ export default function TechStackSection() {
     <section
       ref={stackRef}
       style={{ opacity: show[0] ? 1 : 0, transition: "opacity 1s ease" }}
-      className="flex flex-col lg:flex-row justify-center items-center z-0 px-4 sm:px-10 lg:px-24 py-24"
+      className="flex flex-col lg:flex-row justify-center items-center z-0 px-4 sm:px-14 lg:px-24 py-20"
     >
       <div className="transition-all duration-300 ease-in-out transform hover:scale-105 p-7 rounded-xl shadow-custom-blue mb-10 sm:mb-0">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl text-[#131B23] mb-10 font-playfair text-center">

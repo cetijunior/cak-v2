@@ -43,42 +43,42 @@ function Contact() {
           <h1 className="px-10 py-10 lg:text-left font-playfair text-center text-3xl font-bold ">
             Contact Us!
           </h1>
-          <p className="px-10 text-[14px] lg:text-left font-mmontserrat font-light text-[#131B23] text-center lg:w-[550px]">
+          <p className="px-10 text-[14px] lg:text-left font-extralight text-[#131B23] text-center lg:w-[550px]">
             Choose CAK to propel your software development forward. Get in touch
             to explore your project needs, benefit from our complimentary
             consultation, and receive a tailored estimate for both cost and
             launch timeline!
           </p>
-          <p className="px-10 py-8 text-[14px] lg:text-left font-mmontserrat font-light text-[#131B23] text-center lg:w-[550px]">
+          <p className="px-10 py-8 text-[14px] lg:text-left font-extralight text-[#131B23] text-center lg:w-[550px]">
             Send us an e-mail or fill in the form. We will be in touch within
             one business day!
           </p>
           <h1 className="px-10 text-[18px] lg:text-left font-playfair text-center font-semibold ">
             Send us an e-mail
           </h1>
-          <h2 className="px-10 text-[14px] lg:text-left font-mmontserrat font-light text-[#131B23] text-center">
+          <h2 className="px-10 text-[14px] lg:text-left font-extralight text-[#131B23] text-center">
             info@cakwebsolutions.com
           </h2>
           <h1 className="px-10 mt-[10px] text-[18px] lg:text-left font-playfair text-center font-semibold ">
             Give us a call
           </h1>
-          <h2 className="px-10 text-[14px] lg:text-left font-mmontserrat font-light text-[#131B23] text-center">
+          <h2 className="px-10 text-[14px] lg:text-left font-extralight text-[#131B23] text-center">
             +49 (176) 2359-2066
           </h2>
           <div className="flex flex-wrap justify-center py-4 lg:py-0 space-y-6 lg:space-y-0 mt-4 items-start">
             <img
-              src="/archieContact.png"
+              src="/archieContact.jpg"
               alt="archiecontact"
-              className="lg:w-[180px] lg:h-[240px] md:w-[180px] md:h-[240px] w-[300px] h-[400px] rounded-[39px] lg:rounded-[39px] md:rounded-2xl shadow-custom-blue2 transition-all duration-500 ease-in-out transform hover:scale-105"
+              className="lg:w-[200px] lg:h-[250px] md:w-[200px] md:h-[250px] w-[350px] shadow-custom-blue2 h-[400px] rounded-[39px] lg:rounded-[20px] md:rounded-2xl transition-all duration-500 ease-in-out transform hover:scale-105"
             />
             <div className="flex sm:flex-col flex-wrap justify-start space-y-2">
               <h1 className="px-10 text-[18px] mt-[20px] lg:mt-[0px] font-playfair text-left font-semibold ">
                 Luars Qamo
               </h1>
-              <h2 className="px-10 font-mmontserrat font-light text-[#131B23] text-[14px]">
+              <h2 className="px-10 font-extralight text-[#131B23] text-[14px]">
                 Co-founder of CAK
               </h2>
-              <p className="px-10 font-mmontserrat font-light text-[#131B23] py-4 text-[13px] w-[250px]">
+              <p className="px-10 font-extralight text-[#131B23] py-4 text-[13px] w-[250px]">
                 I`ll ensure the team best suited for your project gets in touch
                 with you swiftly.
               </p>
@@ -154,7 +154,7 @@ function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting || Object.keys(errors).length > 0}
-                  className="bg-[#446AF2] hover:font-bold font-montserrat text-white w-32 h-12 shadow-custom-blue rounded-[39px] mt-4"
+                  className="bg-[#446AF2] hover:font-bold text-white w-32 h-12 shadow-custom-blue rounded-[39px] mt-4"
                 >
                   {isSubmitting ? "Sending..." : "Send"}
                 </button>

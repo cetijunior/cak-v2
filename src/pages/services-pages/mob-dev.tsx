@@ -77,10 +77,10 @@ const mobdev = () => {
         </div>
         <div className="flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105 justify-center w-screen ">
           <div className="w-[380px] md:w-[650px] lg:w-[800px] p-10 md:p-10 lg:p-20 z-10 md:h-[400px] lg:h-[450px] bg-[#F8F9FB] shadow-custom-blue mt-[-100px] md:mt-[-200px] lg:mt-[-300px] rounded-xl space-y-8">
-            <h1 className="text-start md:text-start lg:text-center font-playfair text-4xl md:text-5xl lg:text-6xl font-bold">
+            <h1 className="text-center md:text-center lg:text-center font-playfair text-4xl md:text-5xl lg:text-6xl font-bold">
               World-Class Mobile Development
             </h1>
-            <h3 className="text-start md:text-start font-thin lg:text-center">
+            <h3 className="text-center md:text-center font-thin lg:text-center">
               Elevate your app development process with our customized
               solutions! Whether you're starting from scratch or refining an
               existing application, we're here to take your project to the next
