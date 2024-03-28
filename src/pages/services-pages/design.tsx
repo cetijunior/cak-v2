@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./components/design/Navbar";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "/styles/globals.css";
 import ContactSection from "./components/webDev/ContactSection";

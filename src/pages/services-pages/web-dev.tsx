@@ -1,6 +1,6 @@
 "use client";
 import "/styles/globals.css";
-import Navbar from "./components/webDev/Navbar";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 import TechSection from "./components/webDev/TechSection";
 import HowWeWork from "./components/webDev/HowWeWork";
@@ -12,7 +12,7 @@ const webdev = () => {
   return (
     <>
       <Navbar />
-      <div className="overflow-hidden">
+      <div className="">
         <div className="flex mt-[-40px] md:mt-[-200px] lg:mt-[-350px] items-center justify-center">
           <video autoPlay loop muted playsInline className="rounded-lg w-screen">
             <source

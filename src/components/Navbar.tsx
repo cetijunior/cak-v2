@@ -99,7 +99,7 @@ function Navbar() {
       <div className="absolute pr-4 pt-2 z-40 right-0 sm:block md:block lg:hidden">
         <button onClick={handleMenuToggle}>
           {isMenuOpen ? (
-            <img src="/close.png" alt="Close" className="w-10 h-10 bg-blend-color" />
+            <img src="/close.png" alt="Close" className="w-10 h-10 " />
           ) : (
             <img src="/menu.png" alt="Menu" className="w-10 h-10" />
           )}
