@@ -6,6 +6,7 @@ import TechSection from "./components/webDev/TechSection";
 import HowWeWork from "./components/webDev/HowWeWork";
 import Relationship from "./components/webDev/Relationship";
 import ContactSection from "./components/webDev/ContactSection";
+import Link from "next/link";
 
 const webdev = () => {
   return (
@@ -38,9 +39,11 @@ const webdev = () => {
               extraordinary on the internet.
             </h3>
           </div>
-          <button className="bg-[#446AF2] hover:font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 mb-10 rounded-3xl">
-            Contact Us
-          </button>
+          <Link legacyBehavior href="/#contact">
+            <button className="bg-[#446AF2] hover:font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 mb-10 rounded-3xl">
+              Contact Us
+            </button>
+          </Link>
         </div>
       </div>
       <div className="">

@@ -6,6 +6,7 @@ import MarketingStack from "./components/smma/MarketingStack";
 import SmmaSection from "./components/smma/SmmaSection";
 import SmmaSection2 from "./components/smma/SmmaSection2";
 import ContactSection from "./components/webDev/ContactSection";
+import Link from "next/link";
 
 const smma = () => {
   return (
@@ -37,9 +38,11 @@ const smma = () => {
               together.
             </h3>
           </div>
-          <button className="bg-[#446AF2] z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl hover:font-bold transition-all duration-300 ease-in-out transform hover:scale-105">
-            Contact Us
-          </button>
+          <Link legacyBehavior href="/#contact">
+            <button className="bg-[#446AF2] z-10 text-white mt-[-20px] py-3 px-20 rounded-3xl hover:font-bold transition-all duration-300 ease-in-out transform hover:scale-105">
+              Contact Us
+            </button>
+          </Link>
         </div>
       </div>
       <MarketingStack />
@@ -47,7 +50,6 @@ const smma = () => {
       <SmmaSection2 />
       <ContactSection />
       <Footer />
-      
     </>
   );
 };
