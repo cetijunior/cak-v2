@@ -100,7 +100,7 @@ export default function ServicesSection() {
                 <h3 className="text-2xl font-playfair text-[#131B23] font-semibold mb-4">
                   {link.title}
                 </h3>
-                <p className="text-[#131B23] font-mmontserrat font-light text-xl">
+                <p className="text-[#131B23] font-extralight text-xl">
                   {link.description}
                 </p>
               </div>

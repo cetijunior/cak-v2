@@ -95,10 +95,10 @@ function ProjectCard() {
               <p className="font-semibold font-playfair text-3xl text-start sm:text-start">
                 {card.text}
               </p>
-              <h1 className="text-sm text-start font-mmontserrat font-light text-[#131B23] sm:text-start">
+              <h1 className="text-sm text-start font-extralight text-[#131B23] sm:text-start">
                 {card.description}
               </h1>
-              <p className="font-semibold font-mmontserrat text-[#131B23] text-[15px] text-start sm:text-start">
+              <p className="font-light font-playfair text-[#131B23] text-[15px] text-start sm:text-start">
                 {card.tech}
               </p>
             </div>
