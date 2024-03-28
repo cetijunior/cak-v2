@@ -12,30 +12,42 @@ function ProjectCard() {
   const cards = [
     {
       id: 1,
-      text: "First card text",
+      text: "The Wellness Clinic",
+      image: "/wellnessTemplate.png",
+      className:
+        "w-[300px] h-[250px] transition-all duration-300 ease-in-out transform hover:scale-105 sm:ml-[40px] rounded-2xl",
       description:
-        "Detailed description for 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis maxime nostrum repellendus repudiandae velit inventore nulla maiores corporis obcaecati, error atque provident, aperiam blanditiis tempora incidunt. Explicabo itaque pariatur a!",
+        "The Wellness Clinic website, a showcase of CAK Web Solutions' expertise in crafting digital spaces for holistic health businesses. Our work emphasizes intuitive design and functionality, presenting the clinic's therapies, classes, and resources in a user-friendly platform. This project reflects our commitment to merging design with wellness industry needs.",
       tech: "UI/UX  Front- and Back-End Website",
     },
     {
       id: 2,
-      text: "Second card text",
+      text: "The Construction Company",
+      image: "/constructionTemplate.png",
+      className:
+        "w-[280px] h-[230px] fl transition-all duration-300 ease-in-out transform hover:scale-105 sm:ml-[20px] rounded-2xl",
       description:
-        "Detailed description for 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis maxime nostrum repellendus repudiandae velit inventore nulla maiores corporis obcaecati, error atque provident, aperiam blanditiis tempora incidunt. Explicabo itaque pariatur a!",
+        "The Construction Company website by CAK Web Solutions, showcasing our expertise in tailored digital solutions for the construction industry. Our design merges functionality and aesthetics, highlighting the company’s projects and services in an easily navigable format, reflecting our commitment to innovative design tailored to construction needs.",
       tech: "UI/UX  Front- and Back-End Website",
     },
     {
       id: 3,
       text: "Third card text",
+      image: "/ecommerceTemplate.png",
+      className:
+        "w-[300px] h-[300px] transition-all duration-300 ease-in-out transform hover:scale-105 sm:ml-[40px] rounded-2xl",
       description:
-        "Detailed description for 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis maxime nostrum repellendus repudiandae velit inventore nulla maiores corporis obcaecati, error atque provident, aperiam blanditiis tempora incidunt. Explicabo itaque pariatur a!",
+        "The ECommerce Shop website, crafted by CAK Web Solutions, where sleek design meets seamless functionality. This showcase of our online retail platform development highlights an intuitive shopping experience designed to elevate brands and drive sales, reflecting our dedication to innovative, user-centric solutions in the eCommerce sector.",
       tech: "UI/UX  Front- and Back-End Website",
     },
     {
       id: 4,
-      text: "Fourth card text",
+      text: "Restaurant Website",
+      image: "/restaurantTemplate.png",
+      className:
+        "w-[300px] h-[300px] transition-all duration-300 ease-in-out transform hover:scale-105 sm:ml-[40px] rounded-2xl",
       description:
-        "Detailed description for 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis maxime nostrum repellendus repudiandae velit inventore nulla maiores corporis obcaecati, error atque provident, aperiam blanditiis tempora incidunt. Explicabo itaque pariatur a!",
+        "The Restaurant website, crafted by CAK Web Solutions, showcases our ability to create engaging digital experiences for dining brands, blending aesthetic appeal with functionality. It highlights the menu and ambiance, underlining our dedication to enhancing online presence and customer engagement without needing a direct visit.",
       tech: "UI/UX  Front- and Back-End Website",
     },
   ];
@@ -86,11 +98,7 @@ function ProjectCard() {
             className={`flex flex-col
                                     sm:flex-row items-center justify-between md:h-auto p-4 rounded-[39px] lg:h-[300px]`}
           >
-            <img
-              src="/Macbook.png"
-              alt="Project"
-              className="w-80 h-40 transition-all duration-300 ease-in-out transform hover:scale-105 sm:ml-[40px] rounded-2xl"
-            />
+            <img src={card.image} alt={card.text} className={card.className} />
             <div className="px-6 pt-8 sm:pt-0 space-y-2 sm:space-y-4">
               <p className="font-semibold font-playfair text-3xl text-start sm:text-start">
                 {card.text}
