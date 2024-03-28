@@ -65,9 +65,8 @@ function Relationship() {
         </p>
       </div>
       <div
-        className={`flex flex-col items-center justify-center md:flex-col lg:flex-row sm:space-x-3 sm:space-y-0 pt-20 space-y-8  ${
-          show ? "opacity-100" : "opacity-0"
-        } transition-opacity duration-1000`}
+        className={`flex flex-col items-center justify-center md:flex-col lg:flex-row sm:space-x-3 sm:space-y-0 pt-20 space-y-8  ${show ? "opacity-100" : "opacity-0"
+          } transition-opacity duration-1000`}
       >
         {/* Simplified steps with mapping if there are multiple, similar steps */}
         {steps.map((step, index) => (
@@ -86,9 +85,9 @@ function Relationship() {
             </div>
             {index < steps.length - 1 && ( // Only add arrows between the steps
               <img
-                className="h-30 w-30 hover:animate-pulse transition-all duration-300 ease-in-out transform hover:scale-110 -rotate-90 md:-rotate-90 lg:rotate-180"
-                src="/arrowLeft.png"
-                alt="Arrow"
+                className="h-14 w-30 hover:animate-pulse transition-all duration-300 ease-in-out transform hover:scale-110 -rotate-90 md:-rotate-90 lg:rotate-180"
+                src="/arrow.png"
+                alt="Arrowleft"
               />
             )}
           </React.Fragment>
