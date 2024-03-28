@@ -97,31 +97,31 @@ export default function TechStackSection() {
           <h1 className="font-bold text-center font-playfair text-[#131B23] text-3xl">
             We animate Web-Sites into existence.
           </h1>
-          <p className="flex flex-row items-center font-sans-serif font-light md:items-center lg:items-start group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-normal text-[#131B23]">
+          <p className="flex flex-row items-center font-sans-serif font-light md:items-center lg:items-start group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
             <span className="text-black group-hover:text-blue-500 pr-5">
               ◉{" "}
             </span>
             Elevating your enterprise with our broad technology proficiency.
           </p>
-          <p className="flex flex-row items-center font-sans-serif font-light group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-normal text-[#131B23]">
+          <p className="flex flex-row items-center font-sans-serif font-light group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
             <span className="text-black group-hover:text-blue-500 pr-5">
               ◉{" "}
             </span>
             Crafting inventive answers using cutting-edge technology.
           </p>
-          <p className="flex flex-row items-center font-sans-serif font-light group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-normal text-[#131B23]">
+          <p className="flex flex-row items-center font-sans-serif font-light group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
             <span className="text-black group-hover:text-blue-500 pr-5">
               ◉{" "}
             </span>
             Transforming intricate challenges into intuitive solutions.
           </p>
-          <p className="flex flex-row items-center font-sans-serif font-light group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-normal text-[#131B23]">
+          <p className="flex flex-row items-center font-sans-serif font-light group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
             <span className="text-black group-hover:text-blue-500 pr-5">
               ◉{" "}
             </span>
             Our commitment to technological superiority forms our essence.
           </p>
-          <p className="flex flex-row items-center font-sans-serif font-light group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-normal text-[#131B23]">
+          <p className="flex flex-row items-center font-sans-serif font-light group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
             <span className="text-black group-hover:text-blue-500 pr-5">
               ◉{" "}
             </span>

@@ -63,7 +63,7 @@ const HowWeWork = () => {
               We call it the CAK way.
             </h3>
 
-            <p className="flex flex-row  items-center w-full font-thin group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-normal text-[#131B23]">
+            <p className="flex flex-row  items-center w-full font-thin group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
@@ -72,7 +72,7 @@ const HowWeWork = () => {
               and brand identity to craft a website that truly embodies your
               essence.
             </p>
-            <p className="flex flex-row items-center group font-thin duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-normal text-[#131B23]">
+            <p className="flex flex-row items-center group font-thin duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
@@ -81,7 +81,7 @@ const HowWeWork = () => {
               is not only visually compelling but also intuitively navigates
               your audience through your digital space.
             </p>
-            <p className="flex flex-row items-center group font-thin duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-normal text-[#131B23]">
+            <p className="flex flex-row items-center group font-thin duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
@@ -89,7 +89,7 @@ const HowWeWork = () => {
               with scalability and future growth in mind, ensuring it stands
               resilient and adaptable to the ever-evolving web environment.
             </p>
-            <p className="flex flex-row items-center group font-thin duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-normal text-[#131B23]">
+            <p className="flex flex-row items-center group font-thin duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>

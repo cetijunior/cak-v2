@@ -132,7 +132,7 @@ const mobdev = () => {
             <h1 className="font-bold font-playfair text-[#131B23] text-3xl">
               We animate <br></br> mobile applications
             </h1>
-            <p className="flex flex-row items-center w-full group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-normal text-[#131B23]">
+            <p className="flex flex-row items-center w-full group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
@@ -140,7 +140,7 @@ const mobdev = () => {
               through our distinctive approach that merges innovation with
               efficiency seamlessly.
             </p>
-            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-normal text-[#131B23]">
+            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
@@ -148,7 +148,7 @@ const mobdev = () => {
               swiftly and accurately turn your visions into tangible
               applications.
             </p>
-            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-normal text-[#131B23]">
+            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
@@ -156,7 +156,7 @@ const mobdev = () => {
               enables us to create mobile experiences that go beyond what's
               anticipated.
             </p>
-            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-normal text-[#131B23]">
+            <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
