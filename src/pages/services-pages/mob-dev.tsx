@@ -82,13 +82,13 @@ const mobdev = () => {
             </h1>
             <h3 className="text-center md:text-center font-thin lg:text-center">
               Elevate your app development process with our customized
-              solutions! Whether you're starting from scratch or refining an
-              existing application, we're here to take your project to the next
+              solutions! Whether you`re starting from scratch or refining an
+              existing application, we`re here to take your project to the next
               level. Dive into our bespoke development strategies that cater
               directly to your needs, enhancing functionality, user experience,
               and overall app performance. Contact us for a tailored approach,
-              complete with a thorough assessment of your project's
-              specifications and potential outcomes. Let's collaborate to create
+              complete with a thorough assessment of your project`s
+              specifications and potential outcomes. Let`s collaborate to create
               something exceptional in the mobile app landscape.
             </h3>
           </div>
@@ -99,11 +99,13 @@ const mobdev = () => {
           </div>
         </div>
       </div>
+
       <div
         ref={stackRef}
         style={{ opacity: show[0] ? 1 : 0, transition: "opacity 1s ease" }}
       >
-        <div className="flex flex-col sm:flex-row bg-white sm:h-[50rem] w-full justify-around items-center px-4 sm:px-14 lg:px-24 py-20">
+        <div className="flex flex-col lg:flex-row bg-white h-full w-full justify-around items-center px-4 sm:px-14 lg:px-24 py-20">
+
           <div className="transition-all duration-300 ease-in-out transform hover:scale-105 p-7 rounded-xl shadow-custom-blue mb-10 sm:mb-0">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair text-gray-900 mb-10 text-center">
               We speak your language
@@ -112,9 +114,8 @@ const mobdev = () => {
               {techStack.map((tech, index) => (
                 <div
                   key={tech.name}
-                  className={`flex flex-col items-center transition-all duration-300 ease-in-out justify-center opacity-0 animate-fadeInUp delay-${
-                    index * 1000
-                  }ms`}
+                  className={`flex flex-col items-center transition-all duration-300 ease-in-out justify-center opacity-0 animate-fadeInUp delay-${index * 1000
+                    }ms`}
                 >
                   <img
                     src={tech.icon}
@@ -128,9 +129,11 @@ const mobdev = () => {
               ))}
             </div>
           </div>
-          <div className="max-w-md lg:max-w-lg space-y-4 px-4">
-            <h1 className="font-bold font-playfair text-[#131B23] text-3xl">
-              We animate <br></br> mobile applications
+
+
+          <div className="flex flex-col items-center max-w-md lg:max-w-lg space-y-4 py-10 px-4">
+            <h1 className=" font-bold font-playfair text-[#131B23] text-3xl">
+              We animate mobile applications
             </h1>
             <p className="flex flex-row items-center w-full group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
@@ -168,6 +171,8 @@ const mobdev = () => {
               <Link href="/#contact">Tell us your Problem</Link>
             </div>
           </div>
+
+
         </div>
         <MobDevSection />
         <MobDevSection2 />

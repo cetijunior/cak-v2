@@ -86,7 +86,7 @@ function Navbar() {
   };
 
   return (
-    <div className="sticky top-0 z-50 sm:px-14 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] sm:w-screen w-full">
+    <div className="sticky top-0 z-50  px-0 md:px-2 lg:px-14 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] sm:w-screen w-full">
       <div
         className="p-4"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -110,13 +110,12 @@ function Navbar() {
       {/* Fullscreen Menu for small screens */}
       <div
         onDoubleClick={handleClickScreen}
-        className={`fixed inset-0 bg-[#446AF2] z-30 ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out `}
+        className={`fixed inset-0 bg-[#446AF2] z-30 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+          } transition-transform duration-300 ease-in-out `}
       >
         <ul className="flex h-full flex-col z-30 w-[300px] pl-5 space-y-12 items-start justify-center font-extralight text-white">
           <li
-            className="cursor-pointer text-3xl font-extralight hover:opacity-70"
+            className="cursor-pointer text-3xl font-thin hover:opacity-70"
             onClick={() => navigateToSection("/")}
           >
             Home
@@ -137,9 +136,8 @@ function Navbar() {
             <img
               src="/arrow.png"
               alt="next"
-              className={`w-10 h-10 transform ${
-                rotateArrowServ ? "rotate-0" : "-rotate-180"
-              }`} // Apply rotation based on state
+              className={`w-10 h-10 transform ${rotateArrowServ ? "rotate-0" : "-rotate-180"
+                }`} // Apply rotation based on state
               style={{ transition: "transform 0.4s ease" }} // Smooth transition for rotation
             />
           </div>
@@ -191,13 +189,12 @@ function Navbar() {
             className="flex flex-col cursor-pointer"
           >
             <div className="flex flex-row pb-8 justify-between">
-              <span className="text-3xl">ENG</span>
+              <span className="text-3xl font-thin">ENG</span>
               <img
                 src="/arrow.png"
                 alt="next"
-                className={`w-10 h-10 ml-20 transform ${
-                  rotateArrowLang ? "rotate-0" : "-rotate-180"
-                }`} // Apply rotation based on state
+                className={`w-10 h-10 ml-20 transform ${rotateArrowLang ? "rotate-0" : "-rotate-180"
+                  }`} // Apply rotation based on state
                 style={{ transition: "transform 0.4s ease" }} // Smooth transition for rotation
               />
             </div>
@@ -228,8 +225,8 @@ function Navbar() {
       </div>
 
       {/* Desktop Navbar */}
-      <div className="hidden md:hidden lg:flex flex-row items-center md:px-10 space-x-8">
-        <div className="hidden md:hidden lg:flex flex-row items-center space-x-16 pr-16">
+      <div className="hidden md:hidden lg:flex flex-row items-center md:px-8 space-x-8">
+        <div className="hidden md:hidden lg:flex flex-row items-center space-x-16">
           <h1
             className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20"
             onClick={() => scrollToSection("about")}
@@ -244,9 +241,8 @@ function Navbar() {
           >
             Web Development Services
             <div
-              className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${
-                isDropdownOpenServices ? "max-h-96" : "max-h-0"
-              } overflow-hidden`}
+              className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenServices ? "max-h-96" : "max-h-0"
+                } overflow-hidden`}
               style={{ width: "700px" }} // Adjust width as needed
             >
               <div className="grid grid-cols-2 ">
@@ -296,9 +292,8 @@ function Navbar() {
           >
             Eng
             <div
-              className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${
-                isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
-              } overflow-hidden`}
+              className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
+                } overflow-hidden`}
               style={{ width: "50px" }} // Adjust width as needed
             >
               <div className="flex flex-col items-center w-full ">

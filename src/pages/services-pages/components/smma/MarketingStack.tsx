@@ -72,9 +72,8 @@ export default function MarketingStack() {
           {techStack.map((tech, index) => (
             <div
               key={tech.name}
-              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp delay-${
-                index * 100
-              }ms`}
+              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp delay-${index * 100
+                }ms`}
             >
               <img
                 src={tech.icon}
@@ -88,32 +87,41 @@ export default function MarketingStack() {
           ))}
         </div>
       </div>
-      <div className="max-w-md lg:flex-none flex-none md:flex-col md:flex lg:max-w-lg space-y-4 px-4">
-        <p className="text-sm lg:text-md lg:text-lg lg:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light font-extralight">
-          <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
-          Elevating your brand with dynamic social media strategies.
-        </p>
-        <p className="text-sm lg:text-md lg:text-lg lg:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light font-extralight">
-          <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
-          Crafting cutting-edge campaigns using the latest digital trends.
-        </p>
-        <p className="text-sm lg:text-md lg:text-lg lg:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light font-extralight">
-          <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
-          Transforming challenges into engaging content that resonates with your
-          audience.
-        </p>
-        <p className="text-sm lg:text-md lg:text-lg lg:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light font-extralight">
-          <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
-          Our commitment to digital mastery is at the heart of everything we do.
-        </p>
-        <p className="text-sm lg:text-md lg:text-lg lg:text-start text-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light font-extralight">
-          <span className="text-black group-hover:text-blue-500 pr-5">◉ </span>
-          From concept to viral hit, social media is our canvas of expression.
-        </p>
-        <button className="rounded-xl w-44 sm:ml-0 ml-20 sm:mt-0 mt-12 shadow-custom-blue p-3 bg-blue-600 text-white ">
+
+      <div className="flex flex-col justify-center md:justify-center lg:justify-center space-y-8 md:space-y-8 items-center md:items-center lg:items-center p-8 md:p-10 rounded-3xl">
+        <h1 className=" font-bold font-playfair text-[#131B23] text-3xl">
+          We animate mobile applications
+        </h1>
+        <div className="lg:w-fit md:w-[600px] w-[300px] space-y-4 px-4 justify-center md:justify-center lg:justify-evenly items-center md:items-center lg:items-start">
+
+          <p className="text-sm lg:text-md lg:text-lg text-start group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light font-extralight">
+            <span className="text-black group-hover:text-blue-500 pr-2">◉ </span>
+            Elevating your brand with dynamic social media strategies.
+          </p>
+          <p className="text-sm lg:text-md lg:text-lg text-start group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light font-extralight">
+            <span className="text-black group-hover:text-blue-500 pr-2">◉ </span>
+            Crafting cutting-edge campaigns using the latest digital trends.
+          </p>
+          <p className="text-sm lg:text-md lg:text-lg text-start group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light font-extralight">
+            <span className="text-black group-hover:text-blue-500 pr-2">◉ </span>
+            Transforming challenges into engaging content that resonates with your
+            audience.
+          </p>
+          <p className="text-sm lg:text-md lg:text-lg text-start group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light font-extralight">
+            <span className="text-black group-hover:text-blue-500 pr-2">◉ </span>
+            Our commitment to digital mastery is at the heart of everything we do.
+          </p>
+          <p className="text-sm lg:text-md lg:text-lg text-start group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light font-extralight">
+            <span className="text-black group-hover:text-blue-500 pr-2">◉ </span>
+            From concept to viral hit, social media is our canvas of expression.
+          </p>
+
+        </div>
+        <button className="rounded-xl w-44 sm:mt-0 mt-12 shadow-custom-blue p-3 bg-blue-600 text-white ">
           Tell us your Problem
         </button>
       </div>
+
       <div className="h-20"></div>
     </section>
   );

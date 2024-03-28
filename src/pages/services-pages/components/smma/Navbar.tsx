@@ -104,20 +104,19 @@ function Navbar() {
       {/* Fullscreen Menu for small screens */}
       <div
         onDoubleClick={handleClickScreen}
-        className={`fixed inset-0 bg-[#446AF2] z-30 ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out `}
+        className={`fixed inset-0 bg-[#446AF2] z-30 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+          } transition-transform duration-300 ease-in-out `}
       >
         <ul className="flex h-full flex-col z-30 w-[300px] pl-5 space-y-12 items-start justify-center text-white">
           <li
-            className="cursor-pointer text-3xl font-extralight hover:opacity-70"
+            className="cursor-pointer font-thin text-3xl hover:opacity-70"
             onClick={() => navigateToSection("/")}
           >
             Home
           </li>
 
           <li
-            className="cursor-pointer text-3xl font-extralight hover:opacity-70"
+            className="cursor-pointer font-thin text-3xl hover:opacity-70"
             onClick={() => navigateToSection("about")}
           >
             About Us
@@ -127,15 +126,14 @@ function Navbar() {
             onClick={handleServicesDropdownToggle}
             className="flex flex-row items-center space-x-4 cursor-pointer"
           >
-            <span className="text-3xl font-extralight">
+            <span className="text-3xl font-thin ">
               Web Development Services
             </span>
             <img
               src="/arrow.png"
               alt="next"
-              className={`w-10 h-10 transform ${
-                rotateArrowServ ? "rotate-0" : "-rotate-180"
-              }`} // Apply rotation based on state
+              className={`w-10 h-10 transform ${rotateArrowServ ? "rotate-0" : "-rotate-180"
+                }`} // Apply rotation based on state
               style={{ transition: "transform 0.4s ease" }} // Smooth transition for rotation
             />
           </div>
@@ -152,7 +150,7 @@ function Navbar() {
               {serviceLinks.map((link, index) => (
                 <li
                   key={index}
-                  className="hover:bg-gray-100 hover:text-black font-extralight rounded-md p-2"
+                  className="hover:bg-gray-100 hover:text-black rounded-md p-2"
                 >
                   <Link legacyBehavior href={link.href}>
                     <a className="flex items-center space-x-3">
@@ -170,13 +168,13 @@ function Navbar() {
           </div>
 
           <li
-            className="cursor-pointer text-3xl font-extralight hover:opacity-70"
+            className="cursor-pointer font-thin text-3xl hover:opacity-70"
             onClick={() => navigateToSection("projects")}
           >
             Projects
           </li>
           <li
-            className="cursor-pointer text-3xl font-extralight hover:opacity-70"
+            className="cursor-pointer font-thin text-3xl hover:opacity-70"
             onClick={() => navigateToSection("contact")}
           >
             Contact
@@ -187,13 +185,12 @@ function Navbar() {
             className="flex flex-col cursor-pointer"
           >
             <div className="flex flex-row pb-8 justify-between">
-              <span className="text-3xl">ENG</span>
+              <span className="text-3xl font-thin">ENG</span>
               <img
                 src="/arrow.png"
                 alt="next"
-                className={`w-10 h-10 ml-20 transform ${
-                  rotateArrowLang ? "rotate-0" : "-rotate-180"
-                }`} // Apply rotation based on state
+                className={`w-10 h-10 ml-20 transform ${rotateArrowLang ? "rotate-0" : "-rotate-180"
+                  }`} // Apply rotation based on state
                 style={{ transition: "transform 0.4s ease" }} // Smooth transition for rotation
               />
             </div>
@@ -208,7 +205,7 @@ function Navbar() {
                 {languageLinks.map((link, index) => (
                   <li
                     key={index}
-                    className="hover:bg-gray-100 item hover:text-black font-extralight rounded-md p-2"
+                    className="hover:bg-gray-100 item hover:text-black rounded-md p-2"
                   >
                     <Link legacyBehavior href={link.href}>
                       <a className="flex items-center justify-center space-x-3">
@@ -227,7 +224,7 @@ function Navbar() {
       <div className="hidden md:hidden lg:flex flex-row items-center md:px-10 space-x-8">
         <div className="hidden md:hidden lg:flex flex-row items-center space-x-16 pr-16">
           <Link legacyBehavior href="/#about">
-            <h1 className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight hover:text-[#446AF2] text-xl z-20">
+            <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
               About Us
             </h1>
           </Link>
@@ -235,13 +232,12 @@ function Navbar() {
             <h1
               onMouseEnter={() => setIsDropdownOpenServices(true)}
               onMouseLeave={() => setIsDropdownOpenServices(false)}
-              className="cursor-pointer hover:text-[#446AF2] transition-all duration-600 font-extralight ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative"
+              className="cursor-pointer hover:text-[#446AF2] transition-all duration-600 font-light text-[#131B23] ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative"
             >
               Web Development Services
               <div
-                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${
-                  isDropdownOpenServices ? "max-h-96" : "max-h-0"
-                } overflow-hidden`}
+                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenServices ? "max-h-96" : "max-h-0"
+                  } overflow-hidden`}
                 style={{ width: "700px" }} // Adjust width as needed
               >
                 <div className="grid grid-cols-2 ">
@@ -257,7 +253,7 @@ function Navbar() {
                           <div className="font-semibold font-playfair text-gray-900">
                             {link.title}
                           </div>
-                          <div className="text-sm font-extralight text-gray-600">
+                          <div className="text-sm font-light text-[#131B23]">
                             {link.description}
                           </div>
                         </div>
@@ -270,12 +266,12 @@ function Navbar() {
           </Link>
 
           <Link legacyBehavior href="/#projects">
-            <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-extralight transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
+            <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
               Projects
             </h1>
           </Link>
           <Link legacyBehavior href="/#contact">
-            <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-extralight transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
+            <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
               Contact
             </h1>
           </Link>
@@ -283,20 +279,19 @@ function Navbar() {
             <h1
               onMouseEnter={() => setIsDropdownOpenLanguages(true)}
               onMouseLeave={() => setIsDropdownOpenLanguages(false)}
-              className="cursor-pointer hover:text-[#446AF2] transition-all font-extralight duration-600 ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative"
+              className="cursor-pointer hover:text-[#446AF2] transition-all font-light text-[#131B23] duration-600 ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative"
             >
               Eng
               <div
-                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${
-                  isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
-                } overflow-hidden`}
+                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
+                  } overflow-hidden`}
                 style={{ width: "50px" }} // Adjust width as needed
               >
                 <div className="flex flex-col items-center w-full ">
                   {languageLinks.map((link, index) => (
                     <Link legacyBehavior key={index} href={link.href}>
                       <a className="flex p-2 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white  rounded-lg">
-                        <div className="text-sm hover:font-semibold text-md text-black">
+                        <div className="text-sm hover:font-semibold font-light text-[#131B23] text-md">
                           {link.title}
                         </div>
                       </a>

@@ -140,9 +140,8 @@ const mobDevSection = () => {
             {services.map((service, index) => (
               <div
                 key={service.id}
-                className={`flex flex-col items-center space-y-4 max-w-sm p-4 transition-all duration-300 ease-in-out transform hover:scale-105 ${
-                  show2[index] ? "opacity-100" : "opacity-0"
-                }`}
+                className={`flex flex-col items-center space-y-4 max-w-sm p-4 transition-all duration-300 ease-in-out transform hover:scale-105 ${show2[index] ? "opacity-100" : "opacity-0"
+                  }`}
               >
                 <img
                   className="transition-all duration-300 ease-in-out transform hover:scale-125 h-24 w-24 "
