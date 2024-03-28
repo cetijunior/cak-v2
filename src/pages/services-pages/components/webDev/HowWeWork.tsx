@@ -100,9 +100,11 @@ const HowWeWork = () => {
           </div>
 
           <div className="flex items-center justify-center font-thin sm:items-start sm:justify-center w-full rounded-2xl ">
-            <button className="bg-[#446AF2] w-fit sm:w-fit px-24 p-2 rounded-xl duration-300 ease-in-out transform hover:scale-105 hover:font-semibold shadow-custom-blue text-white">
-              Contact us
-            </button>
+            <Link legacyBehavior href="/#contact">
+              <button className="bg-[#446AF2] w-fit sm:w-fit px-24 p-2 rounded-xl duration-300 ease-in-out transform hover:scale-105 hover:font-semibold shadow-custom-blue text-white">
+                Contact us
+              </button>
+            </Link>
           </div>
         </div>
 

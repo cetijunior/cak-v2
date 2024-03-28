@@ -87,8 +87,7 @@ function Navbar() {
 
   return (
     <div className="sticky top-0 z-50  px-0 md:px-2 lg:px-14 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] sm:w-screen w-full">
-      <div
-        className="p-4"
+      <div className="p-4"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <h1 className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 text-2xl font-extrabold text-[#446AF2]">
@@ -100,7 +99,7 @@ function Navbar() {
       <div className="absolute pr-4 pt-2 z-40 right-0 sm:block md:block lg:hidden">
         <button onClick={handleMenuToggle}>
           {isMenuOpen ? (
-            <img src="/close.png" alt="Close" className="w-10 h-10" />
+            <img src="/close.png" alt="Close" className="w-10 h-10 bg-blend-color" />
           ) : (
             <img src="/menu.png" alt="Menu" className="w-10 h-10" />
           )}

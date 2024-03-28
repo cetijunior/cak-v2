@@ -64,7 +64,7 @@ export default function TechStackSection() {
     <section
       ref={stackRef}
       style={{ opacity: show[0] ? 1 : 0, transition: "opacity 1s ease" }}
-      className="flex flex-col lg:flex-row justify-center items-center px-4 sm:px-10 lg:px-24 py-24"
+      className="flex flex-col md:flex-col lg:flex-col justify-center items-center px-4 sm:px-10 lg:px-24 py-24"
     >
       <div className="transition-all duration-300 ease-in-out transform hover:scale-105 p-7 rounded-xl shadow-custom-blue mb-10 sm:mb-0">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl text-gray-900 mb-10 text-center">
@@ -74,9 +74,8 @@ export default function TechStackSection() {
           {techStack.map((tech, index) => (
             <div
               key={tech.name}
-              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp  delay-${
-                index * 100
-              }ms`}
+              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp  delay-${index * 100
+                }ms`}
             >
               <div className="duration-300 ease-in-out transform hover:scale-105 flex flex-col items-center">
                 <img
