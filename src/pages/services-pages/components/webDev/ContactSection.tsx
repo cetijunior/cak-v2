@@ -17,7 +17,9 @@ function ContactSection() {
                 info@cakwebsolutions.com.
               </Link>
             </p>
-            <p>We're eager to talk about your social media strategy needs.</p>
+            <p>
+              We&apos;re eager to talk about your social media strategy needs.
+            </p>
           </div>
         </div>
       </div>

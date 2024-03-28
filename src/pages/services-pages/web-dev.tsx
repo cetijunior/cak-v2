@@ -28,14 +28,14 @@ const webdev = () => {
             </h1>
             <h3 className="text-center md:text-start lg:text-center text-[#131B23] lg:text-lg text-md md:text-lg font-extralight">
               Harness the potential of the digital world with our custom website
-              development services! Whether you're a growing startup or an
-              established business, we're dedicated to enhancing your web
+              development services! Whether you&apos;re a growing startup or an
+              established business, we&apos;re dedicated to enhancing your web
               presence. Explore our personalized web solutions designed to
               connect with your target audience, increase user engagement, and
               stimulate sales. Reach out for a bespoke strategy, featuring a
               detailed assessment of your online impact and return on
-              investment. Let's collaborate to build something extraordinary on
-              the internet.
+              investment. Let&apos;s collaborate to build something
+              extraordinary on the internet.
             </h3>
           </div>
           <button className="bg-[#446AF2] hover:font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 text-white mt-[-20px] py-3 px-20 mb-10 rounded-3xl">

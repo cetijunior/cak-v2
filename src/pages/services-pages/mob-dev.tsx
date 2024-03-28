@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useRef, useState } from "react";
 import "/styles/globals.css";
 import Navbar from "./components/mobDev/Navbar";
@@ -6,7 +8,7 @@ import MobDevSection from "./components/mobDev/MobDevSection";
 import MobDevSection2 from "./components/mobDev/MobDevSection2";
 import Link from "next/link";
 
-const mobdev = () => {
+const Mobdev = () => {
   const techStack = [
     { name: "C++", icon: "/icons/cis.png" },
     { name: "Python", icon: "/icons/python.png" },
@@ -24,6 +26,7 @@ const mobdev = () => {
   const stackRef = useRef(null); // Use ref to reference the about section
 
   useEffect(() => {
+    const currentRef = stackRef.current;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -36,13 +39,13 @@ const mobdev = () => {
       { threshold: 0.01 }
     );
 
-    if (stackRef.current) {
-      observer.observe(stackRef.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (stackRef.current) {
-        observer.unobserve(stackRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -60,7 +63,7 @@ const mobdev = () => {
         }, index * 1000); // Sequential delay
       });
     }
-  }, [visible]);
+  }, [visible, show]);
 
   return (
     <>
@@ -105,7 +108,6 @@ const mobdev = () => {
         style={{ opacity: show[0] ? 1 : 0, transition: "opacity 1s ease" }}
       >
         <div className="flex flex-col lg:flex-row bg-white h-full w-full justify-around items-center px-4 sm:px-14 lg:px-24 py-20">
-
           <div className="transition-all duration-300 ease-in-out transform hover:scale-105 p-7 rounded-xl shadow-custom-blue mb-10 sm:mb-0">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair text-gray-900 mb-10 text-center">
               We speak your language
@@ -114,8 +116,9 @@ const mobdev = () => {
               {techStack.map((tech, index) => (
                 <div
                   key={tech.name}
-                  className={`flex flex-col items-center transition-all duration-300 ease-in-out justify-center opacity-0 animate-fadeInUp delay-${index * 1000
-                    }ms`}
+                  className={`flex flex-col items-center transition-all duration-300 ease-in-out justify-center opacity-0 animate-fadeInUp delay-${
+                    index * 1000
+                  }ms`}
                 >
                   <img
                     src={tech.icon}
@@ -129,7 +132,6 @@ const mobdev = () => {
               ))}
             </div>
           </div>
-
 
           <div className="flex flex-col items-center max-w-md lg:max-w-lg space-y-4 py-10 px-4">
             <h1 className=" font-bold font-playfair text-[#131B23] text-3xl">
@@ -156,7 +158,7 @@ const mobdev = () => {
                 ◉{" "}
               </span>
               Our emphasis on intuitive design and solid backend development
-              enables us to create mobile experiences that go beyond what's
+              enables us to create mobile experiences that go beyond what&apos;s
               anticipated.
             </p>
             <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-light text-[#131B23]">
@@ -171,8 +173,6 @@ const mobdev = () => {
               <Link href="/#contact">Tell us your Problem</Link>
             </div>
           </div>
-
-
         </div>
         <MobDevSection />
         <MobDevSection2 />
@@ -183,4 +183,4 @@ const mobdev = () => {
   );
 };
 
-export default mobdev;
+export default Mobdev;
