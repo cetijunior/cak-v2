@@ -111,59 +111,55 @@ function Navbar() {
       <div
         onDoubleClick={handleClickScreen}
         className={`fixed inset-0 bg-[#446AF2] z-30 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
-          } transition-transform duration-300 ease-in-out `}
+          } transition-transform duration-300 ease-in-out`}
       >
-        <ul className="flex h-full flex-col z-30 w-[300px] pl-5 space-y-12 items-start justify-center font-extralight text-white">
+        <ul className="flex h-full flex-col w-[350px]  z-30 pl-5 space-y-8 items-start justify-center text-white overflow-y-auto">
           <li
-            className="cursor-pointer text-3xl font-thin hover:opacity-70"
+            className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
             onClick={() => navigateToSection("/")}
           >
             Home
           </li>
 
           <li
-            className="cursor-pointer text-3xl font-thin hover:opacity-70"
+            className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
             onClick={() => navigateToSection("about")}
           >
             About Us
           </li>
-
+          {/* Services Dropdown Toggle */}
           <div
             onClick={handleServicesDropdownToggle}
-            className="flex flex-row items-center space-x-4 cursor-pointer"
+            className="flex flex-row items-center justify-between cursor-pointer"
           >
-            <span className="text-3xl font-thin">Web Development Services</span>
+            <span className="text-2xl md:text-3xl mb-[-25px] font-thin">Web Development Services</span>
             <img
               src="/arrow.png"
               alt="next"
-              className={`w-10 h-10 transform ${rotateArrowServ ? "rotate-0" : "-rotate-180"
+              className={`w-8 h-8 transform ${rotateArrowServ ? "rotate-0" : "-rotate-180"
                 }`} // Apply rotation based on state
               style={{ transition: "transform 0.4s ease" }} // Smooth transition for rotation
             />
           </div>
 
-          {/* Adjusted for sliding effect */}
+          {/* Services Dropdown */}
           <div
-            style={{
-              maxHeight: isDropdownOpenServices ? "500px" : "0", // Adjust maxHeight according to the content size
-              transition: "max-height  1s ease-in-out", // Smooth transition for max-height
-              overflow: "auto", // Hide content that overflows during transition
-            }}
+            className={`transition-all ease-in-out duration-500 ${isDropdownOpenServices ? 'max-h-[60vh]' : 'max-h-0'} overflow-auto`}
           >
-            <ul className="bg-[#37457a67] w-full p-2 rounded-2xl">
+            <ul className="bg-[#37457a67] mt-[20px] w-full p-2 rounded-2xl">
               {serviceLinks.map((link, index) => (
                 <li
                   key={index}
                   className="hover:bg-gray-100 hover:text-black font-thin rounded-md p-2"
                 >
                   <Link legacyBehavior href={link.href}>
-                    <a className="flex items-center space-x-3">
+                    <a className="flex items-center space-x-2">
                       <img
                         src={link.img}
                         alt={link.title}
-                        className="w-6 h-6 rotate"
+                        className="w-4 h-4"
                       />
-                      <span>{link.title}</span>
+                      <span className="text-sm">{link.title}</span>
                     </a>
                   </Link>
                 </li>
@@ -172,48 +168,47 @@ function Navbar() {
           </div>
 
           <li
-            className="cursor-pointer text-3xl font-thin hover:opacity-70"
+            className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
             onClick={() => navigateToSection("projects")}
           >
             Projects
           </li>
           <li
-            className="cursor-pointer text-3xl font-thin hover:opacity-70"
+            className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
             onClick={() => navigateToSection("contact")}
           >
             Contact
           </li>
 
+
+          {/* Languages Dropdown Toggle */}
           <div
             onClick={handleLanguageDropdownToggle}
-            className="flex flex-col cursor-pointer"
+            className="flex flex-col cursor-pointer mt-4"
           >
-            <div className="flex flex-row pb-8 justify-between">
-              <span className="text-3xl font-thin">ENG</span>
+            <div className="flex flex-row justify-between space-x-12 items-center">
+              <span className="text-2xl md:text-3xl font-thin">ENG</span>
               <img
                 src="/arrow.png"
                 alt="next"
-                className={`w-10 h-10 ml-20 transform ${rotateArrowLang ? "rotate-0" : "-rotate-180"
+                className={`w-8 h-8 transform ${rotateArrowLang ? "rotate-0" : "-rotate-180"
                   }`} // Apply rotation based on state
                 style={{ transition: "transform 0.4s ease" }} // Smooth transition for rotation
               />
             </div>
+            {/* Languages Dropdown */}
             <div
-              style={{
-                maxHeight: isDropdownOpenLanguages ? "500px" : "0", // Adjust maxHeight according to the content size
-                transition: "max-height  1s ease-in-out", // Smooth transition for max-height
-                overflow: "hidden", // Hide content that overflows during transition
-              }}
+              className={`transition-all ease-in-out duration-500 ${isDropdownOpenLanguages ? 'max-h-[20vh]' : 'max-h-0'} overflow-auto`}
             >
-              <ul className="bg-[#37457a67] w-full p-2 rounded-2xl">
+              <ul className="bg-[#37457a67] mt-[30px]  w-full p-2 rounded-2xl">
                 {languageLinks.map((link, index) => (
                   <li
                     key={index}
-                    className="hover:bg-gray-100 item hover:text-black rounded-md p-2"
+                    className="hover:bg-gray-100 hover:text-black font-thin rounded-md p-2"
                   >
                     <Link legacyBehavior href={link.href}>
-                      <a className="flex items-center font-thin justify-center space-x-3">
-                        <span>{link.title}</span>
+                      <a className="flex justify-center items-center space-x-2">
+                        <span className="text-sm">{link.title}</span>
                       </a>
                     </Link>
                   </li>
@@ -223,6 +218,7 @@ function Navbar() {
           </div>
         </ul>
       </div>
+
 
       {/* Desktop Navbar */}
       <div className="hidden md:hidden lg:flex flex-row items-center md:px-8 space-x-8">

@@ -13,7 +13,7 @@ function Hero() {
   return (
     <div className="w-screen">
       <div className="flex mt-[-40px] md:mt-[-200px] lg:mt-[-350px] items-center justify-center">
-        <video autoPlay loop muted className="rounded-lg w-screen">
+        <video autoPlay loop muted playsInline className="rounded-lg w-screen">
           <source
             src="https://www.helmes.com/wp-content/uploads/2022/07/costom-software-development_600.mp4"
             type="video/mp4"
