@@ -39,7 +39,7 @@ const services = [
   },
 ];
 
-const mobDevSection = () => {
+const MobDevSection = () => {
   const [visible, setVisible] = useState(false); // Track if the section is visible
   const [show, setShow] = useState(Array(services.length).fill(false)); // Individual visibility for links
   const [show2, setShow2] = useState([false, false, false]);
@@ -48,6 +48,7 @@ const mobDevSection = () => {
   const stackRef = useRef(null); // Use ref to reference the about section
 
   useEffect(() => {
+    const currentRef = stackRef.current;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -60,13 +61,13 @@ const mobDevSection = () => {
       { threshold: 0.4 }
     );
 
-    if (stackRef.current) {
-      observer.observe(stackRef.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (stackRef.current) {
-        observer.unobserve(stackRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -84,9 +85,10 @@ const mobDevSection = () => {
         }, index * 500); // Sequential delay
       });
     }
-  }, [visible2]);
+  }, [visible2, show2]);
 
   useEffect(() => {
+    const currentRef = stackRef.current;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -99,13 +101,13 @@ const mobDevSection = () => {
       { threshold: 0.01 }
     );
 
-    if (stackRef.current) {
-      observer.observe(stackRef.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (stackRef.current) {
-        observer.unobserve(stackRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -123,7 +125,7 @@ const mobDevSection = () => {
         }, index * 1000); // Sequential delay
       });
     }
-  }, [visible]);
+  }, [visible, show]);
   return (
     <section id="services">
       <div
@@ -140,8 +142,9 @@ const mobDevSection = () => {
             {services.map((service, index) => (
               <div
                 key={service.id}
-                className={`flex flex-col items-center space-y-4 max-w-sm p-4 transition-all duration-300 ease-in-out transform hover:scale-105 ${show2[index] ? "opacity-100" : "opacity-0"
-                  }`}
+                className={`flex flex-col items-center space-y-4 max-w-sm p-4 transition-all duration-300 ease-in-out transform hover:scale-105 ${
+                  show2[index] ? "opacity-100" : "opacity-0"
+                }`}
               >
                 <img
                   className="transition-all duration-300 ease-in-out transform hover:scale-125 h-24 w-24 "
@@ -161,4 +164,4 @@ const mobDevSection = () => {
   );
 };
 
-export default mobDevSection;
+export default MobDevSection;

@@ -29,6 +29,7 @@ function Relationship() {
 
   // Intersection Observer to watch the section and trigger the animation
   useEffect(() => {
+    const currentRef = sectionRef.current;
     const observer = new IntersectionObserver(
       (entries) => {
         const [entry] = entries;
@@ -37,16 +38,16 @@ function Relationship() {
       { threshold: 0.2 } // Trigger when 10% of the section is visible
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) {
+      if (currentRef) {
         observer.disconnect();
       }
     };
-  }, [sectionRef]);
+  }, []);
 
   return (
     <div className="pb-20 p-4 sm:p-10" id="services" ref={sectionRef}>
@@ -60,7 +61,7 @@ function Relationship() {
             <a className="text-blue-400">Quick Start approach</a>
           </Link>{" "}
           . To ensure a comprehensive grasp, we perform an in-depth review of
-          your business's IT framework.
+          your business&apos;s IT framework.
         </p>
       </div>
       <div
