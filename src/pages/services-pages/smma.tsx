@@ -23,11 +23,11 @@ const smma = () => {
           </video>
         </div>
         <div className="flex flex-col items-center justify-center w-screen transition-all duration-300 ease-in-out transform hover:scale-105">
-          <div className="w-[400px] sm:w-[650px] p-20 z-10 sm:h-[400px] bg-[#F8F9FB] shadow-custom-blue mt-[-40px] sm:mt-[-350px] rounded-xl space-y-4 transition-all duration-300 ease-in-out transform hover:scale-105">
-            <h1 className="text-center text-2xl sm:text-4xl font-playfair font-bold">
+          <div className="w-[380px] md:w-[650px] lg:w-[850px] p-10 md:p-10 lg:p-20 z-10 md:h-[400px] lg:h-[450px] bg-[#F8F9FB] shadow-custom-blue mt-[-100px] md:mt-[-200px] lg:mt-[-370px] rounded-xl space-y-4 md:space-y-8 lg:space-y-12">
+            <h1 className="text-start md:text-start lg:text-center mt-[-10px] lg:mt-[-25px] text-3xl md:text-5xl lg:text-6xl text-[#131B23] playfair-display">
               Engaging Social Media Marketing Solutions
             </h1>
-            <h3 className="text-center font-thin">
+            <h3 className="text-start md:text-start lg:text-center lg:text-xl md:text-xl text-[#131B23] text-sm font-extralight font-sans-serif ">
               Unlock the power of social media with our bespoke marketing
               strategies! Whether you`re a budding enterprise or a
               well-established brand, we`re here to elevate your online
