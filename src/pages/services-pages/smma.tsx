@@ -1,7 +1,7 @@
 import Footer from "./Footer";
 import React from "react";
 import "/styles/globals.css";
-import Navbar from "./components/smma/Navbar";
+import Navbar from "./Navbar";
 import MarketingStack from "./components/smma/MarketingStack";
 import SmmaSection from "./components/smma/SmmaSection";
 import SmmaSection2 from "./components/smma/SmmaSection2";

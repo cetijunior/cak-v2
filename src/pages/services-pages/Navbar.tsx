@@ -4,7 +4,6 @@
 import React, { useState, useCallback } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import "/styles/globals.css";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -85,8 +84,7 @@ function Navbar() {
 
   return (
     <div className="sticky top-0 z-50  px-0 md:px-2 lg:px-14 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] sm:w-screen w-full">
-      <div
-        className="p-4">
+      <div onClick={navigateHome} className="p-4">
         <h1 className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 text-2xl font-extrabold text-[#446AF2]">
           CAK Web Solutions
         </h1>
@@ -126,9 +124,9 @@ function Navbar() {
           {/* Services Dropdown Toggle */}
           <div
             onClick={handleServicesDropdownToggle}
-            className="flex flex-row items-center justify-between cursor-pointer"
+            className="flex flex-row items-center space-x-8 justify-between cursor-pointer"
           >
-            <span className="text-2xl md:text-3xl mb-[-25px] font-thin">Web Development Services</span>
+            <span className="text-2xl md:text-3xl mb-[-25px] font-thin">Web Development <br /> Services</span>
             <img
               src="/arrow.png"
               alt="next"
@@ -218,9 +216,8 @@ function Navbar() {
       {/* Desktop Navbar */}
       <div className="hidden md:hidden lg:flex flex-row items-center md:px-8 space-x-8">
         <div className="hidden md:hidden lg:flex flex-row items-center space-x-16">
-
           <Link legacyBehavior href="/#about">
-            <h1 className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20">
+            <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
               About Us
             </h1>
           </Link>
@@ -299,7 +296,7 @@ function Navbar() {
           </Link>
         </div>
       </div>
-    </div >
+    </div>
   );
 }
 

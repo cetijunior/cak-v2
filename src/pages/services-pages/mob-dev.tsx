@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import "/styles/globals.css";
-import Navbar from "./components/mobDev/Navbar";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 import MobDevSection from "./components/mobDev/MobDevSection";
 import MobDevSection2 from "./components/mobDev/MobDevSection2";
