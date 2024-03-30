@@ -2,20 +2,16 @@ import React from "react";
 
 const WhatWeOffer = () => {
   return (
-    <div className="pt-10 sm:h-[35rem] flex flex-col items-center justify-center sm:gap-10 sm:space-x-10 sm:flex-row ">
+    <div className="pt-10 lg:h-[35rem] px-12 flex flex-col items-center justify-center lg:gap-10 lg:space-x-10 lg:flex-row">
       <div className="flex flex-col justify-center items-center sm:justify-start sm:items-start space-y-5">
-        <h1 className="text-3xl font-playfair font-semibold px-5 pb-4">
+        <h1 className="text-3xl font-playfair font-semibold pb-4">
           What we offer?
         </h1>
-        <p className="px-5 font-thin">
-          Using a strategic design approach in all our projects ensures{" "}
-          <br></br>
-          that real value is created. This means that we take responsibility
-          <br></br>
-          for the entire process from ideation to realization. It`s is an{" "}
-          <br></br>
-          important part of our approach to ensure the solution is right for
-          you.<br></br>
+        <p className="font-thin">
+          Using a strategic design approach in all our projects ensures that
+          real value is created. This means that we take responsibility for the
+          entire process from ideation to realization. It`s is an important part
+          of our approach to ensure the solution is right for you.
         </p>
       </div>
       <div className="flex flex-col md:flex-row gap-8 md:space-x-10">

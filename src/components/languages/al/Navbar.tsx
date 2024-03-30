@@ -86,8 +86,6 @@ function Navbar() {
     <div className="sticky top-0 z-50  px-0 md:px-2 lg:px-14 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] sm:w-screen w-full">
       <div
         className="p-4"
-      <div
-        className="p-4"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <h1 className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 text-2xl font-extrabold text-[#446AF2]">
@@ -112,9 +110,6 @@ function Navbar() {
         className={`fixed inset-0 bg-[#446AF2] z-30 ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
-        className={`fixed inset-0 bg-[#446AF2] z-30 ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out`}
       >
         <ul className="flex h-full flex-col w-[350px]  z-30 pl-5 space-y-8 items-start justify-center text-white overflow-y-auto">
           <li
@@ -136,14 +131,11 @@ function Navbar() {
             className="flex flex-row items-center space-x-8 justify-between cursor-pointer"
           >
             <span className="text-2xl md:text-3xl mb-[-25px] font-thin">
-              Shërbimet e ofruara
+              Shërbimet <br /> e ofruara
             </span>
             <img
               src="/arrow.png"
               alt="next"
-              className={`w-8 h-8 transform ${
-                rotateArrowServ ? "rotate-0" : "-rotate-180"
-              }`} // Apply rotation based on state
               className={`w-8 h-8 transform ${
                 rotateArrowServ ? "rotate-0" : "-rotate-180"
               }`} // Apply rotation based on state
@@ -153,9 +145,6 @@ function Navbar() {
 
           {/* Services Dropdown */}
           <div
-            className={`transition-all ease-in-out duration-500 ${
-              isDropdownOpenServices ? "max-h-[60vh]" : "max-h-0"
-            } overflow-auto`}
             className={`transition-all ease-in-out duration-500 ${
               isDropdownOpenServices ? "max-h-[60vh]" : "max-h-0"
             } overflow-auto`}
@@ -207,17 +196,11 @@ function Navbar() {
                 className={`w-8 h-8 transform ${
                   rotateArrowLang ? "rotate-0" : "-rotate-180"
                 }`} // Apply rotation based on state
-                className={`w-8 h-8 transform ${
-                  rotateArrowLang ? "rotate-0" : "-rotate-180"
-                }`} // Apply rotation based on state
                 style={{ transition: "transform 0.4s ease" }} // Smooth transition for rotation
               />
             </div>
             {/* Languages Dropdown */}
             <div
-              className={`transition-all ease-in-out duration-500 ${
-                isDropdownOpenLanguages ? "max-h-[20vh]" : "max-h-0"
-              } overflow-auto`}
               className={`transition-all ease-in-out duration-500 ${
                 isDropdownOpenLanguages ? "max-h-[20vh]" : "max-h-0"
               } overflow-auto`}
@@ -258,9 +241,6 @@ function Navbar() {
           >
             Shërbimet e ofruara
             <div
-              className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${
-                isDropdownOpenServices ? "max-h-96" : "max-h-0"
-              } overflow-hidden`}
               className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${
                 isDropdownOpenServices ? "max-h-96" : "max-h-0"
               } overflow-hidden`}
@@ -312,9 +292,6 @@ function Navbar() {
           >
             AL
             <div
-              className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${
-                isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
-              } overflow-hidden`}
               className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${
                 isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
               } overflow-hidden`}

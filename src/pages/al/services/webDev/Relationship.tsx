@@ -17,7 +17,7 @@ function Relationship() {
       id: 2,
       title: "Hapi 2: Projektimi dhe Zhvillimi",
       description:
-        "Ekipi ynë harton dhe zhvillon zgjidhjen tuaj duke përdorur metodologji të shkathëta, duke siguruar fleksibilitet dhe përditësime të vazhdueshme mbi progresin",
+        "Ekipi ynë harton dhe zhvillon zgjidhjen tuaj duke përdorur metodologji të shkathëta, duke siguruar fleksibilitet dhe përditësime të vazhdueshme mbi progresin.",
     },
     {
       id: 3,
@@ -81,7 +81,7 @@ function Relationship() {
                 {step.title}
               </h1>
               <p className="text-lg text-center text-[#131B23] font-thin">
-                {step.description}s
+                {step.description}
               </p>
             </div>
             {index < steps.length - 1 && ( // Only add arrows between the steps

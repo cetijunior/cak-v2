@@ -14,7 +14,7 @@ const OurCompetence = () => {
             Konzernen, sowohl auf lokaler Ebene als auch auf globaler Ebene.
           </p>
         </div>
-        <div className="h-[20rem] w-[20rem] md:h-[600px] md:w-[600px] lg:h-[27rem] lg:w-[54rem] flex flex-col justify-center lg:items-end lg:justify-end transition-all duration-300 ease-in-out transform hover:scale-105 ">
+        <div className="h-[20rem] w-[20rem] md:h-[600px] md:w-[600px] lg:h-[27rem] lg:w-[54rem] flex flex-col justify-center lg:items-end lg:justify-end transition-all duration-300 ease-in-out transform hover:scale-105">
           <img src="/people.svg"></img>
         </div>
       </div>

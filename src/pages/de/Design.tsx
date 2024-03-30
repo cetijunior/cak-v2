@@ -35,7 +35,7 @@ const design = () => {
         <div className="flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105 justify-center w-screen ">
           <div className="w-[380px] md:w-[650px] lg:w-[850px] p-10 md:p-10 lg:p-20 z-10 md:h-[410px] lg:h-[450px] bg-[#F8F9FB] shadow-custom-blue mt-[-110px] md:mt-[-200px] lg:mt-[-370px] rounded-xl space-y-4 md:space-y-8 lg:space-y-12">
             <h1 className="text-start md:text-start lg:text-center mt-[-10px] lg:mt-[-25px] text-3xl md:text-5xl lg:text-6xl text-[#131B23] playfair-display">
-              World-Class Designs
+              Weltklasse-Designs
             </h1>
             <h3 className="text-start md:text-start lg:text-center lg:text-lg md:text-base text-[#131B23] text-sm font-extralight font-sans-serif ">
               Bei CAK setzen wir uns für Design Thinking als Grundlage für die

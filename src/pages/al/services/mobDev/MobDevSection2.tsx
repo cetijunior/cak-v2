@@ -90,7 +90,7 @@ const MobDevSection2 = () => {
                 <h1 className="font-bold">Klientë</h1>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Offices</h1>
+                <h1>Zyrat</h1>
                 <h1 className="text-blue-500 text-3xl">3</h1>
                 <h1 className="font-bold">shtete</h1>
               </div>
