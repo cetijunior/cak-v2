@@ -13,35 +13,32 @@ function Navbar() {
   const [rotateArrowServ, setRotateArrowServ] = useState(false);
   const router = useRouter();
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const navigateHome = () => router.push("/");
-  const navigateContact = () => {
-    router.push("/#contact");
-  };
+  const navigateHome = () => router.push("/al/FaqjaKryesore");
 
   const serviceLinks = [
     {
-      href: "/WebsiteDevelopment",
+      href: "/al/WebsiteDevelopment",
       img: "/computer.png",
       title: "Website Development",
       description:
         "Specializing in custom web solutions to enhance your online presence.",
     },
     {
-      href: "/MobileDevelopment",
+      href: "/al/MobileDevelopment",
       img: "/smartphone.png",
       title: "Mobile App Development",
       description:
         "Creating mobile applications that offer seamless user experiences.",
     },
     {
-      href: "/Smma",
+      href: "/al/Smma",
       img: "/smma.png",
       title: "Social Media Marketing",
       description:
         "Strategies to grow your brand’s presence on various social platforms.",
     },
     {
-      href: "/Design",
+      href: "/al/Design",
       img: "/web-design.png",
       title: "Design",
       description:
@@ -50,9 +47,8 @@ function Navbar() {
   ];
 
   const languageLinks = [
-    { href: "/al/FaqjaKryesore", title: "AL" },
     { href: "/de/Start", title: "DE" },
-
+    { href: "/", title: "EN" },
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -88,9 +84,7 @@ function Navbar() {
 
   return (
     <div className="sticky top-0 z-50  px-0 md:px-2 lg:px-14 shadow-custom-blue flex items-center justify-between bg-[#F8F9FB] sm:w-screen w-full">
-      <div className="p-4"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      >
+      <div onClick={navigateHome} className="p-4">
         <h1 className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 text-2xl font-extrabold text-[#446AF2]">
           CAK Web Solutions
         </h1>
@@ -100,7 +94,7 @@ function Navbar() {
       <div className="absolute pr-4 pt-2 z-40 right-0 sm:block md:block lg:hidden">
         <button onClick={handleMenuToggle}>
           {isMenuOpen ? (
-            <img src="/close.png" alt="Close" className="w-10 h-10 " />
+            <img src="/close.png" alt="Close" className="w-10 h-10" />
           ) : (
             <img src="/menu.png" alt="Menu" className="w-10 h-10" />
           )}
@@ -130,9 +124,9 @@ function Navbar() {
           {/* Services Dropdown Toggle */}
           <div
             onClick={handleServicesDropdownToggle}
-            className="flex flex-row items-center justify-between cursor-pointer"
+            className="flex flex-row items-center space-x-8 justify-between cursor-pointer"
           >
-            <span className="text-2xl md:text-3xl mb-[-25px] font-thin">Web Development Services</span>
+            <span className="text-2xl md:text-3xl mb-[-25px] font-thin">Web Development <br /> Services</span>
             <img
               src="/arrow.png"
               alt="next"
@@ -187,7 +181,7 @@ function Navbar() {
             className="flex flex-col cursor-pointer mt-4"
           >
             <div className="flex flex-row justify-between space-x-12 items-center">
-              <span className="text-2xl md:text-3xl font-thin">EN</span>
+              <span className="text-2xl md:text-3xl font-thin">AL</span>
               <img
                 src="/arrow.png"
                 alt="next"
@@ -219,92 +213,87 @@ function Navbar() {
         </ul>
       </div>
 
-
       {/* Desktop Navbar */}
       <div className="hidden md:hidden lg:flex flex-row items-center md:px-8 space-x-8">
         <div className="hidden md:hidden lg:flex flex-row items-center space-x-16">
-          <h1
-            className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20"
-            onClick={() => scrollToSection("about")}
-          >
-            About Us
-          </h1>
-          <h1
-            onClick={() => scrollToSection("services")}
-            onMouseEnter={() => setIsDropdownOpenServices(true)}
-            onMouseLeave={() => setIsDropdownOpenServices(false)}
-            className="cursor-pointer hover:text-[#446AF2] transition-all duration-600 ease-in-out transform hover:scale-105 text-[#131B23] font-extralight text-xl z-20 h-100p relative"
-          >
-            Web Development Services
-            <div
-              className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenServices ? "max-h-96" : "max-h-0"
-                } overflow-hidden`}
-              style={{ width: "700px" }} // Adjust width as needed
+          <Link legacyBehavior href="/#about">
+            <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
+              About Us
+            </h1>
+          </Link>
+          <Link legacyBehavior href="/#services">
+            <h1
+              onMouseEnter={() => setIsDropdownOpenServices(true)}
+              onMouseLeave={() => setIsDropdownOpenServices(false)}
+              className="cursor-pointer hover:text-[#446AF2] transition-all duration-600 font-light text-[#131B23] ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative"
             >
-              <div className="grid grid-cols-2 ">
-                {serviceLinks.map((link, index) => (
-                  <Link legacyBehavior key={index} href={link.href}>
-                    <a className="flex p-4 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white rounded-lg">
-                      <img
-                        src={link.img}
-                        alt={link.title}
-                        className="w-10 h-10"
-                      />
-                      <div>
-                        <div className="font-semibold font-playfair text-[#131B23]">
+              Web Development Services
+              <div
+                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenServices ? "max-h-96" : "max-h-0"
+                  } overflow-hidden`}
+                style={{ width: "700px" }} // Adjust width as needed
+              >
+                <div className="grid grid-cols-2 ">
+                  {serviceLinks.map((link, index) => (
+                    <Link legacyBehavior key={index} href={link.href}>
+                      <a className="flex p-4 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white rounded-lg">
+                        <img
+                          src={link.img}
+                          alt={link.title}
+                          className="w-10 h-10"
+                        />
+                        <div>
+                          <div className="font-semibold font-playfair text-gray-900">
+                            {link.title}
+                          </div>
+                          <div className="text-sm font-light text-[#131B23]">
+                            {link.description}
+                          </div>
+                        </div>
+                      </a>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </h1>
+          </Link>
+
+          <Link legacyBehavior href="/#projects">
+            <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
+              Projects
+            </h1>
+          </Link>
+          <Link legacyBehavior href="/#contact">
+            <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
+              Contact
+            </h1>
+          </Link>
+          <Link legacyBehavior href="/#">
+            <h1
+              onMouseEnter={() => setIsDropdownOpenLanguages(true)}
+              onMouseLeave={() => setIsDropdownOpenLanguages(false)}
+              className="cursor-pointer hover:text-[#446AF2] transition-all font-light text-[#131B23] duration-600 ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative"
+            >
+              AL
+              <div
+                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
+                  } overflow-hidden`}
+                style={{ width: "50px" }} // Adjust width as needed
+              >
+                <div className="flex flex-col items-center w-full ">
+                  {languageLinks.map((link, index) => (
+                    <Link legacyBehavior key={index} href={link.href}>
+                      <a className="flex p-2 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white  rounded-lg">
+                        <div className="text-sm hover:font-semibold font-light text-[#131B23] text-md">
                           {link.title}
                         </div>
-                        <div className="text-sm font-extralight text-[#131B23]">
-                          {link.description}
-                        </div>
-                      </div>
-                    </a>
-                  </Link>
-                ))}
+                      </a>
+                    </Link>
+                  ))}
+                </div>
               </div>
-            </div>
-          </h1>
-
-          <h1
-            className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20"
-            onClick={() => scrollToSection("projects")}
-          >
-            Projects
-          </h1>
-
-          <h1
-            className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20"
-            onDoubleClick={navigateContact}
-            onClick={() => scrollToSection("contact")}
-          >
-            Contact
-          </h1>
-
-          <h1
-            onClick={() => scrollToSection("")}
-            onMouseEnter={() => setIsDropdownOpenLanguages(true)}
-            onMouseLeave={() => setIsDropdownOpenLanguages(false)}
-            className="cursor-pointer hover:text-[#446AF2] transition-all duration-600 ease-in-out transform text-[#131B23] font-extralight hover:scale-105 text-xl z-20 h-100p relative"
-          >
-            EN
-            <div
-              className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
-                } overflow-hidden`}
-              style={{ width: "50px" }} // Adjust width as needed
-            >
-              <div className="flex flex-col items-center w-full ">
-                {languageLinks.map((link, index) => (
-                  <Link legacyBehavior key={index} href={link.href}>
-                    <a className="flex p-2 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white  rounded-lg">
-                      <div className="text-sm hover:font-semibold font-extralight text-md text-[#131B23]">
-                        {link.title}
-                      </div>
-                    </a>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </h1>
+            </h1>
+          </Link>
         </div>
       </div>
     </div>
