@@ -7,35 +7,35 @@ const services = [
     image: "/web-design.png",
     title: "App Design",
     description:
-      "Creating visually appealing and user-friendly designs for your mobile app.",
+      "Erstellung optisch ansprechender und benutzerfreundlicher Designs für Ihre mobile App.",
   },
   {
     id: 2,
     image: "/smartphone.png",
-    title: "App Development",
+    title: "App-Entwicklung",
     description:
-      "Developing high-performance and scalable mobile applications for iOS and Android platforms.",
+      "Entwicklung leistungsstarker und skalierbarer mobiler Anwendungen für iOS- und Android-Plattformen.",
   },
   {
     id: 3,
     image: "/smma.png",
     title: "App Marketing",
     description:
-      "Strategizing and executing marketing plans to increase app visibility and user engagement.",
+      "Strategische Planung und Umsetzung von Marketingplänen zur Steigerung der Sichtbarkeit der App und der Nutzerbindung.",
   },
   {
     id: 4,
     image: "/web-maintenance.png",
-    title: "App Maintenance",
+    title: "App-Pflege",
     description:
-      "Providing ongoing support and maintenance to ensure your app stays updated and secure.",
+      "Laufende Unterstützung und Wartung, um sicherzustellen, dass Ihre App immer auf dem neuesten Stand und sicher ist.",
   },
   {
     id: 5,
     image: "/analytics.png",
-    title: "App Analytics",
+    title: "App-Analytik",
     description:
-      "Leveraging data analytics to monitor app performance and user interactions for continuous improvement.",
+      "Nutzung von Datenanalysen zur Überwachung der App-Performance und der Benutzerinteraktionen für kontinuierliche Verbesserungen.",
   },
 ];
 
@@ -134,8 +134,8 @@ const MobDevSection = () => {
       >
         <div className="bg-blue-100">
           <div className="flex justify-center items-center py-10">
-            <h1 className="text-4xl font-playfair font-semibold text-center">
-              Mobile app development services
+            <h1 className="text-2xl lg:text-4xl md:text- font-playfair font-semibold text-center">
+              Entwicklungsdienstleistungen für mobile Anwendungen
             </h1>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-10 p-6">

@@ -46,30 +46,30 @@ export default function ServicesSection() {
     {
       href: "/de/WebsiteDevelopment",
       img: "/computer.png",
-      title: "Website Development",
+      title: "Web-Entwicklung",
       description:
-        "Specializing in custom web solutions to enhance your online presence.",
+        "Spezialisiert auf kundenspezifische Web-Lösungen zur Verbesserung Ihrer Online-Präsenz.",
     },
     {
       href: "/de/MobileDevelopment",
       img: "/smartphone.png",
-      title: "Mobile App Development",
+      title: "Mobile App-Entwicklung",
       description:
-        "Creating mobile applications that offer seamless user experiences.",
+        "Erstellung mobiler Anwendungen, die nahtlose Benutzererfahrungen bieten.",
     },
     {
       href: "/de/Smma",
       img: "/smma.png",
-      title: "Social Media Marketing",
+      title: "Marketing sozialer Medien",
       description:
-        "Strategies to grow your brand’s presence on various social platforms.",
+        "Strategien zum Ausbau der Präsenz Ihrer Marke auf verschiedenen sozialen Plattformen.",
     },
     {
       href: "/de/Design",
       img: "/web-design.png",
       title: "Design",
       description:
-        "Innovative design solutions tailored to your business’s needs.",
+        "Innovative Designlösungen, die auf die Bedürfnisse Ihres Unternehmens zugeschnitten sind.",
     },
   ];
   return (
@@ -84,8 +84,9 @@ export default function ServicesSection() {
         {links.map((link, index) => (
           <div
             key={index}
-            className={`ease-in-out hover:scale-105 transition-opacity duration-1000 ${show[index] ? "opacity-100" : "opacity-0"
-              }`}
+            className={`ease-in-out hover:scale-105 transition-opacity duration-1000 ${
+              show[index] ? "opacity-100" : "opacity-0"
+            }`}
           >
             <Link legacyBehavior href={link.href} passHref>
               <div className="text-center cursor-pointer">

@@ -41,26 +41,26 @@ function Contact() {
       <div className="flex flex-wrap items-start justify-center ">
         <div className="flex flex-col bg-[#E6F0F8] shadow-custom-blue rounded-[39px] h-[1200px] px-4 w-[350px] lg:h-[700px] lg:w-[650px] md:h-[700px] md:w-[650px] transition-all duration-500 ease-in-out transform hover:scale-105">
           <h1 className="px-10 py-10 lg:text-left font-playfair text-center text-3xl font-bold ">
-            Contact Us!
+            Nehmen Sie Kontakt mit uns auf!
           </h1>
           <p className="px-10 text-[14px] lg:text-left font-extralight text-[#131B23] text-center lg:w-[550px]">
-            Choose CAK to propel your software development forward. Get in touch
-            to explore your project needs, benefit from our complimentary
-            consultation, and receive a tailored estimate for both cost and
-            launch timeline!
+            Wählen Sie CAK, um Ihre Softwareentwicklung voranzutreiben. Nehmen
+            Sie Kontakt auf um Ihre Projektbedürfnisse zu erkunden, von unserer
+            kostenlosen Beratung und erhalten Sie einen maßgeschneiderten
+            Kostenvoranschlag und Zeitplan für die Einführung!
           </p>
           <p className="px-10 py-8 text-[14px] lg:text-left font-extralight text-[#131B23] text-center lg:w-[550px]">
-            Send us an e-mail or fill in the form. We will be in touch within
-            one business day!
+            Schicken Sie uns eine E-Mail oder füllen Sie das Formular aus. Wir
+            werden uns innerhalb einem Werktag!
           </p>
           <h1 className="px-10 text-[18px] lg:text-left font-playfair text-center font-semibold ">
-            Send us an e-mail
+            Schicken Sie uns eine E-Mail
           </h1>
           <h2 className="px-10 text-[14px] lg:text-left font-extralight text-[#131B23] text-center">
             info@cakwebsolutions.com
           </h2>
           <h1 className="px-10 mt-[10px] text-[18px] lg:text-left font-playfair text-center font-semibold ">
-            Give us a call
+            Klingeln Sie durch
           </h1>
           <h2 className="px-10 text-[14px] lg:text-left font-extralight text-[#131B23] text-center">
             +49 (176) 2359-2066
@@ -76,11 +76,11 @@ function Contact() {
                 Luars Qamo
               </h1>
               <h2 className="px-10 font-extralight text-[#131B23] text-[14px]">
-                Co-founder of CAK
+                Mitbegründer von CAK
               </h2>
               <p className="px-10 font-extralight text-[#131B23] py-4 text-[13px] w-[250px]">
-                I`ll ensure the team best suited for your project gets in touch
-                with you swiftly.
+                Ich werde dafür sorgen, dass sich das für Ihr Projekt am besten
+                geeignete Team mit Ihnen in Verbindung setzt.
               </p>
             </div>
           </div>
@@ -89,37 +89,39 @@ function Contact() {
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="px-4 py-4 flex flex-col space-y-2">
               <h1 className="text-2xl font-bold font-playfair text-center py-4">
-                Fill in the form!
+                Füllen Sie das Formular aus!
               </h1>
-              <h1 className="font-playfair">Your Full Name</h1>
+              <h1 className="font-playfair">Ihr Name</h1>
               <input
-                {...register("name", { required: "*The name is missing" })}
+                {...register("name", { required: "*Der Name fehlt" })}
                 placeholder={
-                  errors.name ? errors.name.message : "Your name here"
+                  errors.name ? errors.name.message : "Ihr Name hier"
                 }
                 className="bg-white focus:bg-white  lg:transition-all lg:duration-500 lg:ease-in-out lg:transform lg:hover:scale-105 cursor-text contactInput outline-none"
                 type="text"
               />
               <div className="w-300 h-[0.5px] bg-[#AECBEB]" />
-              <h1 className="font-playfair">Company Name</h1>
+              <h1 className="font-playfair">Name des Unternehmens</h1>
               <input
                 {...register("name", {
-                  required: "*The Company name is missing",
+                  required: "*Der Name des Unternehmens fehlt",
                 })}
                 className="contactInput bg-white focus:bg-white lg:transition-all lg:duration-500 lg:ease-in-out lg:transform lg:hover:scale-105 cursor-text outline-none"
                 placeholder={
-                  errors.name ? errors.name.message : "Your Company name here"
+                  errors.name
+                    ? errors.name.message
+                    : "Ihr Name des Unternehmens hier"
                 }
                 type="text"
               />
               <div className="w-300 h-[0.5px] bg-[#AECBEB]" />
-              <h1 className="font-playfair">Company Email</h1>
+              <h1 className="font-playfair">E-Mail des Unternehmens</h1>
               <input
                 {...register("email", {
-                  required: "*The email is missing",
+                  required: "*Die E-Mail fehlt",
                   pattern: {
                     value: /^\S+@\S+$/i,
-                    message: "Invalid email format",
+                    message: "Ungültiges E-Mail-Format",
                   },
                 })}
                 className="contactInput bg-white focus:bg-white lg:transition-all lg:duration-500 lg:ease-in-out lg:transform lg:hover:scale-105 cursor-text outline-none"
@@ -127,26 +129,26 @@ function Contact() {
                 type="email"
               />
               <div className="w-300 h-[0.5px] bg-[#AECBEB]" />
-              <h1 className="font-playfair">Subject</h1>
+              <h1 className="font-playfair">Betreff</h1>
               <input
                 {...register("subject", {
-                  required: "*The subject is missing",
+                  required: "*Der Betreff fehlt",
                 })}
                 className="contactInput bg-white focus:bg-white lg:transition-all lg:duration-500 lg:ease-in-out lg:transform lg:hover:scale-105 cursor-text outline-none"
                 placeholder={
-                  errors.subject ? errors.subject.message : "Subject"
+                  errors.subject ? errors.subject.message : "Betreff"
                 }
                 type="text"
               />
               <div className="w-300 h-[0.5px] bg-[#AECBEB]" />
-              <h1 className="font-playfair">Message</h1>
+              <h1 className="font-playfair">Nachricht</h1>
               <textarea
                 {...register("message", {
-                  required: "*The message is missing",
+                  required: "*Die Nachricht fehlt",
                 })}
                 className="contactInput w-full resize-none bg-white focus:bg-white lg:transition-all lg:duration-500 lg:ease-in-out lg:transform lg:hover:scale-105 cursor-text outline-none"
                 placeholder={
-                  errors.message ? errors.message.message : "Message"
+                  errors.message ? errors.message.message : "Nachricht"
                 }
               />
               <div className="w-300 h-[0.5px] bg-[#AECBEB]" />
@@ -156,7 +158,7 @@ function Contact() {
                   disabled={isSubmitting || Object.keys(errors).length > 0}
                   className="bg-[#446AF2] hover:font-bold text-white w-32 h-12 shadow-custom-blue rounded-[39px] mt-4"
                 >
-                  {isSubmitting ? "Sending..." : "Send"}
+                  {isSubmitting ? "Wird gesendet..." : "Senden"}
                 </button>
               </div>
             </div>

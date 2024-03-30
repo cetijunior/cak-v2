@@ -64,7 +64,7 @@ function Navbar() {
 
   const navigateToSection = (sectionId: string) => {
     setIsMenuOpen(false); // Close the menu
-    router.push("/#" + sectionId); // Navigate to section with smooth scroll
+    router.push("/al" + sectionId); // Navigate to section with smooth scroll
   };
 
   const handleLanguageDropdownToggle = () => {
@@ -111,14 +111,14 @@ function Navbar() {
         <ul className="flex h-full flex-col w-[350px]  z-30 pl-5 space-y-8 items-start justify-center text-white overflow-y-auto">
           <li
             className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
-            onClick={() => navigateToSection("/")}
+            onClick={() => navigateToSection("/FaqjaKryesore")}
           >
             Faqja Kryesore
           </li>
 
           <li
             className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
-            onClick={() => navigateToSection("about")}
+            onClick={() => navigateToSection("/FaqjaKryesore#about")}
           >
             Rreth nesh
           </li>
@@ -128,7 +128,7 @@ function Navbar() {
             className="flex flex-row items-center space-x-8 justify-between cursor-pointer"
           >
             <span className="text-2xl md:text-3xl mb-[-25px] font-thin">
-              Shërbimet e ofruara
+              Shërbimet <br />e ofruara
             </span>
             <img
               src="/arrow.png"
@@ -169,13 +169,13 @@ function Navbar() {
 
           <li
             className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
-            onClick={() => navigateToSection("projects")}
+            onClick={() => navigateToSection("/FaqjaKryesore#projects")}
           >
             Projekte
           </li>
           <li
             className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
-            onClick={() => navigateToSection("contact")}
+            onClick={() => navigateToSection("/FaqjaKryesore#contact")}
           >
             Kontakti
           </li>

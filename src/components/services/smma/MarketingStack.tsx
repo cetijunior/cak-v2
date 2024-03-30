@@ -73,8 +73,9 @@ export default function MarketingStack() {
           {techStack.map((tech, index) => (
             <div
               key={tech.name}
-              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp delay-${index * 100
-                }ms`}
+              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp delay-${
+                index * 100
+              }ms`}
             >
               <img
                 src={tech.icon}
@@ -91,7 +92,7 @@ export default function MarketingStack() {
 
       <div className="flex flex-col justify-center md:justify-center lg:justify-center space-y-8 md:space-y-8 items-center md:items-center lg:items-center p-8 md:p-10 rounded-3xl">
         <h1 className=" font-bold font-playfair text-[#131B23] text-3xl">
-          We animate mobile applications
+          Engage, Captivate, Connect
         </h1>
         <div className="lg:w-fit md:w-[600px] w-[300px] space-y-4 px-4 justify-center md:justify-center lg:justify-evenly items-center md:items-center lg:items-start">
           <p className="text-sm lg:text-md lg:text-lg text-start group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light font-extralight">

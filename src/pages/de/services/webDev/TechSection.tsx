@@ -68,14 +68,15 @@ export default function TechStackSection() {
     >
       <div className="transition-all duration-300 ease-in-out transform hover:scale-105 p-7 rounded-xl shadow-custom-blue mb-10 sm:mb-0">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl text-gray-900 mb-10 text-center">
-          We speak your language
+          Wir sprechen Ihre Sprache
         </h2>
         <div className="w-[300px] md:w-[500px] lg:w-[600px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {techStack.map((tech, index) => (
             <div
               key={tech.name}
-              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp  delay-${index * 100
-                }ms`}
+              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp  delay-${
+                index * 100
+              }ms`}
             >
               <div className="duration-300 ease-in-out transform hover:scale-105 flex flex-col items-center">
                 <img
@@ -95,43 +96,46 @@ export default function TechStackSection() {
       <div className="flex flex-col justify-center md:justify-center lg:justify-center space-y-8 md:space-y-8 items-center md:items-center lg:items-center p-8 md:p-10 rounded-3xl">
         <div className="lg:w-fit md:w-[600px] w-[300px] space-y-4 px-4 justify-center md:justify-center lg:justify-evenly items-center md:items-center lg:items-start">
           <h1 className="font-bold text-center text-3xl">
-            We bring Web-Sites to life
+            Wir erwecken Web-Sites zum Leben
           </h1>
           <p className="flex flex-row items-center md:items-center lg:items-start group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
             <span className="text-black group-hover:text-blue-500 pr-5">
               ◉{" "}
             </span>
-            Empowering your business through diverse technology expertise.
+            Stärkung Ihres Unternehmens durch vielfältige Technologiekompetenz.
           </p>
           <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
             <span className="text-black group-hover:text-blue-500 pr-5">
               ◉{" "}
             </span>
-            Innovative solutions crafted with the latest tech stack.
+            Innovative Lösungen, die mit dem neuesten technischen Stack
+            entwickelt wurden.
           </p>
           <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
             <span className="text-black group-hover:text-blue-500 pr-5">
               ◉{" "}
             </span>
-            Bridging the gap between complex problems and user-friendly
-            solutions.
+            Überbrückung der Kluft zwischen komplexen Problemen und
+            benutzerfreundlichen Lösungen.
           </p>
           <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
             <span className="text-black group-hover:text-blue-500 pr-5">
               ◉{" "}
             </span>
-            Our dedication to tech excellence shapes the core of our identity.
+            Unser Engagement für technische Spitzenleistungen prägt den Kern
+            unserer Identität.
           </p>
           <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:text-black text-gray-600">
             <span className="text-black group-hover:text-blue-500 pr-5">
               ◉{" "}
             </span>
-            From ideation to execution, technology is our language of choice.
+            Von der Idee bis zur Ausführung ist die Technologie unsere
+            bevorzugte Sprache.
           </p>
         </div>
         <Link legacyBehavior href="/de/Start#contact">
           <button className="rounded-xl duration-300 ease-in-out transform hover:scale-105 hover:font-semibold shadow-custom-blue px-16 p-2 bg-blue-600 text-white">
-            Tell us your Problem
+            Nennen Sie uns Ihr Problem
           </button>
         </Link>
       </div>

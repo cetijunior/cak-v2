@@ -71,36 +71,46 @@ const Mobdev = () => {
       <Navbar />
       <div className="w-screen">
         <div className="flex mt-[-40px] md:mt-[-200px] lg:mt-[-350px] items-center justify-center">
-          <video autoPlay loop muted playsInline className="rounded-lg w-screen">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="rounded-lg w-screen"
+          >
             <source
               src="https://www.helmes.com/wp-content/uploads/2022/07/costom-software-development_600.mp4"
               type="video/mp4"
             />
-            Your Browser does not support the video tag.
+            Ihr Browser unterstützt das Video-Tag nicht.
           </video>
         </div>
         <div className="flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105 justify-center w-screen ">
           <div className="w-[380px] md:w-[650px] lg:w-[850px] p-10 md:p-10 lg:p-20 z-10 md:h-[450px] lg:h-[500px] bg-[#F8F9FB] shadow-custom-blue mt-[-150px] md:mt-[-200px] lg:mt-[-370px] rounded-xl space-y-4 md:space-y-8 lg:space-y-12">
             <h1 className="text-start md:text-start lg:text-center mt-[-10px] lg:mt-[-25px] text-3xl md:text-5xl lg:text-6xl text-[#131B23] playfair-display">
-              World-Class Mobile Development
+              Mobile Entwicklung der Spitzenklasse
             </h1>
-            <h3 className="text-start md:text-start lg:text-center lg:text-xl md:text-xl text-[#131B23] text-sm font-extralight font-sans-serif ">
-              Elevate your app development process with our customized
-              solutions! Whether you`re starting from scratch or refining an
-              existing application, we`re here to take your project to the next
-              level. Dive into our bespoke development strategies that cater
-              directly to your needs, enhancing functionality, user experience,
-              and overall app performance. Contact us for a tailored approach,
-              complete with a thorough assessment of your project`s
-              specifications and potential outcomes. Let`s collaborate to create
-              something exceptional in the mobile app landscape.
+            <h3 className="text-start md:text-start lg:text-center lg:text-[17px] md:text-base text-[#131B23] text-sm font-extralight font-sans-serif ">
+              Verbessern Sie Ihren App-Entwicklungsprozess mit unseren
+              maßgeschneiderten Lösungen! Ob Sie von Grund auf neu beginnen oder
+              eine bestehende bestehenden Anwendung, wir sind hier, um Ihr
+              Projekt auf die nächste Ebene zu bringen. Tauchen Sie ein in
+              unsere maßgeschneiderten Entwicklungsstrategien, die die direkt
+              auf Ihre Bedürfnisse zugeschnitten sind und die Funktionalität,
+              Benutzerfreundlichkeit und die Gesamtleistung der Anwendung.
+              Kontaktieren Sie uns für einen maßgeschneiderten Ansatz, mit einer
+              gründlichen Bewertung der Spezifikationen Ihres Projekts
+              Spezifikationen und potenziellen Ergebnisse. Lassen Sie uns
+              zusammenarbeiten, um etwas Außergewöhnliches in der mobilen
+              App-Landschaft.
             </h3>
           </div>
-          <div className="bg-[#446AF2] hover:font-semibold font-sans-serif lg:text-xl transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 
+          <div
+            className="bg-[#446AF2] hover:font-semibold font-sans-serif lg:text-xl transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 
           text-white mt-[-20px] md:mt-[-25px] lg:mt-[-30px] py-1 md:py-3 lg:py-3 px-8 md:px-28 lg:px-20 rounded-3xl md:text-xl text-md"
           >
             <Link legacyBehavior href="/de/Start#contact">
-              Contact Us
+              Kontaktieren Sie uns
             </Link>
           </div>
         </div>
@@ -113,14 +123,15 @@ const Mobdev = () => {
         <div className="flex flex-col lg:flex-row bg-white h-full w-full justify-around items-center px-4 sm:px-14 lg:px-24 py-20">
           <div className="transition-all duration-300 ease-in-out transform hover:scale-105 p-7 rounded-xl shadow-custom-blue mb-10 sm:mb-0">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair text-gray-900 mb-10 text-center">
-              We speak your language
+              Wir sprechen Ihre Sprache
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
               {techStack.map((tech, index) => (
                 <div
                   key={tech.name}
-                  className={`flex flex-col items-center transition-all duration-300 ease-in-out justify-center opacity-0 animate-fadeInUp delay-${index * 1000
-                    }ms`}
+                  className={`flex flex-col items-center transition-all duration-300 ease-in-out justify-center opacity-0 animate-fadeInUp delay-${
+                    index * 1000
+                  }ms`}
                 >
                   <img
                     src={tech.icon}
@@ -137,43 +148,43 @@ const Mobdev = () => {
 
           <div className="flex flex-col items-center max-w-md lg:max-w-lg space-y-4 py-10 px-4">
             <h1 className=" font-bold font-playfair text-[#131B23] text-3xl">
-              We animate mobile applications
+              Wir animieren mobile Apps.
             </h1>
             <p className="flex flex-row items-center w-full group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              We breathe life into mobile apps, elevating mobile app development
-              through our distinctive approach that merges innovation with
-              efficiency seamlessly.
+              Wir hauchen mobilen Apps Leben ein und verbessern die Entwicklung
+              mobiler Apps Ansatz, der Innovation und Effizienz nahtlos
+              miteinander verbindet. Effizienz nahtlos verbindet.
             </p>
             <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              By leveraging the latest technology and agile practices, we
-              swiftly and accurately turn your visions into tangible
-              applications.
+              Durch den Einsatz modernster Technologie und agiler Praktiken
+              können wir setzen wir Ihre Visionen schnell und präzise in
+              greifbare Anwendungen.
             </p>
             <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              Our emphasis on intuitive design and solid backend development
-              enables us to create mobile experiences that go beyond what&apos;s
-              anticipated.
+              Unser Schwerpunkt auf intuitivem Design und solider
+              Backend-Entwicklung ermöglichen es uns, mobile Erlebnisse zu
+              schaffen, die über das hinausgehen, was&apos;s erwartet werden.
             </p>
             <p className="flex flex-row items-center group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              Central to our ethos is a commitment to comprehend and address
-              your specific needs, ensuring solutions are perfectly tailored to
-              your challenges.
+              Im Mittelpunkt unseres Ethos steht die Verpflichtung, Ihre und auf
+              Ihre spezifischen Bedürfnisse einzugehen, damit die Lösungen
+              perfekt auf Ihre Herausforderungen.
             </p>
             <div className="rounded-xl w-fit shadow-custom-blue p-3 bg-blue-600 text-white">
               <Link legacyBehavior href="/de/Start#contact">
-                Tell us your Problem
+                Nennen Sie uns Ihr Problem
               </Link>
             </div>
           </div>
