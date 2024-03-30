@@ -24,32 +24,32 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-evenly sm:items-start sm:text-start px-4 sm:px-10 w-full">
           <div className="flex flex-col w-fit mb-4 mx-4">
             <h5 className="text-xl font-bold font-playfair mb-2">
-              Our Company
+              Kompania jonë
             </h5>
             <ul className="text-[#131B23] font-thin">
               <li
                 className="mb-2 hover:text-[#446AF2] cursor-pointer"
                 onClick={(e) => handleScrollToSection(e, "#about")}
               >
-                About us
+                Rreth nesh
               </li>
               <li
                 className="mb-2 hover:text-[#446AF2] cursor-pointer"
                 onClick={(e) => handleScrollToSection(e, "#services")}
               >
-                Website Development Services
+                Shërbimet e Kompanisë
               </li>
               <li
                 className="mb-2 hover:text-[#446AF2] cursor-pointer"
                 onClick={(e) => handleScrollToSection(e, "#contact")}
               >
-                Contact
+                Kontakti
               </li>
               <li
                 className="mb-2 hover:text-[#446AF2] cursor-pointer"
                 onClick={(e) => handleScrollToSection(e, "#projects")}
               >
-                Projects
+                Projekte
               </li>
             </ul>
           </div>

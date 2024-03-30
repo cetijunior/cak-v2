@@ -6,37 +6,37 @@ const services = [
   {
     id: 1,
     image: "/icons/strat.png",
-    title: "Strategy Consultation",
+    title: "Konsultimi i Strategjisë",
     description:
-      "We craft a tailored social media strategy aligned with your goals by deeply understanding your brand, audience, and market.",
+      "Ne krijojmë një strategji të përshtatur të mediave sociale në përputhje me qëllimet tuaja duke kuptuar thellësisht markën, audiencën dhe tregun tuaj.",
   },
   {
     id: 2,
     image: "/icons/design.png",
-    title: "Content Creation and Design",
+    title: "Krijimi i Contentit dhe dizajni",
     description:
-      "We produce engaging social media content based on the latest digital trends and UX insights, designed to resonate with your audience and spur action.",
+      "Ne prodhojmë përmbajtje tërheqëse të mediave sociale bazuar në tendencat më të fundit dixhitale dhe njohuritë e UX, të krijuara për të rezonuar me audiencën tuaj dhe për të nxitur veprime.",
   },
   {
     id: 3,
     image: "/icons/smplanning.png",
-    title: "Social Media Campaign Planning",
+    title: "Planifikimi i Rrjeteve Sociale",
     description:
-      "We design flexible, sustainable social media campaigns with high engagement, based on a solid, strategic foundation.",
+      "Ne hartojmë fushata fleksibël dhe të qëndrueshme të mediave sociale me angazhim të lartë, bazuar në një bazë solide dhe strategjike.",
   },
   {
     id: 4,
     image: "/icons/smgrowth.png",
-    title: "Social Media Management and Growth",
+    title: "Menaxhimi dhe Rritja e Rrjeteve Sociale",
     description:
-      "We expertly manage your social media campaigns across platforms with the latest tools, ensuring optimal performance and broad audience reach.",
+      "Ne menaxhojmë me mjeshtëri fushatat tuaja të mediave sociale nëpër platforma me mjetet më të fundit, duke siguruar performancë optimale dhe shtrirje të gjerë të audiencës.",
   },
   {
     id: 5,
     image: "/icons/analytics.png",
-    title: "Ongoing Analytics and Optimization",
+    title: "Analiza dhe optimizim i vazhdueshëm",
     description:
-      "Our support continues post-launch, with continuous monitoring and optimizations to maximize your social media ROI and value.",
+      "Mbështetja jonë vazhdon edhe pas lançimit, me monitorim të vazhdueshëm dhe optimizime për të maksimizuar ROI dhe vlerën tuaj të mediave sociale.",
   },
 ];
 
@@ -130,7 +130,7 @@ const SmmaSection = () => {
       <div className="bg-[#AECBEB]">
         <div className="flex justify-center items-center py-10">
           <h1 className="sm:text-4xl text-3xl font-playfair font-semibold text-center">
-            Social Media Marketing Services
+            Sherbimi i Menaxhimit te Rrjeteve tuaja Sociale
           </h1>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-10 p-6">

@@ -41,26 +41,26 @@ function Contact() {
       <div className="flex flex-wrap items-start justify-center ">
         <div className="flex flex-col bg-[#E6F0F8] shadow-custom-blue rounded-[39px] h-[1200px] px-4 w-[350px] lg:h-[700px] lg:w-[650px] md:h-[700px] md:w-[650px] transition-all duration-500 ease-in-out transform hover:scale-105">
           <h1 className="px-10 py-10 lg:text-left font-playfair text-center text-3xl font-bold ">
-            Contact Us!
+            Na Kontaktoni!
           </h1>
           <p className="px-10 text-[14px] lg:text-left font-extralight text-[#131B23] text-center lg:w-[550px]">
-            Choose CAK to propel your software development forward. Get in touch
-            to explore your project needs, benefit from our complimentary
-            consultation, and receive a tailored estimate for both cost and
-            launch timeline!
+            Zgjidhni CAK për të shtyrë përpara zhvillimin tuaj të softuerit.
+            Kontaktoni për të eksploruar nevojat e projektit tuaj, përfitoni nga
+            konsultimi ynë falas, dhe merrni një vlerësim të personalizuar për
+            kostot dhe afatin e nisjes!
           </p>
           <p className="px-10 py-8 text-[14px] lg:text-left font-extralight text-[#131B23] text-center lg:w-[550px]">
-            Send us an e-mail or fill in the form. We will be in touch within
-            one business day!
+            Na dërgoni një email ose plotësoni formularin. Ne do të jemi në
+            kontakt brenda një dite pune!
           </p>
           <h1 className="px-10 text-[18px] lg:text-left font-playfair text-center font-semibold ">
-            Send us an e-mail
+            Dergoni nje E-mail
           </h1>
           <h2 className="px-10 text-[14px] lg:text-left font-extralight text-[#131B23] text-center">
             info@cakwebsolutions.com
           </h2>
           <h1 className="px-10 mt-[10px] text-[18px] lg:text-left font-playfair text-center font-semibold ">
-            Give us a call
+            Na telefononi në:
           </h1>
           <h2 className="px-10 text-[14px] lg:text-left font-extralight text-[#131B23] text-center">
             +49 (176) 2359-2066
@@ -79,8 +79,8 @@ function Contact() {
                 Co-founder of CAK
               </h2>
               <p className="px-10 font-extralight text-[#131B23] py-4 text-[13px] w-[250px]">
-                I`ll ensure the team best suited for your project gets in touch
-                with you swiftly.
+                Do të siguroj që ekipi më i përshtatshëm për projektin tuaj të
+                kontaktojë me ju me shpejtësi.
               </p>
             </div>
           </div>
@@ -89,9 +89,9 @@ function Contact() {
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="px-4 py-4 flex flex-col space-y-2">
               <h1 className="text-2xl font-bold font-playfair text-center py-4">
-                Fill in the form!
+                Plotësoni formularin!
               </h1>
-              <h1 className="font-playfair">Your Full Name</h1>
+              <h1 className="font-playfair">Emri i plotë</h1>
               <input
                 {...register("name", { required: "*The name is missing" })}
                 placeholder={
@@ -101,7 +101,7 @@ function Contact() {
                 type="text"
               />
               <div className="w-300 h-[0.5px] bg-[#AECBEB]" />
-              <h1 className="font-playfair">Company Name</h1>
+              <h1 className="font-playfair">Emri i kompanisë</h1>
               <input
                 {...register("name", {
                   required: "*The Company name is missing",
@@ -113,7 +113,7 @@ function Contact() {
                 type="text"
               />
               <div className="w-300 h-[0.5px] bg-[#AECBEB]" />
-              <h1 className="font-playfair">Company Email</h1>
+              <h1 className="font-playfair">Email</h1>
               <input
                 {...register("email", {
                   required: "*The email is missing",
@@ -127,7 +127,7 @@ function Contact() {
                 type="email"
               />
               <div className="w-300 h-[0.5px] bg-[#AECBEB]" />
-              <h1 className="font-playfair">Subject</h1>
+              <h1 className="font-playfair">Subjekti</h1>
               <input
                 {...register("subject", {
                   required: "*The subject is missing",
@@ -139,7 +139,7 @@ function Contact() {
                 type="text"
               />
               <div className="w-300 h-[0.5px] bg-[#AECBEB]" />
-              <h1 className="font-playfair">Message</h1>
+              <h1 className="font-playfair">Mesazhi</h1>
               <textarea
                 {...register("message", {
                   required: "*The message is missing",

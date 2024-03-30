@@ -5,37 +5,37 @@ const services = [
   {
     id: 1,
     image: "/web-design.png",
-    title: "App Design",
+    title: "Dizajni i Aplikacionit",
     description:
-      "Creating visually appealing and user-friendly designs for your mobile app.",
+      "Krijimi i modeleve tërheqëse vizualisht dhe të përshtatshme për përdoruesit për aplikacionin tuaj celular.",
   },
   {
     id: 2,
     image: "/smartphone.png",
-    title: "App Development",
+    title: "Zhvillimi i aplikacionit",
     description:
-      "Developing high-performance and scalable mobile applications for iOS and Android platforms.",
+      "Zhvillimi i aplikacioneve celulare me performancë të lartë dhe të shkallëzuar për platformat iOS dhe Android.",
   },
   {
     id: 3,
     image: "/smma.png",
-    title: "App Marketing",
+    title: "Marketingu i aplikacionit",
     description:
-      "Strategizing and executing marketing plans to increase app visibility and user engagement.",
+      "Strategjizimi dhe ekzekutimi i planeve të marketingut për të rritur shikueshmërinë e aplikacionit dhe angazhimin e përdoruesit.",
   },
   {
     id: 4,
     image: "/web-maintenance.png",
-    title: "App Maintenance",
+    title: "Mirmbajtja e aplikacionit",
     description:
-      "Providing ongoing support and maintenance to ensure your app stays updated and secure.",
+      "Ofrimi i mbështetjes dhe mirëmbajtjes së vazhdueshme për të siguruar që aplikacioni juaj të mbetet i përditësuar dhe i sigurt.",
   },
   {
     id: 5,
     image: "/analytics.png",
-    title: "App Analytics",
+    title: "Analitika e aplikacionit",
     description:
-      "Leveraging data analytics to monitor app performance and user interactions for continuous improvement.",
+      "Ofrimi i mbështetjes dhe mirëmbajtjes së vazhdueshme për të siguruar që aplikacioni juaj të mbetet i përditësuar dhe i sigurt.",
   },
 ];
 
@@ -135,7 +135,7 @@ const MobDevSection = () => {
         <div className="bg-blue-100">
           <div className="flex justify-center items-center py-10">
             <h1 className="text-4xl font-playfair font-semibold text-center">
-              Mobile app development services
+              Sherbimet e aplikacioneve mobile
             </h1>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-10 p-6">

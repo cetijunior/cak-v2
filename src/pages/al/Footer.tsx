@@ -24,40 +24,31 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-evenly sm:items-start sm:text-start px-4 sm:px-10 w-full">
           <div className="flex flex-col w-fit mb-4 mx-4">
             <h5 className="text-xl font-bold font-playfair mb-2">
-              Our Company
+              Kompania Jonë
             </h5>
             <ul className="text-[#131B23] font-thin">
               <Link href="/al/FaqjaKryesore#about" legacyBehavior>
-                <li
-                  className="mb-2 hover:text-[#446AF2] cursor-pointer"
-                >
-                  About us
+                <li className="mb-2 hover:text-[#446AF2] cursor-pointer">
+                  Rreth nesh
                 </li>
               </Link>
               <Link href="/al/FaqjaKryesore#services" legacyBehavior>
-                <li
-                  className="mb-2 hover:text-[#446AF2] cursor-pointer"
-                >
-                  Website Development Services
+                <li className="mb-2 hover:text-[#446AF2] cursor-pointer">
+                  Sherbimi i zhvillimit te uebsjatit
                 </li>
               </Link>
 
               <Link href="/al/FaqjaKryesore#contact" legacyBehavior>
-                <li
-                  className="mb-2 hover:text-[#446AF2] cursor-pointer"
-                >
-                  Contact
+                <li className="mb-2 hover:text-[#446AF2] cursor-pointer">
+                  Kontakt
                 </li>
               </Link>
 
               <Link href="/al/FaqjaKryesore#projects" legacyBehavior>
-                <li
-                  className="mb-2 hover:text-[#446AF2] cursor-pointer"
-                >
-                  Projects
+                <li className="mb-2 hover:text-[#446AF2] cursor-pointer">
+                  Projekte
                 </li>
               </Link>
-
             </ul>
           </div>
 
