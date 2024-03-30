@@ -6,37 +6,37 @@ const services = [
   {
     id: 1,
     image: "/icons/strat.png",
-    title: "Strategy Consultation",
+    title: "Strategie-Beratung",
     description:
-      "We craft a tailored social media strategy aligned with your goals by deeply understanding your brand, audience, and market.",
+      "Wir entwickeln eine maßgeschneiderte Social-Media-Strategie, die auf Ihre Ziele abgestimmt ist, indem wir Ihre Marke, Ihr Publikum und Ihren Markt genau verstehen.",
   },
   {
     id: 2,
     image: "/icons/design.png",
-    title: "Content Creation and Design",
+    title: "Erstellung und Gestaltung von Inhalten",
     description:
-      "We produce engaging social media content based on the latest digital trends and UX insights, designed to resonate with your audience and spur action.",
+      "Wir produzieren ansprechende Social-Media-Inhalte, die auf den neuesten digitalen Trends und UX-Erkenntnissen basieren und so konzipiert sind, dass sie Ihr Publikum ansprechen und zum Handeln anregen.",
   },
   {
     id: 3,
     image: "/icons/smplanning.png",
-    title: "Social Media Campaign Planning",
+    title: "Planung von Social Media-Kampagnen",
     description:
-      "We design flexible, sustainable social media campaigns with high engagement, based on a solid, strategic foundation.",
+      "Wir konzipieren flexible, nachhaltige Social-Media-Kampagnen mit hohem Engagement, die auf einer soliden, strategischen Grundlage basieren.",
   },
   {
     id: 4,
     image: "/icons/smgrowth.png",
-    title: "Social Media Management and Growth",
+    title: "Social Media Management und Wachstum",
     description:
-      "We expertly manage your social media campaigns across platforms with the latest tools, ensuring optimal performance and broad audience reach.",
+      "Wir verwalten Ihre Social-Media-Kampagnen auf allen Plattformen mit den neuesten Tools, um eine optimale Leistung und eine große Reichweite zu gewährleisten.",
   },
   {
     id: 5,
     image: "/icons/analytics.png",
-    title: "Ongoing Analytics and Optimization",
+    title: "Fortlaufende Analyse und Optimierung",
     description:
-      "Our support continues post-launch, with continuous monitoring and optimizations to maximize your social media ROI and value.",
+      "Unser Support geht auch nach der Einführung weiter, mit kontinuierlicher Überwachung und Optimierung, um den ROI und den Wert Ihrer sozialen Medien zu maximieren.",
   },
 ];
 
@@ -130,7 +130,7 @@ const SmmaSection = () => {
       <div className="bg-[#AECBEB]">
         <div className="flex justify-center items-center py-10">
           <h1 className="sm:text-4xl text-3xl font-playfair font-semibold text-center">
-            Social Media Marketing Services
+            Social Media Marketing Dienstleistungen
           </h1>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-10 p-6">

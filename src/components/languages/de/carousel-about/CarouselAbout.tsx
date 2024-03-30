@@ -12,27 +12,27 @@ function CarouselAbout() {
   const items = [
     {
       name: "Krenar Dervishaj",
-      role: "Co-Founder, FullStack Developer and UI/UX Designer",
+      role: "Mitbegründer, FullStack-Entwickler und UI/UX-Designer",
       className:
         "rounded-full w-[150px] transition-all duration-500 ease-in-out transform hover:scale-105 h-[150px] ml-[0px] z-10 mt-[0px] lg:ml-[-40px] md:ml-[20px] md:mt-[-15px] mt-0 md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px]",
       img: "/keniPFP.png",
-      text: "Krenar Dervishaj, co-founder of CAK, merges creativity with tech to excel in web development and UI/UX design. His innovative leadership ensures high-quality, unique digital solutions from the agency.",
+      text: "Krenar Dervishaj, Mitbegründer von CAK, verbindet Kreativität und Technik zu herausragenden Leistungen in den Bereichen Webentwicklung und UI/UX-Design. Seine innovative Führung sorgt für hochwertige, einzigartige digitale Lösungen der Agentur.",
     },
     {
       name: "Shefqet CJ Lame",
-      role: "Co-Founder and FullStack Developer",
+      role: "Mitbegründer und FullStack-Entwickler",
       img: "/cjPFP.png",
       className:
         "rounded-full w-[150px] h-[150px] transition-all duration-500 ease-in-out transform hover:scale-105 ml-[0px] mt-[10px] z-10 lg:ml-[-85px] md:ml-[20px] lg:mt-[20px] md:mt-[0px] md:w-[200px] md:h-[200px] lg:w-[275px] lg:h-[275px]",
-      text: "CJ, co-founder of CAK, brings strategic insight and technical expertise to web development. His focus on innovative solutions drives the agency's success in delivering impactful digital products.",
+      text: "CJ, Mitbegründer von CAK, bringt strategische Einsichten und technisches Fachwissen in die Webentwicklung ein. Sein Fokus auf innovative Lösungen trägt zum Erfolg der Agentur bei, indem er wirkungsvolle digitale Produkte liefert.",
     },
     {
       name: "Luars Qamo",
-      role: "Co-Founder and FullStack Developer",
+      role: "Mitbegründer und FullStack-Entwickler",
       img: "/archiePFP.png",
       className:
         "rounded-full w-[160px] h-[200px] transition-all duration-500 ease-in-out transform hover:scale-105 ml-[0px] mt-[-30px] z-10 lg:ml-[-75px] lg:mt-[-30px] md:mt-[-50px] lg:mr-8 md:ml-[20px] md:w-[200px] md:h-[250px] lg:w-[250px] lg:h-[300px]",
-      text: "Luars, co-founder of CAK, excels in web development, leveraging his technical skills to bring dynamic solutions to life. His dedication ensures the delivery of exceptional digital products.",
+      text: "Luars, Mitbegründer von CAK, ist ein hervorragender Webentwickler, der seine technischen Fähigkeiten einsetzt, um dynamische Lösungen ins Leben zu rufen. Sein Engagement gewährleistet die Bereitstellung außergewöhnlicher digitaler Produkte.",
     },
   ];
 

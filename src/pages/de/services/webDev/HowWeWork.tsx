@@ -56,53 +56,56 @@ const HowWeWork = () => {
         <div className="flex flex-col space-y-5 items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-between ">
           <div className="lg:w-[450px] md:w-[600px] w-[350px] space-y-5 md:space-y-8 lg:space-y-3 items-center justify-center">
             <h1 className="lg:text-start md:text-center text-center text-4xl font-playfair font-semibold  md:text-5xl lg:text-6xl text-[#131B23] ">
-              How we Work ?
+              Wie arbeiten wir?
             </h1>
 
             <h3 className="lg:text-start md:text-center text-center text-lg md:text-3xl font-semibold font-playfair lg:text-xl text-[#131B23]">
-              We call it the CAK way.
+              Wir nennen es den CAK-Weg.
             </h3>
 
             <p className="flex flex-row  items-center w-full font-thin group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              We initiate our process by immersing ourselves in your vision and
-              objectives, fostering a deep understanding of your target audience
-              and brand identity to craft a website that truly embodies your
-              essence.
+              Wir beginnen unseren Prozess, indem wir uns in Ihre Vision und
+              Ziele eintauchen und ein tiefes Verständnis für Ihr Zielpublikum
+              Zielgruppen und Ihrer Markenidentität, um eine Website zu
+              gestalten, die Ihr Wesen verkörpert. Essenz verkörpert.
             </p>
             <p className="flex flex-row items-center group font-thin duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              Through a collaborative and agile design approach, we engage with
-              you to refine the user journey and aesthetic, ensuring the outcome
-              is not only visually compelling but also intuitively navigates
-              your audience through your digital space.
+              Durch einen kooperativen und agilen Designansatz arbeiten wir mit
+              mit Ihnen zusammen, um die Benutzerführung und die Ästhetik zu
+              verfeinern, damit das Ergebnis Ergebnis nicht nur visuell
+              überzeugend ist, sondern auch intuitiv Ihr Publikum durch Ihren
+              digitalen Raum.
             </p>
             <p className="flex flex-row items-center group font-thin duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              Leveraging cutting-edge technologies, we construct your website
-              with scalability and future growth in mind, ensuring it stands
-              resilient and adaptable to the ever-evolving web environment.
+              Durch den Einsatz modernster Technologien erstellen wir Ihre
+              Website mit Blick auf Skalierbarkeit und zukünftiges Wachstum,
+              damit sie und an die sich ständig weiterentwickelnde Webumgebung
+              anpassbar ist.
             </p>
             <p className="flex flex-row items-center group font-thin duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              Beyond the launch, we offer ongoing support and insight, helping
-              you to adapt and flourish in the digital realm, ensuring your site
-              remains aligned with your business’s growth and evolution.
+              Nach der Markteinführung bieten wir fortlaufende Unterstützung und
+              Einblicke, die Ihnen helfen Sie dabei, sich anzupassen und in der
+              digitalen Welt zu gedeihen, damit Ihre Website mit dem Wachstum
+              und der Entwicklung Ihres Unternehmens in Einklang steht.
             </p>
           </div>
 
           <div className="flex items-center justify-center font-thin sm:items-start sm:justify-center w-full rounded-2xl ">
             <Link legacyBehavior href="/de/Start#contact">
               <button className="bg-[#446AF2] w-fit sm:w-fit px-24 p-2 rounded-xl duration-300 ease-in-out transform hover:scale-105 hover:font-semibold shadow-custom-blue text-white">
-                Contact us
+                Kontakt aufnehmen
               </button>
             </Link>
           </div>

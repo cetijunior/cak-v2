@@ -18,12 +18,18 @@ const design = () => {
       <Navbar />
       <div className="w-screen">
         <div className="flex mt-[-40px] md:mt-[-200px] lg:mt-[-350px] items-center justify-center">
-          <video autoPlay loop muted playsInline className="rounded-lg w-screen">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="rounded-lg w-screen"
+          >
             <source
               src="https://www.helmes.com/wp-content/uploads/2022/07/costom-software-development_600.mp4"
               type="video/mp4"
             />
-            Your Browser does not support the video tag.
+            Ihr Browser unterstützt das Video-Tag nicht.
           </video>
         </div>
         <div className="flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105 justify-center w-screen ">
@@ -31,16 +37,19 @@ const design = () => {
             <h1 className="text-start md:text-start lg:text-center mt-[-10px] lg:mt-[-25px] text-3xl md:text-5xl lg:text-6xl text-[#131B23] playfair-display">
               World-Class Designs
             </h1>
-            <h3 className="text-start md:text-start lg:text-center lg:text-xl md:text-xl text-[#131B23] text-sm font-extralight font-sans-serif ">
-              At CAK, we champion design thinking as the foundation for crafting
-              impactful solutions that meet business goals. We focus on creating
-              solutions that resonate with users, driven by our commitment to
-              research-based development that addresses genuine needs and
-              delivers real value. By integrating end-user feedback into our
-              design process, we ensure our solutions are both innovative and
-              user-approved. This approach enables us to deliver experiences
-              that are not only cutting-edge but also closely aligned with both
-              user satisfaction and business success.
+            <h3 className="text-start md:text-start lg:text-center lg:text-lg md:text-base text-[#131B23] text-sm font-extralight font-sans-serif ">
+              Bei CAK setzen wir uns für Design Thinking als Grundlage für die
+              Erarbeitung Lösungen, die die Unternehmensziele erfüllen. Wir
+              konzentrieren uns auf die Schaffung von Lösungen zu schaffen, die
+              bei den Nutzern ankommen. forschungsbasierte Entwicklung, die auf
+              echte Bedürfnisse eingeht und einen echten Wert liefern. Durch die
+              Einbeziehung des Feedbacks der Endbenutzer in unseren
+              Designprozess einbeziehen, stellen wir sicher, dass unsere
+              Lösungen sowohl innovativ als auch von den Nutzern angenommen
+              werden. Dieser Ansatz ermöglicht es uns, Erfahrungen zu liefern
+              die nicht nur innovativ sind, sondern auch eng mit der
+              Zufriedenheit Nutzerzufriedenheit und Geschäftserfolg ausgerichtet
+              sind.
             </h3>
           </div>
           <Link legacyBehavior href="/de/Start#contact">
@@ -48,7 +57,7 @@ const design = () => {
               className="bg-[#446AF2] hover:font-semibold font-sans-serif lg:text-xl transition-all duration-300 ease-in-out transform hover:scale-105 shadow-custom-blue2 z-10 
             text-white mt-[-20px] md:mt-[-25px] lg:mt-[-30px] py-1 md:py-3 lg:py-3 px-8 md:px-20 lg:px-20 rounded-3xl md:text-xl text-md"
             >
-              Contact Us
+              Kontaktieren Sie uns
             </button>
           </Link>
         </div>

@@ -24,45 +24,38 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-evenly sm:items-start sm:text-start px-4 sm:px-10 w-full">
           <div className="flex flex-col w-fit mb-4 mx-4">
             <h5 className="text-xl font-bold font-playfair mb-2">
-              Our Company
+              Unsere Firma
             </h5>
             <ul className="text-[#131B23] font-thin">
               <Link href="/de/Start#about" legacyBehavior>
-                <li
-                  className="mb-2 hover:text-[#446AF2] cursor-pointer"
-                >
-                  About us
+                <li className="mb-2 hover:text-[#446AF2] cursor-pointer">
+                  Über uns
                 </li>
               </Link>
               <Link href="/de/Start#services" legacyBehavior>
-                <li
-                  className="mb-2 hover:text-[#446AF2] cursor-pointer"
-                >
-                  Website Development Services
+                <li className="mb-2 hover:text-[#446AF2] cursor-pointer">
+                  Web-Entwicklungsdienste
                 </li>
               </Link>
 
               <Link href="/de/Start#contact" legacyBehavior>
-                <li
-                  className="mb-2 hover:text-[#446AF2] cursor-pointer"
-                >
-                  Contact
+                <li className="mb-2 hover:text-[#446AF2] cursor-pointer">
+                  Kontakt
                 </li>
               </Link>
 
               <Link href="/de/Start#projects" legacyBehavior>
-                <li
-                  className="mb-2 hover:text-[#446AF2] cursor-pointer"
-                >
-                  Projects
+                <li className="mb-2 hover:text-[#446AF2] cursor-pointer">
+                  Projekte
                 </li>
               </Link>
-
             </ul>
           </div>
 
           <div className="mb-4 mx-4">
-            <h5 className="text-xl font-bold font-playfair mb-2">Socials</h5>
+            <h5 className="text-xl font-bold font-playfair mb-2">
+              Soziale Medien
+            </h5>
             <ul className="text-[#131B23] font-thin">
               <li className="mb-2 hover:text-[#446AF2] ">
                 <Link legacyBehavior href="/facebook">
@@ -85,10 +78,10 @@ const Footer = () => {
           <div className="mb-4 mx-4">
             <h5 className="text-xl font-bold font-playfair mb-2">Legal</h5>
             <p className="text-[#131B23] font-thin hover:text-[#446AF2]">
-              Privacy Policy
+              Datenschutz
             </p>
             <p className="text-[#131B23] font-thin hover:text-[#446AF2]">
-              Terms of Use
+              Nutzungsbedingungen
             </p>
           </div>
         </div>

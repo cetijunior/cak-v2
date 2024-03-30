@@ -64,7 +64,7 @@ function Navbar() {
 
   const navigateToSection = (sectionId: string) => {
     setIsMenuOpen(false); // Close the menu
-    router.push("/#" + sectionId); // Navigate to section with smooth scroll
+    router.push("/al" + sectionId); // Navigate to section with smooth scroll
   };
 
   const handleLanguageDropdownToggle = () => {
@@ -104,20 +104,21 @@ function Navbar() {
       {/* Fullscreen Menu for small screens */}
       <div
         onDoubleClick={handleClickScreen}
-        className={`fixed inset-0 bg-[#446AF2] z-30 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
-          } transition-transform duration-300 ease-in-out`}
+        className={`fixed inset-0 bg-[#446AF2] z-30 ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 ease-in-out`}
       >
         <ul className="flex h-full flex-col w-[350px]  z-30 pl-5 space-y-8 items-start justify-center text-white overflow-y-auto">
           <li
             className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
-            onClick={() => navigateToSection("/")}
+            onClick={() => navigateToSection("/FaqjaKryesore")}
           >
             Home
           </li>
 
           <li
             className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
-            onClick={() => navigateToSection("about")}
+            onClick={() => navigateToSection("/FaqjaKryesore#about")}
           >
             About Us
           </li>
@@ -126,19 +127,24 @@ function Navbar() {
             onClick={handleServicesDropdownToggle}
             className="flex flex-row items-center space-x-8 justify-between cursor-pointer"
           >
-            <span className="text-2xl md:text-3xl mb-[-25px] font-thin">Web Development <br /> Services</span>
+            <span className="text-2xl md:text-3xl mb-[-25px] font-thin">
+              Web Development <br /> Services
+            </span>
             <img
               src="/arrow.png"
               alt="next"
-              className={`w-8 h-8 transform ${rotateArrowServ ? "rotate-0" : "-rotate-180"
-                }`} // Apply rotation based on state
+              className={`w-8 h-8 transform ${
+                rotateArrowServ ? "rotate-0" : "-rotate-180"
+              }`} // Apply rotation based on state
               style={{ transition: "transform 0.4s ease" }} // Smooth transition for rotation
             />
           </div>
 
           {/* Services Dropdown */}
           <div
-            className={`transition-all ease-in-out duration-500 ${isDropdownOpenServices ? 'max-h-[60vh]' : 'max-h-0'} overflow-auto`}
+            className={`transition-all ease-in-out duration-500 ${
+              isDropdownOpenServices ? "max-h-[60vh]" : "max-h-0"
+            } overflow-auto`}
           >
             <ul className="bg-[#37457a67] mt-[20px] w-full p-2 rounded-2xl">
               {serviceLinks.map((link, index) => (
@@ -163,17 +169,16 @@ function Navbar() {
 
           <li
             className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
-            onClick={() => navigateToSection("projects")}
+            onClick={() => navigateToSection("/FaqjaKryesore#projects")}
           >
             Projects
           </li>
           <li
             className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
-            onClick={() => navigateToSection("contact")}
+            onClick={() => navigateToSection("/FaqjaKryesore#contact")}
           >
             Contact
           </li>
-
 
           {/* Languages Dropdown Toggle */}
           <div
@@ -185,14 +190,17 @@ function Navbar() {
               <img
                 src="/arrow.png"
                 alt="next"
-                className={`w-8 h-8 transform ${rotateArrowLang ? "rotate-0" : "-rotate-180"
-                  }`} // Apply rotation based on state
+                className={`w-8 h-8 transform ${
+                  rotateArrowLang ? "rotate-0" : "-rotate-180"
+                }`} // Apply rotation based on state
                 style={{ transition: "transform 0.4s ease" }} // Smooth transition for rotation
               />
             </div>
             {/* Languages Dropdown */}
             <div
-              className={`transition-all ease-in-out duration-500 ${isDropdownOpenLanguages ? 'max-h-[20vh]' : 'max-h-0'} overflow-auto`}
+              className={`transition-all ease-in-out duration-500 ${
+                isDropdownOpenLanguages ? "max-h-[20vh]" : "max-h-0"
+              } overflow-auto`}
             >
               <ul className="bg-[#37457a67] mt-[30px]  w-full p-2 rounded-2xl">
                 {languageLinks.map((link, index) => (
@@ -229,8 +237,9 @@ function Navbar() {
             >
               Web Development Services
               <div
-                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenServices ? "max-h-96" : "max-h-0"
-                  } overflow-hidden`}
+                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${
+                  isDropdownOpenServices ? "max-h-96" : "max-h-0"
+                } overflow-hidden`}
                 style={{ width: "700px" }} // Adjust width as needed
               >
                 <div className="grid grid-cols-2 ">
@@ -276,8 +285,9 @@ function Navbar() {
             >
               AL
               <div
-                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
-                  } overflow-hidden`}
+                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${
+                  isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
+                } overflow-hidden`}
                 style={{ width: "50px" }} // Adjust width as needed
               >
                 <div className="flex flex-col items-center w-full ">

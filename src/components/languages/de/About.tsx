@@ -61,15 +61,16 @@ function About() {
       >
         <div className="flex flex-col sm:mt-32 sm:gap-20 gap-7">
           <h2 className=" text-center lg:text-[64px] text-2xl font-playfair font-semibold z-10 ">
-            Who are we?
+            Wer sind wir?
           </h2>
           <p className="lg:text-center text-base lg:text-base text-center w-[300px] font-extralight md:text-center mt-0 md:-mt-8 lg:mt-0 lg:w-[400px] z-10">
-            We are CAK, a leading web development agency focused on delivering
-            innovative and high-quality digital solutions. Our expertise spans
-            technical development, UI/UX design, and strategic innovation,
-            ensuring standout digital experiences. Committed to excellence, we
-            aim to exceed expectations and make a lasting impact in the digital
-            landscape.
+            Wir sind CAK, eine führende Webentwicklungsagentur, die sich auf die
+            Bereitstellung von innovative und hochwertige digitale Lösungen.
+            Unser Fachwissen reicht von technische Entwicklung, UI/UX-Design und
+            strategische Innovation, um herausragende digitale Erlebnisse zu
+            gewährleisten. Wir haben uns der Exzellenz verpflichtet und
+            Erwartungen zu übertreffen und einen nachhaltigen Einfluss auf die
+            digitale Landschaft.
           </p>
         </div>
         <CarouselAbout />

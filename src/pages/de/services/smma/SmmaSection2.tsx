@@ -6,12 +6,13 @@ const SmmaSection2 = () => {
       <div className="py-12 flex flex-col lg:flex-row justify-center items-center gap-20 p-6">
         <div className="space-y-6 max-w-md lg:max-w-lg">
           <h1 className="text-3xl font-playfair font-semibold text-center">
-            Our Clients Love Our Impactful Social Media Strategies
+            Unsere Kunden lieben unsere wirkungsvollen Social Media-Strategien
           </h1>
           <p className="text-center font-thin">
-            We do more than create dynamic social media campaigns; we forge
-            lasting partnerships. Our strategic insights and impactful outcomes
-            consistently surpass client expectations.
+            Wir machen mehr als nur dynamische Social-Media-Kampagnen; wir
+            schmieden dauerhafte Partnerschaften. Unsere strategischen
+            Erkenntnisse und wirkungsvollen Ergebnisse übertreffen stets die
+            Erwartungen unserer Kunden.
           </p>
         </div>
         <img
