@@ -7,7 +7,7 @@ function Portfolio() {
       <div className="flex flex-col sm:space-y-16 sm:mb-10 items-center">
         <div className="flex flex-col mt-10 sm:mt-32 ">
           <h2 className=" text-center text-4xl sm:text-7xl font-playfair font-semibold">
-            What We Do :
+            Cfarë bëjmë ne:
           </h2>
         </div>
         <ProjectCard />

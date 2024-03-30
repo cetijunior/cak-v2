@@ -46,30 +46,30 @@ export default function ServicesSection() {
     {
       href: "/al/WebsiteDevelopment",
       img: "/computer.png",
-      title: "Website Development",
+      title: "Krijimi Uebsajteve",
       description:
-        "Specializing in custom web solutions to enhance your online presence.",
+        "Specializuar në zgjidhje të personalizuara në ueb për të përmirësuar praninë tuaj në internet.",
     },
     {
       href: "/MobileDevelopment",
       img: "/smartphone.png",
-      title: "Mobile App Development",
+      title: "Zhvillimi i aplikacioneve celulare",
       description:
-        "Creating mobile applications that offer seamless user experiences.",
+        "Krijimi i aplikacioneve celulare që ofrojnë përvoja pa probleme të përdoruesit.",
     },
     {
       href: "/Smma",
       img: "/smma.png",
-      title: "Social Media Marketing",
+      title: "Marketimi i Rrjeteve Sociale",
       description:
-        "Strategies to grow your brand’s presence on various social platforms.",
+        "Strategji për të rritur praninë e markës suaj në platforma të ndryshme sociale.",
     },
     {
       href: "/Design",
       img: "/web-design.png",
-      title: "Design",
+      title: "Dizajni",
       description:
-        "Innovative design solutions tailored to your business’s needs.",
+        "Zgjidhje inovative të projektimit të përshtatura për nevojat e biznesit tuaj.",
     },
   ];
 
@@ -77,7 +77,7 @@ export default function ServicesSection() {
     <section id="services" className="py-16 bg-white">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-extrabold font-playfair text-[#131B23]">
-          Digital Services Provider
+          Shërbimet Dixhitale të ofruara
         </h2>
       </div>
       <div className="h-20"></div>
@@ -85,8 +85,9 @@ export default function ServicesSection() {
         {links.map((link, index) => (
           <div
             key={index}
-            className={`ease-in-out hover:scale-105 transition-opacity duration-1000 ${show[index] ? "opacity-100" : "opacity-0"
-              }`}
+            className={`ease-in-out hover:scale-105 transition-opacity duration-1000 ${
+              show[index] ? "opacity-100" : "opacity-0"
+            }`}
           >
             <Link legacyBehavior href={link.href} passHref>
               <div className="text-center cursor-pointer">

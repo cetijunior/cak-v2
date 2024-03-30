@@ -9,21 +9,21 @@ function Relationship() {
   const steps = [
     {
       id: 1,
-      title: "Step 1: Discovery and Analysis",
+      title: "Hapi 1: Zbulimi dhe Analiza",
       description:
-        "We start with a deep dive into your business requirements, expectations, and the technological landscape to ensure a solid foundation for the project.",
+        "Ne fillojmë me një zhytje të thellë në kërkesat, pritshmëritë dhe peizazhin teknologjik të biznesit tuaj për të siguruar një themel të fortë për projektin.",
     },
     {
       id: 2,
-      title: "Step 2: Design and Development",
+      title: "Hapi 2: Projektimi dhe Zhvillimi",
       description:
-        "Our team designs and develops your solution using agile methodologies, ensuring flexibility and constant updates on progress.",
+        "Ekipi ynë harton dhe zhvillon zgjidhjen tuaj duke përdorur metodologji të shkathëta, duke siguruar fleksibilitet dhe përditësime të vazhdueshme mbi progresin",
     },
     {
       id: 3,
-      title: "Step 3: Testing and Deployment",
+      title: "Hapi 3: Testimi dhe vendosja",
       description:
-        "Rigorous testing is conducted to ensure quality and performance. Following approval, we proceed with deploying your solution.",
+        "Testimi rigoroz është kryer për të siguruar cilësi dhe performancë. Pas miratimit, ne vazhdojmë me vendosjen e zgjidhjes suaj.",
     },
   ];
 
@@ -53,20 +53,21 @@ function Relationship() {
     <div className="pb-20 p-4 sm:p-10" id="services" ref={sectionRef}>
       <div className="flex flex-col justify-center w-full items-center mt-10 pt-10 space-y-5">
         <h1 className="text-bold text-4xl text-center font-playfair text-[#131B23]">
-          How the relationship begins?
+          Si fillon marrëdhënia?
         </h1>
         <p className="text-center text-[#131B23] font-thin text-lg">
-          Our onboarding for new projects follows the{" "}
+          Iniciativa jone per Projektet ndjek metoden{" "}
           <Link legacyBehavior href="/al/FaqjaKryesore/#contact">
             <a className="text-blue-400">Quick Start approach</a>
           </Link>{" "}
-          . To ensure a comprehensive grasp, we perform an in-depth review of
-          your business&apos;s IT framework.
+          . Për të siguruar një kuptim gjithëpërfshirës, ne kryejmë një rishikim
+          të thellë të Korniza e TI-së e biznesit tuaj.
         </p>
       </div>
       <div
-        className={`flex flex-col items-center justify-center md:flex-col lg:flex-row sm:space-x-3 sm:space-y-0 pt-20 space-y-8  ${show ? "opacity-100" : "opacity-0"
-          } transition-opacity duration-1000`}
+        className={`flex flex-col items-center justify-center md:flex-col lg:flex-row sm:space-x-3 sm:space-y-0 pt-20 space-y-8  ${
+          show ? "opacity-100" : "opacity-0"
+        } transition-opacity duration-1000`}
       >
         {/* Simplified steps with mapping if there are multiple, similar steps */}
         {steps.map((step, index) => (

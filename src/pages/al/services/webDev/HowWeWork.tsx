@@ -56,53 +56,54 @@ const HowWeWork = () => {
         <div className="flex flex-col space-y-5 items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-between ">
           <div className="lg:w-[450px] md:w-[600px] w-[350px] space-y-5 md:space-y-8 lg:space-y-3 items-center justify-center">
             <h1 className="lg:text-start md:text-center text-center text-4xl font-playfair font-semibold  md:text-5xl lg:text-6xl text-[#131B23] ">
-              How we Work ?
+              Si funksionojm ne?
             </h1>
 
             <h3 className="lg:text-start md:text-center text-center text-lg md:text-3xl font-semibold font-playfair lg:text-xl text-[#131B23]">
-              We call it the CAK way.
+              Ne e quajmë rruga e CAK-Shpk.
             </h3>
 
             <p className="flex flex-row  items-center w-full font-thin group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              We initiate our process by immersing ourselves in your vision and
-              objectives, fostering a deep understanding of your target audience
-              and brand identity to craft a website that truly embodies your
-              essence.
+              Ne e nisim procesin tonë duke u zhytur në vizionin tuaj dhe
+              objektivat, duke nxitur një kuptim të thellë të audiencës tuaj të
+              synuar dhe identitetin e markës për të krijuar një faqe interneti
+              që mishëron vërtet thelbin tuaj.
             </p>
             <p className="flex flex-row items-center group font-thin duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              Through a collaborative and agile design approach, we engage with
-              you to refine the user journey and aesthetic, ensuring the outcome
-              is not only visually compelling but also intuitively navigates
-              your audience through your digital space.
+              Nëpërmjet një qasjeje bashkëpunuese dhe të shkathët të
+              projektimit, ne angazhohemi me ju për të përmirësuar udhëtimin e
+              përdoruesit dhe estetikën, duke siguruar rezultatin.
             </p>
             <p className="flex flex-row items-center group font-thin duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              Leveraging cutting-edge technologies, we construct your website
-              with scalability and future growth in mind, ensuring it stands
-              resilient and adaptable to the ever-evolving web environment.
+              Duke përdorur teknologjitë më të avancuara, ne ndërtojmë faqen
+              tuaj të internetit duke pasur parasysh shkallëzueshmërinë dhe
+              rritjen e ardhshme, duke siguruar që ajo të qëndrojë elastike dhe
+              e adaptueshme ndaj mjedisit të internetit gjithnjë në zhvillim.
             </p>
             <p className="flex flex-row items-center group font-thin duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}
               </span>
-              Beyond the launch, we offer ongoing support and insight, helping
-              you to adapt and flourish in the digital realm, ensuring your site
-              remains aligned with your business’s growth and evolution.
+              Përtej nisjes, ne ofrojmë mbështetje dhe njohuri të vazhdueshme,
+              duke ndihmuar ju të përshtateni dhe të lulëzoni në sferën
+              dixhitale, duke siguruar faqen tuaj, mbetet në linjë me rritjen
+              dhe evolucionin e biznesit tuaj.
             </p>
           </div>
 
           <div className="flex items-center justify-center font-thin sm:items-start sm:justify-center w-full rounded-2xl ">
             <Link legacyBehavior href="/al/FaqjaKryesore/#contact">
               <button className="bg-[#446AF2] w-fit sm:w-fit px-24 p-2 rounded-xl duration-300 ease-in-out transform hover:scale-105 hover:font-semibold shadow-custom-blue text-white">
-                Contact us
+                Na kontaktoni
               </button>
             </Link>
           </div>
