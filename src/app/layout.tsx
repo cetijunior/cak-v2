@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/computer.png" sizes="any" />
+      <head>
+        <link rel="icon" href="/computer.png" sizes="any" />
+      </head>
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );

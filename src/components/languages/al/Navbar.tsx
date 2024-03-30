@@ -13,35 +13,32 @@ function Navbar() {
   const [rotateArrowServ, setRotateArrowServ] = useState(false);
   const router = useRouter();
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const navigateHome = () => router.push("/");
-  const navigateContact = () => {
-    router.push("/#contact");
-  };
+  const navigateHome = () => router.push("/al/FaqjaKryesore");
 
   const serviceLinks = [
     {
-      href: "/WebsiteDevelopment",
+      href: "/al/WebsiteDevelopment",
       img: "/computer.png",
       title: "Website Development",
       description:
         "Specializing in custom web solutions to enhance your online presence.",
     },
     {
-      href: "/MobileDevelopment",
+      href: "/al/MobileDevelopment",
       img: "/smartphone.png",
       title: "Mobile App Development",
       description:
         "Creating mobile applications that offer seamless user experiences.",
     },
     {
-      href: "/Smma",
+      href: "/al/Smma",
       img: "/smma.png",
       title: "Social Media Marketing",
       description:
         "Strategies to grow your brand’s presence on various social platforms.",
     },
     {
-      href: "/Design",
+      href: "/al/Design",
       img: "/web-design.png",
       title: "Design",
       description:
@@ -50,9 +47,8 @@ function Navbar() {
   ];
 
   const languageLinks = [
-    { href: "/al/FaqjaKryesore", title: "AL" },
     { href: "/de/Start", title: "DE" },
-
+    { href: "/", title: "EN" },
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -100,7 +96,7 @@ function Navbar() {
       <div className="absolute pr-4 pt-2 z-40 right-0 sm:block md:block lg:hidden">
         <button onClick={handleMenuToggle}>
           {isMenuOpen ? (
-            <img src="/close.png" alt="Close" className="w-10 h-10 " />
+            <img src="/close.png" alt="Close" className="w-10 h-10" />
           ) : (
             <img src="/menu.png" alt="Menu" className="w-10 h-10" />
           )}
@@ -130,9 +126,9 @@ function Navbar() {
           {/* Services Dropdown Toggle */}
           <div
             onClick={handleServicesDropdownToggle}
-            className="flex flex-row items-center justify-between cursor-pointer"
+            className="flex flex-row items-center space-x-8 justify-between cursor-pointer"
           >
-            <span className="text-2xl md:text-3xl mb-[-25px] font-thin">Web Development Services</span>
+            <span className="text-2xl md:text-3xl mb-[-25px] font-thin">Web Development <br /> Services</span>
             <img
               src="/arrow.png"
               alt="next"
@@ -187,7 +183,7 @@ function Navbar() {
             className="flex flex-col cursor-pointer mt-4"
           >
             <div className="flex flex-row justify-between space-x-12 items-center">
-              <span className="text-2xl md:text-3xl font-thin">EN</span>
+              <span className="text-2xl md:text-3xl font-thin">AL</span>
               <img
                 src="/arrow.png"
                 alt="next"
@@ -218,7 +214,6 @@ function Navbar() {
           </div>
         </ul>
       </div>
-
 
       {/* Desktop Navbar */}
       <div className="hidden md:hidden lg:flex flex-row items-center md:px-8 space-x-8">
@@ -274,7 +269,6 @@ function Navbar() {
 
           <h1
             className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20"
-            onDoubleClick={navigateContact}
             onClick={() => scrollToSection("contact")}
           >
             Contact
@@ -286,7 +280,7 @@ function Navbar() {
             onMouseLeave={() => setIsDropdownOpenLanguages(false)}
             className="cursor-pointer hover:text-[#446AF2] transition-all duration-600 ease-in-out transform text-[#131B23] font-extralight hover:scale-105 text-xl z-20 h-100p relative"
           >
-            EN
+            AL
             <div
               className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
                 } overflow-hidden`}
