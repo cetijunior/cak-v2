@@ -12,42 +12,42 @@ function ProjectCard() {
   const cards = [
     {
       id: 1,
-      text: "The Wellness Clinic",
+      text: "Klinika Estetike",
       image: "/wellnessTemplate.png",
       className:
         "mt-[-30px]  w-[400px] h-[250px] md:mt-[-40px] md:w-[300px] md:h-[280px] lg:mt-[-10px] lg:w-[350px] lg:h-[250px] transition-all duration-300 ease-in-out transform hover:scale-105 rounded-2xl'",
       description:
-        "The Wellness Clinic website, a showcase of CAK Web Solutions' expertise in crafting digital spaces for holistic health businesses. Our work emphasizes intuitive design and functionality, presenting the clinic's therapies, classes, and resources in a user-friendly platform. This project reflects our commitment to merging design with wellness industry needs.",
+        "Uebfaqja e Wellness Clinic, një vitrinë e ekspertizës së Ueb Solutions të CAK shpk në krijimin e hapësirave dixhitale për bizneset e kujdesit estetik. Puna jonë thekson dizajnin dhe funksionalitetin intuitiv, duke paraqitur terapitë, klasat dhe burimet e klinikës në një platformë miqësore për përdoruesit. Ky projekt pasqyron angazhimin tonë për bashkimin e dizajnit me nevojat e industrisë së mirëqenies.",
       tech: "UI/UX  Front- and Back-End Website",
     },
     {
       id: 2,
-      text: "The Construction Company",
+      text: "Kompania e Ndërtimit",
       image: "/constructionTemplate.png",
       className:
         "mt-[-10px]  w-[400px] h-[250px] md:mt-[-40px] md:w-[300px] md:h-[280px] lg:mt-[15px] lg:ml-[-20px] lg:w-[350px] lg:h-[250px] transition-all duration-300 ease-in-out transform hover:scale-105 rounded-2xl'",
       description:
-        "The Construction Company website by CAK Web Solutions, showcasing our expertise in tailored digital solutions for the construction industry. Our design merges functionality and aesthetics, highlighting the company’s projects and services in an easily navigable format, reflecting our commitment to innovative design tailored to construction needs.",
+        "Faqja e internetit e Kompanisë së Ndërtimit nga CAK Web Solutions, duke shfaqur ekspertizën tonë në zgjidhje digjitale të përshtatura për industrinë e ndërtimit. Dizajni ynë bashkon funksionalitetin dhe estetikën, duke nxjerrë në pah projektet dhe shërbimet e kompanisë në një format lehtësisht të navigueshëm, që reflekton angazhimin tonë për dizajn inovativ të përshtatur me nevojat e ndërtimit.",
       tech: "UI/UX  Front- and Back-End Website",
     },
     {
       id: 3,
-      text: "E-Commerce Store",
+      text: "Dyqan Online",
       image: "/ecommerceTemplate.png",
       className:
         "mt-[-30px] w-[400px] h-[280px] md:mt-[-40px] md:w-[300px] md:h-[280px] lg:mt-[0px] lg:ml-[-10px] lg:w-[350px] lg:h-[250px] transition-all duration-300 ease-in-out transform hover:scale-105 rounded-2xl'",
       description:
-        "The ECommerce Shop website, crafted by CAK Web Solutions, where sleek design meets seamless functionality. This showcase of our online retail platform development highlights an intuitive shopping experience designed to elevate brands and drive sales, reflecting our dedication to innovative, user-centric solutions in the eCommerce sector.",
+        " Faqja e internetit të Dyqanit E-Commerce, e krijuar nga CAK Web Solutions, ku dizajni i shkëlqyeshëm takon funksionalitetin pa probleme. Ky shfaqje e zhvillimit të platformës sonë tregtare online nxjerr në pah një përvojë blerjeje intuitive e dizajnuar për të ngritur markat dhe për të shtyrë shitjet, duke reflektuar përkushtimin tonë ndaj zgjidhjeve inovative, të qendruara tek përdoruesi në sektorin e eCommerce.",
       tech: "UI/UX  Front- and Back-End Website",
     },
     {
       id: 4,
-      text: "Restaurant Website",
+      text: "Uebsajt per Restaurant",
       image: "/restaurantTemplate.png",
       className:
         "mt-[-30px]  w-[400px] h-[280px] md:mt-[-40px] md:w-[300px] md:h-[280px] lg:ml-[10px] lg:mt-[30px] lg:w-[350px] lg:h-[250px] transition-all duration-300 ease-in-out transform hover:scale-105 rounded-2xl'",
       description:
-        "The Restaurant website, crafted by CAK Web Solutions, showcases our ability to create engaging digital experiences for dining brands, blending aesthetic appeal with functionality. It highlights the menu and ambiance, underlining our dedication to enhancing online presence and customer engagement without needing a direct visit.",
+        "Faqja e internetit të Restorantit, e krijuar nga CAK Web Solutions, shfaq aftësinë tonë për të krijuar përvoja digjitale të angazhuese për markat e restoranteve, duke përzier apelin estetik me funksionalitetin. Ajo nxjerr në pah menunë dhe atmosferën, duke nënvizuar përkushtimin tonë për të përmirësuar praninë online dhe angazhimin e klientëve pa nevojën për një vizitë të drejtpërdrejtë.",
       tech: "UI/UX  Front- and Back-End Website",
     },
   ];

@@ -56,48 +56,48 @@ const MobDevSection2 = () => {
           <div className="flex flex-col items-center justify-center bg-gray-100 shadow-lg rounded-2xl w-full max-w-[80rem] p-6 transition-all duration-300 ease-in-out hover:scale-105">
             <div className="text-center">
               <h1 className="text-3xl font-playfair">
-                A unique work method that guarantees 150% efficiency
+                Një metodë unike pune që garanton 150% efikasitet
               </h1>
               <p className="pt-4 font-thin">
-                We call it The CAK Way. For the past 5 years, we’ve worked to
-                perfect it.
+                Ne e quajmë atë Rruga e CAK. Për 5 vitet e fundit, ne kemi
+                punuar për të përsosur atë.
               </p>
               <p className="font-thin">
-                Our methods enable at least 150% greater efficiency, in both
-                delivery and ownership costs, compared to other outsourcing
-                models.
+                Metodat tona mundësojnë të paktën 150% efikasitet më të madh, në
+                të dyja kostot e dorëzimit dhe pronësisë, krahasuar me
+                kontraktimet e tjera modele.
               </p>
             </div>
             <div className="transition-all duration-300 ease-in-out hover:scale-105 pt-8 flex flex-wrap justify-around items-center gap-6">
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Service</h1>
+                <h1>Shërbimet</h1>
                 <h1 className="text-blue-500 text-3xl">66</h1>
                 <h1 className="font-bold">NPS</h1>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>improvement</h1>
+                <h1>përmirësim</h1>
                 <h1 className="text-blue-500 text-3xl">150%</h1>
-                <h1 className="font-bold">efficiency</h1>
+                <h1 className="font-bold">eficencs</h1>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Experience</h1>
+                <h1>Eksperienca</h1>
                 <h1 className="text-blue-500 text-3xl">6+</h1>
-                <h1 className="font-bold">years</h1>
+                <h1 className="font-bold">vite</h1>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Portfolio</h1>
+                <h1>Portofoli</h1>
                 <h1 className="text-blue-500 text-3xl">50+</h1>
-                <h1 className="font-bold">Customers</h1>
+                <h1 className="font-bold">Klientë</h1>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
                 <h1>Offices</h1>
                 <h1 className="text-blue-500 text-3xl">3</h1>
-                <h1 className="font-bold">locations</h1>
+                <h1 className="font-bold">shtete</h1>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>People</h1>
+                <h1>Njerëz</h1>
                 <h1 className="text-blue-500 text-3xl">20+</h1>
-                <h1 className="font-bold">experts</h1>
+                <h1 className="font-bold">ekspertë</h1>
               </div>
             </div>
           </div>
@@ -105,19 +105,20 @@ const MobDevSection2 = () => {
         <div className="py-12 flex flex-col lg:flex-row justify-center items-center gap-10 p-6">
           <div className="space-y-6 max-w-md lg:max-w-lg">
             <h1 className="text-3xl font-playfair text-center lg:text-center">
-              Our customers find our services exceptional
+              Klientët tanë i shohin shërbimet tona të jashtëzakonshme
             </h1>
             <p className="text-center font-thin">
-              We don’t just develop high-end mobile apps, but we also build
-              business relationships. Our early insights and final results
-              routinely exceed customer expectations.
+              Ne nuk zhvillojmë vetëm aplikacione celulare të nivelit të lartë,
+              por gjithashtu ndërtojmë marrëdhëniet e biznesit. Vështrimet tona
+              të hershme dhe rezultatet përfundimtare tejkalojnë në mënyrë
+              rutinore pritjet e klientëve.
             </p>
             {/* Additional paragraphs omitted for brevity */}
           </div>
           <img
             className="max-w-full h-auto rounded-2xl lg:w-96 xl:w-[50rem] transition-all duration-300 ease-in-out hover:scale-105"
-            src="https://www.helmes.com/wp-content/uploads/2021/10/Helmes_Design_Central-1.jpg"
-            alt="Helmes Design"
+            src="/clients.jpg"
+            alt="Clients"
           />
         </div>
         <ContactSection />

@@ -19,30 +19,30 @@ function Navbar() {
     {
       href: "/al/WebsiteDevelopment",
       img: "/computer.png",
-      title: "Website Development",
+      title: "Krijimi i Uebsajteve",
       description:
-        "Specializing in custom web solutions to enhance your online presence.",
+        "Specializuar në zgjidhje të personalizuara në ueb për të përmirësuar praninë tuaj në internet.",
     },
     {
       href: "/al/MobileDevelopment",
       img: "/smartphone.png",
-      title: "Mobile App Development",
+      title: "Zhvillimi i aplikacioneve celulare",
       description:
-        "Creating mobile applications that offer seamless user experiences.",
+        "Krijimi i aplikacioneve celulare që ofrojnë përvoja pa probleme të përdoruesit.",
     },
     {
       href: "/al/Smma",
       img: "/smma.png",
-      title: "Social Media Marketing",
+      title: "Marketimi i Rrjeteve Sociale",
       description:
-        "Strategies to grow your brand’s presence on various social platforms.",
+        "Strategji për të rritur praninë e markës suaj në platforma të ndryshme sociale.",
     },
     {
       href: "/al/Design",
       img: "/web-design.png",
-      title: "Design",
+      title: "Dizajni",
       description:
-        "Innovative design solutions tailored to your business’s needs.",
+        "Zgjidhje inovative të projektimit të përshtatura për nevojat e biznesit tuaj.",
     },
   ];
 
@@ -107,20 +107,23 @@ function Navbar() {
         className={`fixed inset-0 bg-[#446AF2] z-30 ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
+        className={`fixed inset-0 bg-[#446AF2] z-30 ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 ease-in-out`}
       >
         <ul className="flex h-full flex-col w-[350px]  z-30 pl-5 space-y-8 items-start justify-center text-white overflow-y-auto">
           <li
             className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
             onClick={() => navigateToSection("/FaqjaKryesore")}
           >
-            Home
+            Faqja Kryesore
           </li>
 
           <li
             className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
             onClick={() => navigateToSection("/FaqjaKryesore#about")}
           >
-            About Us
+            Rreth nesh
           </li>
           {/* Services Dropdown Toggle */}
           <div
@@ -128,11 +131,14 @@ function Navbar() {
             className="flex flex-row items-center space-x-8 justify-between cursor-pointer"
           >
             <span className="text-2xl md:text-3xl mb-[-25px] font-thin">
-              Web Development <br /> Services
+              Shërbimet e ofruara
             </span>
             <img
               src="/arrow.png"
               alt="next"
+              className={`w-8 h-8 transform ${
+                rotateArrowServ ? "rotate-0" : "-rotate-180"
+              }`} // Apply rotation based on state
               className={`w-8 h-8 transform ${
                 rotateArrowServ ? "rotate-0" : "-rotate-180"
               }`} // Apply rotation based on state
@@ -142,6 +148,9 @@ function Navbar() {
 
           {/* Services Dropdown */}
           <div
+            className={`transition-all ease-in-out duration-500 ${
+              isDropdownOpenServices ? "max-h-[60vh]" : "max-h-0"
+            } overflow-auto`}
             className={`transition-all ease-in-out duration-500 ${
               isDropdownOpenServices ? "max-h-[60vh]" : "max-h-0"
             } overflow-auto`}
@@ -171,13 +180,13 @@ function Navbar() {
             className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
             onClick={() => navigateToSection("/FaqjaKryesore#projects")}
           >
-            Projects
+            Projekte
           </li>
           <li
             className="cursor-pointer text-2xl md:text-3xl font-thin hover:opacity-70"
             onClick={() => navigateToSection("/FaqjaKryesore#contact")}
           >
-            Contact
+            Kontakti
           </li>
 
           {/* Languages Dropdown Toggle */}
@@ -193,11 +202,17 @@ function Navbar() {
                 className={`w-8 h-8 transform ${
                   rotateArrowLang ? "rotate-0" : "-rotate-180"
                 }`} // Apply rotation based on state
+                className={`w-8 h-8 transform ${
+                  rotateArrowLang ? "rotate-0" : "-rotate-180"
+                }`} // Apply rotation based on state
                 style={{ transition: "transform 0.4s ease" }} // Smooth transition for rotation
               />
             </div>
             {/* Languages Dropdown */}
             <div
+              className={`transition-all ease-in-out duration-500 ${
+                isDropdownOpenLanguages ? "max-h-[20vh]" : "max-h-0"
+              } overflow-auto`}
               className={`transition-all ease-in-out duration-500 ${
                 isDropdownOpenLanguages ? "max-h-[20vh]" : "max-h-0"
               } overflow-auto`}
@@ -226,7 +241,7 @@ function Navbar() {
         <div className="hidden md:hidden lg:flex flex-row items-center space-x-16">
           <Link legacyBehavior href="/#about">
             <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
-              About Us
+              Rreth nesh
             </h1>
           </Link>
           <Link legacyBehavior href="/#services">
@@ -235,8 +250,11 @@ function Navbar() {
               onMouseLeave={() => setIsDropdownOpenServices(false)}
               className="cursor-pointer hover:text-[#446AF2] transition-all duration-600 font-light text-[#131B23] ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative"
             >
-              Web Development Services
+              Shërbimet e ofruara
               <div
+                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${
+                  isDropdownOpenServices ? "max-h-96" : "max-h-0"
+                } overflow-hidden`}
                 className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:p-2 shadow-custom-blue rounded-md transition-max-height duration-500 ease-in-out ${
                   isDropdownOpenServices ? "max-h-96" : "max-h-0"
                 } overflow-hidden`}
@@ -269,12 +287,12 @@ function Navbar() {
 
           <Link legacyBehavior href="/#projects">
             <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
-              Projects
+              Projekte
             </h1>
           </Link>
           <Link legacyBehavior href="/#contact">
             <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
-              Contact
+              Kontakti
             </h1>
           </Link>
           <Link legacyBehavior href="/#">
@@ -285,6 +303,9 @@ function Navbar() {
             >
               AL
               <div
+                className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${
+                  isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
+                } overflow-hidden`}
                 className={`absolute top-full left-1/2 -translate-x-1/2 bg-[#ffffff] hover:mt-4 hover:shadow-custom-bluerounded-md transition-max-height duration-500 ease-in-out ${
                   isDropdownOpenLanguages ? "max-h-96" : "max-h-0"
                 } overflow-hidden`}

@@ -10,16 +10,16 @@ function ContactSection() {
             Contact us
           </h1>
           <div className="text-xl text-left font-thin sm:text-center">
-            <p>Reach out to us!</p>
+            <p>Na kontaktoni!</p>
             <p>
-              Feel free to contact our team or send us an email at{" "}
+              Mos ngurroni të kontaktoni ekipin tonë ose të na dërgoni një email
+              në{" "}
               <Link className="text-blue-600" href="/al/FaqjaKryesore/#contact">
-
                 info@cakwebsolutions.com.
               </Link>
             </p>
             <p>
-              We&apos;re eager to talk about your social media strategy needs.
+              Ne jemi këtu, për të diskutuar rreth marketimit të biznesit tuaj.
             </p>
           </div>
         </div>

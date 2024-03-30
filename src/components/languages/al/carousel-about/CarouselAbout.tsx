@@ -16,7 +16,7 @@ function CarouselAbout() {
       className:
         "rounded-full w-[150px] transition-all duration-500 ease-in-out transform hover:scale-105 h-[150px] ml-[0px] z-10 mt-[0px] lg:ml-[-40px] md:ml-[20px] md:mt-[-15px] mt-0 md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px]",
       img: "/keniPFP.png",
-      text: "Krenar Dervishaj, co-founder of CAK, merges creativity with tech to excel in web development and UI/UX design. His innovative leadership ensures high-quality, unique digital solutions from the agency.",
+      text: "Krenar Dervishaj, bashkëthemelues i CAK shpk, bashkon kreativitetin me teknologjinë për të shkëlqyer në zhvillimin e ueb-it dhe dizajnin UI/UX. Udhëheqja e tij inovative siguron zgjidhje dixhitale unike me cilësi të lartë nga agjencia.",
     },
     {
       name: "Shefqet CJ Lame",
@@ -24,7 +24,7 @@ function CarouselAbout() {
       img: "/cjPFP.png",
       className:
         "rounded-full w-[150px] h-[150px] transition-all duration-500 ease-in-out transform hover:scale-105 ml-[0px] mt-[10px] z-10 lg:ml-[-85px] md:ml-[20px] lg:mt-[20px] md:mt-[0px] md:w-[200px] md:h-[200px] lg:w-[275px] lg:h-[275px]",
-      text: "CJ, co-founder of CAK, brings strategic insight and technical expertise to web development. His focus on innovative solutions drives the agency's success in delivering impactful digital products.",
+      text: "CJ, bashkëthemelues i CAK shpk, sjell njohuri strategjike dhe ekspertizë teknike në zhvillimin e ueb-faqes. Fokusi i tij në zgjidhjet inovative drejton suksesin e agjencisë në ofrimin e produkteve dixhitale me ndikim.",
     },
     {
       name: "Luars Qamo",
@@ -32,7 +32,7 @@ function CarouselAbout() {
       img: "/archiePFP.png",
       className:
         "rounded-full w-[160px] h-[200px] transition-all duration-500 ease-in-out transform hover:scale-105 ml-[0px] mt-[-30px] z-10 lg:ml-[-75px] lg:mt-[-30px] md:mt-[-50px] lg:mr-8 md:ml-[20px] md:w-[200px] md:h-[250px] lg:w-[250px] lg:h-[300px]",
-      text: "Luars, co-founder of CAK, excels in web development, leveraging his technical skills to bring dynamic solutions to life. His dedication ensures the delivery of exceptional digital products.",
+      text: "Luars, bashkëthemelues i CAK shpk, shkëlqen në zhvillimin e ueb-faqes, duke shfrytëzuar aftësitë e tij teknike për të sjellë në jetë zgjidhjet dinamike. Përkushtimi i tij siguron shpërndarjen e produkteve të jashtëzakonshme dixhitale.",
     },
   ];
 
