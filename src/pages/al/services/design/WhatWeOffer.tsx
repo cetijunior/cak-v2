@@ -5,7 +5,7 @@ const WhatWeOffer = () => {
     <div className="pt-10 sm:h-[35rem] flex flex-col items-center justify-center sm:gap-10 sm:space-x-10 sm:flex-row ">
       <div className="flex flex-col justify-center items-center sm:justify-start sm:items-start space-y-5">
         <h1 className="text-3xl font-playfair font-semibold px-5 pb-4">
-          Cfarë mund t'ju ofrojmë ne?
+          Cfarë mund t&apos:ju ofrojmë ne?
         </h1>
         <p className="px-5 font-thin">
           Përdorimi i një qasjeje të projektimit strategjik në të gjitha
