@@ -58,17 +58,26 @@ const Footer = () => {
             </h5>
             <ul className="text-[#131B23] font-thin">
               <li className="mb-2 hover:text-[#446AF2] ">
-                <Link legacyBehavior href="/facebook">
+                <Link
+                  legacyBehavior
+                  href="https://www.facebook.com/profile.php?id=61558254502814"
+                >
                   <a>Facebook</a>
                 </Link>
               </li>
               <li className="mb-2 hover:text-[#446AF2]">
-                <Link legacyBehavior href="/instagram">
+                <Link
+                  legacyBehavior
+                  href="https://www.instagram.com/cakwebsolutions/"
+                >
                   <a>Instagram</a>
                 </Link>
               </li>
               <li className="mb-2 hover:text-[#446AF2]">
-                <Link legacyBehavior href="/linkedin">
+                <Link
+                  legacyBehavior
+                  href="https://www.linkedin.com/company/cak-web-solutions/"
+                >
                   <a>Linkedin</a>
                 </Link>
               </li>

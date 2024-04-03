@@ -28,36 +28,27 @@ const Footer = () => {
             </h5>
             <ul className="text-[#131B23] font-thin">
               <Link href="/#about" legacyBehavior>
-                <li
-                  className="mb-2 hover:text-[#446AF2] cursor-pointer"
-                >
+                <li className="mb-2 hover:text-[#446AF2] cursor-pointer">
                   About us
                 </li>
               </Link>
               <Link href="/#services" legacyBehavior>
-                <li
-                  className="mb-2 hover:text-[#446AF2] cursor-pointer"
-                >
+                <li className="mb-2 hover:text-[#446AF2] cursor-pointer">
                   Website Development Services
                 </li>
               </Link>
 
               <Link href="/#contact" legacyBehavior>
-                <li
-                  className="mb-2 hover:text-[#446AF2] cursor-pointer"
-                >
+                <li className="mb-2 hover:text-[#446AF2] cursor-pointer">
                   Contact
                 </li>
               </Link>
 
               <Link href="/#projects" legacyBehavior>
-                <li
-                  className="mb-2 hover:text-[#446AF2] cursor-pointer"
-                >
+                <li className="mb-2 hover:text-[#446AF2] cursor-pointer">
                   Projects
                 </li>
               </Link>
-
             </ul>
           </div>
 
@@ -65,17 +56,26 @@ const Footer = () => {
             <h5 className="text-xl font-bold font-playfair mb-2">Socials</h5>
             <ul className="text-[#131B23] font-thin">
               <li className="mb-2 hover:text-[#446AF2] ">
-                <Link legacyBehavior href="/facebook">
+                <Link
+                  legacyBehavior
+                  href="https://www.facebook.com/profile.php?id=61558254502814"
+                >
                   <a>Facebook</a>
                 </Link>
               </li>
               <li className="mb-2 hover:text-[#446AF2]">
-                <Link legacyBehavior href="/instagram">
+                <Link
+                  legacyBehavior
+                  href="https://www.instagram.com/cakwebsolutions/"
+                >
                   <a>Instagram</a>
                 </Link>
               </li>
               <li className="mb-2 hover:text-[#446AF2]">
-                <Link legacyBehavior href="/linkedin">
+                <Link
+                  legacyBehavior
+                  href="https://www.linkedin.com/company/cak-web-solutions/"
+                >
                   <a>Linkedin</a>
                 </Link>
               </li>
