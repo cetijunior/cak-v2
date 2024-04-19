@@ -46,28 +46,32 @@ export default function ServicesSection() {
     {
       href: "/al/WebsiteDevelopment",
       img: "/computer.png",
-      title: "Krijimi Uebsajteve",
+      title: "Krijimi i Uebsajteve",
+      alt: "Ilustrim i një monitori kompjuterik të vetëm që shfaq kodin dhe ndërfaqen e dizajnit të faqes në internet.",
       description:
         "Specializuar në zgjidhje të personalizuara në ueb për të përmirësuar praninë tuaj në internet.",
     },
     {
-      href: "/MobileDevelopment",
+      href: "/al/MobileDevelopment",
       img: "/smartphone.png",
       title: "Zhvillimi i aplikacioneve celulare",
+      alt: "Ilustrim i një telefoni inteligjent që shfaq një ndërfaqe aplikacioni për zhvillimin mobil.",
       description:
         "Krijimi i aplikacioneve celulare që ofrojnë përvoja pa probleme të përdoruesit.",
     },
     {
-      href: "/Smma",
+      href: "/al/Smma",
       img: "/smma.png",
       title: "Marketimi i Rrjeteve Sociale",
+      alt: "Ilustrim i një megafoni që përforcon drejt tre ikonave të përdoruesve, simbolizon arritjen në media sociale.",
       description:
         "Strategji për të rritur praninë e markës suaj në platforma të ndryshme sociale.",
     },
     {
-      href: "/Design",
+      href: "/al/Design",
       img: "/web-design.png",
       title: "Dizajni",
+      alt: "Ilustrim i një shablloni faqeje në një ekran kompjuteri, tregon strukturën e dizajnit të uebit.",
       description:
         "Zgjidhje inovative të projektimit të përshtatura për nevojat e biznesit tuaj.",
     },
@@ -93,7 +97,7 @@ export default function ServicesSection() {
               <div className="text-center cursor-pointer">
                 <img
                   src={link.img}
-                  alt={link.title}
+                  alt={link.alt}
                   className="mx-auto mb-4"
                   width={90}
                 />

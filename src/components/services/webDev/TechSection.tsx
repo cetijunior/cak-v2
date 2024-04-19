@@ -5,14 +5,18 @@ import "/styles/globals.css";
 import Link from "next/link";
 
 const techStack = [
-  { name: "C++", icon: "/icons/cis.png" },
-  { name: "Python", icon: "/icons/python.png" },
-  { name: "Css", icon: "/icons/css-3.png" },
-  { name: "Sql", icon: "/icons/datenbank.png" },
-  { name: "Javascript", icon: "/icons/java-skript.png" },
-  { name: "Php", icon: "/icons/php.png" },
-  { name: "Java", icon: "/icons/java.png" },
-  { name: "React Native", icon: "/icons/codes.png" },
+  { name: "C++", icon: "/icons/cis.png", alt: "C++ logo" },
+  { name: "Python", icon: "/icons/python.png", alt: "Python logo" },
+  { name: "Css", icon: "/icons/css-3.png", alt: "Css logo" },
+  { name: "Sql", icon: "/icons/datenbank.png", alt: "Sql logo" },
+  {
+    name: "Javascript",
+    icon: "/icons/java-skript.png",
+    alt: "Javascript logo",
+  },
+  { name: "Php", icon: "/icons/php.png", alt: "Php logo" },
+  { name: "Java", icon: "/icons/java.png", alt: "Java logo" },
+  { name: "React Native", icon: "/icons/codes.png", alt: "React Native logo" },
 ];
 
 export default function TechStackSection() {
@@ -74,14 +78,15 @@ export default function TechStackSection() {
           {techStack.map((tech, index) => (
             <div
               key={tech.name}
-              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp  delay-${index * 100
-                }ms`}
+              className={`flex flex-col items-center justify-center opacity-0 animate-fadeInUp  delay-${
+                index * 100
+              }ms`}
             >
               <div className="duration-300 ease-in-out transform hover:scale-105 flex flex-col items-center">
                 <img
                   src={tech.icon}
                   className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 transition-all duration-300 ease-in-out transform hover:scale-110"
-                  alt={`${tech.name} logo`}
+                  alt={`${tech.alt}`}
                 />
                 <span className="mt-2 text-sm md:text-md lg:text-lg font-semibold">
                   {tech.name}

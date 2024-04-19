@@ -6,13 +6,15 @@ const services = [
   {
     id: 1,
     image: "/icons/strat.png",
-    title: "Strategy Consultation",
+    alt: "Strategy Consultation",
+    title: "Strategy Consultation, Chess Piece illustration",
     description:
       "We craft a tailored social media strategy aligned with your goals by deeply understanding your brand, audience, and market.",
   },
   {
     id: 2,
     image: "/icons/design.png",
+    alt: "Content Creation and Design illustration",
     title: "Content Creation and Design",
     description:
       "We produce engaging social media content based on the latest digital trends and UX insights, designed to resonate with your audience and spur action.",
@@ -20,6 +22,7 @@ const services = [
   {
     id: 3,
     image: "/icons/smplanning.png",
+    alt: "Social Media Campaign Planning illustration",
     title: "Social Media Campaign Planning",
     description:
       "We design flexible, sustainable social media campaigns with high engagement, based on a solid, strategic foundation.",
@@ -27,6 +30,7 @@ const services = [
   {
     id: 4,
     image: "/icons/smgrowth.png",
+    alt: "Social Media Management and Growth illustration",
     title: "Social Media Management and Growth",
     description:
       "We expertly manage your social media campaigns across platforms with the latest tools, ensuring optimal performance and broad audience reach.",
@@ -34,6 +38,7 @@ const services = [
   {
     id: 5,
     image: "/icons/analytics.png",
+    alt: "Ongoing Analytics and Optimization illustration",
     title: "Ongoing Analytics and Optimization",
     description:
       "Our support continues post-launch, with continuous monitoring and optimizations to maximize your social media ROI and value.",
@@ -143,12 +148,12 @@ const SmmaSection = () => {
             >
               <img
                 className="h-24 w-24 transition-all duration-300 ease-in-out transform hover:scale-125"
-                alt="service"
+                alt={service.alt}
                 src={service.image}
               />
-              <h1 className="font-bold text-xl font-playfair text-center">
+              <h2 className="font-bold text-xl font-playfair text-center">
                 {service.title}
-              </h1>
+              </h2>
               <p className="text-center font-thin">{service.description}</p>
             </div>
           ))}

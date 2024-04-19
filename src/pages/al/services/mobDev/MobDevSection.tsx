@@ -5,6 +5,7 @@ const services = [
   {
     id: 1,
     image: "/web-design.png",
+    alt: "Website Template illustration",
     title: "Dizajni i Aplikacionit",
     description:
       "Krijimi i modeleve tërheqëse vizualisht dhe të përshtatshme për përdoruesit për aplikacionin tuaj celular.",
@@ -12,6 +13,7 @@ const services = [
   {
     id: 2,
     image: "/smartphone.png",
+    alt: "Mobile Phone illustration",
     title: "Zhvillimi i aplikacionit",
     description:
       "Zhvillimi i aplikacioneve celulare me performancë të lartë dhe të shkallëzuar për platformat iOS dhe Android.",
@@ -19,6 +21,7 @@ const services = [
   {
     id: 3,
     image: "/smma.png",
+    alt: "Marketing illustration",
     title: "Marketingu i aplikacionit",
     description:
       "Strategjizimi dhe ekzekutimi i planeve të marketingut për të rritur shikueshmërinë e aplikacionit dhe angazhimin e përdoruesit.",
@@ -26,6 +29,7 @@ const services = [
   {
     id: 4,
     image: "/web-maintenance.png",
+    alt: "Maintenance illustration",
     title: "Mirmbajtja e aplikacionit",
     description:
       "Ofrimi i mbështetjes dhe mirëmbajtjes së vazhdueshme për të siguruar që aplikacioni juaj të mbetet i përditësuar dhe i sigurt.",
@@ -33,6 +37,7 @@ const services = [
   {
     id: 5,
     image: "/analytics.png",
+    alt: "Analytics illustration",
     title: "Analitika e aplikacionit",
     description:
       "Ofrimi i mbështetjes dhe mirëmbajtjes së vazhdueshme për të siguruar që aplikacioni juaj të mbetet i përditësuar dhe i sigurt.",
@@ -148,12 +153,12 @@ const MobDevSection = () => {
               >
                 <img
                   className="transition-all duration-300 ease-in-out transform hover:scale-125 h-24 w-24 "
-                  alt="service"
+                  alt={service.alt}
                   src={service.image}
                 />
-                <h1 className="font-bold text-xl font-playfair text-center">
+                <h2 className="font-bold text-xl font-playfair text-center">
                   {service.title}
-                </h1>
+                </h2>
                 <p className="text-center font-thin">{service.description}</p>
               </div>
             ))}

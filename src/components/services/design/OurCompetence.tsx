@@ -15,7 +15,7 @@ const OurCompetence = () => {
           </p>
         </div>
         <div className="h-[20rem] w-[20rem] md:h-[600px] md:w-[600px] lg:h-[27rem] lg:w-[54rem] flex flex-col justify-center lg:items-end lg:justify-end transition-all duration-300 ease-in-out transform hover:scale-105">
-          <img src="/people.svg"></img>
+          <img src="/people.svg" alt="Three People illustration"></img>
         </div>
       </div>
     </>

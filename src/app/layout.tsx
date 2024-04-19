@@ -5,8 +5,10 @@ import "../../styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CAK Web Solutions",
-  description: "A website building company for you",
+  title:
+    "CAK Web Solutions | Your Partner for Professional Web and Social Media Growth",
+  description:
+    "CAK Web Solutions is a dynamic web agency based in Germany, dedicated to elevating your digital presence with custom website design, responsive development, and targeted social media marketing. Specializing in affordable, high-quality solutions, we offer tailored packages that combine web and social media strategies to boost your online visibility and engagement. Whether you're starting from scratch or aiming to enhance your current digital footprint, CAK Web Solutions is your trusted partner for innovative and effective digital marketing services.",
 };
 
 export default function RootLayout({

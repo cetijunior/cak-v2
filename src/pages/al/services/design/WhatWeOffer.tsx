@@ -20,16 +20,16 @@ const WhatWeOffer = () => {
           <div className="flex flex-col justify-end items-end">
             <div className="pt-8 flex flex-col space-y-11">
               <div className="ml-16 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 transition-all duration-300 ease-in-out transform hover:scale-125">
-                <h1>◉ Dizajni i përvojës së përdoruesit (UX)</h1>
+                <h3>◉ Dizajni i përvojës së përdoruesit (UX)</h3>
               </div>
               <div className="mr-8 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 transition-all duration-300 ease-in-out transform hover:scale-125">
-                <h1>◉ Dizajni i ndërfaqes së përdoruesit (UI)</h1>
+                <h3>◉ Dizajni i ndërfaqes së përdoruesit (UI)</h3>
               </div>
               <div className="ml-16 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 w-[11rem] transition-all duration-300 ease-in-out transform hover:scale-125">
-                <h1>◉ Dizajni rrethor</h1>
+                <h3>◉ Dizajni rrethor</h3>
               </div>
               <div className="bg-white shadow-custom-blue font-playfair rounded-3xl p-4 transition-all duration-300 ease-in-out transform hover:scale-125">
-                <h1>◉ Speculative Design</h1>
+                <h3>◉ Speculative Design</h3>
               </div>
             </div>
           </div>
@@ -37,16 +37,16 @@ const WhatWeOffer = () => {
         <div className="flex flex-col justify-end items-end">
           <div className="flex flex-col space-y-11">
             <div className="ml-16 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 w-[11rem] transition-all duration-300 ease-in-out transform hover:scale-125">
-              <h1>◉ Projektimi i Shërbimit</h1>
+              <h3>◉ Projektimi i Shërbimit</h3>
             </div>
             <div className="mr-12 md:mb-4 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 w-[11rem] transition-all duration-300 ease-in-out transform hover:scale-125">
-              <h1>◉ Dizajni i Sistemeve</h1>
+              <h3>◉ Dizajni i Sistemeve</h3>
             </div>
             <div className="ml-16 bg-white shadow-custom-blue rounded-3xl font-playfair p-4 w-[11rem] transition-all duration-300 ease-in-out transform hover:scale-125">
-              <h1>◉ Dizajni i së ardhmes</h1>
+              <h3>◉ Dizajni i së ardhmes</h3>
             </div>
             <div className="bg-white shadow-custom-blue font-playfair rounded-3xl p-4 transition-all duration-300 ease-in-out transform hover:scale-125">
-              <h1>◉ Dizajni i përvojës së klientit (CX)</h1>
+              <h3>◉ Dizajni i përvojës së klientit (CX)</h3>
             </div>
           </div>
         </div>

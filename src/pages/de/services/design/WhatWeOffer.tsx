@@ -21,16 +21,16 @@ const WhatWeOffer = () => {
           <div className="flex flex-col justify-end items-end">
             <div className="pt-8 flex flex-col space-y-11">
               <div className="ml-16 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 transition-all duration-300 ease-in-out transform hover:scale-125">
-                <h1>◉ Benutzerfreundliches Design (UX)</h1>
+                <h3>◉ Benutzerfreundliches Design (UX)</h3>
               </div>
               <div className="mr-8 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 transition-all duration-300 ease-in-out transform hover:scale-125">
-                <h1>◉ Gestaltung der Benutzeroberfläche (UI)</h1>
+                <h3>◉ Gestaltung der Benutzeroberfläche (UI)</h3>
               </div>
               <div className="ml-16 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 w-[11rem] transition-all duration-300 ease-in-out transform hover:scale-125">
-                <h1>◉ Kreisförmiges Design</h1>
+                <h3>◉ Kreisförmiges Design</h3>
               </div>
               <div className="bg-white shadow-custom-blue font-playfair rounded-3xl p-4 transition-all duration-300 ease-in-out transform hover:scale-125">
-                <h1>◉ Spekulativer Entwurf</h1>
+                <h3>◉ Spekulativer Entwurf</h3>
               </div>
             </div>
           </div>
@@ -38,16 +38,16 @@ const WhatWeOffer = () => {
         <div className="flex flex-col justify-end items-end">
           <div className="flex flex-col space-y-11">
             <div className="ml-16 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 w-[11rem] transition-all duration-300 ease-in-out transform hover:scale-125">
-              <h1>◉ Dienstleistungsdesign</h1>
+              <h3>◉ Dienstleistungsdesign</h3>
             </div>
             <div className="mr-12 md:mb-4 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 w-[11rem] transition-all duration-300 ease-in-out transform hover:scale-125">
-              <h1>◉ Entwurf von Systemen</h1>
+              <h3>◉ Entwurf von Systemen</h3>
             </div>
             <div className="ml-16 bg-white shadow-custom-blue rounded-3xl font-playfair p-4 w-[11rem] transition-all duration-300 ease-in-out transform hover:scale-125">
-              <h1>◉ Zukünftiges Design</h1>
+              <h3>◉ Zukünftiges Design</h3>
             </div>
             <div className="bg-white shadow-custom-blue font-playfair rounded-3xl p-4 transition-all duration-300 ease-in-out transform hover:scale-125">
-              <h1>◉ Kundenerlebnis-Design (CX)</h1>
+              <h3>◉ Kundenerlebnis-Design (CX)</h3>
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ const SmmaSection2 = () => {
         <img
           className="w-[400px] h-auto lg:w-[700px] rounded-2xl md:rounded-[39px] lg:rounded-[39px] shadow-custom-blue2 md:w-[50rem] transition-all duration-300 ease-in-out transform hover:scale-105"
           src="/smmapic.png"
-          alt="Helmes Design"
+          alt="Social Media Marketing pole of icons"
         />
       </div>
     </div>

@@ -17,30 +17,34 @@ function Navbar() {
 
   const serviceLinks = [
     {
-      href: "/de/WebsiteDevelopment",
+      href: "/WebsiteDevelopment",
       img: "/computer.png",
-      title: "Web-Entwicklung",
+      title: "Website Development",
+      alt: "Illustration eines einzelnen Computermonitors, der Website-Code und Designoberfläche anzeigt.",
       description:
         "Spezialisiert auf kundenspezifische Web-Lösungen zur Verbesserung Ihrer Online-Präsenz.",
     },
     {
-      href: "/de/MobileDevelopment",
+      href: "/MobileDevelopment",
       img: "/smartphone.png",
-      title: "Mobile App-Entwicklung",
+      title: "Mobile App Development",
+      alt: "Illustration eines Smartphones, das eine App-Schnittstelle für die mobile Entwicklung anzeigt.",
       description:
         "Erstellung mobiler Anwendungen, die nahtlose Benutzererfahrungen bieten.",
     },
     {
-      href: "/de/Smma",
+      href: "/Smma",
       img: "/smma.png",
-      title: "Marketing sozialer Medien",
+      title: "Social Media Marketing",
+      alt: "Illustration eines Megaphons, das auf drei Benutzersymbole gerichtet ist, symbolisiert Social-Media-Outreach.",
       description:
         "Strategien zum Ausbau der Präsenz Ihrer Marke auf verschiedenen sozialen Plattformen.",
     },
     {
-      href: "/de/Design",
+      href: "/Design",
       img: "/web-design.png",
       title: "Design",
+      alt: "Illustration einer Website-Vorlage auf einem Computerbildschirm, zeigt das Layout des Webdesigns.",
       description:
         "Innovative Designlösungen, die auf die Bedürfnisse Ihres Unternehmens zugeschnitten sind.",
     },
@@ -157,11 +161,7 @@ function Navbar() {
                 >
                   <Link legacyBehavior href={link.href}>
                     <a className="flex items-center space-x-2">
-                      <img
-                        src={link.img}
-                        alt={link.title}
-                        className="w-4 h-4"
-                      />
+                      <img src={link.img} alt={link.alt} className="w-4 h-4" />
                       <span className="text-sm">{link.title}</span>
                     </a>
                   </Link>
@@ -227,13 +227,13 @@ function Navbar() {
       {/* Desktop Navbar */}
       <div className="hidden md:hidden lg:flex flex-row items-center md:px-8 space-x-8">
         <div className="hidden md:hidden lg:flex flex-row items-center space-x-16">
-          <h1
+          <h3
             className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20"
             onClick={() => scrollToSection("about")}
           >
             Über uns
-          </h1>
-          <h1
+          </h3>
+          <h3
             onClick={() => scrollToSection("services")}
             onMouseEnter={() => setIsDropdownOpenServices(true)}
             onMouseLeave={() => setIsDropdownOpenServices(false)}
@@ -252,7 +252,7 @@ function Navbar() {
                     <a className="flex p-4 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white rounded-lg">
                       <img
                         src={link.img}
-                        alt={link.title}
+                        alt={link.alt}
                         className="w-10 h-10"
                       />
                       <div>
@@ -268,23 +268,23 @@ function Navbar() {
                 ))}
               </div>
             </div>
-          </h1>
+          </h3>
 
-          <h1
+          <h3
             className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20"
             onClick={() => scrollToSection("projects")}
           >
             Projekte
-          </h1>
+          </h3>
 
-          <h1
+          <h3
             className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20"
             onClick={() => scrollToSection("contact")}
           >
             Kontakt
-          </h1>
+          </h3>
 
-          <h1
+          <h3
             onClick={() => scrollToSection("")}
             onMouseEnter={() => setIsDropdownOpenLanguages(true)}
             onMouseLeave={() => setIsDropdownOpenLanguages(false)}
@@ -309,7 +309,7 @@ function Navbar() {
                 ))}
               </div>
             </div>
-          </h1>
+          </h3>
         </div>
       </div>
     </div>

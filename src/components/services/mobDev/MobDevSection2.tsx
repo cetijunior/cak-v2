@@ -70,43 +70,43 @@ const MobDevSection2 = () => {
             </div>
             <div className="transition-all duration-300 ease-in-out hover:scale-105 pt-8 flex flex-wrap justify-around items-center gap-6">
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Service</h1>
-                <h1 className="text-blue-500 text-3xl">66</h1>
-                <h1 className="font-bold">NPS</h1>
+                <h2>Service</h2>
+                <h2 className="text-blue-500 text-3xl">66</h2>
+                <h2 className="font-bold">NPS</h2>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>improvement</h1>
-                <h1 className="text-blue-500 text-3xl">150%</h1>
-                <h1 className="font-bold">efficiency</h1>
+                <h2>improvement</h2>
+                <h2 className="text-blue-500 text-3xl">150%</h2>
+                <h2 className="font-bold">efficiency</h2>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Experience</h1>
-                <h1 className="text-blue-500 text-3xl">6+</h1>
-                <h1 className="font-bold">years</h1>
+                <h2>Experience</h2>
+                <h2 className="text-blue-500 text-3xl">6+</h2>
+                <h2 className="font-bold">years</h2>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Portfolio</h1>
-                <h1 className="text-blue-500 text-3xl">50+</h1>
-                <h1 className="font-bold">Customers</h1>
+                <h2>Portfolio</h2>
+                <h2 className="text-blue-500 text-3xl">50+</h2>
+                <h2 className="font-bold">Customers</h2>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Offices</h1>
-                <h1 className="text-blue-500 text-3xl">3</h1>
-                <h1 className="font-bold">locations</h1>
+                <h2>Offices</h2>
+                <h2 className="text-blue-500 text-3xl">3</h2>
+                <h2 className="font-bold">locations</h2>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>People</h1>
-                <h1 className="text-blue-500 text-3xl">20+</h1>
-                <h1 className="font-bold">experts</h1>
+                <h2>People</h2>
+                <h2 className="text-blue-500 text-3xl">20+</h2>
+                <h2 className="font-bold">experts</h2>
               </div>
             </div>
           </div>
         </div>
         <div className="py-12 flex flex-col lg:flex-row justify-center items-center gap-10 p-6">
           <div className="space-y-6 max-w-md lg:max-w-lg">
-            <h1 className="text-3xl font-playfair text-center lg:text-center">
+            <h2 className="text-3xl font-playfair text-center lg:text-center">
               Our customers find our services exceptional
-            </h1>
+            </h2>
             <p className="text-center font-thin">
               We don’t just develop high-end mobile apps, but we also build
               business relationships. Our early insights and final results
@@ -117,7 +117,7 @@ const MobDevSection2 = () => {
           <img
             className="max-w-full h-auto rounded-2xl lg:w-96 xl:w-[50rem] transition-all duration-300 ease-in-out hover:scale-105"
             src="https://www.helmes.com/wp-content/uploads/2021/10/Helmes_Design_Central-1.jpg"
-            alt="Helmes Design"
+            alt="Writing on a clear board with a marker"
           />
         </div>
         <ContactSection />

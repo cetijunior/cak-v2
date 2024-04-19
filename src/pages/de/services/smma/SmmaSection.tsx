@@ -6,6 +6,7 @@ const services = [
   {
     id: 1,
     image: "/icons/strat.png",
+    alt: "Strategy Consultation illustration",
     title: "Strategie-Beratung",
     description:
       "Wir entwickeln eine maßgeschneiderte Social-Media-Strategie, die auf Ihre Ziele abgestimmt ist, indem wir Ihre Marke, Ihr Publikum und Ihren Markt genau verstehen.",
@@ -13,6 +14,7 @@ const services = [
   {
     id: 2,
     image: "/icons/design.png",
+    alt: "Content Creation and Design illustration",
     title: "Erstellung und Gestaltung von Inhalten",
     description:
       "Wir produzieren ansprechende Social-Media-Inhalte, die auf den neuesten digitalen Trends und UX-Erkenntnissen basieren und so konzipiert sind, dass sie Ihr Publikum ansprechen und zum Handeln anregen.",
@@ -20,6 +22,7 @@ const services = [
   {
     id: 3,
     image: "/icons/smplanning.png",
+    alt: "Social Media Campaign Planning illustration",
     title: "Planung von Social Media-Kampagnen",
     description:
       "Wir konzipieren flexible, nachhaltige Social-Media-Kampagnen mit hohem Engagement, die auf einer soliden, strategischen Grundlage basieren.",
@@ -27,6 +30,7 @@ const services = [
   {
     id: 4,
     image: "/icons/smgrowth.png",
+    alt: "Social Media Management and Growth illustration",
     title: "Social Media Management und Wachstum",
     description:
       "Wir verwalten Ihre Social-Media-Kampagnen auf allen Plattformen mit den neuesten Tools, um eine optimale Leistung und eine große Reichweite zu gewährleisten.",
@@ -34,6 +38,7 @@ const services = [
   {
     id: 5,
     image: "/icons/analytics.png",
+    alt: "Ongoing Analytics and Optimization illustration",
     title: "Fortlaufende Analyse und Optimierung",
     description:
       "Unser Support geht auch nach der Einführung weiter, mit kontinuierlicher Überwachung und Optimierung, um den ROI und den Wert Ihrer sozialen Medien zu maximieren.",
@@ -143,7 +148,7 @@ const SmmaSection = () => {
             >
               <img
                 className="h-24 w-24 transition-all duration-300 ease-in-out transform hover:scale-125"
-                alt="service"
+                alt={service.alt}
                 src={service.image}
               />
               <h1 className="font-bold text-xl font-playfair text-center">

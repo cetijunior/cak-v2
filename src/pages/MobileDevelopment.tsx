@@ -136,9 +136,9 @@ const Mobdev = () => {
           </div>
 
           <div className="flex flex-col items-center max-w-md lg:max-w-lg space-y-4 py-10 px-4">
-            <h1 className=" font-bold font-playfair text-[#131B23] text-3xl">
+            <h2 className=" font-bold font-playfair text-[#131B23] text-3xl">
               We animate mobile applications
-            </h1>
+            </h2>
             <p className="flex flex-row items-center w-full group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg font-extralight hover:font-light text-[#131B23]">
               <span className="text-black group-hover:text-blue-500 pr-5">
                 ◉{" "}

@@ -5,6 +5,7 @@ const services = [
   {
     id: 1,
     image: "/web-design.png",
+    alt: "Website Template illustration",
     title: "App Design",
     description:
       "Erstellung optisch ansprechender und benutzerfreundlicher Designs für Ihre mobile App.",
@@ -12,6 +13,7 @@ const services = [
   {
     id: 2,
     image: "/smartphone.png",
+    alt: "Mobile Phone illustration",
     title: "App-Entwicklung",
     description:
       "Entwicklung leistungsstarker und skalierbarer mobiler Anwendungen für iOS- und Android-Plattformen.",
@@ -19,6 +21,7 @@ const services = [
   {
     id: 3,
     image: "/smma.png",
+    alt: "Marketing illustration",
     title: "App Marketing",
     description:
       "Strategische Planung und Umsetzung von Marketingplänen zur Steigerung der Sichtbarkeit der App und der Nutzerbindung.",
@@ -26,6 +29,7 @@ const services = [
   {
     id: 4,
     image: "/web-maintenance.png",
+    alt: "Maintenance illustration",
     title: "App-Pflege",
     description:
       "Laufende Unterstützung und Wartung, um sicherzustellen, dass Ihre App immer auf dem neuesten Stand und sicher ist.",
@@ -33,6 +37,7 @@ const services = [
   {
     id: 5,
     image: "/analytics.png",
+    alt: "Analytics illustration",
     title: "App-Analytik",
     description:
       "Nutzung von Datenanalysen zur Überwachung der App-Performance und der Benutzerinteraktionen für kontinuierliche Verbesserungen.",
@@ -148,12 +153,12 @@ const MobDevSection = () => {
               >
                 <img
                   className="transition-all duration-300 ease-in-out transform hover:scale-125 h-24 w-24 "
-                  alt="service"
+                  alt={service.alt}
                   src={service.image}
                 />
-                <h1 className="font-bold text-xl font-playfair text-center">
+                <h2 className="font-bold text-xl font-playfair text-center">
                   {service.title}
-                </h1>
+                </h2>
                 <p className="text-center font-thin">{service.description}</p>
               </div>
             ))}

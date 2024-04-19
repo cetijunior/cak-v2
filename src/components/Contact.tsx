@@ -53,31 +53,31 @@ function Contact() {
             Send us an e-mail or fill in the form. We will be in touch within
             one business day!
           </p>
-          <h1 className="px-10 text-[18px] lg:text-left font-playfair text-center font-semibold ">
+          <h2 className="px-10 text-[18px] lg:text-left font-playfair text-center font-semibold ">
             Send us an e-mail
-          </h1>
-          <h2 className="px-10 text-[14px] lg:text-left font-extralight text-[#131B23] text-center">
+          </h2>
+          <h3 className="px-10 text-[14px] lg:text-left font-extralight text-[#131B23] text-center">
             info@cakwebsolutions.com
-          </h2>
-          <h1 className="px-10 mt-[10px] text-[18px] lg:text-left font-playfair text-center font-semibold ">
+          </h3>
+          <h2 className="px-10 mt-[10px] text-[18px] lg:text-left font-playfair text-center font-semibold ">
             Give us a call
-          </h1>
-          <h2 className="px-10 text-[14px] lg:text-left font-extralight text-[#131B23] text-center">
-            +49 (176) 2359-2066
           </h2>
+          <h3 className="px-10 text-[14px] lg:text-left font-extralight text-[#131B23] text-center">
+            +49 (176) 2359-2066
+          </h3>
           <div className="flex flex-wrap justify-center py-4 lg:py-0 space-y-6 lg:space-y-0 mt-4 items-start">
             <img
               src="/archieContact.jpg"
-              alt="archiecontact"
+              alt="Luars Qamo"
               className="lg:w-[200px] lg:h-[250px] md:w-[200px] md:h-[250px] w-[350px] shadow-custom-blue2 h-[400px] rounded-[39px] lg:rounded-[20px] md:rounded-2xl transition-all duration-500 ease-in-out transform hover:scale-105"
             />
             <div className="flex sm:flex-col flex-wrap justify-start space-y-2">
-              <h1 className="px-10 text-[18px] mt-[20px] lg:mt-[0px] font-playfair text-left font-semibold ">
+              <h2 className="px-10 text-[18px] mt-[20px] lg:mt-[0px] font-playfair text-left font-semibold ">
                 Luars Qamo
-              </h1>
-              <h2 className="px-10 font-extralight text-[#131B23] text-[14px]">
-                Co-founder of CAK
               </h2>
+              <h3 className="px-10 font-extralight text-[#131B23] text-[14px]">
+                Co-founder of CAK
+              </h3>
               <p className="px-10 font-extralight text-[#131B23] py-4 text-[13px] w-[250px]">
                 I`ll ensure the team best suited for your project gets in touch
                 with you swiftly.
@@ -88,9 +88,9 @@ function Contact() {
         <div className="bg-white lg:w-[400px] md:w-[500px] w-[310px] h-[550px] lg:ml-[-80px] mt-[-40px] lg:mt-[100px] md:mt-[-30px] flex flex-col shadow-custom-blue2 rounded-[39px] transition-all duration-500 ease-in-out transform hover:scale-105">
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="px-4 py-4 flex flex-col space-y-2">
-              <h1 className="text-2xl font-bold font-playfair text-center py-4">
+              <h2 className="text-2xl font-bold font-playfair text-center py-4">
                 Fill in the form!
-              </h1>
+              </h2>
               <h1 className="font-playfair">Your Full Name</h1>
               <input
                 {...register("name", { required: "*The name is missing" })}
@@ -101,7 +101,7 @@ function Contact() {
                 type="text"
               />
               <div className="w-300 h-[0.5px] bg-[#AECBEB]" />
-              <h1 className="font-playfair">Company Name</h1>
+              <h3 className="font-playfair">Company Name</h3>
               <input
                 {...register("name", {
                   required: "*The Company name is missing",
@@ -113,7 +113,7 @@ function Contact() {
                 type="text"
               />
               <div className="w-300 h-[0.5px] bg-[#AECBEB]" />
-              <h1 className="font-playfair">Company Email</h1>
+              <h3 className="font-playfair">Company Email</h3>
               <input
                 {...register("email", {
                   required: "*The email is missing",
@@ -139,7 +139,7 @@ function Contact() {
                 type="text"
               />
               <div className="w-300 h-[0.5px] bg-[#AECBEB]" />
-              <h1 className="font-playfair">Message</h1>
+              <h3 className="font-playfair">Message</h3>
               <textarea
                 {...register("message", {
                   required: "*The message is missing",

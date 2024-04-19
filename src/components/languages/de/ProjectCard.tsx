@@ -14,6 +14,7 @@ function ProjectCard() {
       id: 1,
       text: "Die Wellness-Klinik",
       image: "/wellnessTemplate.png",
+      alt: "Die Wellness-Klinik Website Vorlage 3D Mockup",
       className:
         "mt-[-30px]  w-[400px] h-[250px] md:mt-[-40px] md:w-[300px] md:h-[280px] lg:mt-[-10px] lg:w-[350px] lg:h-[250px] transition-all duration-300 ease-in-out transform hover:scale-105 rounded-2xl'",
       description:
@@ -24,6 +25,7 @@ function ProjectCard() {
       id: 2,
       text: "Das Bauunternehmen",
       image: "/constructionTemplate.png",
+      alt: "Die Website des Bauunternehmens Vorlage 3D Mockup",
       className:
         "mt-[-10px]  w-[400px] h-[250px] md:mt-[-40px] md:w-[300px] md:h-[280px] lg:mt-[15px] lg:ml-[-20px] lg:w-[350px] lg:h-[250px] transition-all duration-300 ease-in-out transform hover:scale-105 rounded-2xl'",
       description:
@@ -34,6 +36,7 @@ function ProjectCard() {
       id: 3,
       text: "E-Commerce-Shop",
       image: "/ecommerceTemplate.png",
+      alt: "E-Commerce-Shop Website Vorlage 3D Mockup",
       className:
         "mt-[-30px] w-[400px] h-[280px] md:mt-[-40px] md:w-[300px] md:h-[280px] lg:mt-[0px] lg:ml-[-10px] lg:w-[350px] lg:h-[250px] transition-all duration-300 ease-in-out transform hover:scale-105 rounded-2xl'",
       description:
@@ -44,6 +47,7 @@ function ProjectCard() {
       id: 4,
       text: "Restaurant Webseite",
       image: "/restaurantTemplate.png",
+      alt: "Restaurant Webseite Vorlage 3D Mockup",
       className:
         "mt-[-30px]  w-[400px] h-[280px] md:mt-[-40px] md:w-[300px] md:h-[280px] lg:ml-[10px] lg:mt-[30px] lg:w-[350px] lg:h-[250px] transition-all duration-300 ease-in-out transform hover:scale-105 rounded-2xl'",
       description:
@@ -97,7 +101,7 @@ function ProjectCard() {
           <div
             className={`flex flex-col md:flex-col lg:flex-row items-center justify-between md:h-auto p-4 rounded-[39px] lg:h-[300px]`}
           >
-            <img src={card.image} alt={card.text} className={card.className} />
+            <img src={card.image} alt={card.alt} className={card.className} />
 
             <div>
               <div className="px-6 pt-8 sm:pt-0 space-y-2 sm:space-y-4">

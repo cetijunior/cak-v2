@@ -44,30 +44,34 @@ export default function ServicesSection() {
 
   const links = [
     {
-      href: "/de/WebsiteDevelopment",
+      href: "/WebsiteDevelopment",
       img: "/computer.png",
-      title: "Web-Entwicklung",
+      title: "Website Development",
+      alt: "Illustration eines einzelnen Computermonitors, der Website-Code und Designoberfläche anzeigt.",
       description:
         "Spezialisiert auf kundenspezifische Web-Lösungen zur Verbesserung Ihrer Online-Präsenz.",
     },
     {
-      href: "/de/MobileDevelopment",
+      href: "/MobileDevelopment",
       img: "/smartphone.png",
-      title: "Mobile App-Entwicklung",
+      title: "Mobile App Development",
+      alt: "Illustration eines Smartphones, das eine App-Schnittstelle für die mobile Entwicklung anzeigt.",
       description:
         "Erstellung mobiler Anwendungen, die nahtlose Benutzererfahrungen bieten.",
     },
     {
-      href: "/de/Smma",
+      href: "/Smma",
       img: "/smma.png",
-      title: "Marketing sozialer Medien",
+      title: "Social Media Marketing",
+      alt: "Illustration eines Megaphons, das auf drei Benutzersymbole gerichtet ist, symbolisiert Social-Media-Outreach.",
       description:
         "Strategien zum Ausbau der Präsenz Ihrer Marke auf verschiedenen sozialen Plattformen.",
     },
     {
-      href: "/de/Design",
+      href: "/Design",
       img: "/web-design.png",
       title: "Design",
+      alt: "Illustration einer Website-Vorlage auf einem Computerbildschirm, zeigt das Layout des Webdesigns.",
       description:
         "Innovative Designlösungen, die auf die Bedürfnisse Ihres Unternehmens zugeschnitten sind.",
     },
@@ -92,7 +96,7 @@ export default function ServicesSection() {
               <div className="text-center cursor-pointer">
                 <img
                   src={link.img}
-                  alt={link.title}
+                  alt={link.alt}
                   className="mx-auto mb-4"
                   width={90}
                 />

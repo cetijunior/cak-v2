@@ -70,43 +70,43 @@ const MobDevSection2 = () => {
             </div>
             <div className="transition-all duration-300 ease-in-out hover:scale-105 pt-8 flex flex-wrap justify-around items-center gap-6">
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Dienst</h1>
-                <h1 className="text-blue-500 text-3xl">66</h1>
-                <h1 className="font-bold">NPS</h1>
+                <h3>Dienst</h3>
+                <h3 className="text-blue-500 text-3xl">66</h3>
+                <h3 className="font-bold">NPS</h3>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Verbesserung</h1>
-                <h1 className="text-blue-500 text-3xl">150%</h1>
-                <h1 className="font-bold">Effizienz</h1>
+                <h3>Verbesserung</h3>
+                <h3 className="text-blue-500 text-3xl">150%</h3>
+                <h3 className="font-bold">Effizienz</h3>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Erfahrung</h1>
-                <h1 className="text-blue-500 text-3xl">6+</h1>
-                <h1 className="font-bold">Jahre</h1>
+                <h3>Erfahrung</h3>
+                <h3 className="text-blue-500 text-3xl">6+</h3>
+                <h3 className="font-bold">Jahre</h3>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Portfolio</h1>
-                <h1 className="text-blue-500 text-3xl">50+</h1>
-                <h1 className="font-bold">Kunden</h1>
+                <h3>Portfolio</h3>
+                <h3 className="text-blue-500 text-3xl">50+</h3>
+                <h3 className="font-bold">Kunden</h3>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Büros</h1>
-                <h1 className="text-blue-500 text-3xl">3</h1>
-                <h1 className="font-bold">Standorte</h1>
+                <h3>Büros</h3>
+                <h3 className="text-blue-500 text-3xl">3</h3>
+                <h3 className="font-bold">Standorte</h3>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Mitarbeiter</h1>
-                <h1 className="text-blue-500 text-3xl">20+</h1>
-                <h1 className="font-bold">Experten</h1>
+                <h3>Mitarbeiter</h3>
+                <h3 className="text-blue-500 text-3xl">20+</h3>
+                <h3 className="font-bold">Experten</h3>
               </div>
             </div>
           </div>
         </div>
         <div className="py-12 flex flex-col lg:flex-row justify-center items-center gap-10 p-6">
           <div className="space-y-6 max-w-md lg:max-w-lg">
-            <h1 className="text-3xl font-playfair text-center lg:text-center">
+            <h2 className="text-3xl font-playfair text-center lg:text-center">
               Unsere Kunden finden unsere Dienstleistungen außergewöhnlich
-            </h1>
+            </h2>
             <p className="text-center font-thin">
               Wir entwickeln nicht nur High-End-Mobile-Apps, sondern wir bauen
               auch Geschäftsbeziehungen auf. Unsere frühen Erkenntnisse und
@@ -118,7 +118,7 @@ const MobDevSection2 = () => {
           <img
             className="max-w-full h-auto rounded-2xl lg:w-96 xl:w-[50rem] transition-all duration-300 ease-in-out hover:scale-105"
             src="https://www.helmes.com/wp-content/uploads/2021/10/Helmes_Design_Central-1.jpg"
-            alt="Helmes Design"
+            alt="Writing on a clear board with a marker"
           />
         </div>
         <ContactSection />
