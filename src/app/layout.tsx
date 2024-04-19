@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/x-icon" href="/CAKLogo.svg" sizes="any" />
+        <link rel="CAK-icon" sizes="any" type="image/x-icon" href="/favicon.ico" />
       </head>
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
