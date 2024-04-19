@@ -20,6 +20,7 @@ function Navbar() {
       href: "/al/WebsiteDevelopment",
       img: "/computer.png",
       title: "Krijimi i Uebsajteve",
+      alt: "Ilustrim i një monitori kompjuterik të vetëm që shfaq kodin dhe ndërfaqen e dizajnit të faqes në internet.",
       description:
         "Specializuar në zgjidhje të personalizuara në ueb për të përmirësuar praninë tuaj në internet.",
     },
@@ -27,6 +28,7 @@ function Navbar() {
       href: "/al/MobileDevelopment",
       img: "/smartphone.png",
       title: "Zhvillimi i aplikacioneve celulare",
+      alt: "Ilustrim i një telefoni inteligjent që shfaq një ndërfaqe aplikacioni për zhvillimin mobil.",
       description:
         "Krijimi i aplikacioneve celulare që ofrojnë përvoja pa probleme të përdoruesit.",
     },
@@ -34,6 +36,7 @@ function Navbar() {
       href: "/al/Smma",
       img: "/smma.png",
       title: "Marketimi i Rrjeteve Sociale",
+      alt: "Ilustrim i një megafoni që përforcon drejt tre ikonave të përdoruesve, simbolizon arritjen në media sociale.",
       description:
         "Strategji për të rritur praninë e markës suaj në platforma të ndryshme sociale.",
     },
@@ -41,6 +44,7 @@ function Navbar() {
       href: "/al/Design",
       img: "/web-design.png",
       title: "Dizajni",
+      alt: "Ilustrim i një shablloni faqeje në një ekran kompjuteri, tregon strukturën e dizajnit të uebit.",
       description:
         "Zgjidhje inovative të projektimit të përshtatura për nevojat e biznesit tuaj.",
     },
@@ -94,9 +98,17 @@ function Navbar() {
       <div className="absolute pr-4 pt-2 z-40 right-0 sm:block md:block lg:hidden">
         <button onClick={handleMenuToggle}>
           {isMenuOpen ? (
-            <img src="/close.png" alt="Close" className="w-10 h-10" />
+            <img
+              src="/close.png"
+              alt="Close Icon illustration"
+              className="w-10 h-10"
+            />
           ) : (
-            <img src="/menu.png" alt="Menu" className="w-10 h-10" />
+            <img
+              src="/menu.png"
+              alt="Burger Menu illustration"
+              className="w-10 h-10"
+            />
           )}
         </button>
       </div>
@@ -132,7 +144,7 @@ function Navbar() {
             </span>
             <img
               src="/arrow.png"
-              alt="next"
+              alt="Arrow Icon illustration"
               className={`w-8 h-8 transform ${
                 rotateArrowServ ? "rotate-0" : "-rotate-180"
               }`} // Apply rotation based on state
@@ -154,11 +166,7 @@ function Navbar() {
                 >
                   <Link legacyBehavior href={link.href}>
                     <a className="flex items-center space-x-2">
-                      <img
-                        src={link.img}
-                        alt={link.title}
-                        className="w-4 h-4"
-                      />
+                      <img src={link.img} alt={link.alt} className="w-4 h-4" />
                       <span className="text-sm">{link.title}</span>
                     </a>
                   </Link>
@@ -189,7 +197,7 @@ function Navbar() {
               <span className="text-2xl md:text-3xl font-thin">AL</span>
               <img
                 src="/arrow.png"
-                alt="next"
+                alt="Arrow Icon illustration"
                 className={`w-8 h-8 transform ${
                   rotateArrowLang ? "rotate-0" : "-rotate-180"
                 }`} // Apply rotation based on state
@@ -225,12 +233,12 @@ function Navbar() {
       <div className="hidden md:hidden lg:flex flex-row items-center md:px-8 space-x-8">
         <div className="hidden md:hidden lg:flex flex-row items-center space-x-16">
           <Link legacyBehavior href="/#about">
-            <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
+            <h3 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
               Rreth nesh
-            </h1>
+            </h3>
           </Link>
           <Link legacyBehavior href="/#services">
-            <h1
+            <h3
               onMouseEnter={() => setIsDropdownOpenServices(true)}
               onMouseLeave={() => setIsDropdownOpenServices(false)}
               className="cursor-pointer hover:text-[#446AF2] transition-all duration-600 font-light text-[#131B23] ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative"
@@ -248,7 +256,7 @@ function Navbar() {
                       <a className="flex p-4 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white rounded-lg">
                         <img
                           src={link.img}
-                          alt={link.title}
+                          alt={link.alt}
                           className="w-10 h-10"
                         />
                         <div>
@@ -264,21 +272,21 @@ function Navbar() {
                   ))}
                 </div>
               </div>
-            </h1>
+            </h3>
           </Link>
 
           <Link legacyBehavior href="/#projects">
-            <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
+            <h3 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
               Projekte
-            </h1>
+            </h3>
           </Link>
           <Link legacyBehavior href="/#contact">
-            <h1 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
+            <h3 className="cursor-pointer transition-all duration-300 ease-in-out font-light text-[#131B23] transform hover:scale-105 hover:text-[#446AF2] text-xl z-20">
               Kontakti
-            </h1>
+            </h3>
           </Link>
           <Link legacyBehavior href="/#">
-            <h1
+            <h3
               onMouseEnter={() => setIsDropdownOpenLanguages(true)}
               onMouseLeave={() => setIsDropdownOpenLanguages(false)}
               className="cursor-pointer hover:text-[#446AF2] transition-all font-light text-[#131B23] duration-600 ease-in-out transform hover:scale-105 text-xl z-20 h-100p relative"
@@ -302,7 +310,7 @@ function Navbar() {
                   ))}
                 </div>
               </div>
-            </h1>
+            </h3>
           </Link>
         </div>
       </div>

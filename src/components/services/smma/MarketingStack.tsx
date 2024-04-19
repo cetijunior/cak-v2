@@ -66,9 +66,9 @@ export default function MarketingStack() {
       style={{ opacity: show[0] ? 1 : 0, transition: "opacity 1s ease" }}
     >
       <div className="transition-all duration-300 ease-in-out transform hover:scale-105 p-7 rounded-xl shadow-custom-blue mb-10 sm:mb-0">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair text-gray-900 mb-10 text-center">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-playfair text-gray-900 mb-10 text-center">
           We Amplify Your Voice
-        </h2>
+        </h1>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {techStack.map((tech, index) => (
             <div
@@ -91,9 +91,9 @@ export default function MarketingStack() {
       </div>
 
       <div className="flex flex-col justify-center md:justify-center lg:justify-center space-y-8 md:space-y-8 items-center md:items-center lg:items-center p-8 md:p-10 rounded-3xl">
-        <h1 className=" font-bold font-playfair text-[#131B23] text-3xl">
+        <h2 className=" font-bold font-playfair text-[#131B23] text-3xl">
           Engage, Captivate, Connect
-        </h1>
+        </h2>
         <div className="lg:w-fit md:w-[600px] w-[300px] space-y-4 px-4 justify-center md:justify-center lg:justify-evenly items-center md:items-center lg:items-start">
           <p className="text-sm lg:text-md lg:text-lg text-start group duration-300 ease-in-out transform hover:scale-105 cursor-pointer text-md sm:text-lg hover:font-light font-extralight">
             <span className="text-black group-hover:text-blue-500 pr-2">

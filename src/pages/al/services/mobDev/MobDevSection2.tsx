@@ -70,43 +70,43 @@ const MobDevSection2 = () => {
             </div>
             <div className="transition-all duration-300 ease-in-out hover:scale-105 pt-8 flex flex-wrap justify-around items-center gap-6">
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Shërbimet</h1>
-                <h1 className="text-blue-500 text-3xl">66</h1>
-                <h1 className="font-bold">NPS</h1>
+                <h3>Shërbimet</h3>
+                <h3 className="text-blue-500 text-3xl">66</h3>
+                <h3 className="font-bold">NPS</h3>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>përmirësim</h1>
-                <h1 className="text-blue-500 text-3xl">150%</h1>
-                <h1 className="font-bold">eficencs</h1>
+                <h3>përmirësim</h3>
+                <h3 className="text-blue-500 text-3xl">150%</h3>
+                <h3 className="font-bold">eficencs</h3>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Eksperienca</h1>
-                <h1 className="text-blue-500 text-3xl">6+</h1>
-                <h1 className="font-bold">vite</h1>
+                <h3>Eksperienca</h3>
+                <h3 className="text-blue-500 text-3xl">6+</h3>
+                <h3 className="font-bold">vite</h3>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Portofoli</h1>
-                <h1 className="text-blue-500 text-3xl">50+</h1>
-                <h1 className="font-bold">Klientë</h1>
+                <h3>Portofoli</h3>
+                <h3 className="text-blue-500 text-3xl">50+</h3>
+                <h3 className="font-bold">Klientë</h3>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Zyrat</h1>
-                <h1 className="text-blue-500 text-3xl">3</h1>
-                <h1 className="font-bold">shtete</h1>
+                <h3>Zyrat</h3>
+                <h3 className="text-blue-500 text-3xl">3</h3>
+                <h3 className="font-bold">shtete</h3>
               </div>
               <div className="flex flex-col space-y-1 justify-center items-center h-40 w-40 bg-white rounded-3xl shadow-custom-blue transition-all duration-300 ease-in-out hover:scale-110">
-                <h1>Njerëz</h1>
-                <h1 className="text-blue-500 text-3xl">20+</h1>
-                <h1 className="font-bold">ekspertë</h1>
+                <h3>Njerëz</h3>
+                <h3 className="text-blue-500 text-3xl">20+</h3>
+                <h3 className="font-bold">ekspertë</h3>
               </div>
             </div>
           </div>
         </div>
         <div className="py-12 flex flex-col lg:flex-row justify-center items-center gap-10 p-6">
           <div className="space-y-6 max-w-md lg:max-w-lg">
-            <h1 className="text-3xl font-playfair text-center lg:text-center">
+            <h2 className="text-3xl font-playfair text-center lg:text-center">
               Klientët tanë i shohin shërbimet tona të jashtëzakonshme
-            </h1>
+            </h2>
             <p className="text-center font-thin">
               Ne nuk zhvillojmë vetëm aplikacione celulare të nivelit të lartë,
               por gjithashtu ndërtojmë marrëdhëniet e biznesit. Vështrimet tona
@@ -118,7 +118,7 @@ const MobDevSection2 = () => {
           <img
             className="max-w-full h-auto rounded-2xl lg:w-96 xl:w-[50rem] transition-all duration-300 ease-in-out hover:scale-105"
             src="/clients.jpg"
-            alt="Clients"
+            alt="Writing on a transparent board with a marker"
           />
         </div>
         <ContactSection />

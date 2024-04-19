@@ -5,6 +5,7 @@ const services = [
   {
     id: 1,
     image: "/web-design.png",
+    alt: "Website Template illustration",
     title: "App Design",
     description:
       "Creating visually appealing and user-friendly designs for your mobile app.",
@@ -12,6 +13,7 @@ const services = [
   {
     id: 2,
     image: "/smartphone.png",
+    alt: "Mobile Phone illustration",
     title: "App Development",
     description:
       "Developing high-performance and scalable mobile applications for iOS and Android platforms.",
@@ -19,6 +21,7 @@ const services = [
   {
     id: 3,
     image: "/smma.png",
+    alt: "Marketing illustration",
     title: "App Marketing",
     description:
       "Strategizing and executing marketing plans to increase app visibility and user engagement.",
@@ -26,6 +29,7 @@ const services = [
   {
     id: 4,
     image: "/web-maintenance.png",
+    alt: "Maintenance illustration",
     title: "App Maintenance",
     description:
       "Providing ongoing support and maintenance to ensure your app stays updated and secure.",
@@ -34,6 +38,7 @@ const services = [
     id: 5,
     image: "/analytics.png",
     title: "App Analytics",
+    alt: "Analytics illustration",
     description:
       "Leveraging data analytics to monitor app performance and user interactions for continuous improvement.",
   },
@@ -148,12 +153,12 @@ const MobDevSection = () => {
               >
                 <img
                   className="transition-all duration-300 ease-in-out transform hover:scale-125 h-24 w-24 "
-                  alt="service"
+                  alt={service.alt}
                   src={service.image}
                 />
-                <h1 className="font-bold text-xl font-playfair text-center">
+                <h2 className="font-bold text-xl font-playfair text-center">
                   {service.title}
-                </h1>
+                </h2>
                 <p className="text-center font-thin">{service.description}</p>
               </div>
             ))}

@@ -6,6 +6,7 @@ const services = [
   {
     id: 1,
     image: "/icons/strat.png",
+    alt: "Strategy illustration",
     title: "Konsultimi i Strategjisë",
     description:
       "Ne krijojmë një strategji të përshtatur të mediave sociale në përputhje me qëllimet tuaja duke kuptuar thellësisht markën, audiencën dhe tregun tuaj.",
@@ -13,6 +14,7 @@ const services = [
   {
     id: 2,
     image: "/icons/design.png",
+    alt: "Design illustration",
     title: "Krijimi i Contentit dhe dizajni",
     description:
       "Ne prodhojmë përmbajtje tërheqëse të mediave sociale bazuar në tendencat më të fundit dixhitale dhe njohuritë e UX, të krijuara për të rezonuar me audiencën tuaj dhe për të nxitur veprime.",
@@ -20,6 +22,7 @@ const services = [
   {
     id: 3,
     image: "/icons/smplanning.png",
+    alt: "Planning illustration",
     title: "Planifikimi i Rrjeteve Sociale",
     description:
       "Ne hartojmë fushata fleksibël dhe të qëndrueshme të mediave sociale me angazhim të lartë, bazuar në një bazë solide dhe strategjike.",
@@ -27,6 +30,7 @@ const services = [
   {
     id: 4,
     image: "/icons/smgrowth.png",
+    alt: "Growth illustration",
     title: "Menaxhimi dhe Rritja e Rrjeteve Sociale",
     description:
       "Ne menaxhojmë me mjeshtëri fushatat tuaja të mediave sociale nëpër platforma me mjetet më të fundit, duke siguruar performancë optimale dhe shtrirje të gjerë të audiencës.",
@@ -34,6 +38,7 @@ const services = [
   {
     id: 5,
     image: "/icons/analytics.png",
+    alt: "Analytics illustration",
     title: "Analiza dhe optimizim i vazhdueshëm",
     description:
       "Mbështetja jonë vazhdon edhe pas lançimit, me monitorim të vazhdueshëm dhe optimizime për të maksimizuar ROI dhe vlerën tuaj të mediave sociale.",
@@ -143,12 +148,12 @@ const SmmaSection = () => {
             >
               <img
                 className="h-24 w-24 transition-all duration-300 ease-in-out transform hover:scale-125"
-                alt="service"
+                alt={service.alt}
                 src={service.image}
               />
-              <h1 className="font-bold text-xl font-playfair text-center">
+              <h2 className="font-bold text-xl font-playfair text-center">
                 {service.title}
-              </h1>
+              </h2>
               <p className="text-center font-thin">{service.description}</p>
             </div>
           ))}

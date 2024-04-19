@@ -23,6 +23,7 @@ function Navbar() {
       href: "/WebsiteDevelopment",
       img: "/computer.png",
       title: "Website Development",
+      alt: "Illustration of a single computer monitor displaying website code and design interface.",
       description:
         "Specializing in custom web solutions to enhance your online presence.",
     },
@@ -30,6 +31,7 @@ function Navbar() {
       href: "/MobileDevelopment",
       img: "/smartphone.png",
       title: "Mobile App Development",
+      alt: "Illustration of a smartphone displaying an app interface for mobile development.",
       description:
         "Creating mobile applications that offer seamless user experiences.",
     },
@@ -37,6 +39,7 @@ function Navbar() {
       href: "/Smma",
       img: "/smma.png",
       title: "Social Media Marketing",
+      alt: "Illustration of a megaphone amplifying towards three user icons, symbolizing social media outreach.",
       description:
         "Strategies to grow your brand’s presence on various social platforms.",
     },
@@ -44,6 +47,7 @@ function Navbar() {
       href: "/Design",
       img: "/web-design.png",
       title: "Design",
+      alt: "Illustration of a website template on a computer screen, showcasing web design layout.",
       description:
         "Innovative design solutions tailored to your business’s needs.",
     },
@@ -100,9 +104,17 @@ function Navbar() {
       <div className="absolute pr-4 pt-2 z-40 right-0 sm:block md:block lg:hidden">
         <button onClick={handleMenuToggle}>
           {isMenuOpen ? (
-            <img src="/close.png" alt="Close" className="w-10 h-10 " />
+            <img
+              src="/close.png"
+              alt="Close Icon illustration"
+              className="w-10 h-10 "
+            />
           ) : (
-            <img src="/menu.png" alt="Menu" className="w-10 h-10" />
+            <img
+              src="/menu.png"
+              alt="Burger Menu Icon illustration"
+              className="w-10 h-10"
+            />
           )}
         </button>
       </div>
@@ -138,7 +150,7 @@ function Navbar() {
             </span>
             <img
               src="/arrow.png"
-              alt="next"
+              alt="Arrow Icon illustration"
               className={`w-8 h-8 transform ${
                 rotateArrowServ ? "rotate-0" : "-rotate-180"
               }`} // Apply rotation based on state
@@ -160,11 +172,7 @@ function Navbar() {
                 >
                   <Link legacyBehavior href={link.href}>
                     <a className="flex items-center space-x-2">
-                      <img
-                        src={link.img}
-                        alt={link.title}
-                        className="w-4 h-4"
-                      />
+                      <img src={link.img} alt={link.alt} className="w-4 h-4" />
                       <span className="text-sm">{link.title}</span>
                     </a>
                   </Link>
@@ -195,7 +203,7 @@ function Navbar() {
               <span className="text-2xl md:text-3xl font-thin">EN</span>
               <img
                 src="/arrow.png"
-                alt="next"
+                alt="Arrow Icon illustration"
                 className={`w-8 h-8 transform ${
                   rotateArrowLang ? "rotate-0" : "-rotate-180"
                 }`} // Apply rotation based on state
@@ -230,12 +238,12 @@ function Navbar() {
       {/* Desktop Navbar */}
       <div className="hidden md:hidden lg:flex flex-row items-center md:px-8 space-x-8">
         <div className="hidden md:hidden lg:flex flex-row items-center space-x-16">
-          <h1
+          <h3
             className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20"
             onClick={() => scrollToSection("about")}
           >
             About Us
-          </h1>
+          </h3>
           <h1
             onClick={() => scrollToSection("services")}
             onMouseEnter={() => setIsDropdownOpenServices(true)}
@@ -255,7 +263,7 @@ function Navbar() {
                     <a className="flex p-4 items-center transition-all duration-300 ease-in-out transform hover:scale-105 space-x-3 bg-white rounded-lg">
                       <img
                         src={link.img}
-                        alt={link.title}
+                        alt={link.alt}
                         className="w-10 h-10"
                       />
                       <div>
@@ -273,22 +281,22 @@ function Navbar() {
             </div>
           </h1>
 
-          <h1
+          <h3
             className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20"
             onClick={() => scrollToSection("projects")}
           >
             Projects
-          </h1>
+          </h3>
 
-          <h1
+          <h3
             className="cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 font-extralight text-[#131B23] hover:text-[#446AF2] text-xl z-20"
             onDoubleClick={navigateContact}
             onClick={() => scrollToSection("contact")}
           >
             Contact
-          </h1>
+          </h3>
 
-          <h1
+          <h3
             onClick={() => scrollToSection("")}
             onMouseEnter={() => setIsDropdownOpenLanguages(true)}
             onMouseLeave={() => setIsDropdownOpenLanguages(false)}
@@ -313,7 +321,7 @@ function Navbar() {
                 ))}
               </div>
             </div>
-          </h1>
+          </h3>
         </div>
       </div>
     </div>

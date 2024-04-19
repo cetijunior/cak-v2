@@ -19,16 +19,16 @@ const WhatWeOffer = () => {
           <div className="flex flex-col justify-end items-end">
             <div className="pt-8 flex flex-col space-y-11">
               <div className="ml-16 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 transition-all duration-300 ease-in-out transform hover:scale-125">
-                <h1>◉ User Experience Design (UX)</h1>
+                <h3>◉ User Experience Design (UX)</h3>
               </div>
               <div className="mr-8 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 transition-all duration-300 ease-in-out transform hover:scale-125">
-                <h1>◉ User Interface Design (UI)</h1>
+                <h3>◉ User Interface Design (UI)</h3>
               </div>
               <div className="ml-16 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 w-[11rem] transition-all duration-300 ease-in-out transform hover:scale-125">
-                <h1>◉ Circular Design</h1>
+                <h3>◉ Circular Design</h3>
               </div>
               <div className="bg-white shadow-custom-blue font-playfair rounded-3xl p-4 transition-all duration-300 ease-in-out transform hover:scale-125">
-                <h1>◉ Speculative Design</h1>
+                <h3>◉ Speculative Design</h3>
               </div>
             </div>
           </div>
@@ -36,16 +36,16 @@ const WhatWeOffer = () => {
         <div className="flex flex-col justify-end items-end">
           <div className="flex flex-col space-y-11">
             <div className="ml-16 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 w-[11rem] transition-all duration-300 ease-in-out transform hover:scale-125">
-              <h1>◉ Service Design</h1>
+              <h3>◉ Service Design</h3>
             </div>
             <div className="mr-12 md:mb-4 bg-white shadow-custom-blue font-playfair rounded-3xl p-4 w-[11rem] transition-all duration-300 ease-in-out transform hover:scale-125">
-              <h1>◉ Systems Design</h1>
+              <h3>◉ Systems Design</h3>
             </div>
             <div className="ml-16 bg-white shadow-custom-blue rounded-3xl font-playfair p-4 w-[11rem] transition-all duration-300 ease-in-out transform hover:scale-125">
-              <h1>◉ Future Design</h1>
+              <h3>◉ Future Design</h3>
             </div>
             <div className="bg-white shadow-custom-blue font-playfair rounded-3xl p-4 transition-all duration-300 ease-in-out transform hover:scale-125">
-              <h1>◉ Customer Experience Design (CX)</h1>
+              <h3>◉ Customer Experience Design (CX)</h3>
             </div>
           </div>
         </div>

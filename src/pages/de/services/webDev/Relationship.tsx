@@ -77,9 +77,9 @@ function Relationship() {
                         w-[350px] h-[300px] justify-center p-8
                         transition-all duration-300 ease-in-out transform hover:scale-105 rounded-3xl shadow-custom-blue"
             >
-              <h1 className="flex items-start text-center text-[#131B23] font-playfair font-bold text-3xl">
+              <h2 className="flex items-start text-center text-[#131B23] font-playfair font-bold text-3xl">
                 {step.title}
-              </h1>
+              </h2>
               <p className="text-lg text-center text-[#131B23] font-thin">
                 {step.description}s
               </p>
@@ -88,7 +88,7 @@ function Relationship() {
               <img
                 className="h-14 w-30 hover:animate-pulse transition-all duration-300 ease-in-out transform hover:scale-110 -rotate-90 md:-rotate-90 lg:rotate-180"
                 src="/arrow.png"
-                alt="Arrowleft"
+                alt="Arrowleft icon"
               />
             )}
           </React.Fragment>

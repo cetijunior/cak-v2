@@ -47,6 +47,7 @@ export default function ServicesSection() {
       href: "/WebsiteDevelopment",
       img: "/computer.png",
       title: "Website Development",
+      alt: "Illustration of a single computer monitor displaying website code and design interface.",
       description:
         "Specializing in custom web solutions to enhance your online presence.",
     },
@@ -54,6 +55,7 @@ export default function ServicesSection() {
       href: "/MobileDevelopment",
       img: "/smartphone.png",
       title: "Mobile App Development",
+      alt: "Illustration of a smartphone displaying an app interface for mobile development.",
       description:
         "Creating mobile applications that offer seamless user experiences.",
     },
@@ -61,6 +63,7 @@ export default function ServicesSection() {
       href: "/Smma",
       img: "/smma.png",
       title: "Social Media Marketing",
+      alt: "Illustration of a megaphone amplifying towards three user icons, symbolizing social media outreach.",
       description:
         "Strategies to grow your brand’s presence on various social platforms.",
     },
@@ -68,6 +71,7 @@ export default function ServicesSection() {
       href: "/Design",
       img: "/web-design.png",
       title: "Design",
+      alt: "Illustration of a website template on a computer screen, showcasing web design layout.",
       description:
         "Innovative design solutions tailored to your business’s needs.",
     },
@@ -85,14 +89,15 @@ export default function ServicesSection() {
         {links.map((link, index) => (
           <div
             key={index}
-            className={`ease-in-out hover:scale-105 transition-opacity duration-1000 ${show[index] ? "opacity-100" : "opacity-0"
-              }`}
+            className={`ease-in-out hover:scale-105 transition-opacity duration-1000 ${
+              show[index] ? "opacity-100" : "opacity-0"
+            }`}
           >
             <Link legacyBehavior href={link.href} passHref>
               <div className="text-center cursor-pointer">
                 <img
                   src={link.img}
-                  alt={link.title}
+                  alt={link.alt}
                   className="mx-auto mb-4"
                   width={90}
                 />
